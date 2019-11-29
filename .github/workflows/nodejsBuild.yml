@@ -26,6 +26,9 @@ jobs:
         npm test
       env:
         CI: true
+    - uses: actions/aws/cli@master
+      with:
+        args: sns create-topic --name my-topic
     - name: Deploy to S3
       run: $HOME/hugo -v deploy --maxDeletes -1
       env:
