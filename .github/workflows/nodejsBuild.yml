@@ -28,9 +28,7 @@ jobs:
         CI: true
     - uses: actions/aws/cli@master
       with:
-        args: sns create-topic --name my-topic
-    - name: Deploy to S3
-      run: $HOME/hugo -v deploy --maxDeletes -1
+        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control "max-age=3600, public" --exclude "*" --include "*.html" --include "*.xml"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
