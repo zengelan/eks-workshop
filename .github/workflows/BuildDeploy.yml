@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        
+
     - name: npm install, build, and test
       run: |
         npm ci
@@ -34,7 +34,7 @@ jobs:
     - uses: actions/aws/cli@master
       name: Deploy content to S3 Bucket
       with:
-        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=3600, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\"
+        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=120, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -42,7 +42,7 @@ jobs:
     - uses: actions/aws/cli@master
       name: Deploy cloud formation templates to S3 Bucket
       with:
-        args: s3 sync templates/ s3://${S3_BUCKET_NAME}/templates/ --delete --acl public-read --cache-control \"max-age=86400, public\"
+        args: s3 sync templates/ s3://${S3_BUCKET_NAME}/templates/ --delete --cache-control \"max-age=10, public\"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -50,7 +50,7 @@ jobs:
     - uses: actions/aws/cli@master
       name: Deploy others to S3 Bucket
       with:
-        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=86400, public\" --exclude \"*.html\" --exclude \"*.xml\"
+        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=120, public\" --exclude \"*.html\" --exclude \"*.xml\"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
