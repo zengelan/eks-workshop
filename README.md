@@ -1,4 +1,4 @@
-master branch: ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiUmYrQzlvK2JVYWloK3N5NFh5WUZNS1duYUtVeFN2eWJLNk9VdU9NdzdDdGtobldPcHBKYjdVQ0YxV0NQLzRZeXhWbkJVTkc2Ymd2TEpJblNYb1BraXFNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRObVVDcVUyb3JJUEFYQTciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+master branch: 
 
 # eksworkshop
 
