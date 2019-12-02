@@ -1,0 +1,51 @@
+name: Node NPM Build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+    env:
+      S3_BUCKET_NAME: sesummit2020
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm run build --if-present
+        npm test
+      env:
+        CI: true
+    - uses: actions/aws/cli@master
+      name: Deploy content to S3 Bucket
+      with:
+        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=3600, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\"
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - uses: actions/aws/cli@master
+      name: Deploy templates to S3 Bucket
+      with:
+        args: s3 sync templates/ s3://${S3_BUCKET_NAME}/templates/${CODEBUILD_GIT_CLEAN_BRANCH}/ --delete --acl public-read --cache-control \"max-age=86400, public\"
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
+    - uses: actions/aws/cli@master
+      name: Deploy others to S3 Bucket
+      with:
+        args: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control \"max-age=86400, public\" --exclude \"*.html\" --exclude \"*.xml\"
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
