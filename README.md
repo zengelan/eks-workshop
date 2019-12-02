@@ -3,6 +3,11 @@ master branch:
 # eksworkshop
 
 ### Setup:
+#### Get a certificate or renew it for cloudfront distribution:
+reqeust cert:
+certbot-auto certonly --manual --preferred-challenges=dns -d sesummit20.net -d *.sesummit20.net
+renew cert (on the same host where requested)
+certbot-auto certonly --manual --preferred-challenges=dns -d sesummit20.net -d *.sesummit20.net
 
 #### Install Hugo:
 On a mac:
