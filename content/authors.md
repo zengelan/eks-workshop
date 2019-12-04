@@ -13,4 +13,4 @@ note: change the url to match the new repo... using old repo as an example place
 
 {{% ghcontributors "https://api.github.com/repos/aws-samples/eks-workshop/contributors?per_page=1000" %}}
 and
-{{% ghcontributors "https://github.com/zengelan/eks-workshop/contributors?per_page=1000" %}}
+{{% ghcontributors "https://api.github.com/repos/zengelan/eks-workshop/contributors?per_page=1000" %}}
