@@ -1,10 +1,10 @@
 languageCode = "en-us"
 ignoreFiles = [ "\\.files/README.md$",  ]
 defaultContentLanguage = "en"
-title = "Amazon EKS Workshop"
+title = "McAfee SE Summit 2020 IaaS Workshop"
 theme = "learn"
 uglyurls = false
-googleAnalytics = "UA-44634850-4"
+googleAnalytics = "UA-35687986-6"
 sectionPagesMenu = "main"
 relativeURLs = true
 
@@ -12,17 +12,17 @@ relativeURLs = true
 hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/aws-samples/eks-workshop/edit/master/content/"
+editURL = "https://github.com/zengelan/eks-workshop/edit/master/content/"
 themeVariant = "mine"
 showVisitedLinks = false
-author = "Brent Langston"
-description = "Amazon EKS Workshop"
+author = "Andreas Zengel (original from Brent Langston)"
+description = "McAfee SE Summit 2020 IaaS Workshop"
 disableSearch = false
 disableAssetsBusting = false
 disableLanguageSwitchingButton = true
 disableShortcutsTitle=false
 disableInlineCopyToClipBoard = true
-ghrepo = "https://github.com/aws-samples/eks-workshop/"
+ghrepo = "https://github.com/zengelan/eks-workshop/"
 branch = "master"
 template_bucket = "eksworkshop.com"
 pygmentsUseClasses = true
@@ -43,23 +43,8 @@ pygmentsStyle = "tango"
     weight = -110
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON203"
-url = "/tags/CON203"
-weight = 1
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON205"
-url = "/tags/CON205"
-weight = 2
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> CON206"
-url = "/tags/CON206"
-weight = 3
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> OPN401"
-url = "/tags/OPN401"
+name = "<i class='fab fa-aws'></i> MFESUMMIT2020"
+url = "/tags/mfesummit2020"
 weight = 4
 
 [[menu.shortcuts]]
@@ -78,6 +63,11 @@ url = "https://ecsworkshop.com"
 weight = 7
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard'></i> The original Amazon EKS Workshop"
+url = "https://eksworkshop.com"
+weight = 7
+
+[[menu.shortcuts]]
 name = "<i class='fas fa-bookmark'></i> More Resources"
 url = "/more_resources"
 weight = 10
@@ -88,13 +78,13 @@ url = "/authors"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/aws-samples/eks-workshop"
+name = "<i class='fab fa-github'></i> McAfee Fork GitHub Project"
+url = "https://github.com/zengelan/eks-workshop"
 weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Have questions?"
-url = "mailto:eksworkshop@amazon.com"
+url = "mailto:andreas_zengel@gmail.com"
 weight = 40
 
 

@@ -2,6 +2,8 @@
 title: "Create an AWS account"
 chapter: false
 weight: 1
+tags:
+  - MFESummit2020
 ---
 
 {{% notice warning %}}
