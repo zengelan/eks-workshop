@@ -2,6 +2,8 @@
 title: "McAfee Amazon EKS Workshop"
 chapter: true
 weight: 1
+tags:
+  - MFESummit2020
 ---
 
 <div style="text-align: center"><h2>McAfee Amazon EKS Workshop</h2></div>

@@ -10,6 +10,7 @@ tags:
   - CON205
   - CON206
   - OPN401
+  - MFESummit2020
 ---
 
 # Launch using [eksctl](https://eksctl.io/)
