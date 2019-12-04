@@ -30,7 +30,7 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 
 ### Create an EKS cluster
 ```
-eksctl create cluster --name=eksworkshop-eksctl --nodes=3 --managed --alb-ingress-access --region=${AWS_REGION}
+eksctl create cluster --name=eksctl<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${AWS_REGION} --auto-kubeconfig
 ```
 
 {{% notice info %}}
