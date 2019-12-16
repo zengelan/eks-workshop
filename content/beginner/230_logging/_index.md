@@ -3,10 +3,9 @@ title: "Logging with Elasticsearch, Fluentd, and Kibana (EFK)"
 chapter: true
 weight: 230
 tags:
-  - advanced
+  - beginner
   - operations
   - logging
-  - CON206
 ---
 
 # Implement Logging with EFK

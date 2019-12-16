@@ -5,10 +5,6 @@ weight: 20
 ---
 
 
-{{% notice warning %}}
-**DO NOT PROCEED** with this step unless you have [validated the IAM role](/020_prerequisites/workspaceiam/#validate-the-iam-role) in use by the Cloud9 IDE. You will not be able to run the necessary kubectl commands in the later modules unless the EKS cluster is built using the IAM role.
-{{% /notice %}}
-
 #### Challenge:
 **How do I check the IAM role on the workspace?**
 
@@ -29,6 +25,14 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 {{% /expand %}}
 
 ### Create an EKS cluster
+
+To create your new EKS cluster we will be using some defaults for this lab to ensure the resources are tagged with your codeword and we have some best practices settings defined like enabling logging of the EKS cluster and nodes 
+
+{{% notice info %}}
+We will be using a pre-defined configuration file that was downloaded when you cloned the repos. If you can't find the configuration please review section [Clone the service repos](/020_prerequisites/clone)
+{{% /notice %}}
+
+Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
 ```
 eksctl create cluster --name=eksctl<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${AWS_REGION} --auto-kubeconfig
 ```
