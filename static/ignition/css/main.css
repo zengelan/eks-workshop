@@ -1,0 +1,78 @@
+#noresults, #loading {
+  display: none;
+}
+
+body {
+  margin: 2rem;
+}
+
+table {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-collapse: collapse;
+}
+
+/*
+td {
+  border: 1px solid #1b00ff;
+}
+*/
+
+tr:hover {background-color: #ddd;}
+
+h1, h2, input, p, td {
+  font-weight: 400;
+  font-family: sans-serif;
+  margin: 1rem 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input, p, td {
+  font-size: 1rem;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+input {
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: SteelBlue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-height: 337px;
+  max-width: 285px ;
+  vertical-align: top;
+  margin: 0 2rem 2rem 0;
+}
+
+pre {
+  margin: 0 0 0 0;
+}
+
+pre.bash {
+ background-color: black;
+ color: gainsboro;
+ font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+ font-size: 0.9rem;
+}
+
+.result {
+  display: flex;
+}
