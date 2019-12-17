@@ -1,5 +1,5 @@
 // Update this variable to point to your domain.
-var apigatewayendpoint = 'https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummit2020-creds-prod';
+var apigatewayendpoint = 'https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummit2020-creds-prod/v2';
 var loadingdiv = $('#loading');
 var noresults = $('#noresults');
 var resultdiv = $('#results');
@@ -49,21 +49,21 @@ async function search() {
             let response = await $.get(apigatewayendpoint, {mfeemail: query, acckey: apikey}, 'json');
             // Get the part of the JSON response that we care about
             let user = response['User'];
-            if (user['UserName'].length > 0) {
+            if (user['username'].length > 2) {
                 loadingdiv.hide();
                 // Iterate through the results and write them to HTML
 
-                let codeword = user['Codeword'];
+                let codeword = user['codeword'];
                 let url = user['AwsLoginUrl'];
-                let password = user['AwsLoginPassword']
-                let username = user['UserName'];
+                let password = user['password']
+                let username = user['username'];
                 let AWS_ACCESS_KEY_ID = user['AWS_ACCESS_KEY_ID'];
                 let AWS_SECRET_ACCESS_KEY = user['AWS_SECRET_ACCESS_KEY'];
                 let AWS_DEFAULT_REGION = user['AWS_DEFAULT_REGION'];
-                let Cloud9Ide = user['Cloud9Ide'];
-                let Cloud9IdeUrl = user['Cloud9IdeUrl'];
+                let Cloud9Ide = user['tags']['Cloud9Env'];
+                let Cloud9IdeUrl = user['Cloud9EnvUrl'];
                 let FirstRequest = user['FirstRequest'];
-                let JenkinsUsername = user['JenkinsUsername'];
+                let JenkinsUsername = user['codeword'];
 
                 let restext = 'Found results, here are your credentials:'
                 if (String(FirstRequest).toLowerCase() == 'true') {
@@ -87,7 +87,7 @@ async function search() {
                     '<tr><td>AWS_DEFAULT_REGION:</td><td><pre>' + AWS_DEFAULT_REGION + '</pre></td></tr>' +
                     '<tr><td>Cloud9 Ide ID:</td><td><pre>' + Cloud9Ide + '</pre></td></tr>' +
                     '<tr><td>Cloud9 IDE Access URL</td><td><a target="_blank" href="' + Cloud9IdeUrl + '">' + Cloud9IdeUrl + '</a></td></tr>' +
-                    '<tr><td>Jenkins Username:</td><td><pre>' + user['JenkinsUser'] + '</pre></td></tr>' +
+                    '<tr><td>Jenkins Username:</td><td><pre>' + user['codeword'] + '</pre></td></tr>' +
                     '<tr><td>Jenkins Password:</td><td><pre>' + password + '</pre></td></tr>' +
                     '<tr><td>Jenkins Access URL</td><td><a target="_blank" href="https://jenkins.sesummit20.net/jenkins">https://jenkins.sesummit20.net/jenkins</a></td></tr>' +
                     '<tr><td>CodeCommit Username:</td><td><pre>' + user['CodeCommitUsername'] + '</pre></td></tr>' +
