@@ -49,7 +49,7 @@ async function search() {
             let response = await $.get(apigatewayendpoint, {mfeemail: query, acckey: apikey}, 'json');
             // Get the part of the JSON response that we care about
             let user = response['User'];
-            if (user['UserName'].length > 0) {
+            if (user['username'].length > 2) {
                 loadingdiv.hide();
                 // Iterate through the results and write them to HTML
 

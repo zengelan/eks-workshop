@@ -9,7 +9,7 @@ tags:
 {{% notice warning %}}
 For this lab you will retrieve the required user account and resources for a shared AWS instance from a website{{% /notice %}}
 
-1. Pleas visit the page <a href="https://labs.sesummit20.net/ignition/" target="_blank">https://labs.sesummit20.net/ignition</a> to request your credentials
+1. Pleas visit the page <a href="https://labs.sesummit20.net/ignition2/" target="_blank">https://labs.sesummit20.net/ignition2</a> to request your credentials
 {{% notice warning %}}
 This will only work today and only with your McAfee Email address{{% /notice %}}
 
