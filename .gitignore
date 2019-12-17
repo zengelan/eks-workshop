@@ -8,4 +8,3 @@ terraform.tfstate.backup
 .DS_Store
 *.swp
 themes/learn
-themes/learn
