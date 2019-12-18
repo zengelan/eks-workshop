@@ -12,7 +12,9 @@ curl --silent --location "https://labs.sesummit20.net/tools/eksctl_mfesummit2020
 sudo mv -v /tmp/eksctl /usr/local/bin
 ```
 
-{{% notice warning %}} In this workshop we will use a special version of eksctrl which supports the *--enable-logging-all* parameter to make it easier to turn on logging for the EKS master, schedule and worker nodes. If you use another build of eksctl then please ensue you have enabled logging in the configuration file or that you enable logging right after the EKS cluster was created manually {{% /notice %}}
+{{% notice warning %}}
+In this workshop we will use a special version of eksctrl which supports the *--enable-logging-all* parameter to make it easier to turn on logging for the EKS master, schedule and worker nodes. If you use another build of eksctl then please ensue you have enabled logging in the configuration file or that you enable logging right after the EKS cluster was created manually 
+{{% /notice %}}
 
 
 

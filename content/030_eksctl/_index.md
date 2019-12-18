@@ -4,12 +4,6 @@ chapter: true
 weight: 30
 tags:
   - beginner
-  - kubeflow
-  - appmesh
-  - CON203
-  - CON205
-  - CON206
-  - OPN401
   - MFESummit2020
 ---
 
