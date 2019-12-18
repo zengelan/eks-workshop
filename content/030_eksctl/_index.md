@@ -1,5 +1,5 @@
 ---
-title: "Launch using eksctl"
+title: "Create EKS Environment"
 chapter: true
 weight: 30
 tags:
@@ -13,7 +13,7 @@ tags:
   - MFESummit2020
 ---
 
-# Launch using [eksctl](https://eksctl.io/)
+# Create an EKS environment using [eksctl](https://eksctl.io/)
 
 [eksctl](https://eksctl.io) is a tool jointly developed by AWS and [Weaveworks](https://weave.works) that automates much of
 the experience of creating EKS clusters.
