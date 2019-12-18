@@ -34,7 +34,7 @@ We will be using a pre-defined configuration file that was downloaded when you c
 
 Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
 ```
-eksctl create cluster --name=eksctl<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${AWS_REGION} --auto-kubeconfig
+eksctl create cluster --name=eksctl-<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${AWS_REGION} --auto-kubeconfig
 ```
 
 {{% notice info %}}
