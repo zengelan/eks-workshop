@@ -12,11 +12,6 @@ sudo mv -v /tmp/eksctl /usr/local/bin
 
 {{% notice warning %}}
 In this workshop we will use a special version of eksctrl which turns on logging for the EKS master, schedule and worker nodes during creation. If you use another build of eksctl then please ensure you have enabled logging in the configuration file or that you enable logging right after the EKS cluster was created manually 
- 
- To enable logging after the EKS cluster was created use the command
- ```
-eksctl --cluster <CLUSTER-NAME> utils update-cluster-logging --enable-types all --approve
-```
 
 {{% /notice %}}
 

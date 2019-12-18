@@ -40,3 +40,8 @@ eksctl create cluster --name=eksctl-<CODEWORD> --tags codeword=<CODEWORD> --node
 {{% notice info %}}
 Launching EKS and all the dependencies will take approximately 15 minutes
 {{% /notice %}}
+
+To enable CloudWatch logging manually after the EKS cluster was created use the following command.
+ ```
+eksctl --cluster <CLUSTER-NAME> utils update-cluster-logging --enable-types all --approve
+```
