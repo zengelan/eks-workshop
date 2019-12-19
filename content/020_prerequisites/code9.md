@@ -24,7 +24,7 @@ Then execute the following command to check that you are connected and authentic
 
 #### Check username using AWS IAM
 ```
-aws ami get-user
+aws iam get-user
 
 ```
 The output will be all information about your user account from IAM and looks like this
