@@ -4,7 +4,7 @@ chapter: true
 weight: 50
 tags:
   - beginner
-  - CON203
+  - architects
 ---
 
 # Deploy the Example Microservices
