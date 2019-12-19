@@ -41,9 +41,11 @@ eksctl create cluster --name=<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --n
 Launching EKS and all the dependencies will take approximately 15 minutes
 {{% /notice %}}
 
+
+While the task is running you can see the progress in the CloudFormation Console at https://console.aws.amazon.com/cloudformation/home?region=us-east-1
+You can also go to the other relevant services in the console to see how e.g. the EC2 machines are created, the VPC settings and security groups are configured automatically.
+
 To enable CloudWatch logging manually after the EKS cluster was created use the following command.
  ```
 eksctl --cluster <CLUSTER-NAME> utils update-cluster-logging --enable-types all --approve
 ```
-
-While the task is running you can see the progress in the CloudFormation Console at https://console.aws.amazon.com/cloudformation/home?region=us-east-1
