@@ -4,7 +4,7 @@ chapter: true
 weight: 40
 tags:
   - beginner
-  - architects
+  - mfearchitects
 ---
 
 # Deploy the Kubernetes Dashboard

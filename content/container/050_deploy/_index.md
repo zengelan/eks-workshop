@@ -4,7 +4,7 @@ chapter: true
 weight: 50
 tags:
   - beginner
-  - architects
+  - mfearchitects
 ---
 
 # Deploy the Example Microservices

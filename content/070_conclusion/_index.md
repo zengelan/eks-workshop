@@ -1,9 +1,10 @@
 ---
 title: "Conclusion"
 chapter: true
-weight: 910
+weight: 70
 tags:
   - beginner
+  - andreas
 ---
 
 # Conclusion

@@ -1,9 +1,10 @@
 ---
 title: "Cleanup"
 chapter: true
-weight: 920
+weight: 80
 tags:
   - beginner
+  - mfearchitects
 ---
 
 # Cleanup
