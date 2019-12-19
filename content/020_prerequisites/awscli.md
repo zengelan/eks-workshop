@@ -4,6 +4,9 @@ chapter: false
 weight: 45
 draft: true
 comment: default install now includes aws-cli/1.15.83
+tags:
+  - MFESummit2020
+  - frith
 ---
 
 {{% notice tip %}}

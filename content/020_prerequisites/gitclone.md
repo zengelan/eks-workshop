@@ -3,6 +3,7 @@ title: "Clone the Workshop Repository"
 chapter: false
 weight: 65
 draft: true
+hidden: true
 comment: disabled since eksctl doesn't require it
 ---
 

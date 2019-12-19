@@ -6,8 +6,7 @@ weight: 20
 tags:
   - MFESummit2020
   - beginner
-  - kubeflow
-  - appmesh
+  - frith
 ---
 
 # Getting Started

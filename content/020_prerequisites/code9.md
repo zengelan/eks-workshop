@@ -2,6 +2,9 @@
 title: "Access Code 9 IDE"
 chapter: false
 weight: 13
+tags:
+  - MFESummit2020
+  - frith
 ---
 
 One of the most important resources you will be using is the Cloud 9, cloud based, Integrated Developer Environment (IDE). This is similar to using Eclipse or IntelliJ IDEA as an IDE. However Cloud 9 runs in the cloud, on a EC2 machine and can be accessed through the web browser.

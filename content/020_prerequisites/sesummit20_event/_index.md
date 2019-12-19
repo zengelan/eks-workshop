@@ -4,6 +4,7 @@ chapter: true
 weight: 12
 tags:
   - MFESummit2020
+  - frith
 ---
 
 ### Running the workshop at the McAfee SE Summit 2020 event

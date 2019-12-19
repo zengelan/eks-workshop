@@ -2,6 +2,9 @@
 title: "Launch EKS"
 date: 2018-08-07T13:34:24-07:00
 weight: 20
+tags:
+  - MFESummit2020
+  - sunny
 ---
 
 
