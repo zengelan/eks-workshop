@@ -2,22 +2,27 @@
 title: "Create an AWS account"
 chapter: false
 weight: 1
-tags:
-  - MFESummit2020
 ---
 
 {{% notice warning %}}
-For this lab you will retrieve the required user account and resources for a shared AWS instance from a website{{% /notice %}}
+Your account must have the ability to create new IAM roles and scope other IAM permissions.
+{{% /notice %}}
 
-1. Pleas visit the page <a href="https://labs.sesummit20.net/ignition/" target="_blank">https://labs.sesummit20.net/ignition</a> to request your credentials
-{{% notice warning %}}
-This will only work today and only with your McAfee Email address{{% /notice %}}
+1. If you don't already have an AWS account with Administrator access: [create
+one now by clicking here](https://aws.amazon.com/getting-started/)
 
-1. Please keep this page open and copy the details to a text file
+1. Once you have an AWS account, ensure you are following the remaining workshop steps
+as an IAM user with administrator access to the AWS account:
+[Create a new IAM user to use for the workshop](https://console.aws.amazon.com/iam/home?#/users$new)
 
-1. You will also receive all this information to your email address
+1. Enter the user details:
+![Create User](/images/iam-1-create-user.png)
 
-1. Remember the codeword, as it will be used to identify your ressources withing the shared environment
+1. Attach the AdministratorAccess IAM Policy:
+![Attach Policy](/images/iam-2-attach-policy.png)
+
+1. Click to create the new user:
+![Confirm User](/images/iam-3-create-user.png)
 
 1. Take note of the login URL and save:
 ![Login URL](/images/iam-4-save-url.png)
