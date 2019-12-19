@@ -2,6 +2,8 @@
 title: "...at McAfee SE Summit 2020 event"
 chapter: true
 weight: 12
+tags:
+  - MFESummit2020
 ---
 
 ### Running the workshop at the McAfee SE Summit 2020 event
