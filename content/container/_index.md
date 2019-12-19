@@ -5,6 +5,7 @@ weight: 50
 tags:
   - beginner
   - MFESummit2020
+  - container
 ---
 
 # Container Lab

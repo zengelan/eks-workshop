@@ -1,7 +1,7 @@
 ---
 title: "Intermediate"
 chapter: true
-weight: 60
+weight: 70
 tags:
   - intermediate
 ---
