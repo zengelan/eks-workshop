@@ -2,11 +2,16 @@
 title: "McAfee SE Summit Ignition Portal"
 chapter: false
 weight: 20
+tags:
+  - MFESummit2020
 ---
 
 ### Request credentials and environment 
 
 This workshop uses a shared, McAfee owned AWS account and every student will get a personal Cloud9 IDE environment. You will need your **McAfee Email Address** to request the environment and the credentials.
+
+{{% notice warning %}}
+This will only work today and only with your McAfee Email address{{% /notice %}}
 
 Connect to the portal by clicking the button or browsing to [https://labs.sesummit20.net/ignition/](https://labs.sesummit20.net/ignition/). The following screen shows up.
 
