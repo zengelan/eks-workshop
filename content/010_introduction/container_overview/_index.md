@@ -33,7 +33,7 @@ Amazon Elastic Container Service (Amazon ECS) is a fully managed container orche
 <a href="https://kubernetes.io/">Kubernetes</a>&#160;is an open source platform for managing containerized applications. If you use Docker to deploy&#160;an application, a Kubernetes cluster can manage your servers and deployments, including tasks such as scaling, deployment, and rolling upgrades.
 
 * **Nodes**:
-A Kubernetes cluster consists of at least one ##Master node and several ##Worker nodes. The master node runs the API server, the scheduler and the controller manager, and the actual application is deployed dynamically across the cluster.
+A Kubernetes cluster consists of at least one **Master** node and several **Worker** nodes. The master node runs the API server, the scheduler and the controller manager, and the actual application is deployed dynamically across the cluster.
 
 * **Pods** A <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/">Pod</a>&#160;is a group of one or more tightly coupled containers that share resources such as storage and network. Containers inside a pod are started, stopped, and replicated as a group.
 
@@ -49,6 +49,6 @@ Amazon Elastic Kubernetes Service (EKS) is a managed&#160;<a href="https://aws.a
 
 MVISION Cloud Container Security provides&#160;Cloud Security Posture Management (CSPM) for major IaaS providers such as Amazon Web Services (AWS), as part of a unified cloud security platform. This has been extended and enhanced to&#160;secure dynamic container workloads and the&#160;infrastructure they depend on.&#160;
 
-MVISION Cloud Container Security solution continuously checks CIS Level 1 and 2 benchmark requirements to detect and correct any misconfigurations or drift in workloads and containers.&#160;Currently, MVISION Cloud Container Security supports Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS), and provides more than 78 preconfigured <a href="https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Policy_Templates_for_Container_Security"> Policy Templates </a>(46 for EKS and 32 for ECS)
+MVISION Cloud Container Security solution continuously checks CIS Level 1 and 2 benchmark requirements to detect and correct any misconfigurations or drift in workloads and containers.&#160;Currently, MVISION Cloud Container Security supports Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS), and provides more than 78 preconfigured <a href="https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Policy_Templates_for_Container_Security"> Policy Templates </a> (46 for EKS and 32 for ECS)
 
-For EKS, as of the MVISION Cloud 4.4.0 release, MCC supports CSPM audit of only the *Master* node, *NOT* the Worker nodes
+For EKS, as of the MVISION Cloud 4.4.0 release, MCC supports CSPM audit of only the **Master** node, **NOT** the Worker nodes
