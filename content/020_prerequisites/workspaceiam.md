@@ -2,6 +2,7 @@
 title: "Update IAM settings for your Workspace"
 chapter: false
 weight: 19
+hidden: true
 ---
 
 {{% notice info %}}
