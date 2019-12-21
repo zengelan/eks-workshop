@@ -10,11 +10,11 @@ tags:
 ## Explore details of your cluster using kubectl and the AWS Console
 
 You can explore and edit the properties of your EKS cluster using the command line tool `kubectl` 
-![ekskubectl](/images/ekskubectl.jpg)
+![ekskubectl](/images/mfe/ekskubectl.jpg)
 and the [AWS EKS Console UI](https://us-east-2.console.aws.amazon.com/eks/home?region=us-east-2).
-![eksui1](/images/eksui1.jpg)
+![eksui1](/images/mfe/eksui1.jpg)
 
-##Command line
+## Command line
 Execute the following commands to learn more about the architecture and settings of your cluster using the command line tool and also explore the relevant UI parts in the [AWS EKS Console UI](https://us-east-2.console.aws.amazon.com/eks/home?region=us-east-2)
 
 Information about the cluster
@@ -37,5 +37,5 @@ Information about API resources
 kubectl kubectl api-resources
 ```
 
-##AWS EKS Console 
+## AWS EKS Console 
 Navigate to the [AWS EKS Console UI](https://us-east-2.console.aws.amazon.com/eks/home?region=us-east-2) and open the details of your cluster, if you don't see the cluster with your codeword, make sure you selected the right region ``us-east-2`` 
