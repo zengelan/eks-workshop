@@ -24,7 +24,7 @@ kubectl cluster-info
 
 All details about the nodes
 ```bash
-kubectl cluster-info
+kubectl cluster-info dump|more
 ```
 
 Context information
