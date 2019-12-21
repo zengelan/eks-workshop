@@ -1,7 +1,7 @@
 ---
 title: "Shift-Left Lab"
 chapter: true
-weight: 60
+weight: 40
 tags:
   - beginner
   - MFESummit2020
