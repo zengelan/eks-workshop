@@ -1,7 +1,7 @@
 ---
 title: "Container Lab"
 chapter: true
-weight: 50
+weight: 40
 tags:
   - beginner
   - MFESummit2020
