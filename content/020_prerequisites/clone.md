@@ -11,7 +11,6 @@ In this step you are downloading some of the files and tools we need for the lab
 
 ```
 cd ~/environment
-git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020
 git clone https://github.com/brentley/ecsdemo-frontend.git
 git clone https://github.com/brentley/ecsdemo-nodejs.git
 git clone https://github.com/brentley/ecsdemo-crystal.git
