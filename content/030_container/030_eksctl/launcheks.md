@@ -12,13 +12,13 @@ tags:
 **How do I check the IAM role on the workspace?**
 
 {{%expand "Expand here to see the solution" %}}
-Run `aws sts get-caller-identity` and validate that your _Arn_ contains your codeword like `halogen` and an Instance Id.
+Run `aws sts get-caller-identity` and validate that your _Arn_ contains your codeword like `halogen`.
 
 ```output
 {
-    "Account": "123456789012",
-    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
-    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef"
+    "Account": "933292480693", 
+    "UserId": "AIDA5STERDC22QHELGDYZ", 
+    "Arn": "arn:aws:iam::933292480693:user/sesummit20/labuser.candidate@sesummit20.net"
 }
 ```
 
@@ -35,10 +35,21 @@ To create your new EKS cluster we will be using some defaults for this lab to en
 We will be using a pre-defined configuration file that was downloaded when you cloned the repos. If you can't find the configuration please review section [Clone the service repos](/020_prerequisites/clone)
 {{% /notice %}}
 
+Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment) 
 Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
 ```
+eksctl create cluster --name=${CODEWORD} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${EKS_REGION} --zones="${EKS_REGION}b,${EKS_REGION}d,${EKS_REGION}f"
+```
+
+{{%expand "If you have not setup the variables, then expand this section" %}}
+
+Copy & Paste the following command to your Cloud9 terminal and replace `<CODEWORD>` with your personally assigned codeword, then execute
+
+```bash
 eksctl create cluster --name=<CODEWORD> --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=us-east-1
 ```
+
+{{% /expand %}}
 
 {{% notice info %}}
 Launching EKS and all the dependencies will take approximately 15 minutes
