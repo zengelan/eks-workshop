@@ -45,7 +45,7 @@ Amazon Elastic Kubernetes Service (EKS) is a managed&#160;<a href="https://aws.a
 
 ![ekss](/images/mfe/eks.png)
 
-## 6) What does MCC&#160;(MVision&#160;Cloud for Containers) provide for Container Security?
+## 6) What does MVision Cloud for Containers provide for Container Security?
 
 MVISION Cloud Container Security provides&#160;Cloud Security Posture Management (CSPM) for major IaaS providers such as Amazon Web Services (AWS), as part of a unified cloud security platform. This has been extended and enhanced to&#160;secure dynamic container workloads and the&#160;infrastructure they depend on.&#160;
 
