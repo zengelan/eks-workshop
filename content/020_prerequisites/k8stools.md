@@ -19,10 +19,12 @@ Starting from here, when you see command to be entered such as below, you will e
 
 #### Install kubectl
 ```
+sudo python3 -m pip install --upgrade awscli
 sudo curl --silent --location -o /usr/local/bin/kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/kubectl
-
-
 sudo chmod +x /usr/local/bin/kubectl
+sudo curl --silent --location -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/aws-iam-authenticator
+sudo chmod +x /usr/local/bin/aws-iam-authenticator
+
 ```
 
 #### Install jq, envsubst (from GNU gettext utilities) and bash-completion
