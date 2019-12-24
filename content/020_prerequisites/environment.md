@@ -26,7 +26,7 @@ then execute
 
 You should also save the default regions for the the different labs and resources in this lab:
 ```bash
-echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
+echo export EKS-REGION=us-east-1 | tee -a ~/.bash_profile
 . ~/.bash_profile 
 ```
 
