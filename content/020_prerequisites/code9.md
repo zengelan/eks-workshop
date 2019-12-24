@@ -15,6 +15,28 @@ If you want to learn more about Cloud 9 and how it works you can visit the [offi
 {{% /notice %}}
 
 #### Access your personal Cloud 9 environment
+TODO: Here is how you can access your personal Cloud9 Enviroment
+
+
+#### Configure Cloud9 Credential Management
+{{% notice info %}}
+Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
+the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
+{{% /notice %}}
+
+- Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab
+- Select **AWS SETTINGS**
+- Turn off **AWS managed temporary credentials**
+- Close the Preferences tab
+![c9disableiam](/images/c9disableiam.png)
+
+To ensure temporary credentials aren't already in place we will also remove
+any existing credentials file:
+```
+rm -vf ${HOME}/.aws/credentials
+```
+
+### Check Credential configuration
 Check the list of credentials for a link to your personal Cloud 9 environment or use the AWS Console to navigate to Cloud 9 and click on **Open IDE** 
 
 ![Cloud91](/images/mfe/cloud9_1.jpg)
