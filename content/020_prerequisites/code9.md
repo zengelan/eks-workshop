@@ -17,7 +17,7 @@ If you want to learn more about Cloud 9 and how it works you can visit the [offi
 #### Access your personal Cloud 9 environment
 TODO: Here is how you can access your personal Cloud9 Enviroment
 
-
+{{%expand "If you have not setup the variables, then expand this section" %}}
 #### Configure Cloud9 Credential Management
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
@@ -35,6 +35,8 @@ any existing credentials file:
 ```
 rm -vf ${HOME}/.aws/credentials
 ```
+
+{{% /expand %}}
 
 ### Check Credential configuration
 Check the list of credentials for a link to your personal Cloud 9 environment or use the AWS Console to navigate to Cloud 9 and click on **Open IDE** 
