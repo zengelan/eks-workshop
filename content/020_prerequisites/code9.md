@@ -14,11 +14,16 @@ No installation is needed and when working with it, you are already in the corre
 If you want to learn more about Cloud 9 and how it works you can visit the [official Getting Started with Cloud 9 pages](https://console.aws.amazon.com/cloud9/home/product?ad=c&cp=bn&p=c9#) for further information
 {{% /notice %}}
 
-#### Access your personal Cloud 9 environment
-TODO: Here is how you can access your personal Cloud9 Enviroment
+### Access your personal Cloud 9 environment
+Check the list of credentials for a link to your personal Cloud 9 environment or use the AWS Console to navigate to Cloud 9 and click on **Open IDE** 
 
-{{%expand "If you have not setup the variables, then expand this section" %}}
-#### Configure Cloud9 Credential Management
+![Cloud91](/images/mfe/cloud9_1.jpg)
+
+Your IDE Opens and you can see the main window layout. It looks like a "regular" IDE running on your computer but its running in your browser. Click on the (+) icon and **Open a new Terminal**
+
+![Cloud92](/images/mfe/cloud9_2.jpg)
+
+### Configure Cloud9 Credential Management
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
 the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
@@ -36,16 +41,15 @@ any existing credentials file:
 rm -vf ${HOME}/.aws/credentials
 ```
 
-{{% /expand %}}
+#### Add your student credentials
+Now you configure your own student credentials by executing the following command and providing the information from the user information:
+```bash
+aws configure
+```
+
+![awscliauth](/images/mfe/awscliauth.jpg)
 
 ### Check Credential configuration
-Check the list of credentials for a link to your personal Cloud 9 environment or use the AWS Console to navigate to Cloud 9 and click on **Open IDE** 
-
-![Cloud91](/images/mfe/cloud9_1.jpg)
-
-Your IDE Opens and you can see the main window layout. It looks like a "regular" IDE running on your computer but its running in your browser. Click on the (+) icon and **Open a new Terminal**
-
-![Cloud92](/images/mfe/cloud9_2.jpg)
 
 Then execute the following command to check that you are connected and authenticated to the AWS API backend with the correct username:
 
