@@ -17,6 +17,10 @@ Copy this command, then paste it into the Cloud 9 terminal, then replace ``<CODE
 
 ```bash
 echo export CODEWORD=<CODEWORD> | tee -a ~/.bash_profile
+```
+then execute 
+
+```bash
 . ~/.bash_profile 
 ```
 
