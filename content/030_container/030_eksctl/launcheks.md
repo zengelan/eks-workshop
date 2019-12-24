@@ -38,7 +38,7 @@ We will be using a pre-defined configuration file that was downloaded when you c
 Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment) 
 Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
 ```
-eksctl create cluster --name=${CODEWORD} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${EKS_REGION} --zones="${EKS_REGION}b,${EKS_REGION}d,${EKS_REGION}f"
+eksctl create cluster --name=${CODEWORD}-eksctl --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.large --managed --alb-ingress-access --region=${EKS_REGION} --zones="${EKS_REGION}b,${EKS_REGION}d,${EKS_REGION}f"
 ```
 
 {{%expand "If you have not setup the variables, then expand this section" %}}
@@ -60,7 +60,7 @@ While the task is running you can see the progress in the CloudFormation Console
 You can also go to the other relevant services in the console to see how e.g. the EC2 machines are created, the VPC settings and security groups are configured automatically.
 
 To enable CloudWatch logging manually after the EKS cluster was created use the following command.
- ```
+ ```bash
 eksctl --cluster <CLUSTER-NAME> utils update-cluster-logging --enable-types all --approve
 ```
 

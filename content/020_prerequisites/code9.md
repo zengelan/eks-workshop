@@ -42,7 +42,7 @@ rm -vf ${HOME}/.aws/credentials
 ```
 
 #### Add your student credentials
-Now you configure your own student credentials by executing the following command and providing the information from the user information:
+Now you configure your own student credentials by executing the following command and providing the information from the user information. Provide the region as `us-east-1` and output format `json`
 ```bash
 aws configure
 ```
