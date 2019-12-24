@@ -13,9 +13,12 @@ Now we can access the Kubernetes Dashboard
 /api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 ```
 
+Click the following button to show the Kubernetes Dashboard in a new tab/window:
+![k8sdashaccess](/images/mfe/k8sdashaccess.jpg)
+
 Open a New Terminal Tab  and enter
 ```
-aws eks get-token --cluster-name eksworkshop-eksctl | jq -r '.status.token'
+aws eks get-token --cluster-name ${CODEWORD}-eksctl | jq -r '.status.token'
 ```
 
 Copy the output of this command and then click the radio button next to
