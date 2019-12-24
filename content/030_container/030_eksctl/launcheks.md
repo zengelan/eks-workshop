@@ -63,3 +63,8 @@ To enable CloudWatch logging manually after the EKS cluster was created use the 
  ```
 eksctl --cluster <CLUSTER-NAME> utils update-cluster-logging --enable-types all --approve
 ```
+
+After the command is done, execute the following command to view the cluster information:
+```bash
+ eksctl get cluster
+```
