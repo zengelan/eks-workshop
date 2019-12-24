@@ -21,5 +21,5 @@ Press `enter` 3 times to take the default choices
 Upload the public key to your EC2 region:
 
 ```bash
-aws ec2 --region ${EKS-REGION} import-key-pair --key-name eksworkshop-${CODEWORD} --public-key-material file://~/.ssh/id_rsa.pub
+aws ec2 --region ${EKS_REGION} import-key-pair --key-name eksworkshop-${CODEWORD} --public-key-material file://~/.ssh/id_rsa.pub
 ```
