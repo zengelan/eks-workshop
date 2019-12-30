@@ -1,6 +1,7 @@
 ---
 title: "...on your own"
 chapter: true
+hidden: true
 weight: 11
 ---
 
