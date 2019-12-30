@@ -16,7 +16,8 @@ To start the workshop, follow one of the following depending on whether you are.
 
 {{%expand "hidden:" %}}
 * ...[running the workshop on your own (in your own account)](self_paced/), or
+
 {{% /expand %}}
 
 
-Once you have completed with either setup, continue with [**Install Kubernetes Tools**](/020_prerequisites/k8stools/)
+Once you have completed with either setup, continue with [**Access Code 9 IDE **](/020_prerequisites/code9/)
