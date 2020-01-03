@@ -12,4 +12,4 @@ tags:
 In this Chapter, we will deploy the official Kubernetes dashboard, and connect
 through our Cloud9 Workspace.
 
-![dashboard](/images/dashboard.png)
+![dashboard](/images/dashboard.png?classes=border,shadow)
