@@ -7,7 +7,7 @@ tags:
   - frith
 ---
 
-### Running the workshop at the McAfee SE Summit 2020 event
+### Running the workshop at the McAfee SE Summit 2020 event (unless you are beta tester of course)
 
 {{% notice warning %}}
 Only complete this section if you are at McAfee SE Summit 2020 event
