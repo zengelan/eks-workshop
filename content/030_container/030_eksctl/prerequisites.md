@@ -9,7 +9,7 @@ tags:
 
 For this module, we need to download the [eksctl](https://eksctl.io/) binary:
 ```bash
-curl --silent --location "https://labs.sesummit20.net/tools/eksctl_mfesummit2020.tar.gz" | tar xz -C /tmp
+curl --location "https://labs.sesummit20.net/tools/eksctl_mfesummit2020.tar.gz" | tar xz -C /tmp
 sudo mv -v /tmp/eksctl /usr/local/bin
 ```
 
@@ -24,6 +24,8 @@ Confirm the eksctl command works:
 ```bash
 eksctl version
 ```
+
+Check that the version is `0.2.0-1086-g2c93d15f`
 
 Enable eksctl bash-completion
 ```
