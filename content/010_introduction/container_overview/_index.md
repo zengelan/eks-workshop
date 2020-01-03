@@ -14,19 +14,19 @@ tags:
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.&#160;Containers&#160;are able&#160;to run&#160;virtually anywhere, greatly easing development and deployment: on Linux, Windows, and Mac operating systems; on virtual machines or bare metal; on a developer's machine or in data centers on-premises; and of course, in the public cloud.&#160;Multiple containers can run on the same machine and share the OS kernel with other containers, each running as isolated processes in user space. Containers take up less space than VMs (container images are typically tens of MBs in size), can handle more applications and require fewer VMs and Operating systems.
 
-![containerss](/images/mfe/containers.png)
+![containerss](/images/mfe/containers.png?classes=border,shadow)
 
 ## 2) What is Docker?
 
 A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.&#160;Container images become containers at runtime and in the case of Docker containers - images become containers when they run on [Docker Engine](https://www.docker.com/products/docker-engine)
 
-![dockers](/images/mfe/docker.png)
+![dockers](/images/mfe/docker.png?classes=border,shadow)
 
 ## 3) What is ECS?
 
 Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service. You can choose to run your ECS clusters using <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>, which is serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.&#160;
 
-![ecss](/images/mfe/ecs.png)
+![ecss](/images/mfe/ecs.png?classes=border,shadow)
 
 ## 4) What is Kubernetes?
 
@@ -37,13 +37,13 @@ A Kubernetes cluster consists of at least one **Master** node and several **Work
 
 * **Pods** A <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/">Pod</a>&#160;is a group of one or more tightly coupled containers that share resources such as storage and network. Containers inside a pod are started, stopped, and replicated as a group.
 
-![podss](/images/mfe/pods.png)
+![podss](/images/mfe/pods.png?classes=border,shadow)
 
 ## 5) What is EKS?
 
 Amazon Elastic Kubernetes Service (EKS) is a managed&#160;<a href="https://aws.amazon.com/kubernetes/" target="_blank">Kubernetes</a>&#160;service that makes it easy for you to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane.&#160;Amazon EKS automatically manages the availability and scalability of the Kubernetes control plane nodes that are responsible for starting and stopping&#160;<a href="https://aws.amazon.com/containers/" target="_blank">containers</a>, scheduling containers on virtual machines, storing cluster data, and other tasks. Amazon EKS automatically detects and replaces unhealthy control plane nodes for each cluster.
 
-![ekss](/images/mfe/eks.png)
+![ekss](/images/mfe/eks.png?classes=border,shadow)
 
 ## 6) What does MVision Cloud for Containers provide for Container Security?
 

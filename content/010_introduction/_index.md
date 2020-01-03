@@ -12,7 +12,7 @@ tags:
 
 A walkthrough of basic Kubernetes concepts.
 
-![Title Image](/images/introduction/eks-product-page.png)
+![Title Image](/images/introduction/eks-product-page.png?classes=border,shadow)
 
 Welcome to the Amazon EKS Workshop!
 

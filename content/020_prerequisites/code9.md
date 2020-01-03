@@ -33,11 +33,11 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 - Select **AWS SETTINGS**
 - Turn off **AWS managed temporary credentials**
 - Close the Preferences tab
-![c9disableiam](/images/c9disableiam.png)
+![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
 
 To ensure temporary credentials aren't already in place we will also remove
 any existing credentials file:
-```
+```bash
 rm -vf ${HOME}/.aws/credentials
 ```
 
@@ -47,29 +47,29 @@ Now you configure your own student credentials by executing the following comman
 aws configure
 ```
 
-![awscliauth](/images/mfe/awscliauth.jpg)
+![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
 ### Check Credential configuration
 
 Then execute the following command to check that you are connected and authenticated to the AWS API backend with the correct username:
 
 #### Check username using AWS IAM
-```
+```bash
 aws iam get-user
 
 ```
 The output will be all information about your user account from IAM and looks like this
-![Cloud94](/images/mfe/cloud9_4.jpg)
+![Cloud94](/images/mfe/cloud9_4.jpg?classes=border,shadow)
 
 Another way to get the information about the logged in user is to execute the following command, which asks the AWS STS service:
 
 #### Check username using AWS STS
-```
+```bash
 aws sts get-caller-identity
 
 ```
 
 The output will show the username and user id of the currently logged in user and look like this:
-![Cloud93](/images/mfe/cloud9_3.jpg)
+![Cloud93](/images/mfe/cloud9_3.jpg?classes=border,shadow)
 
 

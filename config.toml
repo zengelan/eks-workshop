@@ -15,14 +15,16 @@ hrefTargetBlank = true
 [params]
 editURL = "https://github.com/zengelan/eks-workshop/edit/master/content/"
 themeVariant = "mine"
-showVisitedLinks = false
+showVisitedLinks = true
 author = "Andreas Zengel (original from Brent Langston)"
 description = "McAfee SE Summit 2020 IaaS Workshop"
 disableSearch = false
 disableAssetsBusting = false
 disableLanguageSwitchingButton = true
 disableShortcutsTitle=false
-disableInlineCopyToClipBoard = true
+# Hide breadcrumbs in the header and only show the current page title
+disableBreadcrumb = false
+disableInlineCopyToClipBoard = false
 ghrepo = "https://github.com/zengelan/eks-workshop/"
 branch = "master"
 template_bucket = "eksworkshop.com"
@@ -90,5 +92,5 @@ weight = 40
 
 
 [outputs]
-home = [ "HTML", "JSON"]
+home = [ "HTML", "RSS", "JSON"]
 page = [ "HTML" ]

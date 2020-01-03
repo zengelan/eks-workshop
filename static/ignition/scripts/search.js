@@ -82,9 +82,9 @@ async function search() {
                     '<tr><td>AWS Login URL</td><td><a target="_blank" href="' + url + '">' + url + '</a></td></tr>' +
                     '<tr><td>AWS Username:</td><td><pre>' + username + '</pre></td></tr>' +
                     '<tr><td>AWS Password:</td><td><pre>' + password + '</pre></td></tr>' +
-                    '<tr><td>AWS_ACCESS_KEY_ID:</td><td><pre>' + AWS_ACCESS_KEY_ID + '</pre></td></tr>' +
-                    '<tr><td>AWS_SECRET_ACCESS_KEY:</td><td><pre>' + AWS_SECRET_ACCESS_KEY + '</pre></td></tr>' +
-                    '<tr><td>AWS_DEFAULT_REGION:</td><td><pre>' + AWS_DEFAULT_REGION + '</pre></td></tr>' +
+                    '<tr><td>AWS_ACCESS_KEY_ID:</td><td><pre class="bash">' + AWS_ACCESS_KEY_ID + '</pre></td></tr>' +
+                    '<tr><td>AWS_SECRET_ACCESS_KEY:</td><td><pre class="bash">' + AWS_SECRET_ACCESS_KEY + '</pre></td></tr>' +
+                    '<tr><td>AWS_DEFAULT_REGION:</td><td><pre class="bash">' + AWS_DEFAULT_REGION + '</pre></td></tr>' +
                     '<tr><td>Cloud9 Ide ID:</td><td><pre>' + Cloud9Ide + '</pre></td></tr>' +
                     '<tr><td>Cloud9 IDE Access URL</td><td><a target="_blank" href="' + Cloud9IdeUrl + '">' + Cloud9IdeUrl + '</a></td></tr>' +
                     '<tr><td>Jenkins Username:</td><td><pre>' + user['codeword'] + '</pre></td></tr>' +
@@ -105,7 +105,7 @@ async function search() {
                     'git config --global credential.UseHttpPath true' +
                     '</pre></td></tr>' +
                     '</table>' +
-                    '<div><h2>Back to the workshop: <a target="_blank" href="https://labs.sesummit20.net/tags/mfesummit2020/">https://labs.sesummit20.net/tags/mfesummit2020/</a></h2>' +
+                    '<div><h2>Back to the workshop: <a target="_blank" href="https://labs.sesummit20.net/020_prerequisites/sesummit20_event/portal/">https://labs.sesummit20.net/020_prerequisites/sesummit20_event/portal/</a></h2>' +
                     '</div>');
 
             } else {
