@@ -18,7 +18,7 @@ git config --global credential.helper store
 
 Now lets clone the `master` branch from the repository, we will be cloning another branch, specific for your student environment later
 
-```bash
+```
 cd ~/environment
 git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020 SESummit2020_master
 ls -lisah

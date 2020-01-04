@@ -11,7 +11,7 @@ to communicate with the service, we need to add a policy to the worker nodes'
 
 First, we will need to ensure the Role Name our workers use is set in our environment:
 
-```bash
+```
 test -n "$ROLE_NAME" && echo ROLE_NAME is "$ROLE_NAME" || echo ROLE_NAME is not set
 ```
 

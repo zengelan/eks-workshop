@@ -18,22 +18,22 @@ and the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?r
 Execute the following commands to learn more about the architecture and settings of your cluster using the command line tool and also explore the relevant UI parts in the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-2)
 
 Information about the cluster
-```bash
+```
 kubectl cluster-info
 ```
 
 All details about the nodes
-```bash
+```
 kubectl cluster-info dump|more
 ```
 
 Context information
-```bash
+```
 kubectl config current-context
 ```
 
 Information about API resources
-```bash
+```
 kubectl api-resources
 ```
 

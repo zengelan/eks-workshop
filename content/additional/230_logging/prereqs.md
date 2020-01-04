@@ -10,7 +10,7 @@ In our example, we will create an IAM policy and attach it the the Worker node r
 
 First, we will need to ensure the Role Name our workers use is set in our environment:
 
-```bash
+```
 test -n "$ROLE_NAME" && echo ROLE_NAME is "$ROLE_NAME" || echo ROLE_NAME is not set
 ```
 

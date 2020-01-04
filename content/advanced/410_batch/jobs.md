@@ -35,7 +35,7 @@ kubectl apply -f job-whalesay.yaml
 
 Wait until the job has completed successfully.
 
-```bash
+```
 kubectl get job/whalesay
 ```
 
@@ -46,7 +46,7 @@ whalesay   1         1            2m
 
 Confirm the output.
 
-```bash
+```
 kubectl logs -l job-name=whalesay
 ```
 

@@ -17,7 +17,7 @@ aws s3 mb s3://batch-artifact-repository-${ACCOUNT_ID}/
 
 Next, edit the workflow-controller ConfigMap to use the S3 bucket.
 
-```bash
+```
 kubectl edit -n argo configmap/workflow-controller-configmap
 ```
 
@@ -37,7 +37,7 @@ In order for Argo to read from/write to the S3 bucket, we need to configure an i
 
 First, we will need to ensure the Role Name our workers use is set in our environment:
 
-```bash
+```
 test -n "$ROLE_NAME" && echo ROLE_NAME is "$ROLE_NAME" || echo ROLE_NAME is not set
 ```
 

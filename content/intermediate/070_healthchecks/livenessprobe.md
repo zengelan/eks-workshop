@@ -53,7 +53,7 @@ liveness-app   1/1       Running   0          11s
 ```
 
 The `kubectl describe` command will show an event history which will show any probe failures or restarts.
-```bash
+```
 kubectl describe pod liveness-app
 ```
 
@@ -109,11 +109,11 @@ liveness-app   1/1       Running   1          12m
 **How can we check the status of the container health checks?**
 
 {{%expand "Expand here to see the solution" %}}
-```bash
+```
 kubectl logs liveness-app
 ```
 You can also use `kubectl logs` to retrieve logs from a previous instantiation of a container with `--previous` flag, in case the container has crashed
-```bash
+```
 kubectl logs liveness-app --previous
 ```
 ```text

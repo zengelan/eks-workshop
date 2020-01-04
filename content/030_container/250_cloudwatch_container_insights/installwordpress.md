@@ -13,7 +13,7 @@ https://github.com/helm/charts/tree/master/stable/wordpress
 
 In your Cloud9 Workspace terminal you just need to run the following command to deploy WordPress. 
 
-```bash
+```
 helm install stable/wordpress --name understood-zebu
 ```
 
@@ -30,7 +30,7 @@ It may take a few minutes for the LoadBalancer to be available.
 {{% /notice %}} 
 
 Watch the status using the following command
-```bash
+```
 kubectl get svc --namespace default -w understood-zebu-wordpress
 ``` 
 *(depending on time of install the Wordpress version can change)*
@@ -40,7 +40,7 @@ kubectl get svc --namespace default -w understood-zebu-wordpress
 
 You’ll need the URL for your WordPress site. This is easily accomplished by running the command below from your terminal window. Copy and paste it from the output of your install of Wordpress. 
 
-```bash
+```
  export SERVICE_IP=$(kubectl get svc --namespace default understood-zebu-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
  
   echo "WordPress URL: http://$SERVICE_IP/"

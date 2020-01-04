@@ -22,12 +22,12 @@ The workflow can be summarized as:
 
 By default, the **aws-node-termination-handler** will run on all of your nodes (on-demand and spot). If your spot instances are labeled, you can configure `aws-node-termination-handler` to only run on your labeled spot nodes. If you're using the tag `lifecycle=Ec2Spot`, you can run the following to apply our spot-node-selector overlay.
 
-```bash
+```
 kubectl apply -k https://github.com/aws/aws-node-termination-handler/config/overlays/spot-node-selector?ref=master
 ```
 
 View the pods. There should be one for each spot node.
 
-```bash
+```
 kubectl --namespace=kube-system get daemonsets 
 ```

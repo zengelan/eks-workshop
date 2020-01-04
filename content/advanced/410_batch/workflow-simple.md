@@ -30,7 +30,7 @@ Now deploy the workflow using the argo CLI.
 You can also run workflow specs directly using kubectl but the argo CLI provides syntax checking, nicer output, and requires less typing. For the equivalent `kubectl` commands, see [Argo CLI](https://argoproj.github.io/docs/argo/examples/readme.html#argo-cli).
 {{% /notice %}}
 
-```bash
+```
 argo submit --watch workflow-whalesay.yaml
 ```
 
@@ -51,7 +51,7 @@ Make a note of the workflow's name from your output (It should be similar to wha
 
 Confirm the output by running the following command, substituting name of your workflow for "whalesay-xxxxx":
 
-```bash
+```
 argo logs whalesay-xxxxx
 ```
 

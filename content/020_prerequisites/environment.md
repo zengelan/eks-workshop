@@ -15,17 +15,17 @@ We are using the ``bash_profile`` to save the variables. We can then reference t
 
 Copy this command, then paste it into the Cloud 9 terminal, then replace ``<CODEWORD>`` with the codeword for your environment. Then execute the command.
 
-```bash
+```
 echo export CODEWORD=<CODEWORD> | tee -a ~/.bash_profile
 ```
 then execute 
 
-```bash
+```
 . ~/.bash_profile 
 ```
 
 You should also save the default regions for the the different labs and resources in this lab:
-```bash
+```
 echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
 . ~/.bash_profile 
 ```
