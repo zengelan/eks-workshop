@@ -11,7 +11,7 @@ In this step you are downloading some of the files and tools we need for the lab
 
 Let's first reset and setup the right configuration for the git command
 
-```bash
+```
 rm ~/.gitconfig
 git config --global credential.helper store
 ```
