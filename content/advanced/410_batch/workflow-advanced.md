@@ -143,7 +143,7 @@ Each job in the workflow pulls the artifact(s) and lists them in the "Chain", th
 
 Run the workflow.
 
-```bash
+```
 argo submit --watch teardrop.yaml
 ```
 

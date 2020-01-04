@@ -37,13 +37,13 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 
 To ensure temporary credentials aren't already in place we will also remove
 any existing credentials file:
-```bash
+```
 rm -vf ${HOME}/.aws/credentials
 ```
 
 #### Add your student credentials
 Now you configure your own student credentials by executing the following command and providing the information from the user information. Provide the region as `us-east-1` and output format `json`
-```bash
+```
 aws configure
 ```
 
@@ -54,7 +54,7 @@ aws configure
 Then execute the following command to check that you are connected and authenticated to the AWS API backend with the correct username:
 
 #### Check username using AWS IAM
-```bash
+```
 aws iam get-user
 
 ```
@@ -64,7 +64,7 @@ The output will be all information about your user account from IAM and looks li
 Another way to get the information about the logged in user is to execute the following command, which asks the AWS STS service:
 
 #### Check username using AWS STS
-```bash
+```
 aws sts get-caller-identity
 
 ```

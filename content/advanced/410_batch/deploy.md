@@ -11,7 +11,7 @@ Argo run in its own namespace and deploys as a CustomResourceDefinition.
 
 Deploy the Controller and UI.
 
-```bash
+```
 kubectl create ns argo
 kubectl apply -n argo -f https://raw.githubusercontent.com/argoproj/argo/v2.2.1/manifests/install.yaml
 ```
@@ -40,6 +40,6 @@ To use advanced features of Argo for this demo, create a RoleBinding to grant ad
 This is for demo purposes only. In any other environment, you should use [Workflow RBAC](https://argoproj.github.io/docs/argo/docs/workflow-rbac.html) to set appropriate permissions.
 {{% /notice %}}
 
-```bash
+```
 kubectl create rolebinding default-admin --clusterrole=admin --serviceaccount=default:default
 ```

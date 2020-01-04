@@ -8,7 +8,7 @@ We have our EKS Cluster and worker nodes already, but we need some Spot Instance
 
 But first, we will add a new label to the OnDemand worker nodes
 
-```bash
+```
 kubectl label nodes --all 'lifecycle=OnDemand'
 ```
 
@@ -16,7 +16,7 @@ kubectl label nodes --all 'lifecycle=OnDemand'
 
 We are now ready to create new worker nodes.
 
-```bash
+```
 cat << EoF > ~/environment/eks-workshop-ng-spot.yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
@@ -54,14 +54,14 @@ The creation of the workers will take about 3 minutes.
 
 Confirm that the new nodes joined the cluster correctly. You should see 2 more nodes added to the cluster.
 
-```bash
+```
 kubectl get nodes
 ```
 
 ![All Nodes](/images/spotworkers/spot_get_nodes.png)
 You can use the node-labels to identify the lifecycle of the nodes.
 
-```bash
+```
 kubectl get nodes --show-labels --selector=lifecycle=Ec2Spot
 ```
 
@@ -71,7 +71,7 @@ The output of this command should return 2 nodes. At the end of the node output,
 
 Now we will show all nodes with the **lifecycle=OnDemand**. The output of this command should return multiple nodes as configured in `eksctl` YAMl template.
 
-```bash
+```
 kubectl get nodes --show-labels --selector=lifecycle=OnDemand
 ```
 
