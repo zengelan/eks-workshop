@@ -1,8 +1,9 @@
 ---
 title: "Update to the latest AWS CLI"
 chapter: false
-weight: 45
-draft: true
+weight: 9
+draft: false
+hidden: false
 comment: default install now includes aws-cli/1.15.83
 tags:
   - MFESummit2020
@@ -20,7 +21,7 @@ aws --version
 
 1. Update to the latest version:
 ```
-pip install --user --upgrade awscli
+sudo python3 -m pip install --upgrade awscli
 ```
 
 1. Confirm you have a newer version:
