@@ -1,9 +1,9 @@
 ---
 title: "Update to the latest AWS CLI"
 chapter: false
-weight: 9
+weight: 14
 draft: false
-hidden: false
+hidden: true
 comment: default install now includes aws-cli/1.15.83
 tags:
   - MFESummit2020

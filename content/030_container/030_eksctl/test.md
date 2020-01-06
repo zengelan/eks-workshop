@@ -9,10 +9,11 @@ tags:
 #### Test the cluster:
 Confirm your nodes:
 
+```bash
+kubectl get nodes
 ```
-kubectl get nodes # if we see our 3 nodes, we know we have authenticated correctly
-```
- 
+
+if we see our 3 nodes, we know we have authenticated correctly
 
 #### Export the Worker Role Name for use throughout the workshop:
 
