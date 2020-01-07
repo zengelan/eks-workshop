@@ -6,8 +6,8 @@ Go to Policy Templates --> Import Configuration Audit Checks for AWS EKS -> Run 
 
 <<Show EKS Cluster Configured in AWS>>
 
-<<Show Misconfigurations in EKS>>
 
+content/030_container/030_eksctl/Capture_MVC-Validation.JPG
 ```
 
 
