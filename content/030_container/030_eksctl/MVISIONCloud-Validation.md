@@ -10,8 +10,12 @@ Go to Policy Templates --> Import Configuration Audit Checks for AWS EKS -> Run 
 
 ```
 
+
+
 ```
 
 
 Here need to add my image file 
+
+
 
