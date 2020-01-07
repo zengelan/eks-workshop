@@ -9,12 +9,9 @@ tags:
 
 
 
-Go to Policy Templates -> Import Configuration Audit Checks for AWS EKS -> Run the configuration audit scan -> Validate your findings under Incidents
+Go to Policy Templates -> Import Configuration Audit Checks for AWS EKS -> 
 
+Run the configuration audit scan -> Validate your findings under Incidents
 
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
-
-
-```
-
