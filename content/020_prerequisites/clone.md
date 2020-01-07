@@ -9,7 +9,7 @@ tags:
 
 In this step you are downloading some of the files and tools we need for the lab to your environment. The following commands create a git repository in your environment and fill it with the data from the central repository.
 
-Let's first reset and setup the right configuration for the git command
+Let's first reset and setup the right configuration for the git command to use the aws credentials (ref: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
 
 ```
 rm ~/.gitconfig
