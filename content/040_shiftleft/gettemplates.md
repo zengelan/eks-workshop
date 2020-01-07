@@ -21,3 +21,14 @@ cd ~/environment
 git clone -b <CODENAME> https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020 SESummit2020
 ll
 ```
+
+{{% notice warning %}}
+If you receive an error like "fatal: unable to access 'https://.....': The requested URL returned error: 403" then you need to remove the line starting with `aws_session_token` from the aws credential file at `${HOME}/.aws/credentials`
+Otherwise you will not be able to authenticate correctly when using the `git`command.   
+You can use the following command to easily remove the line, then try again
+```bash
+sed -i '/aws_session_token/d' ${HOME}/.aws/credentials
+
+```
+this is due to a current bug/issue in the Code9 IDE
+{{% /notice %}}

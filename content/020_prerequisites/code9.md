@@ -49,6 +49,15 @@ aws configure
 
 ![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
+Due to a bug in the Code9 IDE we need to remove the line `aws_session_token=` from the AWS credential file. Either edit the file and remove the line starting with `aws_session_token=` or execute the following command:
+```bash
+sed -i '/aws_session_token/d' ${HOME}/.aws/credentials
+
+```
+{{% notice warning %}}
+If the line starting with `aws_session_token` is in the aws credential file at ${HOME}/.aws/credentials you will not be able to authenticate correctly when using the `git`command   
+{{% /notice %}}
+
 ### Check Credential configuration
 
 Then execute the following command to check that you are connected and authenticated to the AWS API backend with the correct username:
