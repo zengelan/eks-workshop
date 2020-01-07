@@ -39,6 +39,7 @@ kubectl api-resources
 ```
 To see all pods available across all namespaces:
 
+```
 kubectl get pods --all-namespaces
 
 
