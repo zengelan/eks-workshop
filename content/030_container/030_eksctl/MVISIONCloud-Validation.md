@@ -1,7 +1,7 @@
 ---
 title: "MVISION Cloud Validation of your EKS Cluster"
 date: 2018-08-07T13:36:57-07:00
-weight: 40
+weight: 50
 tags:
   - MFESummit2020
   - sunny
