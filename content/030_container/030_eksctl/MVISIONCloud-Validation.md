@@ -16,7 +16,7 @@ Go to Policy Templates --> Import Configuration Audit Checks for AWS EKS -> Run 
 
 
 
-![MVCValidation](/images/Capture_Violations.JPG?classes=border,shadow)
+![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
 
 
 ```
