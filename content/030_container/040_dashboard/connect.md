@@ -10,7 +10,7 @@ Now we can access the Kubernetes Dashboard
 1. Scroll to **the end of the URL** and append:
 
 ```
-/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 ```
 
 Click the following button to show the Kubernetes Dashboard in a new tab/window:
