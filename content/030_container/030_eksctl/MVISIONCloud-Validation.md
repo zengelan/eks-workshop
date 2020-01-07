@@ -1,5 +1,5 @@
 ---
-title: "MVISION Cloud Validation of your EKS Cluster"
+title: "MVISION Cloud Validation"
 date: 2018-08-07T13:36:57-07:00
 weight: 50
 tags:
@@ -10,9 +10,6 @@ tags:
 
 
 Go to Policy Templates -> Import Configuration Audit Checks for AWS EKS -> Run the configuration audit scan -> Validate your findings under Incidents
-
-
-Go to Policy Templates --> Import Configuration Audit Checks for AWS EKS -> Run the configuration audit scan -> Validate your findings under Incidents
 
 
 
