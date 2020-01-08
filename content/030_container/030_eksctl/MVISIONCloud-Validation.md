@@ -9,7 +9,7 @@ tags:
 
 ## Import New Configuration Audit Checks  
 
-Login to your MVISION Cloud dashboard. Go to Policy Templates -> Select the option of "Container Security" under Business Requirements, and select the option of "Security Configuration" from Policy Type.
+Login to your MVISION Cloud dashboard. Go to Policy Templates. Select the option of "Container Security" under Business Requirements, and select the option of "Security Configuration" from under Policy Type.
 
 
 ![NewConfigAudit](/images/mfe/Capture_PolicyTemplates.JPG?classes=border,shadow)
