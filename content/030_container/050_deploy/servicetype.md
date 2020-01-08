@@ -29,7 +29,7 @@ spec:
 1. Apply the Redis Slave Service from the following redis-slave-service.yaml file:
 
 ```
-  kubectl apply <Will to provide relateive path>/application/guestbook/redis-slave-service.yaml
+  kubectl apply -f ~/environment/guestbook-example/redis-slave-service.yaml
 ```
 
 2. Query the list of Services to verify that the Redis slave service is running:
