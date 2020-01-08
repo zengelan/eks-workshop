@@ -1,11 +1,11 @@
 ---
 title: "Explore your EKS Cluster in Dashboard"
 date: 2018-08-07T13:36:57-07:00
-weight: 20
+weight: 30
 tags:
   - beginner
-  - andreas
-  - done
+  - todo
+  - stupiello
 ---
 
 ## Explore details of your cluster using the Kubernetes Dashboard
