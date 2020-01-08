@@ -1,19 +1,59 @@
 ---
-title: "Scale the Frontend"
-date: 2018-09-18T17:40:09-05:00
+title: "Useful Kubectl Commands"
+date: 2020-01-08
 weight: 60
 ---
 
-#### Challenge:
-**Let's also scale our frontend service!**
-
-{{%expand "Expand here to see the solution" %}}
+The Kubernetes Controller provides a lot of useful commands
+You can explore many of these commands using the help flag:
 ```
-kubectl get deployments
-kubectl scale deployment ecsdemo-frontend --replicas=3
-kubectl get deployments
+  kubectl -h
 ```
-{{% /expand %}}
 
-Check the browser tab where we can see our application running. You should
-now see traffic flowing to multiple frontend services.
+1. Review the deployments by type and observe the status of each
+```
+   sesummit20:~/environment/guestbook-example (master) $ kubectl get deployments
+   NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+   frontend       1/1     1            1           106m
+   redis-master   1/1     1            1           2d4h
+   redis-slave    2/2     2            2           2d4h
+```
+2. Scale out the frontend web services from 1 to 10:
+
+```
+   sesummit20:~/environment/guestbook-example (master) $ kubectl scale deployment frontend --replicas=10
+   deployment.extensions/frontend scaled
+```
+
+3. Check the deployments after the change to see the number of frontend web services available and ready:
+```
+sesummit20:~/environment/guestbook-example (master) $ kubectl get deployments
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+frontend       10/10   10           10          106m
+redis-master   1/1     1            1           2d4h
+redis-slave    2/2     2            2           2d4h
+```
+4. Scale the frontend web services back to inital value of 1:
+
+```
+   kubectl scale deployment frontend --replicas=1
+```
+
+5. To get more details about a given resource or resources, you can use the kubectl describe command:
+
+```
+   kubectl describe pods
+```   
+   or you can be more specific by using your specific pod name (use kubectl get pods to get pod names)
+```
+   kubectl describe pod frontend-59d9d8c865-72tln
+```   
+   You can use the above command to get details on pods, nodes, and deployments --which all provide valuable information
+
+
+
+6. You can leverage the kubectl log command to get a direct log stream for troubleshooting.
+
+```
+   kubectl log -f frontend-59d9d8c865-72tln
+```   
