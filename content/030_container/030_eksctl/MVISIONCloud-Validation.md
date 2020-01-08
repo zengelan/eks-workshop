@@ -7,11 +7,18 @@ tags:
   - sunny
 ---
 
+## Import New Configuration Audit Checks  
+
 
 
 Go to Policy Templates -> Import Configuration Audit Checks for AWS EKS -> 
 
-Run the configuration audit scan -> Validate your findings under Incidents
 
+## Initiate a new Configuration Audit Scan in AWS
+
+Run the configuration audit scan -> 
+
+
+## Review Misconfiguration Incidents on your Default EKS Cluster installation 
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
