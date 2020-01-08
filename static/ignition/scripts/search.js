@@ -78,20 +78,20 @@ async function search() {
                     '<img src="images/account.png" style="height: 150px;">' +
                     '<div><h2>Codeword: ' + codeword + '</h2>' +
                     '<table>' +
-                    '<tr><td>Codeword:</td><td><pre>' + codeword + '</pre></td></tr>' +
+                    '<tr><td>Codeword:</td><td><pre class="bash">' + codeword + '</pre></td></tr>' +
                     '<tr><td>AWS Login URL</td><td><a target="_blank" href="' + url + '">' + url + '</a></td></tr>' +
-                    '<tr><td>AWS Username:</td><td><pre>' + username + '</pre></td></tr>' +
-                    '<tr><td>AWS Password:</td><td><pre>' + password + '</pre></td></tr>' +
+                    '<tr><td>AWS Username:</td><td><pre class="bash">' + username + '</pre></td></tr>' +
+                    '<tr><td>AWS Password:</td><td><pre class="bash">' + password + '</pre></td></tr>' +
                     '<tr><td>AWS_ACCESS_KEY_ID:</td><td><pre class="bash">' + AWS_ACCESS_KEY_ID + '</pre></td></tr>' +
                     '<tr><td>AWS_SECRET_ACCESS_KEY:</td><td><pre class="bash">' + AWS_SECRET_ACCESS_KEY + '</pre></td></tr>' +
                     '<tr><td>AWS_DEFAULT_REGION:</td><td><pre class="bash">' + AWS_DEFAULT_REGION + '</pre></td></tr>' +
                     '<tr><td>Cloud9 Ide ID:</td><td><pre>' + Cloud9Ide + '</pre></td></tr>' +
                     '<tr><td>Cloud9 IDE Access URL</td><td><a target="_blank" href="' + Cloud9IdeUrl + '">' + Cloud9IdeUrl + '</a></td></tr>' +
-                    '<tr><td>Jenkins Username:</td><td><pre>' + user['codeword'] + '</pre></td></tr>' +
-                    '<tr><td>Jenkins Password:</td><td><pre>' + password + '</pre></td></tr>' +
+                    '<tr><td>Jenkins Username:</td><td><pre class="bash">' + user['codeword'] + '</pre></td></tr>' +
+                    '<tr><td>Jenkins Password:</td><td><pre class="bash">' + password + '</pre></td></tr>' +
                     '<tr><td>Jenkins Access URL</td><td><a target="_blank" href="https://jenkins.sesummit20.net/jenkins">https://jenkins.sesummit20.net/jenkins</a></td></tr>' +
-                    '<tr><td>CodeCommit Username:</td><td><pre>' + user['CodeCommitUsername'] + '</pre></td></tr>' +
-                    '<tr><td>CodeCommit Password:</td><td><pre>' + user['CodeCommitPassword'] + '</pre></td></tr>' +
+                    '<tr><td>CodeCommit Git Username:</td><td><pre class="bash">' + user['CodeCommitUsername'] + '</pre></td></tr>' +
+                    '<tr><td>CodeCommit Git Password:</td><td><pre class="bash">' + user['CodeCommitPassword'] + '</pre></td></tr>' +
                     '<tr><td>CodeCommit Access URL</td><td><a target="_blank" href="' + user['CodeCommitUrl'] + '">' + user['CodeCommitUrl'] + '</a></td></tr>' +
                     '<tr><td>CodeCommit Git Repo URL</td><td>' + user['CodeCommitRepo'] + '</td></tr>' +
                     '<tr><td>Variables for Windows</td><td>' +
@@ -102,7 +102,7 @@ async function search() {
                     '</pre></td></tr>' +
                     '<tr><td>Enable GIT Credential helper for Cloud9</td><td>' +
                     '<pre class="bash">git config --global credential.helper \'!aws codecommit credential-helper $@\'\n' +
-                    'git config --global credential.UseHttpPath true' +
+                    'git config --global credential.UseHttpPath true \n' +
                     'sed -i \'/aws_session_token/d\' ${HOME}/.aws/credentials' +
                     '</pre></td></tr>' +
                     '</table>' +
