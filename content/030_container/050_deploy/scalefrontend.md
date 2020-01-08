@@ -12,7 +12,9 @@ You can explore many of these commands using the help flag:
 
 1. Review the deployments by type and observe the status of each
 ```
-   sesummit20:~/environment/guestbook-example (master) $ kubectl get deployments
+   kubectl get deployments
+```
+```
    NAME           READY   UP-TO-DATE   AVAILABLE   AGE
    frontend       1/1     1            1           106m
    redis-master   1/1     1            1           2d4h
