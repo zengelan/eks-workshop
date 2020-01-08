@@ -17,7 +17,13 @@ Login to your MVISION Cloud dashboard. Go to Policy Templates. Select the option
 
 ## Initiate a new Configuration Audit Scan in AWS
 
-Run the configuration audit scan -> 
+Trigger a new configuration audit scan by going to Policy -> On-Demand Scan -> Security Configuration Audit for AWS.
+
+Click on "Run Scan Now". 
+
+
+![TriggerConfigAuditScan](/images/mfe/Capture_TriggerConfigAuditScan.JPG?classes=border,shadow)
+
 
 
 ## Review Misconfiguration Incidents on your Default EKS Cluster installation 
