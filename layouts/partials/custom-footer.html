@@ -1,6 +1,13 @@
 <footer>
     <div align="right">
-        {{ if .IsPage }}<small class="gray"><em>Updated: {{ .Page.Lastmod }}, GIT Version: {{ .GitInfo.AbbreviatedHash }}</em></small>{{ end }}
+        {{ if .IsPage }}
+        <small class="gray"><em>Updated: {{ .Page.Lastmod }},
+            {{ if eq hugo.Environment "development" }}
+                DEVELOPMENT
+            {{else}}
+                GIT Version: {{ .Hugo.Environment }}
+            {{ end }}
+        </em></small>{{ end }}
     </div>
 </footer>
 {{ template "_internal/google_analytics.html" . }}
