@@ -34,7 +34,7 @@ spec:
 1. Apply the frontend Service from the frontend-service.yaml file:
 
 ```
-  kubectl apply -f <Will to provide relative path>/application/guestbook/frontend-service.yaml
+  kubectl apply -f ~/environment/guestbook-example/frontend-service.yaml
 ```
 
 2. Query the list of Services to verify that the frontend Service is running:
