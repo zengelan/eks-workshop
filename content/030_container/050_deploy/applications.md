@@ -80,5 +80,5 @@ The containers listen on port 6379, and native service discovery will be used to
   kubectl logs -f POD-NAME
 ```
 
-<b>Note</b>: Replace POD-NAME with the name of your Pod
+<b>Note</b>: Replace <font color="red">POD-NAME</font> with the name of your Pod
 
