@@ -54,7 +54,7 @@ spec:
 1. Apply the Redis Slave Deployment from the redis-slave-deployment.yaml file:
 
 ```
-   kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-deployment.yaml
+   kubectl apply -f <Will to provide relative URL>/application/guestbook/redis-slave-deployment.yaml
 ```
 
 2. Query the list of Pods to verify that the Redis Slave Pods are running:
