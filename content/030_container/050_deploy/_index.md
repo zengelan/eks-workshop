@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Example Microservices"
+title: "Deploy the Guestbook Microservice"
 chapter: true
 weight: 50
 tags:
