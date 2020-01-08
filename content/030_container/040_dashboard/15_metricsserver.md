@@ -4,8 +4,8 @@ date: 2018-08-07T08:30:11-07:00
 weight: 15
 tags:
   - beginner
-  - mfearchitects
-  - stuppiello
+  - andreas
+  - done
 ---
 
 To collect resource monitoring data and metrics and to display those in the Kubernetes Dashboard we can install the official **Kubernetes Metrics Server**. The Kubernetes Metrics Server runs in the Kubernetes system namespace and continuously collects data. More detail can be found in   [the official documentation](https://github.com/kubernetes-sigs/metrics-server)
