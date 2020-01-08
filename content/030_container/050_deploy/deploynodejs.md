@@ -29,7 +29,7 @@ spec:
 1. Apply the Redis Master Service from the following redis-master-service.yaml file:
 
 ```
-  kubectl apply -f <Will to provide relative path>/application/guestbook/redis-master-service.yaml
+  kubectl apply -f ~/environment/guestbook-example/redis-master-service.yaml
 ```
 
 2. Query the list of Services to verify that the Redis Master Service is running:
