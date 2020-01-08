@@ -9,9 +9,10 @@ tags:
 
 ## Import New Configuration Audit Checks  
 
+Login to your MVISION Cloud dashboard. Go to Policy Templates -> Select the option of "Container Security" under Business Requirements, and select the option of "Security Configuration" from Policy Type.
 
 
-Go to Policy Templates -> Import Configuration Audit Checks for AWS EKS -> 
+![NewConfigAudit](/images/mfe/Capture_PolicyTemplates.JPG?classes=border,shadow)
 
 
 ## Initiate a new Configuration Audit Scan in AWS
