@@ -7,7 +7,7 @@ tags:
   - mfearchitects
 ---
 
-# Deploy the Example Microservices
+# Deploy the Guestbook Application as a Microservice
 
 ![microservices](/images/crystal.svg)
 {{% children showhidden="false" %}}
