@@ -1,43 +1,48 @@
 ---
-title: "Let's check Service Types"
-date: 2018-09-18T17:40:09-05:00
+title: "Deploy Redis Slave Service"
+date: 2020-01-08
 weight: 25
 ---
 
-Before we bring up the frontend service, let's take a look at the service types
-we are using:
-This is `kubernetes/service.yaml` for our frontend service:
-```
-apiVersion: v1
-kind: Service
-metadata:
-  name: ecsdemo-frontend
-spec:
-  selector:
-    app: ecsdemo-frontend
-  type: LoadBalancer
-  ports:
-   -  protocol: TCP
-      port: 80
-      targetPort: 3000
-```
-Notice `type: LoadBalancer`: This will configure an ELB to handle incoming traffic
-to this service.
+The guestbook application needs to communicate to Redis slaves to read data. To make the Redis slaves discoverable, you need to set up a Service. A Service provides transparent load balancing to a set of Pods.
 
-Compare this to `kubernetes/service.yaml` for one of our backend services:
+This is `redis-slave-service.yaml` for our backend service:
+
 ```
 apiVersion: v1
 kind: Service
 metadata:
-  name: ecsdemo-nodejs
+  name: redis-slave
+  labels:
+    app: redis
+    role: slave
+    tier: backend
 spec:
-  selector:
-    app: ecsdemo-nodejs
   ports:
-   -  protocol: TCP
-      port: 80
-      targetPort: 3000
+  - port: 6379
+  selector:
+    app: redis
+    role: slave
+    tier: backend
 ```
-Notice there is no specific service type described. When we check [the kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
-we find that the default type is `ClusterIP`. This Exposes the service on a cluster-internal IP.
-Choosing this value makes the service only reachable from within the cluster.
+
+1. Apply the Redis Slave Service from the following redis-slave-service.yaml file:
+
+```
+  kubectl apply <Will to provide relateive path>/application/guestbook/redis-slave-service.yaml
+```
+
+2. Query the list of Services to verify that the Redis slave service is running:
+
+```
+  kubectl get services
+```
+
+3. The response should be similar to this:
+
+```
+  NAME           TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+  kubernetes     ClusterIP   10.0.0.1     <none>        443/TCP    2m
+  redis-master   ClusterIP   10.0.0.151   <none>        6379/TCP   1m
+  redis-slave    ClusterIP   10.0.0.223   <none>        6379/TCP   6s
+```
