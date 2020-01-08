@@ -1,6 +1,6 @@
 ---
 title: "Deploy the Metrics Server"
-date: 2020-01-08T08:30:11-07:00
+date: 2018-08-07T08:30:11-07:00
 weight: 15
 tags:
   - beginner
