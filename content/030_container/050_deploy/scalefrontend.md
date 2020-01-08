@@ -44,15 +44,15 @@ redis-slave    2/2     2            2           2d4h
 ```
    kubectl describe pods
 ```   
-   or you can be more specific by using your specific pod name (use kubectl get pods to get pod names)
+6. Alternatively, you can be more specific by using your specific pod name (use kubectl get pods to get pod names)
 ```
    kubectl describe pod frontend-59d9d8c865-72tln
 ```   
-   You can use the above command to get details on pods, nodes, and deployments --which all provide valuable information
+7. You can use the above command to get details on pods, nodes, and deployments --which all provide valuable information
 
 
 
-6. You can leverage the kubectl log command to get a direct log stream for troubleshooting.
+8. You can leverage the kubectl log command to get a direct log stream for troubleshooting.
 
 ```
    kubectl log -f frontend-59d9d8c865-72tln
