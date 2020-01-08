@@ -1,5 +1,5 @@
 ---
-title: "Deploy our Backend Redis DB (master)"
+title: "Deploy our Redis Master"
 date: 2020-01-08
 weight: 5
 ---
@@ -56,12 +56,12 @@ The containers listen on port 6379, and native service discovery will be used to
 ```
   kubectl get pods
 ```
-The response should be similar to this:
+   The response should be similar to this:
 
-```
-  NAME                            READY     STATUS    RESTARTS   AGE
-  redis-master-1068406935-3lswp   1/1       Running   0          28s
-```
+   ```
+     NAME                            READY     STATUS    RESTARTS   AGE
+     redis-master-1068406935-3lswp   1/1       Running   0          28s
+   ```
 
 4. Run the following command to view the logs from the Redis Master Pod:
 
@@ -69,5 +69,5 @@ The response should be similar to this:
   kubectl logs -f POD-NAME
 ```
 
-Note: Replace POD-NAME with the name of your Pod.
+   Note: Replace POD-NAME with the name of your Pod.
 
