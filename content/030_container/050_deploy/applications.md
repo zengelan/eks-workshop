@@ -41,3 +41,33 @@ spec:
 The Manifest file, included above, specifies a deployment controller that runs a single replica Redis master Pod. We will write this description to the kubernetes api using kubectl, and kubernetes will ensure our preferences are met as the application is deployed.
 
 The containers listen on port 6379, and native service discovery will be used to locate the running containers and communicate with them.
+
+
+1. Launch a terminal window in the directory you downloaded the manifest files.
+
+2. Apply the Redis Master Deployment from the redis-master-deployment.yaml file:
+
+```
+  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+```
+
+3. Query the list of Pods to verify that the Redis Master Pod is running:
+
+```
+  kubectl get pods
+```
+The response should be similar to this:
+
+```
+  NAME                            READY     STATUS    RESTARTS   AGE
+  redis-master-1068406935-3lswp   1/1       Running   0          28s
+```
+
+4. Run the following command to view the logs from the Redis Master Pod:
+
+```
+kubectl logs -f POD-NAME
+```
+
+Note: Replace POD-NAME with the name of your Pod.
+
