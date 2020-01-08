@@ -13,9 +13,9 @@ You can explore and edit the properties of your EKS cluster using the command li
 ![ekskubectl](/images/mfe/ekskubectl.jpg?classes=border,shadow)
 and the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-2).
 
-![eksui1](/images/mfe/Capture_EKSCluster1?classes=border,shadow)
+![eksui1](/images/mfe/Capture_EKSCluster1.JPG?classes=border,shadow)
 
-![eksui2](/images/mfe/Capture_EKSCluster2?classes=border,shadow)
+![eksui2](/images/mfe/Capture_EKSCluster2.JPG?classes=border,shadow)
 
 
 
