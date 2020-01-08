@@ -103,7 +103,6 @@ async function search() {
                     '<tr><td>Enable GIT Credential helper for Cloud9</td><td>' +
                     '<pre class="bash">git config --global credential.helper \'!aws codecommit credential-helper $@\'\n' +
                     'git config --global credential.UseHttpPath true' +
-                    'sed -i \'/aws_session_token/d\' ${HOME}/.aws/credentials' +
                     '</pre></td></tr>' +
                     '</table>' +
                     '<div><h2>Back to the workshop: <a target="_blank" href="https://labs.sesummit20.net/020_prerequisites/sesummit20_event/portal/">https://labs.sesummit20.net/020_prerequisites/sesummit20_event/portal/</a></h2>' +

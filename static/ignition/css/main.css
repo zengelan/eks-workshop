@@ -63,23 +63,14 @@ img {
 }
 
 pre {
-    padding: 1rem;
-    margin: 1rem 0;
-    background: #282c34;
-    border: 0;
-    border-radius: 2px;
-    line-height: 1.15;
+  margin: 0 0 0 0;
 }
 
 pre.bash {
+ background-color: black;
+ color: gainsboro;
  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
- color: whitesmoke;
- background: inherit;
- white-space: pre-wrap;
- border: 0;
- padding: 0;
- margin: 0;
- font-size: 15px;
+ font-size: 0.9rem;
 }
 
 .result {

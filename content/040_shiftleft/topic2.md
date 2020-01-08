@@ -6,7 +6,6 @@ tags:
   - beginner
   - MFESummit2020
   - shiftleft
-  - boubker
 ---
 
 .... another topic

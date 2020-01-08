@@ -5,7 +5,6 @@ weight: 40
 tags:
   - beginner
   - mfearchitects
-  - stuppiello
 ---
 
 # Deploy the Kubernetes Dashboard

@@ -6,7 +6,6 @@ tags:
   - beginner
   - MFESummit2020
   - shiftleft
-  - boubker
 ---
 
 In this step you are downloading the CloudFormation templates that are used to deploy resources in AWS automatically.
