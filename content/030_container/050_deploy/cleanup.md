@@ -1,23 +1,39 @@
 ---
 title: "Cleanup the applications"
-date: 2018-08-07T13:37:53-07:00
+date: 2020-01-08
 weight: 90
 ---
 
-To delete the resources created by the applications, we should delete the application
-deployments:
+Deleting the Deployments and Services also deletes any running Pods. Use labels to delete multiple resources with one command.
 
-Undeploy the applications:
+Run the following commands to delete all Pods, Deployments, and Services.
 ```
-cd ~/environment/ecsdemo-frontend
-kubectl delete -f kubernetes/service.yaml
-kubectl delete -f kubernetes/deployment.yaml
-
-cd ~/environment/ecsdemo-crystal
-kubectl delete -f kubernetes/service.yaml
-kubectl delete -f kubernetes/deployment.yaml
-
-cd ~/environment/ecsdemo-nodejs
-kubectl delete -f kubernetes/service.yaml
-kubectl delete -f kubernetes/deployment.yaml
+  kubectl delete deployment -l app=redis
+  kubectl delete service -l app=redis
+  kubectl delete deployment -l app=guestbook
+  kubectl delete service -l app=guestbook
 ```
+
+The responses should be:
+
+```
+  deployment.apps "redis-master" deleted
+  deployment.apps "redis-slave" deleted
+  service "redis-master" deleted
+  service "redis-slave" deleted
+  deployment.apps "frontend" deleted    
+  service "frontend" deleted
+```
+
+You can confirm that the services have been deleted by running:
+```
+  kubectl get pods
+```
+```
+  kubectl get deployments
+```
+```
+  kubectl get services
+```
+
+Thank You!  This concludes the Container Lab for the Guestbook Application.
