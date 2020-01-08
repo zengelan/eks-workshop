@@ -48,7 +48,7 @@ The containers listen on port 6379, and native service discovery will be used to
 2. Apply the Redis Master Deployment from the redis-master-deployment.yaml file:
 
 ```
-  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+  kubectl apply -f <Will to provide relative URL>/application/guestbook/redis-master-deployment.yaml
 ```
 
 3. Query the list of Pods to verify that the Redis Master Pod is running:
