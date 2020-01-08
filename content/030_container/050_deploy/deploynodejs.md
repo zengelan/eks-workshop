@@ -1,20 +1,47 @@
 ---
-title: "Deploy NodeJS Backend API"
-date: 2018-09-18T17:39:30-05:00
+title: "Deploy Redis Master Service"
+date: 2020-01-08
 weight: 10
 ---
 
-Let’s bring up the NodeJS Backend API!
-
-Copy/Paste the following commands into your Cloud9 workspace:
+The guestbook applications needs to communicate to the Redis master to write its data. You need to apply a Service to proxy the traffic to the Redis master Pod. A Service defines a policy to access the Pods.
 
 ```
-cd ~/environment/ecsdemo-nodejs
-kubectl apply -f kubernetes/deployment.yaml
-kubectl apply -f kubernetes/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-master
+  labels:
+    app: redis
+    role: master
+    tier: backend
+spec:
+  ports:
+  - port: 6379
+    targetPort: 6379
+  selector:
+    app: redis
+    role: master
+    tier: backend
+```
+1. Apply the Redis Master Service from the following redis-master-service.yaml file:
+
+```
+  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-service.yaml
 ```
 
-We can watch the progress by looking at the deployment status:
+2. Query the list of Services to verify that the Redis Master Service is running:
+
 ```
-kubectl get deployment ecsdemo-nodejs
+  kubectl get service
 ```
+
+The response should be similar to this:
+
+```
+  NAME           TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
+  kubernetes     ClusterIP   10.0.0.1     <none>        443/TCP    1m
+  redis-master   ClusterIP   10.0.0.151   <none>        6379/TCP   8s
+```
+
+Note: This manifest file creates a Service named redis-master with a set of labels that match the labels previously defined, so the Service routes network traffic to the Redis master Pod.

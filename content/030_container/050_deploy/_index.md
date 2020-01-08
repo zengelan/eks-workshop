@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Example Microservices"
+title: "Deploy the Guestbook Application"
 chapter: true
 weight: 50
 tags:
@@ -7,7 +7,7 @@ tags:
   - mfearchitects
 ---
 
-# Deploy the Example Microservices
+# Deploy the Guestbook Application
 
 ![microservices](/images/crystal.svg)
 {{% children showhidden="false" %}}

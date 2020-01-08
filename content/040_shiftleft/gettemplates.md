@@ -19,7 +19,7 @@ The following command will clone the branch for your codename from the repositor
 
 ```
 cd ~/environment
-git clone -b <CODENAME> https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020 SESummit2020
+git clone -b $CODEWORD https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020 SESummit2020
 ll
 ```
 
