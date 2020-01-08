@@ -36,7 +36,7 @@ spec:
   kubectl get service
 ```
 
-The response should be similar to this:
+3. The response should be similar to this:
 
 ```
   NAME           TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
@@ -44,4 +44,4 @@ The response should be similar to this:
   redis-master   ClusterIP   10.0.0.151   <none>        6379/TCP   8s
 ```
 
-Note: This manifest file creates a Service named redis-master with a set of labels that match the labels previously defined, so the Service routes network traffic to the Redis master Pod.
+<b>Note</b>: This manifest file creates a Service named redis-master with a set of labels that match the labels previously defined, so the Service routes network traffic to the Redis master Pod.
