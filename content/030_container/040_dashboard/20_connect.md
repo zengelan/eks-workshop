@@ -18,8 +18,12 @@ Now we can access the Kubernetes Dashboard
 ```
 The Dashboard login page should now show up
 
-Click the following button to show the Kubernetes Dashboard in a new tab/window:
+{{% notice tip %}}
+You might want to open the Kubernetes Dashboard in a new browser tab or window for better visibility. Click the following button to show the Kubernetes Dashboard in a new tab/window:
 ![k8sdashaccess](/images/mfe/k8sdashaccess.jpg?classes=border,shadow)
+{{% /notice %}}
+
+Now lets's get the authentication done
 
 Open a New Terminal Tab  and enter
 ```
