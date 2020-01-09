@@ -31,16 +31,17 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 
 To create your new EKS cluster we will be using some defaults for this lab to ensure the resources are tagged with your codeword and we have some best practices settings defined like enabling logging of the EKS cluster and nodes 
 
-{{% notice info %}}
-We will be using a pre-defined configuration file that was downloaded when you cloned the repos. If you can't find the configuration please review section [Clone the service repos](/020_prerequisites/clone)
-{{% /notice %}}
 
 Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment).
 To check this execute the command:
 ```
-echo "My codeword is: ${CODEWORD}"
-echo "My EKS Region is: ${EKS_REGION}"
+echo "My codeword is: ${CODEWORD} and my EKS Region is: ${EKS_REGION}"
 ``` 
+
+The output should print both your Codeword as well as the EKS Region like this:
+![checkvars](/images/checkvars.png?classes=border,shadow)
+
+####Now we are ready to create your own Kubernetes cluster with all the required resources:
 
 Copy & Paste the following command to your Cloud9 terminal, then execute
 ```
