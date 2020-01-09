@@ -34,7 +34,7 @@ jobs:
         HUGO_PARAMS_listTodo: true
 
     - name: Deploy content to S3 Bucket
-      run: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control "max-age=120, public" --exclude "*" --include "*.html" --include "*.xml"
+      run: aws s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control "max-age=120, public" --exclude "*" --include "*.html" --include "*.xml"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -46,7 +46,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Deploy others to S3 Bucket
-      run: s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control "max-age=120, public" --exclude "*.html" --exclude "*.xml"
+      run: aws s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete --cache-control "max-age=120, public" --exclude "*.html" --exclude "*.xml"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
