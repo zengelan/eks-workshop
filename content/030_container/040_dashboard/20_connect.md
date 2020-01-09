@@ -41,6 +41,6 @@ If you want to see the dashboard in a full tab, click the **Pop Out** button, li
 ![popout](/images/popout.png?classes=border,shadow)
 
 If you are not seeing the Memory and CPU utilization and your dashboard looks like this:
-then please make sure to go through the section  [Deploy the Metrics Server](/030_container/040_dashboard/metricsserver) to deploy the metrics server.
+then please make sure to go through the section {{< relref "15_metricsserver.md" >}} to deploy the metrics server.
 ![dashnometrics](/images/mfe/dashnometrics.jpg?classes=border,shadow)
 

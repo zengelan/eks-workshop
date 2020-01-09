@@ -31,7 +31,7 @@ jobs:
         npm test
       env:
         CI: true
-        HUGO_PARAMS_listTodo: false
+        HUGO_PARAMS_listTodo: true
 
 #    - uses: actions/aws/cli@master
 #        name: Cleanup S3 Bucket

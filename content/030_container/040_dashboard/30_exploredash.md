@@ -11,7 +11,7 @@ tags:
 ## Explore details of your cluster using the Kubernetes Dashboard
 
 #### Investigate the worker nodes
-need content
+{{<todo>}}need content{{</todo>}}
 
 
 #### Investigate the Daemon Sets

@@ -5,6 +5,7 @@ weight: 40
 tags:
   - MFESummit2020
   - frith
+  - todo
 ---
 
 In this step you are downloading some of the files and tools we need for the lab to your environment. The following commands create a git repository in your environment and fill it with the data from the central repository.
@@ -18,7 +19,7 @@ git config --global credential.UseHttpPath true
 ```
 
 Now lets clone the `master` branch from the repository, we will be cloning another branch, specific for your student environment later
-
+{{< todo >}} Do we need the master branch at all? {{< /todo >}}
 ```
 cd ~/environment
 git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/SESummit2020 SESummit2020_master

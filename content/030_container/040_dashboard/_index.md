@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Kubernetes Dashboard"
+title: "Deploy Kubernetes Dashboard"
 chapter: true
 weight: 40
 tags:

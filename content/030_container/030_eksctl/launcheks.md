@@ -16,9 +16,9 @@ Run `aws sts get-caller-identity` and validate that your _Arn_ contains your cod
 
 ```javascript
 {
-    "Account": "933292480693", 
-    "UserId": "AIDA5STERDC22QHELGDYZ", 
-    "Arn": "arn:aws:iam::933292480693:user/sesummit20/labuser.halogen@sesummit20.net"
+    "Account": "933.....0693", 
+    "UserId": "AIDA......HELGDYZ", 
+    "Arn": "arn:aws:iam::933....93:user/sesummit20/labuser.halogen@sesummit20.net"
 }
 ```
 
@@ -35,10 +35,16 @@ To create your new EKS cluster we will be using some defaults for this lab to en
 We will be using a pre-defined configuration file that was downloaded when you cloned the repos. If you can't find the configuration please review section [Clone the service repos](/020_prerequisites/clone)
 {{% /notice %}}
 
-Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment) 
-Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
+Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment).
+To check this execute the command:
 ```
-eksctl create cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.medium --managed --vpc-nat-mode Disable --alb-ingress-access
+echo "My codeword is: ${CODEWORD}"
+echo "My EKS Region is: ${EKS_REGION}"
+``` 
+
+Copy & Paste the following command to your Cloud9 terminal, then execute
+```
+eksctl create cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.small --managed --vpc-nat-mode Disable --alb-ingress-access
 ```
 
 {{%expand "If you have not setup the variables, then expand this section" %}}
@@ -46,12 +52,12 @@ eksctl create cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} --tags co
 Copy & Paste the following command to your Cloud9 terminal and replace `<CODEWORD>` with your personally assigned codeword, then execute
 
 ```
-eksctl create cluster --name=<CODEWORD>-eksctl --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.medium --managed --vpc-nat-mode Disable --alb-ingress-access --region=${EKS_REGION}
+eksctl create cluster --name=<CODEWORD>-eksctl --tags codeword=<CODEWORD> --nodes=3 --node-type=t3a.small --managed --vpc-nat-mode Disable --alb-ingress-access
 ```
 
 {{% /expand %}}
 
-{{% notice info %}}
+{{% notice warning %}}
 Launching EKS and all the dependencies will take approximately 15 minutes
 {{% /notice %}}
 

@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Guestbook Application"
+title: "Deploy Guestbook Application"
 chapter: true
 weight: 50
 tags:

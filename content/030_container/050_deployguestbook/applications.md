@@ -74,10 +74,10 @@ The containers listen on port 6379, and native service discovery will be used to
   redis-master-1068406935-3lswp   1/1       Running   0          28s
 ```
 
-5. Run the following command to view the logs from the Redis Master Pod:
+5. Run the following command to view the logs from the Redis Master Pod. Replace ``<PODNAME>`` with the name of the pod from the output of the previous command.
 
 ```
-  kubectl logs -f POD-NAME
+  kubectl logs -f <POD-NAME>
 ```
 
 <b>Note</b>: Replace <font color="red">POD-NAME</font> with the name of your Pod
