@@ -8,7 +8,4 @@ tags:
   - boubker
 ---
 
-In this digram you will find the lab flow and steps
-
-1 
-
+![Lab Diagram](/static/images/Lab_Diagram.png)
