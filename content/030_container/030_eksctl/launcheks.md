@@ -39,9 +39,9 @@ echo "My codeword is: ${CODEWORD} and my EKS Region is: ${EKS_REGION}"
 ``` 
 
 The output should print both your Codeword as well as the EKS Region like this:
-![checkvars](/images/checkvars.png?classes=border,shadow)
+![checkvars](/images/mfe/checkvars.png?classes=border,shadow)
 
-####Now we are ready to create your own Kubernetes cluster with all the required resources:
+#### Now we are ready to create your own Kubernetes cluster with all the required resources:
 
 Copy & Paste the following command to your Cloud9 terminal, then execute
 ```
