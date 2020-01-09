@@ -28,7 +28,7 @@ spec:
       containers:
       - name: php-redis
         image: zengelan/gb_frontend:latest
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         resources:
           requests:
             cpu: 100m
@@ -44,6 +44,12 @@ spec:
         ports:
         - containerPort: 80
 ```
+
+Inspect the line
+```
+        image: zengelan/gb_frontend:latest
+```
+This tells kubernetes to download the docker image named `gb_frontend` from the repository with name `zengelan` in the `latest` version. You can browse to [https://hub.docker.com/repository/docker/zengelan/gb_frontend](https://hub.docker.com/repository/docker/zengelan/gb_frontend) to see all details about this docker image / application. 
 
 1. Apply the frontend Deployment from the frontend-deployment.yaml file:
 
