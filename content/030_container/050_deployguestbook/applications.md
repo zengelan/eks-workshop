@@ -1,6 +1,6 @@
 ---
 title: "Deploy our Redis Master"
-date: 2020-01-08
+date: 2020-01-09
 weight: 5
 ---
 
