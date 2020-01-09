@@ -15,20 +15,20 @@ Start with the template named `fixme_easy_cloudformation.json`
 
 2. Go to the Jenkins home page. Click on project folder that has your codeword (example: bravado)
 
-![](/images/mfe/2_login.png)
-![](/images/mfe/2_config.png)
+![](/images/mfe/2_login.png?classes=border,shadow)
+![](/images/mfe/2_config.png?classes=border,shadow)
 
 3. Find the fixme_easy_cloudformation.json, investigate why the build failed (check the `Console` view)
 
-![](/images/mfe/3_audit.png)
+![](/images/mfe/3_audit.png?classes=border,shadow)
 
 4. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template
 
-![](/images/mfe/4_login.png)
+![](/images/mfe/4_login.png?classes=border,shadow)
 
 5. Open the template in your Cloud 9 IDE by navigating to `cd ~/environment/SESummit2020/ShiftLeft` 
 
-![](/images/mfe/5_login.png)
+![](/images/mfe/5_login.png?classes=border,shadow)
 
 6. Make the appropriate changes and save the file
 

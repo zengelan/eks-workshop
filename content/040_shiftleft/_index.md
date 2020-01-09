@@ -12,4 +12,4 @@ tags:
 # Shift-Left Lab
 
 Welcome to our Shift-Left and Jenkins Lab
-![ShiftLeft](/images/mfe/shiftleft.png)
+![ShiftLeft](/images/mfe/shiftleft.png?classes=border,shadow)
