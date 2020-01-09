@@ -2,6 +2,7 @@
 title: "Undeploy the applications"
 date: 2018-08-07T13:37:53-07:00
 weight: 20
+hidden: true
 ---
 
 To delete the resources created by the applications, we should delete the application

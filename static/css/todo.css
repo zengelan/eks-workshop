@@ -1,0 +1,20 @@
+#draft-warning {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  z-index: 99;
+  float: right;
+  display: block;
+
+  margin: 0px 0px;
+  padding: 1rem;
+  background-color: red;
+  border: 0.1rem solid black;
+  color: yellow;
+  font-size: 80%;
+}

@@ -26,10 +26,12 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
+        npm run env
         npm run build --if-present
         npm test
       env:
         CI: true
+        HUGO_PARAMS_listTodo: false
 
 #    - uses: actions/aws/cli@master
 #        name: Cleanup S3 Bucket

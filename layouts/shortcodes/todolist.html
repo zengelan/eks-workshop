@@ -1,0 +1,37 @@
+<!-- Affiche les TODO si besoin -->
+{{ if (or .Site.IsServer .Site.Params.listTodo) }}
+	{{ .Scratch.Set "todos" slice }}
+	{{ range .Site.RegularPages }}
+		{{ if .HasShortcode "todo" }}
+			{{ $.Scratch.Add "todos" . }}
+		{{ end }}
+{{ end }}
+
+<h2 id="todos">Pages marked with TODOs</h2>
+<table>
+	<thead>
+	<tr>
+		<th>Last change</th>
+		<th>Link</th>
+		<th>TODO Content</th>
+	</tr>
+	</thead>
+	<tbody>
+	{{ range  (.Scratch.Get "todos") }}
+	<tr>
+		<td>{{ .Lastmod.Format "02 Jan 2006" }}</td>
+		<td>
+			{{ .Parent.Title}} / <a href="{{ .Permalink }}">{{ .Title }}</a>
+		</td>
+		<td>
+			{{ $_x := (findRE "-#-(.|\n)*?-#-" .Content) }}
+			{{ range $_x }}
+			<li>{{ $cowsound := strings.TrimRight "-#- :" .}}
+				{{ strings.TrimLeft "-#- :" $cowsound}}
+			{{ end }}
+		</td>
+	</tr>
+	{{ end }}
+	</tbody>
+</table>
+{{ end }}

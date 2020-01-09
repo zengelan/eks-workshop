@@ -1,0 +1,3 @@
+{{ if (or .Site.IsServer .Site.Params.listTodo) }}
+	{{ if .Inner }}<div id="draft-warning">-#- TODO : {{ .Inner }} -#-</div>{{ end }}
+{{ end }}

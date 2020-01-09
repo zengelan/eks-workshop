@@ -8,7 +8,7 @@ In order to delete the resources created for this EKS cluster, run the following
 
 Delete the cluster:
 ```
-eksctl delete cluster --name=eksworkshop-eksctl
+eksctl delete cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} 
 ```
 
 {{% notice tip %}}

@@ -32,6 +32,8 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "tango"
+# https://discourse.gohugo.io/t/add-visual-reminder-on-pages-with-todo-shortcode/11724
+listTodo = true
 
 
 
@@ -54,11 +56,6 @@ weight = 4
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 5
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard'></i> AppMesh Workshop"
-url = "https://appmeshworkshop.com"
-weight = 6
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-chalkboard'></i> ECS Workshop"
@@ -87,8 +84,13 @@ weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Have questions?"
-url = "mailto:andreas_zengel@gmail.com"
+url = "mailto:andreas_zengel@mcafee.com"
 weight = 40
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> TODO"
+url = "/todoitems"
+weight = 50
 
 
 [outputs]

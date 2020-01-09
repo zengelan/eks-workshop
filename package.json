@@ -14,6 +14,7 @@
   "scripts": {
     "theme": "git submodule init && git submodule update",
     "drafts": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
+    "env": "hugo -v env",
     "server": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged",
     "build": "hugo -v --enableGitInfo",
     "deploy": "aws s3 sync public/ s3://${S3_BUCKET_NAME}/ --delete",

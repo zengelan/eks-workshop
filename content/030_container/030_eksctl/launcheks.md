@@ -38,7 +38,7 @@ We will be using a pre-defined configuration file that was downloaded when you c
 Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment) 
 Copy & Paste the following command to your Cloud9 terminal and replace <CODEWORD> with your personally assigned codeword, then execute
 ```
-eksctl create cluster --name=${CODEWORD}-eksctl --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.medium --managed --vpc-nat-mode Disable --alb-ingress-access --region=${EKS_REGION}
+eksctl create cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.medium --managed --vpc-nat-mode Disable --alb-ingress-access
 ```
 
 {{%expand "If you have not setup the variables, then expand this section" %}}

@@ -2,6 +2,11 @@
 title: "Deploy Web Frontend Service"
 date: 2020-01-08
 weight: 30
+draft: false
+tags:
+  - MFESummit2020
+  - todo
+  - dennen
 ---
 
 The redis-slave and redis-master Services you applied are only accessible within the container cluster because the default type for a Service is ClusterIP. ClusterIP provides a single IP address for the set of Pods the Service is pointing to. This IP address is accessible only within the cluster.
@@ -59,6 +64,13 @@ frontend       NodePort    10.0.0.112   <none>       80:31323/TCP   6s
 ```
 
 Here you can see that Kubernetes has setup a service that can be accessed on TCP port 31323 on every *pod* where this *container* runs in. This port maps to the port 80 of the specific *container*. 
-As this can be very dynamic, as Kubernetes automatically choses which nodes to run pods on and  as Kubernetes can automatically scale up and down and increase number of pods or even nodes, it is possible to address this *service* using Kubernetes built-in DNS system. Kubernetes automatically keeps the pointers in DNS updates to always point to the right *pods*
+As this can be very dynamic, as Kubernetes automatically chooses which nodes to run pods on and  as Kubernetes can automatically scale up and down and increase number of pods or even nodes, it is possible to address this *service* using Kubernetes built-in DNS system. Kubernetes automatically keeps the pointers in DNS updates to always point to the right *pods*
+
+
+Execute {{< todo >}} Write up some details on how to interpret the output: {{< /todo >}}
+```
+kubectl describe svc frontend
+```
+here are some details https://labs.sesummit20.net/030_container/130_exposing-service/connecting/
 
 
