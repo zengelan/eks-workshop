@@ -8,6 +8,24 @@ tags:
   - done
 ---
 
+Since the dashboard is deployed to our private cluster, we need to access it via a proxy.
+Kube-proxy is available to proxy our requests to the dashboard service.  In your
+workspace, run the following command:
+```
+kubectl proxy --port=8080 --address='0.0.0.0' --disable-filter=true &
+```
+
+This will start the proxy, listen on port 8080, listen on all interfaces, and
+will disable the filtering of non-localhost requests.
+
+This command will continue to run in the background of the current terminal's session.
+
+{{% notice warning %}}
+We are disabling request filtering, a security feature that guards against XSRF attacks.
+This isn't recommended for a production environment, but is useful for our dev environment.
+{{% /notice %}}
+
+
 Now we can access the Kubernetes Dashboard
 
 1. In your Cloud9 environment, click **Tools / Preview / Preview Running Application**
@@ -25,13 +43,27 @@ You might want to open the Kubernetes Dashboard in a new browser tab or window f
 
 Now lets's get the authentication done
 
-Open a New Terminal Tab  and enter
+Open a New Terminal Tab and enter
 ```
 aws eks get-token --cluster-name ${CODEWORD}-eksctl | jq -r '.status.token'
 ```
 
 Copy the output of this command and then click the radio button next to
 *Token* then in the text field below paste the output from the last command.
+
+{{<todo>}}finish expand table and add screenshot for alternative token for dashboard{{</todo>}}
+{{%expand "Expand here to see another option to get a token" %}}
+Run the command ``kubectl get secrets`` to identify the accounts, then copy the name of the token starting with `dashboard-admin-sa-token-...`
+then run the command
+```bash
+kubectl describe secret dashboard-admin-sa-token-.....
+```
+(screenshot of output)
+
+from the output copy the token ....
+
+{{% /expand %}}
+
 
 ![Token page](/images/dashboard-connect.png?classes=border,shadow)
 
