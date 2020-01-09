@@ -1,12 +1,10 @@
-+++
-title = "Let us know what you think!"
-chapter = false
-weight = 60
+---
+title: "Let us know what you think!"
+weight: 60
 tags:
-    - draft
-    - todo
-    - khe
-+++
+  - todo
+  - khe
+---
 
  - Please take our survey!
    {{% surveymonkey %}}

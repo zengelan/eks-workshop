@@ -51,8 +51,12 @@ aws eks get-token --cluster-name ${CODEWORD}-eksctl | jq -r '.status.token'
 Copy the output of this command and then click the radio button next to
 *Token* then in the text field below paste the output from the last command.
 
-{{<todo>}}finish expand table and add screenshot for alternative token for dashboard{{</todo>}}
-{{%expand "Expand here to see another option to get a token" %}}
+![Token page](/images/dashboard-connect.png?classes=border,shadow)
+
+
+{{<todo>}}finish expand table and add screenshot for alternative token for dashboard {{</todo>}}
+
+{{% expand "Expand here to see another option to get a token" %}}
 Run the command ``kubectl get secrets`` to identify the accounts, then copy the name of the token starting with `dashboard-admin-sa-token-...`
 then run the command
 ```bash
@@ -64,8 +68,6 @@ from the output copy the token ....
 
 {{% /expand %}}
 
-
-![Token page](/images/dashboard-connect.png?classes=border,shadow)
 
 Then press *Sign In*.
 

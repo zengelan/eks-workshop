@@ -16,4 +16,4 @@ We can deploy the dashboard with the following command:
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
 ```
 
-{{<todo>}}anything else to mention here?{{</todo>}}
+{{<todo>}} anything else to mention here? {{</todo>}}
