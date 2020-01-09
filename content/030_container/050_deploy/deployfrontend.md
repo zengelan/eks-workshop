@@ -52,3 +52,13 @@ spec:
   redis-master   ClusterIP   10.0.0.151   <none>        6379/TCP       2m
   redis-slave    ClusterIP   10.0.0.223   <none>        6379/TCP       1m
 ```  
+
+Inspect the line
+```
+frontend       NodePort    10.0.0.112   <none>       80:31323/TCP   6s
+```
+
+Here you can see that Kubernetes has setup a service that can be accessed on TCP port 31323 on every *pod* where this *container* runs in. This port maps to the port 80 of the specific *container*. 
+As this can be very dynamic, as Kubernetes automatically choses which nodes to run pods on and  as Kubernetes can automatically scale up and down and increase number of pods or even nodes, it is possible to address this *service* using Kubernetes built-in DNS system. Kubernetes automatically keeps the pointers in DNS updates to always point to the right *pods*
+
+
