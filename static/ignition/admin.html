@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>McAfee SE Summit 2020 - IaaS Lab Admin Tools</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+  <script src="admincontroller.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.js"></script>
+</head>
+
+<body ng-controller="AdminCtrl">
+<div style="width: 100%; margin-left: 20px">
+  <h2>McAfee SE Summit 2020 Active User Admin View</h2>
+  <form>
+    <fieldset>
+      <button type="button" class="btn btn-primary" ng-click="controller.onUserStatus()">User Status</button>
+    </fieldset>
+  </form>
+</div>
+
+<div style="width: 100%; margin-left: 20px">
+    <div ng-repeat="user in users track by $index">
+      {{user}}
+    </div>
+</div>
+</body>
+</html>
