@@ -39,7 +39,6 @@
       <th scope="col">codeword</th>
       <th scope="col" ng-show="showemail">mfeemail</th>
       <th scope="col">AWS lastlogin</th>
-      <th scope="col">MVC lastlogin</th>
       <th scope="col">c9status</th>
       <th scope="col">eks</th>
       <th scope="col">nodegroups</th>
@@ -48,6 +47,7 @@
       <th scope="col">Jenkins Easy</th>
       <th scope="col">Jenkins Medium</th>
       <th scope="col">Jenkins Hard</th>
+      <th scope="col">MVC lastlogin</th>
       <th scope="col">MVC Incidents</th>
     </thead>
     <tbody>
@@ -57,8 +57,6 @@
           <td ng-show="showemail">{{user.mfeemail}}</td>
           <td ng-style="user.llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
             {{user.llminutesago}} min</td>
-          <td ng-style="mvc[user.codeword].llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
-            {{mvc[user.codeword].llminutesago}} min</td>
           <td ng-style="user.c9status == 'ready' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{user.c9status}}</td>
           <td ng-style="user.eksstatus == 'running' && {'background-color':'green'} || {'background-color':'FireBrick '}">
@@ -67,13 +65,16 @@
             {{user.eksnodegroups}}</td>
           <td ng-style="user.ekslogging != 'n/a' && {'background-color':'green'} || {'background-color':'FireBrick '}" >
             {{user.ekslogging}}</td>
-          <td >not implementd</td>
+          <td ng-style="cc[user.codeword].checkins != 'n/a' && {'background-color':'green'} || {'background-color':'FireBrick '}" >
+            {{cc[user.codeword].checkins}}</td>
           <td ng-style="jenkins[user.codeword].jobs['easy'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs['easy'].color}}:{{jenkins[user.codeword].jobs['easy'].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["medium"].color}}:{{jenkins[user.codeword].jobs["medium"].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['hard'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["hard"].color}}:{{jenkins[user.codeword].jobs["hard"].builds}}</td>
+          <td ng-style="mvc[user.codeword].llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
+            {{mvc[user.codeword].llminutesago}} min</td>
           <td ng-style="mvc[user.codeword].incidents != 'n/a' && {'background-color':'green'} || {'background-color':'FireBrick '}" >
             {{mvc[user.codeword].incidents}}</td>
         </tr>
