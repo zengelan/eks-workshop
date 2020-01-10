@@ -68,7 +68,7 @@
             {{jenkins[user.codeword].jobs['easy'].color}}:{{jenkins[user.codeword].jobs['easy'].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["medium"].color}}:{{jenkins[user.codeword].jobs["medium"].builds}}</td>
-          <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
+          <td ng-style="jenkins[user.codeword].jobs['hard'].color != 'blue' && {'background-color':'FireBrick '} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["hard"].color}}:{{jenkins[user.codeword].jobs["hard"].builds}}</td>
         </tr>
      </tbody>
