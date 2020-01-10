@@ -17,7 +17,6 @@ Start with the template named `fixme_easy_cloudformation.json`
 
 ![](/images/mfe/2_login.png?classes=border,shadow)
 ![](/images/mfe/2_config.png?classes=border,shadow)
-
 3. Find the fixme_easy_cloudformation.json, investigate why the build failed (check the `Console` view)
 
 ![](/images/mfe/3_audit.png?classes=border,shadow)
