@@ -8,4 +8,4 @@ tags:
   - boubker
 ---
 
-![Lab_Diagram](/images/mfe/Lab_Diagram.png?classes=border,shadow)
+![LAB_Diagram](/images/mfe/LAB_Diagram.png?classes=border,shadow)
