@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="admin">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>McAfee SE Summit 2020 - IaaS Lab Admin Tools</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-  <script src="admincontroller.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/admincontroller.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.js"></script>
 </head>
 
-<body ng-controller="AdminCtrl">
+<body ng-controller="AdminCtrl" onload="bodyOnLoad();">
 <div style="width: 100%; margin-left: 20px">
   <h2>McAfee SE Summit 2020 Active User Admin View</h2>
   <form>
     <fieldset>
       <button type="button" class="btn btn-primary" ng-click="controller.onUserStatus()">User Status</button>
+      <input type="checkbox" ng-checked="showemail" ng-click="showemail=!showemail" ng-init="showemail=false">mfeemail<br>
     </fieldset>
   </form>
+  <p id="loading">Getting results, please wait, this can take a while...</p>
 </div>
 
-<div style="width: 100%; margin-left: 20px">
-    <div ng-repeat="user in users track by $index">
-      {{user}}
-    </div>
+<div style="margin-left: 20px">
+<table id="resulttable" class="table table-striped">
+  <thead>
+    <th scope="col">#</th>
+    <th scope="col">codeword</th>
+    <th scope="col">username</th>
+    <th scope="col" ng-show="showemail">mfeemail</th>
+    <th scope="col">c9status</th>
+    <th scope="col">eks</th>
+    <th scope="col">nodegroups</th>
+    <th scope="col">ekslogging</th>
+  </thead>
+  <tbody>
+      <tr ng-repeat="(userid, user) in user_table">
+        <th scope="row">{{ $index }}</th>
+        <td scope="row">{{ user.codeword }}</td>
+        <td >{{userid}}</td>
+        <td ng-show="showemail">{{user.mfeemail}}</td>
+        <td >{{user.c9status}}</td>
+        <td >{{user.eksregion}}/{{user.eksname}}:{{user.eksstatus}}</td>
+        <td >{{user.eksnodegroups}}</td>
+        <td >{{user.ekslogging}}</td>
+      </tr>
+   </tbody>
+</table>
 </div>
 </body>
 </html>
