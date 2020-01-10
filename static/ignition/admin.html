@@ -33,12 +33,12 @@
 
 <div style=" margin-left: 1rem;margin-right: 1rem">
   <p id="resultinfo">Results as of {{update_time}} UTC</p>
-  <table id="resulttable" class="table table-striped table-hover table-bordered">
+  <table id="resulttable" hidden class="table table-striped table-hover table-bordered">
     <thead>
       <th scope="col">#</th>
       <th scope="col">codeword</th>
-      <th scope="col">AWS lastlogin</th>
       <th scope="col" ng-show="showemail">mfeemail</th>
+      <th scope="col">AWS lastlogin</th>
       <th scope="col">c9status</th>
       <th scope="col">eks</th>
       <th scope="col">nodegroups</th>
@@ -52,9 +52,9 @@
         <tr ng-repeat="(userid, user) in user_table | orderBy:'codeword'">
           <th scope="row">{{ $index }}</th>
           <td scope="row">{{ user.codeword }}</td>
+          <td ng-show="showemail">{{user.mfeemail}}</td>
           <td ng-style="user.llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
             {{user.llminutesago}}</td>
-          <td ng-show="showemail">{{user.mfeemail}}</td>
           <td ng-style="user.eksnodegroups == 'running' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{user.c9status}}</td>
           <td ng-style="user.eksstatus == 'running' && {'background-color':'green'} || {'background-color':'FireBrick '}">
