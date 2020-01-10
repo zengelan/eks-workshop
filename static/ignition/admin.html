@@ -52,7 +52,7 @@
         <tr ng-repeat="(userid, user) in user_table | orderBy:'codeword'">
           <th scope="row">{{ $index }}</th>
           <td scope="row">{{ user.codeword }}</td>
-          <td ng-style="user.llminutesago == 'n/a'|| !user.llminutesago  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
+          <td ng-style="user.llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
             {{user.llminutesago}}</td>
           <td ng-show="showemail">{{user.mfeemail}}</td>
           <td ng-style="user.eksnodegroups == 'running' && {'background-color':'green'} || {'background-color':'FireBrick'}">
