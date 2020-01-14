@@ -49,7 +49,7 @@ the ELB's address.  We can do this by using the `get services` operation of kube
 kubectl get service frontend
 ```
 This should allow you to see the Public DNS name, allowing you to connect to the frontend web services via browser.
-It should look something like this:<font color=red>It may take a few minutes before the External URL appears</font>
+It should look something like this:<font color=red>(It may take a few minutes before the External URL appears)</font>
 ```
 sesummit20:~/environment $ kubectl get service frontend
 NAME       TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE
