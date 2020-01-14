@@ -41,11 +41,24 @@ the ELB's address.  We can do this by using the `get services` operation of kube
 ```
 kubectl get service frontend
 ```
+This should allow you to see the Public DNS name, allowing you to connect to the frontend web services via browser.
+It should look something like this:
+```
+sesummit20:~/environment $ kubectl get service frontend
+NAME       TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE
+frontend   LoadBalancer   10.100.218.79   a0340ceb8370411ea812f122fedde54b-1329106542.us-east-1.elb.amazonaws.com   80:32087/TCP   28m
+```
 
 In some cases the field isn't wide enough to show the FQDN of the ELB. We can adjust the
 output format with this command:
 ```
 kubectl get service -o wide frontend
+```
+It should look something like this:
+```
+sesummit20:~/environment $ kubectl get service -o wide frontend
+NAME       TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE   SELECTOR
+frontend   LoadBalancer   10.100.218.79   a0340ceb8370411ea812f122fedde54b-1329106542.us-east-1.elb.amazonaws.com   80:32087/TCP   28m   app=guestbook,tier=frontend
 ```
 
 If we wanted to use the data programatically, we can also output via json. This is
