@@ -1,5 +1,5 @@
 ---
-title: "K8S ELB Setup"
+title: "Frontend Web ELB Setup"
 date: 2020-01-14
 weight: 40
 ---
