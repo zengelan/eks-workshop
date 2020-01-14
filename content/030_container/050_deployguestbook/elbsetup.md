@@ -35,6 +35,12 @@ spec:
     tier: frontend                     
 ```
 
+Since the frontend web service had already been deployed, you can kill the existing service and redploy the newly modified service that now includes the LoadBalancer. The following commands will execute these steps:
+```
+kubectl delete service -l app=guestbook
+kubectl apply -f ~/environment/guestbook-example/frontend-service.yaml
+```
+
 Now that we have a running service that is `type: LoadBalancer` we need to find
 the ELB's address.  We can do this by using the `get services` operation of kubectl:
 
