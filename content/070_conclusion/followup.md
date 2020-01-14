@@ -17,4 +17,4 @@ As a follow up to the SESummit cloud training and to make sure that all SEs unde
 
 please join the team 
 
-{{<todo>}} fininsh this page {{</todo>}} 
+{{<todo>}} boubker & laurent fininsh this page {{</todo>}} 
