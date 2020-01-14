@@ -12,7 +12,7 @@ You'll need to edit the frontend-service.yaml file which was already deployed pr
 vi ~/environment/guestbook-example/frontend-service.yaml
 ```
 
-Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
+Using an editor, such as VI, you will need to make the following edits to the frontend-service.yaml file. Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
 
 ```
 apiVersion: v1
