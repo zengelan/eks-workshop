@@ -79,21 +79,30 @@ async function search() {
                     '<div><h2>Codeword: ' + codeword + '</h2>' +
                     '<table>' +
                     '<tr><td>Codeword:</td><td><pre class="bash">' + codeword + '</pre></td></tr>' +
+                    '<tr><td></td></tr>' +
                     '<tr><td>AWS Login URL</td><td><a target="_blank" href="' + url + '">' + url + '</a></td></tr>' +
                     '<tr><td>AWS Username:</td><td><pre class="bash">' + username + '</pre></td></tr>' +
                     '<tr><td>AWS Password:</td><td><pre class="bash">' + password + '</pre></td></tr>' +
                     '<tr><td>AWS_ACCESS_KEY_ID:</td><td><pre class="bash">' + AWS_ACCESS_KEY_ID + '</pre></td></tr>' +
                     '<tr><td>AWS_SECRET_ACCESS_KEY:</td><td><pre class="bash">' + AWS_SECRET_ACCESS_KEY + '</pre></td></tr>' +
                     '<tr><td>AWS_DEFAULT_REGION:</td><td><pre class="bash">' + AWS_DEFAULT_REGION + '</pre></td></tr>' +
+                    '<tr><td></td></tr>' +
                     '<tr><td>Cloud9 Ide ID:</td><td><pre>' + Cloud9Ide + '</pre></td></tr>' +
                     '<tr><td>Cloud9 IDE Access URL</td><td><a target="_blank" href="' + Cloud9IdeUrl + '">' + Cloud9IdeUrl + '</a></td></tr>' +
+                    '<tr><td></td></tr>' +
                     '<tr><td>Jenkins Username:</td><td><pre class="bash">' + user['codeword'] + '</pre></td></tr>' +
                     '<tr><td>Jenkins Password:</td><td><pre class="bash">' + password + '</pre></td></tr>' +
                     '<tr><td>Jenkins Access URL</td><td><a target="_blank" href="https://jenkins.sesummit20.net/jenkins">https://jenkins.sesummit20.net/jenkins</a></td></tr>' +
+                    '<tr><td></td></tr>' +
+                    '<tr><td>MVISION Cloud Username:</td><td><pre class="bash">' + username + '</pre></td></tr>' +
+                    '<tr><td>MVISION Cloud Password:</td><td><pre class="bash">' + user['MvcPassword']  + '</pre></td></tr>' +
+                    '<tr><td>MVISION Cloud Access URL</td><td><a target="_blank" href="https://www.myshn.net">https://www.myshn.net</a></td></tr>' +
+                    '<tr><td></td></tr>' +
                     '<tr><td>CodeCommit Git Username:</td><td><pre class="bash">' + user['CodeCommitUsername'] + '</pre></td></tr>' +
                     '<tr><td>CodeCommit Git Password:</td><td><pre class="bash">' + user['CodeCommitPassword'] + '</pre></td></tr>' +
                     '<tr><td>CodeCommit Access URL</td><td><a target="_blank" href="' + user['CodeCommitUrl'] + '">' + user['CodeCommitUrl'] + '</a></td></tr>' +
                     '<tr><td>CodeCommit Git Repo URL</td><td>' + user['CodeCommitRepo'] + '</td></tr>' +
+                    '<tr><td></td></tr>' +
                     '<tr><td>Variables for Windows</td><td>' +
                     '<pre class="bash">setx AWS_ACCESS_KEY_ID ' + AWS_ACCESS_KEY_ID + '\nsetx AWS_SECRET_ACCESS_KEY ' + AWS_SECRET_ACCESS_KEY + '\nsetx AWS_DEFAULT_REGION ' + AWS_DEFAULT_REGION +
                     '</pre></td></tr>' +
