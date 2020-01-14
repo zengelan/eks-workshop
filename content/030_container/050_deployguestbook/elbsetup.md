@@ -6,13 +6,13 @@ weight: 40
 
 Now that the Guestbook Applicaion has been deployed to your Kubernetes cluster, we can configure the frontend web server to run as a cluster.  Configuring cluster mode deployment, as opposed to nodeport deployment, will also generate an externally accessible DNS entry which can be used to connect to the frontend web services.
 
-You'll need to configure the frontend-service.yaml file located within your local repository
+You'll need to edit the frontend-service.yaml file which was already deployed previously. It is located within your local repository.
 
 ```
 vi ~/environment/guestbook-example/frontend-service.yaml
 ```
 
-Follow the instructions within the comment lines within the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
+Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
 
 ```
 apiVersion: v1
