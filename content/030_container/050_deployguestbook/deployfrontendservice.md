@@ -13,7 +13,7 @@ The redis-slave and redis-master Services you applied are only accessible within
 
 If you want guests to be able to access your guestbook, you must configure the frontend Service to be externally visible, so a client can request the Service from outside the container cluster. For the purposes of this training, you will be manually configuring an Elastic Load Balancer (ELB) using the AWS Console. Though this can all be done progamatically using code, it will be good hands on experience to configure the ELB and Target Group in this training session. The steps to do this will follow in an upcoming section within this exercise.
 
-This is web-frontend-service.yaml for our Guestbook application. <bold><font color="red">There is no need to copy this content since it is included in the repo clone in your environment</font></bold>. Step 1 will deploy the below configuration using a relative path.
+This is web-frontend-service.yaml for our Guestbook application. <bold><font color="red">There is no need to copy this content since it is included in the repo clone in your environment. This is for illustration purposes only</font></bold>. Step 1 will deploy the below configuration using a relative path.
 
 ```
 apiVersion: v1
