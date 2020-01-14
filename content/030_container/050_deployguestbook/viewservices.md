@@ -4,6 +4,8 @@ date: 2018-09-18T17:40:09-05:00
 weight: 40
 ---
 
+Dennen Testing time to update
+
 Now that we have a running service that is `type: LoadBalancer` we need to find
 the ELB's address.  We can do this by using the `get services` operation of kubectl:
 
