@@ -36,8 +36,18 @@
   <table id="resulttable" hidden class="table table-striped table-hover table-bordered">
     <thead>
       <th scope="col">#</th>
-      <th scope="col">codeword</th>
-      <th scope="col" ng-show="showemail">mfeemail</th>
+      <th scope="col">
+        <a href="#" ng-click="orderByField='codeword'; reverseSort = !reverseSort">
+          codeword <span ng-show="orderByField == 'codeword'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+        </a>
+      </th>
+      <th scope="col" ng-show="showemail">
+        <a href="#" ng-click="orderByField='mfeemail'; reverseSort = !reverseSort">
+          mfeemail <span ng-show="orderByField == 'mfeemail'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+        </a>
+      </th>
+
+
       <th scope="col">AWS lastlogin</th>
       <th scope="col">c9status</th>
       <th scope="col">eks</th>
@@ -48,10 +58,11 @@
       <th scope="col">Jenkins Medium</th>
       <th scope="col">Jenkins Hard</th>
       <th scope="col">MVC lastlogin</th>
-      <th scope="col">MVC Incidents</th>
+      <th scope="col">MVC Inc EKS</th>
+      <th scope="col">MVC Inc ShiftLeft</th>
     </thead>
     <tbody>
-        <tr ng-repeat="(userid, user) in user_table | orderBy:'codeword'">
+        <tr ng-repeat="(userid, user) in user_table | orderBy:orderByField:reverseSort">
           <th scope="row">{{ $index }}</th>
           <td scope="row">{{ user.codeword }}</td>
           <td ng-show="showemail">{{user.mfeemail}}</td>
@@ -59,24 +70,26 @@
             {{user.llminutesago}} min</td>
           <td ng-style="user.c9status == 'ready' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{user.c9status}}</td>
-          <td ng-style="user.eksstatus == 'running' && {'background-color':'green'} || {'background-color':'FireBrick'}">
+          <td ng-style="user.eksstatus == 'ACTIVE' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{user.eksregion}}/{{user.eksname}}:{{user.eksstatus}}</td>
           <td ng-style="user.eksnodegroups != 'n/a' && {'background-color':'green'} || {'background-color':'Firebrick'}">
             {{user.eksnodegroups}}</td>
           <td ng-style="user.ekslogging != 'n/a' && {'background-color':'green'} || {'background-color':'Firebrick'}" >
             {{user.ekslogging}}</td>
-          <td ng-style="cc[user.codeword].checkins != 'n/a' && {'background-color':'LightBlue'} || {'background-color':'FireBrick'}" >
-            {{cc[user.codeword].checkins}}</td>
+          <td ng-style="cc[user.codeword].commits.length > 0 && {'background-color':'green'} || {'background-color':'FireBrick'}" >
+            {{cc[user.codeword].commits.length}} {{cc[user.codeword].commits[0].author.name}}</td>
           <td ng-style="jenkins[user.codeword].jobs['easy'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs['easy'].color}}:{{jenkins[user.codeword].jobs['easy'].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["medium"].color}}:{{jenkins[user.codeword].jobs["medium"].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['hard'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["hard"].color}}:{{jenkins[user.codeword].jobs["hard"].builds}}</td>
-          <td ng-style="mvc[user.codeword].llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'LightBlue'}" >
+          <td ng-style="mvc[user.codeword].llminutesago < '120'  && {'background-color':'green'} || {'background-color':'FireBrick'}" >
             {{mvc[user.codeword].llminutesago}} min</td>
-          <td ng-style="mvc[user.codeword].incidents != 'n/a' && {'background-color':'LightBlue'} || {'background-color':'Firebrick'}" >
-            {{mvc[user.codeword].incidents}}</td>
+          <td ng-style="mvc[user.codeword].incidents['eks'].length > 1 && {'background-color':'green'} || {'background-color':'Firebrick'}" >
+            eks:{{mvc[user.codeword].incidents['eks'].length}}</td>
+          <td ng-style="mvc[user.codeword].incidents['shiftleft'].length > 1 && {'background-color':'green'} || {'background-color':'Firebrick'}" >
+            shiftleft:{{mvc[user.codeword].incidents['shiftleft'].length}}</td>
         </tr>
      </tbody>
   </table>

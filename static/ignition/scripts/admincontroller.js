@@ -65,6 +65,8 @@ redisApp.controller('AdminCtrl', function ($scope, $http, $location) {
     $scope.controller.scope_ = $scope;
     $scope.controller.location_ = $location;
     $scope.controller.http_ = $http;
+    $scope.orderByField = 'codeword';
+    $scope.reverseSort = false;
 
     loadingdiv = $('#loading');
     resulttable = $('#resulttable');
