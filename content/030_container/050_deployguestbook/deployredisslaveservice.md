@@ -6,7 +6,7 @@ weight: 25
 
 The guestbook application needs to communicate to Redis slaves to read data. To make the Redis slaves discoverable, you need to set up a Service. A Service provides transparent load balancing to a set of Pods.
 
-This is redis-slave-service.yaml for our backend db service. There is no need to copy this content since it is included in the repo clone in your environment. Step 1 will deploy the below configuration using a relative path.
+This is redis-slave-service.yaml for our backend db service. <font color=red>There is no need to copy this content since it is included in the repo clone in your environment</font>. Step 1 will deploy the below configuration using a relative path.
 
 ```
 apiVersion: v1
