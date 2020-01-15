@@ -48,7 +48,7 @@ spec:
   kubectl get services
 ```
 
-3. The response should be similar to this:
+3. The response should be similar to this: <font color=red>Note: with type: NodePort, there is no external DNS entry created.  We will change this in an upcoming section.</font>
 
 ```
   NAME           TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
@@ -70,6 +70,26 @@ As this can be very dynamic, as Kubernetes automatically chooses which nodes to 
 Execute {{< todo >}} Write up some details on how to interpret the output: {{< /todo >}}
 ```
 kubectl describe svc frontend
+```
+
+```
+Name:                     frontend
+Namespace:                default
+Labels:                   app=guestbook
+                          tier=frontend
+Annotations:              kubectl.kubernetes.io/last-applied-configuration:
+                            {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"guestbook","tier":"frontend"},"name":"frontend","namespa...
+Selector:                 app=guestbook,tier=frontend
+Type:                     LoadBalancer
+IP:                       10.100.245.62
+LoadBalancer Ingress:     aa1762af5370a11ea83a90eb80f14777-987475916.us-east-1.elb.amazonaws.com
+Port:                     <unset>  80/TCP
+TargetPort:               80/TCP
+NodePort:                 <unset>  31768/TCP
+Endpoints:                192.168.31.226:80
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
 ```
 here are some details https://labs.sesummit20.net/030_container/130_exposing-service/connecting/
 

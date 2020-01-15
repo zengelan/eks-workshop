@@ -9,9 +9,9 @@ tags:
 
 ## Explore details of your cluster using kubectl and the AWS Console
 
-You can explore and edit the properties of your EKS cluster using the command line tool `kubectl` 
+You can explore and edit the properties of your EKS cluster using the command line tool `kubectl` and the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-2).
+
 ![ekskubectl](/images/mfe/ekskubectl.jpg?classes=border,shadow)
-and the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-2).
 
 ![eksui1](/images/mfe/Capture_EKSCluster1.JPG?classes=border,shadow)
 
@@ -25,6 +25,11 @@ Execute the following commands to learn more about the architecture and settings
 Information about the cluster
 ```
 kubectl cluster-info
+```
+
+Information about the nodes
+```
+kubectl describe nodes
 ```
 
 All details about the nodes
@@ -50,7 +55,7 @@ kubectl get pods --all-namespaces
 
 To review the POD definition file in YAML for further exploration:
 ```
-kubectl get pods <<name_of_your_pod>> -o yaml > pod-definition.yaml
+kubectl get pods <<name_of_a_pod>> -n <<name_of_a_namespace_that_has_that_pod>> -o yaml > pod-definition.yaml
 ```
 
 
