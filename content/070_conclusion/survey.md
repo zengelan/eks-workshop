@@ -2,8 +2,7 @@
 title: "Let us know what you think!"
 weight: 60
 tags:
-  - todo
-  - boubker
+  - laurent
 ---
 
 ## Give us some feedback
@@ -19,7 +18,7 @@ We continue to appreciate and solicit your input on Cloud solutions enablement a
 
   
 
-Your voice is important to us, so we ask you to complete the following survey on the SKO Cloud Workshop you attended: 
+Your voice is important to us, so we ask you to complete the following survey on the SE Summit 2020 Cloud Workshop you attended: 
 
   
 
