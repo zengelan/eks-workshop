@@ -50,7 +50,7 @@ kubectl get pods --all-namespaces
 
 To review the POD definition file in YAML for further exploration:
 ```
-kubectl get pods <<name_of_your_pod>> -o yaml > pod-definition.yaml
+kubectl get pods <<name_of_a_pod>> -n <<name_of_a_namespace_that_has_that_pod>> -o yaml > pod-definition.yaml
 ```
 
 
