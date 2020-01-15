@@ -48,7 +48,7 @@ spec:
   kubectl get services
 ```
 
-3. The response should be similar to this:
+3. The response should be similar to this: <font color=red>Note: with type: NodePort, there is no external DNS entry created.  We will change this in an upcoming section.</font>
 
 ```
   NAME           TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
