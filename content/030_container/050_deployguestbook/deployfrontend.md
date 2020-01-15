@@ -6,7 +6,7 @@ weight: 29
 
 The guestbook application has a web frontend serving the HTTP requests written in PHP. It is configured to connect to the redis-master Service for write requests and the redis-slave service for Read requests. 
 
-This is web-frontend-deployment.yaml for our Guestbook application. There is no need to copy this content since it is included in the repo clone in your environment. Step 1 will deploy the below configuration using a relative path.
+This is web-frontend-deployment.yaml for our Guestbook application. <font color=red>There is no need to copy this content since it is included in the repo clone in your environment</font>. Step 1 will deploy the below configuration using a relative path.
 
 ```yaml
 apiVersion: apps/v1 #  for k8s versions before 1.9.0 use apps/v1beta2  and before 1.8.0 use extensions/v1beta1
