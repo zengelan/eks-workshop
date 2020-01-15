@@ -8,7 +8,7 @@ Deployments scale based off of the configurations set in the manifest file. In t
 
 If there are not any replicas running, this Deployment would start the two replicas on your container cluster. Conversely, if there are more than two replicas are running, it would scale down until two replicas are running.
 
-This is redis-slave-deployment.yaml for our backend db service. There is no need to copy this content since it is included in the repo clone in your environment. Step 1 will deploy the below configuration using a relative path.
+This is redis-slave-deployment.yaml for our backend db service. <font color=red>There is no need to copy this content since it is included in the repo clone in your environment</font>. Step 1 will deploy the below configuration using a relative path.
 
 ```
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
