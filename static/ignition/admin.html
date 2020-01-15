@@ -72,9 +72,9 @@
             {{cloud9[user.codeword].status}}</td>
           <td ng-style="eks[user.codeword].status == 'ACTIVE' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{eks[user.codeword].region}}/{{eks[user.codeword].name}}:{{eks[user.codeword].status}}</td>
-          <td ng-style="eks[user.codeword].nodegroups != 'n/a' && {'background-color':'green'} || {'background-color':'Firebrick'}">
+          <td ng-style="(eks[user.codeword].nodegroups + '').length > 5 && {'background-color':'green'} || {'background-color':'Firebrick'}">
             {{eks[user.codeword].nodegroups}}</td>
-          <td ng-style="eks[user.codeword].logging != 'n/a' && {'background-color':'green'} || {'background-color':'Firebrick'}" >
+          <td ng-style="eks[user.codeword].logging == 'True' && {'background-color':'green'} || {'background-color':'Firebrick'}" >
             {{eks[user.codeword].logging}}</td>
           <td ng-style="cc[user.codeword].commits.length > 0 && {'background-color':'green'} || {'background-color':'FireBrick'}" >
             {{cc[user.codeword].commits.length}} {{cc[user.codeword].commits[0].author.name}}</td>

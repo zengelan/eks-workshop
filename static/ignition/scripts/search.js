@@ -126,7 +126,7 @@ async function search() {
     } catch (e) {
         console.log("Error from api: " + e.responseText, e);
         loadingdiv.hide();
-        noresults[0].innerText = noresults[0].innerText + " (error: " + e.responseText + ") check with andreas";
+        noresults[0].innerText = noresults[0].innerText + " (error: " + e.responseText + ") try again after 2 minutes, then check with andreas";
         noresults.show();
     }
 }
