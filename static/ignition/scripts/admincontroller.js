@@ -83,6 +83,27 @@ redisApp.controller('AdminCtrl', function ($scope, $http, $location) {
             console.log(resp);
         });
 
+    // get cloud9 data
+    $scope.controller.http_.get(apiUrl + "&admin=get_cloud9")
+        .success(function (data) {
+            $scope.cloud9 = data.cloud9;
+            console.log($scope.cloud9 );
+        })
+        .error(function (resp) {
+            console.log(resp);
+        });
+
+
+    // get eks data
+    $scope.controller.http_.get(apiUrl + "&admin=get_eks")
+        .success(function (data) {
+            $scope.eks = data.eks;
+            console.log($scope.eks );
+        })
+        .error(function (resp) {
+            console.log(resp);
+        });
+
     // get MVC data
     $scope.controller.http_.get(apiUrl + "&admin=get_mvc")
         .success(function (data) {
