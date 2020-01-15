@@ -12,7 +12,7 @@ You'll need to edit the frontend-service.yaml file which was already deployed pr
 vi ~/environment/guestbook-example/frontend-service.yaml
 ```
 
-Using an editor, such as VI, you will need to make the following edits to the frontend-service.yaml file. Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
+Using the Cloud9 console, you can double-click the frontend-service.yaml file located within the guestbook-examples folder (on the left pane of the terminal window). You will need to make the following edits to the frontend-service.yaml file. Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
 
 ```
 apiVersion: v1
