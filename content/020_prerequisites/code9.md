@@ -36,13 +36,19 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 ![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
 
 To ensure temporary credentials aren't already in place we will also remove
-any existing credentials file:
+any existing credentials file by executing the following command in the Terminal:
 ```
 rm -vf ${HOME}/.aws/credentials
 ```
 
-#### Add your student credentials
-Now you configure your own student credentials by executing the following command and providing the information from the user information. Provide the region as `us-east-1` and output format `json`
+#### Enter your student credentials
+Execute the following command and enter the information from the user information email. Enter the following:
+
+AWS Acces Key ID
+AWS Secret Access Key
+Region as `us-east-1`
+Output format `json`
+
 ```
 aws configure
 ```
