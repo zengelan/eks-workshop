@@ -11,7 +11,7 @@ tags:
 
 
 ## Medium difficulty
-Now we are making things a bit more complicated, this time, use the template named `fixme_medium_cloudformation.json`
+Now we are making things a bit more complicated, this time, use the template named `fixme_medium_cloudformation.yaml`
 
 The lab2 steps are similar to Lab1.
 
@@ -19,7 +19,7 @@ The lab2 steps are similar to Lab1.
 
 2. Go to the Jenkins home page. Click on project folder that has your codeword (example: bravado)
 
-3. Find the fixme_medium_cloudformation.json, investigate why the build failed (check the `Console` view)
+3. Find the fixme_medium_cloudformation.yaml, investigate why the build failed (check the `Console` view)
 
 4. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template
 
