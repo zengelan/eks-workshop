@@ -15,9 +15,9 @@ Our Cloud Security Architects will host an SE call Post-SKO. The purpose is to r
 
 This one-hour online meeting will focus on:
 
-#	SKO Cloud summit content review
-#	McAfee solutions alignment to IaaS/PaaS security requirements
-#	Q&A
+..* SKO Cloud summit content review
+..* McAfee solutions alignment to IaaS/PaaS security requirements
+..* Q&A
  
 You will shortly receive a Webex invite including all the details.
 
