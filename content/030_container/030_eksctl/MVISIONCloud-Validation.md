@@ -38,7 +38,7 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 
 Every EKS cluster deployed as part of the class is expected to yield the following 4 security misconfigurations:  
 
-![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations_1.JPG?classes=border,shadow)
+![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
 
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
