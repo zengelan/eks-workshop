@@ -1,7 +1,7 @@
 ---
 title: "Bonus Section"
 chapter: true
-weight: 10
+weight: 80
 tags:
   - beginner
   - CON203
