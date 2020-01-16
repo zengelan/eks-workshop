@@ -28,15 +28,15 @@ tags:
  
         overview:
  
-        lessonsections:
+          lessonsections:
    
-           - intro
+             - intro
      
-           - containerlab
+             - containerlab
      
-           - shiftleftlab
+             - shiftleftlab
      
-           - conclusion
+             - conclusion
      
  
 ## YAML File Syntax
