@@ -18,6 +18,7 @@ We first need to clone the repository to download the deployment files:
 cd ~/environment
 git clone https://github.com/kubernetes-sigs/metrics-server.git
 cd metrics-server
+
 ```
 
 Now can deploy the latest version of the Metric Server with the following command:

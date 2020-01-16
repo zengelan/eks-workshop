@@ -56,15 +56,16 @@ Copy the output of this command and then click the radio button next to
 
 {{<todo>}}finish expand table and add screenshot for alternative token for dashboard {{</todo>}}
 
-{{% expand "Expand here to see another option to get a token" %}}
-Run the command ``kubectl get secrets`` to identify the accounts, then copy the name of the token starting with `dashboard-admin-sa-token-...`
-then run the command
+{{% expand "Expand here to see another option to get a token to authenticate to the dashboard" %}}
+Run the command ``kubectl  get secrets --all-namespaces`` to identify the accounts, then copy the name of the token starting with `kubernetes-dashboard-token-`
+and run  the command ````
 ```bash
-kubectl describe secret dashboard-admin-sa-token-.....
+kubectl  get secrets --all-namespaces
+kubectl --namespace kubernetes-dashboard describe secrets/kubernetes-dashboard-token-...
 ```
-(screenshot of output)
+![alttoken.png](/images/mfe/alttoken.png?classes=border,shadow)
 
-from the output copy the token ....
+from the output copy the token and paste it into the dashboard login page
 
 {{% /expand %}}
 

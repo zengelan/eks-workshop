@@ -4,14 +4,6 @@ date: 2020-01-09
 weight: 5
 ---
 
-<b>Prerequisite</b>
-To begin this section, you'll need to clone the following repository for local access to deployment files:
-
-```
-cd ~/environment
-git clone https://github.com/zengelan/guestbook-example
-ls -lisah
-```
 
 The Guestbook application uses a simple, multi-tier web application using Kubernetes and Docker. There is a Web frontend and a Redis database backend to store data. It writes its data to a Redis master instance and reads data from multiple Redis slave instances.
 
