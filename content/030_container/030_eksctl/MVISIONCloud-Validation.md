@@ -35,10 +35,13 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 
 
 
-## Review Misconfiguration Incidents on your Default EKS Cluster installation
+## Review Misconfigurations with the Default EKS Cluster 
 
 
 Of all the policies enabled for configuration audit, every EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
+
+
+
 
 
 ![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
@@ -53,7 +56,18 @@ Of all the policies enabled for configuration audit, every EKS cluster deployed 
 
 
 
-Review compliance on the two must-have security requirements that your EKS cluster should pass. 
+Review compliance on the **two** critical security requirements that your EKS cluster is expected to pass:
+
+
+1. Admission control plugin PodSecurityPolicy should be set for API Server
+
+
+
+
+
+2. Argument secure-port should not be set to 0 for API Server
+
+
 
 
 
