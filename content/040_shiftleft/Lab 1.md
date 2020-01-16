@@ -22,7 +22,7 @@ Start with the template named `fixme_easy_cloudformation.json`
 
 ![](/images/mfe/3_audit.png?classes=border,shadow)
 
-1. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template
+1. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template. Search for your codeword in the search bar to filter your the incidents associated with your lab account. Investigate the details of the incidents. 
 https://www.myshn.net
 
 ![](/images/mfe/4_login.png?classes=border,shadow)
@@ -54,4 +54,6 @@ https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1
 {{%expand "What else?" %}}
 You can click on the System information links of the web server you deployed to see some details about the system and AWS status and metadata. All machines running in AWS EC2 can retrieve this metadata easily and it can be used to deploy and configure new workloads and elastic scalability pretty easily.
 ![](/images/mfe/workloadaddtlinfo.png?classes=border,shadow)
+
+You can terminate the instance in the EC2 console or in the CloudFormation console. 
 {{%/expand%}}

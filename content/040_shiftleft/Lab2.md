@@ -10,8 +10,8 @@ tags:
 ---
 
 
-## Medium
-Start with the template named `fixme_medium_cloudformation.json`
+## Medium difficulty
+Now we are making things a bit more complicated, this time, use the template named `fixme_medium_cloudformation.json`
 
 The lab2 steps are similar to Lab1.
 
@@ -34,3 +34,9 @@ The lab2 steps are similar to Lab1.
 9. Check the build in jenkins to see if it succeeds, 
 
 10. if not then investigate why it fails, fix the issue and check in the code changes again 
+
+
+{{%expand "Need help?" %}}
+Check out this post for some help and and example
+https://stackoverflow.com/a/48417263
+{{%/expand%}}
