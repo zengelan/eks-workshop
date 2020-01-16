@@ -55,7 +55,7 @@ You can explore many of these commands using the help flag:
 ```
    kubectl describe pods
 ```   
-7. Alternatively, you can be more specific by using your specific pod name (use kubectl get pods to get pod names)
+7. Alternatively, you can be more specific by using your specific pod name <font color=red>(use kubectl get pods to get your unique pod names)</font>
 ```
    kubectl describe pod frontend-59d9d8c865-72tln
 ```   
