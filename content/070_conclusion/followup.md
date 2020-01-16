@@ -9,12 +9,33 @@ tags:
 
 ## Followup Session 
 
-As a follow up to the SESummit cloud training and to make sure that all SEs understand the training content. Boubker and Laurent had an idea to set up a call the week after SKO and (3th of Feb) to review the content and give the opportunity to SE to ask questions that are still not clear. The call agenda will as follow:
+We want to follow up with you to see how things are going on learning 
+containers security and shift-left.   
 
-•	Review the SKO content
-•	Mapped McAfee solution to IaaS/PaaS
-•	Q&A
+ 
 
-please join the team 
+Our Cloud Security Architects will host an SE call Post-SKO. The purpose is to re-emphasize some of the key points from the SE Summit Cloud training session and answer follow up questions.  
 
-{{<todo>}} boubker & laurent fininsh this page {{</todo>}} 
+ 
+
+This one-hour online meeting will focus on: 
+
+ 
+
+SKO Cloud summit content review 
+
+McAfee solutions alignment to IaaS/PaaS security requirements 
+
+Q&A 
+
+  
+
+You will shortly receive a Webex invite including all the details. 
+
+ 
+
+Get prepared with your questions! 
+
+ 
+
+Thanks. 
