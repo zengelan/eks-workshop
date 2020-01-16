@@ -28,11 +28,17 @@ Let’s Review a sample YAML file for a brief overview.
  labcomplete: true
  
  overview:
+ 
    lessonsections:
+   
      - intro
+     
      - containerlab
+     
      - shiftleftlab
+     
      - conclusion
+     
  
 ## YAML File Syntax
 
@@ -55,7 +61,7 @@ You structure a YAML document using indentation. The indentation level can be on
 Comments begin with a pound sign. They can appear after a document value or take up an entire line. They are ignored by the YAML parser
 
 
-#. This is a comment line
+# This is a comment line
 
 foo: bar # this comment comes after a key mapping
 
@@ -82,7 +88,9 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
      ---
     intkey: 12345
+    
     hexkey: 0x12d4
+    
     octkey: 023332
  
     As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
@@ -96,12 +104,14 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
     When evaluated these entries are presented as 
     
     floatkey : 1230.15
+    
     expkey : 1230150.0
 
     Finally, we can represent not-a-number (NAN) or infinity.
 
      ---
      infkey: .inf
+     
     nonum: .NAN
 
 infkey Foo is infinity and nonum is NAN.  (Not a number)
@@ -112,8 +122,11 @@ infkey Foo is infinity and nonum is NAN.  (Not a number)
    
     ---
     teststring: this is a normal string
+    
     specialstring: "This is not a normal string\n"
+    
     specialstring2: this is not a normal string\n
+    
 
     NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid having string contents interpreted as document formatting.
 
@@ -123,21 +136,29 @@ infkey Foo is infinity and nonum is NAN.  (Not a number)
  A string can bedefined in a block using this method
  
 longstring: >
+
   this is not a normal string it
+  
   spans more than
+  
   one line
  
 In this example, it is parsed wihtout the new lines
-Th output in this example would be 
+The output in this example would be 
 
 longstring : this is not a normal string it spans more than one line
+
 
 IF we want to interpret a field exactly as is,  we use the (|) pipe character in place of the > sign as follows:
 
 longstring: |
+
   this is not a normal string it
+  
   spans more than
+  
   one line
+  
 
 And the output is 
 
@@ -152,6 +173,7 @@ You can enter numm values when assigning a key using the tilde or the unquoted w
 
 ---
 nullkey: ~
+
 nullkey2: null
 
 Boolean Values
@@ -161,8 +183,11 @@ YAML allows the assignment of boolean values using the keywords True, On and Yes
 
 ---
 tkey: True
+
 fkey: False
+
 light: On
+
 TV: Off
 
 
@@ -176,23 +201,35 @@ You can specify arrays or lists on a single or multi line.  Both formats are sup
   
    ---
    items: [ 10, 20, 30, 40, 50 ]
+   
    names: [ "ten", "twenty", "thirty", "fourty" ]
+   
 
 Multi Line Example
 
    ---
    items:
+   
      - 1 
+     
      - 2 
+     
      - 3
+     
      - 4 
+     
      - 5 
+     
 
    names:
      - "one"
+     
      - "two"
+     
      - "three"
+     
      - "four"
+     
 
 Multiple documents
 
@@ -208,10 +245,15 @@ Consider this document. The items inside stuff are indented with two spaces.
 
 ---
 main: "SKO2020"
+
      session1: "cyberlab"
+     
      session2: "containerlab"
+     
        lesson1:"containers"
+       
        lesson2: "kubernetes"
+       
        
 For this example, we will saved the above simple code to a file names. sko2020.yml
 
@@ -224,15 +266,21 @@ import yaml
 if __name__ == '__main__':
 
     stream = open("foo.yaml", 'r')
+    
     dictionary = yaml.load(stream)
+    
     for key, value in dictionary.items():
+    
         print (key + " : " + str(value))
 
 The output is:
 
 main : SKO2020
+
 session1 : cyberlab
+
 session2 : containerlab
+
 stuff : {'foo': 'bar', 'bar': 'foo'}
 
 
