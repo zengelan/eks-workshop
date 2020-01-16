@@ -242,49 +242,47 @@ A document starts with three dashes and ends with three periods. Some YAML proce
 # YAML Parse Example using Python
 
 
-Now, let’s process a compound document with it.
+   Consider this document. The items inside stuff are indented with two spaces.
 
-Consider this document. The items inside stuff are indented with two spaces.
+   ---
+   main: "SKO2020"
 
----
-main: "SKO2020"
-
-     session1: "cyberlab"
+        session1: "cyberlab"
      
-     session2: "containerlab"
+        session2: "containerlab"
      
-       lesson1:"containers"
+        lesson1:"containers"
        
-       lesson2: "kubernetes"
+        lesson2: "kubernetes"
        
        
-For this example, we will saved the above simple code to a file names. sko2020.yml
+   For this example, we will saved the above simple code to a file names. sko2020.yml
 
-For our test we will create a somple python program that reads in the YAML file stream, maps it into a python dictionary and allows us to iterate through the ifnormation. TAML processors are available or many languages
+   For our test we will create a somple python program that reads in the YAML file stream, maps it into a python dictionary    and allows us to iterate through the ifnormation. TAML processors are available or many languages
 
-For our python example we will use the PyYAML package
+   For our python example we will use the PyYAML package
 
-import yaml
+   import yaml
 
-if (__name__ == '__main__'):
+   if (__name__ == '__main__'):
 
-    stream = open("foo.yaml", 'r')
+       stream = open("sko2020.yaml", 'r')
     
-    dictionary = yaml.load(stream)
+       dictionary = yaml.load(stream)
     
-    for key, value in dictionary.items():
+       for key, value in dictionary.items():
     
-        print (key + " : " + str(value))
+           print (key + " : " + str(value))
+ 
+   The output is:
 
-The output is:
+   main : SKO2020
 
-main : SKO2020
+   session1 : cyberlab
 
-session1 : cyberlab
+   session2 : containerlab
 
-session2 : containerlab
-
-session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
+   session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
 
 
 
