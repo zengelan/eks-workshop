@@ -11,67 +11,71 @@ tags:
 
 ## YAML Primer
 
-YAML Ain’t Markup Language (YAML) is a serialization language that has become popular due to its ease of readability and it use as an alternative to JSON for object serialization. This short YAML tutorial will demonstrate the basic language syntax and conclude with a short exmaple of parsing a YAML file using Python.
+   YAML Ain’t Markup Language (YAML) is a serialization language that has become popular due to its ease of readability and it use as an alternative to JSON for object serialization. This short YAML tutorial will demonstrate the basic language syntax and conclude with a short exmaple of parsing a YAML file using Python.
 
 
-Let’s Review a sample YAML file for a brief overview.
+   Let’s Review a sample YAML file for a brief overview.
 
-    ---
-    event: "SKO 2020"
+        ---
+    
+        event: "SKO 2020"
  
-    company: "McAfee"
+        company: "McAfee"
  
-    year: 2020
+        year: 2020
  
-    labcomplete: true
+        labcomplete: true
  
-    overview:
+        overview:
  
-      lessonsections:
+        lessonsections:
    
-        - intro
+           - intro
      
-        - containerlab
+           - containerlab
      
-        - shiftleftlab
+           - shiftleftlab
      
-        - conclusion
+           - conclusion
      
  
 ## YAML File Syntax
 
-A YAML file alwsays starts starts with three dashes. These dashes indicate the start of a new YAML document. YAML supports multiple documents, and compliant parsers will recognize each set of dashes as the beginning of a new one
+   A YAML file alwsays starts starts with three dashes. These dashes indicate the start of a new YAML document. YAML supports multiple documents, and compliant parsers will recognize each set of dashes as the beginning of a new one
 
-Next, we see the construct that makes up most of a typical YAML document: a key-value pair. In this example event is a key that points to a string value: SKO 2020.
+   Next, we see the construct that makes up most of a typical YAML document: a key-value pair. In this example event is a key that points to a string value: SKO 2020.
 
-YAML supports more than just string values. The file starts with four  key-value pairs. They have four different data types. evenr and company are strings. year is an integer number. labcomplete is a boolean. You can enclose strings in single or double-quotes or no quotes at all. YAML recognizes unquoted numerals as integers or floating point. The fifth item labsections is an array. It has four elements. intro, containerlab, shiftleftlab and conclusion. 
+   YAML supports more than just string values. The file starts with four  key-value pairs. They have four different data types. evenr and company are strings. year is an integer number. labcomplete is a boolean. You can enclose strings in single or double-quotes or no quotes at all. YAML recognizes unquoted numerals as integers or floating point. The fifth item labsections is an array. It has four elements. intro, containerlab, shiftleftlab and conclusion. 
 
-In the example above lessonsections is indented with two spaces. Indentation is how YAML denotes nesting. The number of spaces can vary from file to file, but tabs are not allowed. We’ll look at how indentation works below.
+   In the example above lessonsections is indented with two spaces. Indentation is how YAML denotes nesting. The number of spaces can vary from file to file, but tabs are not allowed. We’ll look at how indentation works below.
 
 ## OUTLINES AND INDENTATION IN YAML DOCUMENTS
 
-Whitespace is part of YAML’s formatting. Unless otherwise indicated, newlines indicate the end of a field.
+   Whitespace is part of YAML’s formatting. Unless otherwise indicated, newlines indicate the end of a field.
 
-You structure a YAML document using indentation. The indentation level can be one or more spaces. The YAML specification forbids tabs because tools treat them differently.
+   You structure a YAML document using indentation. The indentation level can be one or more spaces. The YAML specification forbids tabs because tools treat them differently.
 
 ## COMMENTS
 
 Comments begin with a pound sign. They can appear after a document value or take up an entire line. They are ignored by the YAML parser
 
-   .# This is a comment line
+      .# This is a comment line
 
-   foo: bar     # this comment comes after a key mapping
+      foo: bar     # this comment comes after a key mapping
 
 
 ## DATA TYPES IN YAML
 
-Values in YAML’s are key-value pairs are they are scalar. They act similar to the scalar types in many programming languages like Javascript or Python. Strings are placed in quotes numbers are non quoted.  The YAML parser will assign a data type based on the scanning proess. 
+   Values in YAML’s are key-value pairs are they are scalar. They act similar to the scalar types in many programming languages like Javascript or Python. Strings are placed in quotes numbers are non quoted.  The YAML parser will assign a data type based on the scanning proess. 
 
 
-  Key-Value Pairs and Dictionaries
+     Key-Value Pairs and Dictionaries
 
-    The key-value is YAML’s basic building block. Every item in a YAML document is a member of at least one dictionary. The  
-    key is always a string. The value is a scalar so that it can be any datatype.
+       The key-value is YAML’s basic building block. 
+       
+       Every item in a YAML document is a member of at least one dictionary. 
+       
+       The key is always a string. The value is a scalar so that it can be any datatype.
 
       A key value in YAML can be a string, a number, or another dictionary.
 
@@ -83,23 +87,23 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
      The following are some examples of numerical types
 
-        ---
+           ---
       
-       intkey: 12345
+          intkey: 12345
     
-       hexkey: 0x12d4
+          hexkey: 0x12d4
     
-       octkey: 023332
+          octkey: 023332
  
        As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
 
        YAML supports both fixed and exponential floating point numbers.
 
-       ---
+          ---
     
-       floatkey: 1230.15
+          floatkey: 1230.15
     
-       expkey:  12.3015e+05
+          expkey:  12.3015e+05
 
        When evaluated these entries are presented as 
     
@@ -121,13 +125,13 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
    YAML strings are Unicode based . In most situations, quotes are optional unless we use escape sequences in our string 
    
-       ---
+          ---
     
-       teststring: this is a normal string
+          teststring: this is a normal string
     
-       specialstring: "This is not a normal string\n"
+          specialstring: "This is not a normal string\n"
     
-       specialstring2: this is not a normal string\n
+          specialstring2: this is not a normal string\n
     
 
     NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid
@@ -138,39 +142,39 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
  String values can span more than one line. With the fold operator (the greater than character)
  A string can bedefined in a block using this method
  
-   longstring: >
+     longstring: >
 
-     this is not a normal string it
+        this is not a normal string it
   
-     spans more than
+        spans more than
   
-     one line
+        one line
  
    In this example, it is parsed wihtout the new lines
 
-The output in this example would be 
+   The output in this example would be 
 
-   longstring : this is not a normal string it spans more than one line
+      longstring : this is not a normal string it spans more than one line
 
 
-IF we want to interpret a field exactly as is,  we use the (|) pipe character in place of the > sign as follows:
+   IF we want to interpret a field exactly as is,  we use the (|) pipe character in place of the > sign as follows:
 
-   longstring: |
+      longstring: |
 
-      this is not a normal string it
+         this is not a normal string it
   
-      spans more than
+         spans more than
   
-      one line
+         one line
   
 
-   And the output is 
+      And the output is 
 
-      longstring : this is not a normal string it
+         longstring : this is not a normal string it
 
-      spans more than
+         spans more than
 
-      one line
+         one line
 
 
 
