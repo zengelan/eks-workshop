@@ -18,11 +18,15 @@ YAML Ain’t Markup Language (YAML) is a serialixation language that has become 
 
 Let’s Review a sample YAML file for a brief overview.
 
- "---\n"
+ ---
  event: "SKO 2020"
+ 
  company: "McAfee"
+ 
  year: 2020
+ 
  labcomplete: true
+ 
  overview:
    lessonsections:
      - intro
@@ -48,14 +52,13 @@ You structure a YAML document using indentation. The indentation level can be on
 
 ## COMMENTS
 
-Comments begin with a pound sign. They can appear after a document value or take up an entire line.
+Comments begin with a pound sign. They can appear after a document value or take up an entire line. They are ignored by the YAML parser
 
 
 #. This is a comment line
 
 foo: bar # this comment comes after a key mapping
 
-Comments are for humans and YAML processors discard them.
 
 ## DATA TYPES IN YAML
 
