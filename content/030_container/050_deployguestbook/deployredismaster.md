@@ -9,7 +9,7 @@ The Guestbook application uses a simple, multi-tier web application using Kubern
 
 This is redis-master-deployment.yaml for our backend db service. <font color=red>There is no need to copy this content since it is included in the repo clone in your environment</font>. Step 1 will deploy the below configuration using a relative path.
 
-```
+{{< output >}}
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
@@ -39,7 +39,7 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 6379
-```
+{{< /output >}}
 
 The Manifest file, included above, specifies a deployment controller that runs a single replica Redis master Pod. We will write this description to the kubernetes api using kubectl, and kubernetes will ensure our preferences are met as the application is deployed.
 
