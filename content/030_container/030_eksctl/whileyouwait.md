@@ -13,21 +13,22 @@ tags:
 
 ## YAML Primer
 
-YAML Ain’t Markup Language (YAML) is a serialization language that has steadily increased in popularity over the last few years. It’s often used as a format for configuration files since it's easy to for humans to read. But its object serialization abilities make it a viable alternative for languages like JSON. This short YAML tutorial will demonstrate the language syntax with a guide. It concludes with a sample Python file showing the ease of parsing from a programming language.
+YAML Ain’t Markup Language (YAML) is a serialixation language that has become popular due to its easy human readability along with its ability for object serialization which makes it a viable alternative for languages like JSON. This short YAML tutorial will demonstrate the language syntax and conclude with a short exmaple of parsing a YAML file using Python.
+
 
 Let’s Review a sample YAML file for a brief overview.
 
 
- event: "SKO 2020"
- company: "McAfee"
- year: 2020
- labcomplete: true
- overview:
-   lessonsections: 
-     - intro
-     - containerlab
-     - shiftleftlab
-     - conclusion
+ event: "SKO 2020"\n
+ company: "McAfee"\n
+ year: 2020\n
+ labcomplete: true\n
+ overview:\n
+   lessonsections:\n 
+     - intro\n
+     - containerlab\n
+     - shiftleftlab\n
+     - conclusion\n
  
 ## YAML File Syntax
 
