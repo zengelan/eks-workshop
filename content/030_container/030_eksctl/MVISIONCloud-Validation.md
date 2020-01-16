@@ -86,18 +86,28 @@ Include Screenshot
 
 
 
-Post remediation, we will trigger a new configuration audit scan to validate that 2 of the 4 misconfigurations show up with their Status updated to "Resolved". 
-
-
-Include MVC image with only 2 remaining misconfigurations
 
 
 
 
 
+After remediation steps, we can trigger a new configuration audit scan to validate that 2 of the 4 misconfigurations show up with their Status updated to "Resolved".
 
 
-Some **important** thoughts to highlight:
+
+
+
+Include MVC screenshot with only 2 remaining misconfigurations
+
+
+
+
+
+
+
+
+
+Some **important** points to highlight:
 
 
 1. The default control-plane components (i.e., Kubernetes cluster comprising of master and worker nodes, etcd, coreDNS and kube-proxy DaemonSets, and a host of other foundational elements) that you installed in this lab section have security misconfigurations that have potentially introduced new attack surface to the cloud-native application architecture.
