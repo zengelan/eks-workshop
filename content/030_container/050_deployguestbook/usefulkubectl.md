@@ -4,8 +4,11 @@ date: 2020-01-08
 weight: 60
 ---
 
-The Kubernetes Controller provides a lot of useful commands. You can bookmark this <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">kubectl Cheat Sheet</a> for common uses of many of the command parameters. 
-
+The Kubernetes Controller provides a lot of useful commands. You can bookmark the following links for common uses kubectl and learn about many of the command parameters. 
+  
+  <a href="https://kubernetes.io/docs/reference/kubectl/overview/">About kubectl</a>
+  <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">kubectl Command Cheat Sheet</a>
+  
 You can explore many of these commands using the help flag:
 ```
   kubectl -h
