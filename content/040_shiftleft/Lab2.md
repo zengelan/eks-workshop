@@ -36,6 +36,10 @@ The lab2 steps are similar to Lab1.
 10. if not then investigate why it fails, fix the issue and check in the code changes again 
 
 
+### When the build succeeded
+1. Investigate the console output from the build and check out which resources were deployed
+1. Look in the Cloudformation console for the relevant region for detail on the deployed assets and stages: https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1
+
 {{%expand "Need help?" %}}
 Check out this post for some help and and example
 https://stackoverflow.com/a/48417263
