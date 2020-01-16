@@ -66,7 +66,7 @@ Comments begin with a pound sign. They can appear after a document value or take
 
 ## DATA TYPES IN YAML
 
-   Values in YAML’s are key-value pairs are they are scalar. They act similar to the scalar types in many programming languages like Javascript or Python. Strings are placed in quotes numbers are non quoted.  The YAML parser will assign a data type based on the scanning proess. 
+   Values in YAML are key-value pairs are they are scalar. They act similar to the scalar types in many programming languages like Javascript or Python. Strings are placed in quotes, numbers are non quoted.  The YAML parser will assign a data type based on the scanning proess. 
 
 
      Key-Value Pairs and Dictionaries
@@ -94,8 +94,10 @@ Comments begin with a pound sign. They can appear after a document value or take
           hexkey: 0x12d4
     
           octkey: 023332
+          
  
        As you expect, Ox indicates a value is in hex, and a leading zero denotes an octal value.
+       
 
        YAML supports both fixed and exponential floating point numbers as well.
 
@@ -179,47 +181,49 @@ Comments begin with a pound sign. They can appear after a document value or take
 
 
 
-# Assigning NULL values to a key 
+ # Assigning NULL values to a key 
 
-You can enter numm values when assigning a key using the tilde or the unquoted word null
+   You can enter numm values when assigning a key using the tilde or the unquoted word null
 
-   ---
+      ---
 
-   nullkey: ~
+      nullkey: ~
 
-   nullkey2: null
+      nullkey2: null
 
-# Boolean Values
+ # Boolean Values
 
-YAML allows the assignment of boolean values using the keywords True, On and Yes for true or False, Off, or No for false values.
+ YAML allows the assignment of boolean values using the keywords True, On and Yes for true or False, Off, or No for false  
+ values.
 
 
-   ---
+      ---
    
-   tkey: True
+     tkey: True
 
-   fkey: False
+     fkey: False
 
-   light: On
+     light: On
 
-   TV: Off
+     TV: Off
 
 
-# Arrays in YAML files
+ # Arrays in YAML files
 
-An array can contain any valid YAML value. The values in a list do not have to be the same type.
+ An array can contain any valid YAML value. The values in a list do not have to be the same type.
 
-You can specify arrays or lists on a single or multi line.  Both formats are supported by YAML.
+ You can specify arrays or lists on a single or multi line.  Both formats are supported by YAML.
 
   Single Line Example
   
       ---
+  
       items: [ 10, 20, 30, 40, 50 ]
    
       names: [ "ten", "twenty", "thirty", "fourty" ]
    
 
-# Multi Line Example
+ # Multi Line Example
 
       ---
       
@@ -247,12 +251,14 @@ You can specify arrays or lists on a single or multi line.  Both formats are sup
         - "four"
      
 
-# Multiple documents
+ # Multiple documents
 
-A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator. The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but Python’s PyYAML will.
+ A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator.  
+ The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but 
+ Python’s PyYAML will.
 
 
-# YAML Parse Example using Python
+ # YAML Parse Example using Python
 
 
    Consider this document. The items inside stuff are indented with two spaces.
