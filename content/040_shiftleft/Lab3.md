@@ -47,5 +47,5 @@ The lab steps are similar to Lab 1 and Lab 2, but there are more difficult error
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 {{%expand "Need help?" (expand to see more) %}}
- [Download solution](/labfiles/fixme_hard_cloudformation_solution.json) 
+ [Download solution](/labfiles/shiftleft-lab/fixme_hard_cloudformation_solution.json) 
 {{%/expand%}}
