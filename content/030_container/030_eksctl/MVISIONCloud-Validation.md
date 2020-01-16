@@ -17,6 +17,9 @@ Login to your MVISION Cloud dashboard. Go to Policy Templates. Select the option
 In today's lab you are not able to make any changes to the MVISION Cloud configuration as you have read-only access. We have already imported several policies that are executed against the EKS Clusters.
 {{% /notice %}}
 
+
+
+
 ## Initiate a new Configuration Audit Scan in AWS
 
 Trigger a new configuration audit scan by going to Policy -> On-Demand Scan -> Security Configuration Audit for AWS.
@@ -30,7 +33,16 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 
 
 
+
 ## Review Misconfiguration Incidents on your Default EKS Cluster installation 
+
+Every EKS cluster deployed as part of the class is expected to yield the following 4 security misconfigurations:  
+
+![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations_1.JPG?classes=border,shadow)
+
+
+
+
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
 
