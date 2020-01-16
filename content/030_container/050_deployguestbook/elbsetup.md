@@ -12,7 +12,7 @@ You'll need to edit the frontend-service.yaml file which was already deployed pr
 vi ~/environment/guestbook-example/frontend-service.yaml
 ```
 
-Using the Cloud9 console, you can double-click the frontend-service.yaml file located within the guestbook-examples folder (on the left pane of the terminal window). You will need to make the following edits to the frontend-service.yaml file. Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
+Using the Cloud9 console, you can also double-click the frontend-service.yaml file located within the guestbook-examples folder (on the left pane of the terminal window). You will need to make the following edits to the frontend-service.yaml file. Follow the instructions found in the comment lines inside the file.  This includes commenting out the line <b>Type: NodePort</b> and uncommenting the line <b>Type: LoadBalancer</b>.  The file should now look like this before saving:
 
 ```
 apiVersion: v1
@@ -81,3 +81,6 @@ It can take several minutes for the ELB to become healthy and start passing traf
 
 You should also be able to copy/paste the loadBalancer hostname into your browser and see the application running.
 Keep this tab open while we scale the services up on the next page.
+
+Check out the display of the POD name and the name of the instance the POD is running on:
+![microservices](/images/mfe/guestbook.png)

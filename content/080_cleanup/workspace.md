@@ -2,6 +2,7 @@
 title: "Cleanup the Workspace"
 chapter: false
 weight: 50
+hidden: true
 ---
 
 Since we no longer need the Cloud9 instance to have Administrator access

@@ -2,6 +2,7 @@
 title: "Assigning Pods to Nodes"
 chapter: true
 weight: 140
+hidden: true
 tags:
   - intermediate
   - CON203

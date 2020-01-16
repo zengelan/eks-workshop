@@ -2,6 +2,7 @@
 title: "Exposing a Service"
 chapter: true
 weight: 130
+hidden: true
 tags:
   - intermediate
   - CON203
