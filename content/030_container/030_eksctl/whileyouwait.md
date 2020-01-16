@@ -11,31 +11,31 @@ tags:
 
 ## YAML Primer
 
-YAML Ain’t Markup Language (YAML) is a serialixation language that has become popular due to its easy human readability along with its ability for object serialization which makes it a viable alternative for languages like JSON. This short YAML tutorial will demonstrate the language syntax and conclude with a short exmaple of parsing a YAML file using Python.
+YAML Ain’t Markup Language (YAML) is a serialization language that has become popular due to its ease of readability and it use as an alternative to JSON for object serialization. This short YAML tutorial will demonstrate the basic language syntax and conclude with a short exmaple of parsing a YAML file using Python.
 
 
 Let’s Review a sample YAML file for a brief overview.
 
- ---
- event: "SKO 2020"
+    ---
+    event: "SKO 2020"
  
- company: "McAfee"
+    company: "McAfee"
  
- year: 2020
+    year: 2020
  
- labcomplete: true
+    labcomplete: true
  
- overview:
+    overview:
  
-   lessonsections:
+      lessonsections:
    
-     - intro
+        - intro
      
-     - containerlab
+        - containerlab
      
-     - shiftleftlab
+        - shiftleftlab
      
-     - conclusion
+        - conclusion
      
  
 ## YAML File Syntax
@@ -58,10 +58,9 @@ You structure a YAML document using indentation. The indentation level can be on
 
 Comments begin with a pound sign. They can appear after a document value or take up an entire line. They are ignored by the YAML parser
 
+   .# This is a comment line
 
-# This is a comment line
-
-foo: bar     # this comment comes after a key mapping
+   foo: bar     # this comment comes after a key mapping
 
 
 ## DATA TYPES IN YAML
@@ -84,47 +83,51 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
      The following are some examples of numerical types
 
-     ---
-    intkey: 12345
+        ---
+      
+       intkey: 12345
     
-    hexkey: 0x12d4
+       hexkey: 0x12d4
     
-    octkey: 023332
+       octkey: 023332
  
-    As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
+       As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
 
-    YAML supports both fixed and exponential floating point numbers.
+       YAML supports both fixed and exponential floating point numbers.
 
-    ---
-    floatkey: 1230.15
+       ---
     
-    expkey:  12.3015e+05
-
-    When evaluated these entries are presented as 
+       floatkey: 1230.15
     
-    floatkey : 1230.15
+       expkey:  12.3015e+05
+
+       When evaluated these entries are presented as 
     
-    expkey : 1230150.0
+          floatkey : 1230.15
+    
+          expkey : 1230150.0
 
-    Finally, we can represent not-a-number (NAN) or infinity.
+       Finally, we can represent not-a-number (NAN) or infinity.
 
-     ---
-    infkey: .inf
+         ---
+    
+         infkey: .inf
      
-    nonum: .NAN
+         nonum: .NAN
 
-infkey is infinity and nonum is NAN.  (Not a number)
+      infkey is infinity and nonum is NAN.  (Not a number)
 
  # String Types
 
    YAML strings are Unicode based . In most situations, quotes are optional unless we use escape sequences in our string 
    
-    ---
-    teststring: this is a normal string
+       ---
     
-    specialstring: "This is not a normal string\n"
+       teststring: this is a normal string
     
-    specialstring2: this is not a normal string\n
+       specialstring: "This is not a normal string\n"
+    
+       specialstring2: this is not a normal string\n
     
 
     NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid
@@ -135,38 +138,39 @@ infkey is infinity and nonum is NAN.  (Not a number)
  String values can span more than one line. With the fold operator (the greater than character)
  A string can bedefined in a block using this method
  
-longstring: >
+   longstring: >
 
-  this is not a normal string it
+     this is not a normal string it
   
-  spans more than
+     spans more than
   
-  one line
+     one line
  
-In this example, it is parsed wihtout the new lines
+   In this example, it is parsed wihtout the new lines
+
 The output in this example would be 
 
-longstring : this is not a normal string it spans more than one line
+   longstring : this is not a normal string it spans more than one line
 
 
 IF we want to interpret a field exactly as is,  we use the (|) pipe character in place of the > sign as follows:
 
-longstring: |
+   longstring: |
 
-  this is not a normal string it
+      this is not a normal string it
   
-  spans more than
+      spans more than
   
-  one line
+      one line
   
 
-And the output is 
+   And the output is 
 
-longstring : this is not a normal string it
+      longstring : this is not a normal string it
 
-spans more than
+      spans more than
 
-one line
+      one line
 
 
 
@@ -174,24 +178,26 @@ one line
 
 You can enter numm values when assigning a key using the tilde or the unquoted word null
 
----
-nullkey: ~
+   ---
 
-nullkey2: null
+   nullkey: ~
 
-Boolean Values
+   nullkey2: null
+
+# Boolean Values
 
 YAML allows the assignment of boolean values using the keywords True, On and Yes for true or False, Off, or No for false values.
 
 
----
-tkey: True
+   ---
+   
+   tkey: True
 
-fkey: False
+   fkey: False
 
-light: On
+   light: On
 
-TV: Off
+   TV: Off
 
 
 # Arrays in YAML files
@@ -202,39 +208,41 @@ You can specify arrays or lists on a single or multi line.  Both formats are sup
 
   Single Line Example
   
-   ---
-   items: [ 10, 20, 30, 40, 50 ]
+      ---
+      items: [ 10, 20, 30, 40, 50 ]
    
-   names: [ "ten", "twenty", "thirty", "fourty" ]
+      names: [ "ten", "twenty", "thirty", "fourty" ]
    
 
 # Multi Line Example
 
-   ---
-   items:
+      ---
+      
+      items:
    
-     - 1 
+        - 1 
      
-     - 2 
+        - 2 
      
-     - 3
+        - 3
      
-     - 4 
+        - 4 
      
-     - 5 
-     
-
-   names:
-     - "one"
-     
-     - "two"
-     
-     - "three"
-     
-     - "four"
+        - 5 
      
 
-Multiple documents
+      names:
+        
+        - "one"
+     
+        - "two"
+     
+        - "three"
+     
+        - "four"
+     
+
+# Multiple documents
 
 A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator. The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but Python’s PyYAML will.
 
@@ -244,8 +252,9 @@ A document starts with three dashes and ends with three periods. Some YAML proce
 
    Consider this document. The items inside stuff are indented with two spaces.
 
-   ---
-   main: "SKO2020"
+         ---
+      
+         main: "SKO2020"
 
         session1: "cyberlab"
      
@@ -262,27 +271,27 @@ A document starts with three dashes and ends with three periods. Some YAML proce
 
    For our python example we will use the PyYAML package
 
-   import yaml
+      import yaml
 
-   if (__name__ == '__main__'):
+      if (__name__ == '__main__'):
 
-       stream = open("sko2020.yaml", 'r')
+          stream = open("sko2020.yaml", 'r')
     
-       dictionary = yaml.load(stream)
+          dictionary = yaml.load(stream)
     
-       for key, value in dictionary.items():
+          for key, value in dictionary.items():
     
-           print (key + " : " + str(value))
+              print (key + " : " + str(value))
  
-   The output is:
+      The output is:
 
-   main : SKO2020
+         main : SKO2020
 
-   session1 : cyberlab
+         session1 : cyberlab
 
-   session2 : containerlab
+         session2 : containerlab
 
-   session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
+         session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
 
 
 
