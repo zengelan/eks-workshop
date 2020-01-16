@@ -13,14 +13,18 @@ Login to your MVISION Cloud dashboard. Go to Policy Templates. Select the option
 
 
 ![NewConfigAudit](/images/mfe/Capture_PolicyTemplates.JPG?classes=border,shadow)
-
+{{% notice info %}}
+In today's lab you are not able to make any changes to the MVISION Cloud configuration as you have read-only access. We have already imported several policies that are executed against the EKS Clusters.
+{{% /notice %}}
 
 ## Initiate a new Configuration Audit Scan in AWS
 
 Trigger a new configuration audit scan by going to Policy -> On-Demand Scan -> Security Configuration Audit for AWS.
 
 Click on "Run Scan Now". 
-
+{{% notice info %}}
+In today's lab you are not able start a scan. A scan will be started by the instructor during the lab session.
+{{% /notice %}}
 
 ![TriggerConfigAuditScan](/images/mfe/Capture_TriggerConfigAuditScan.JPG?classes=border,shadow)
 
