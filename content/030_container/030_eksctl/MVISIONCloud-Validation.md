@@ -33,6 +33,8 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 
 
 
+
+
 ## Review Misconfiguration Incidents on your Default EKS Cluster installation
 
 
@@ -40,8 +42,6 @@ Every EKS cluster deployed as part of the class is expected to yield the followi
 
 
 ![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
-
-
 
 
 
@@ -54,10 +54,12 @@ Here is the default EKS cluster yielding 16 misconfigurations when all configura
 
 
 
+
 ## Remediate & Revalidate Misconfigurations in your EKS cluster 
 
 
 To effect risk mitigation and proper hygiene,  we will prioritize mitigating the following 2 misconfigurations:
+
 
 
 **1. Disable Anonymous Auth to the Kubernetes API server**
@@ -66,7 +68,10 @@ When enabled, requests that are not rejected by other configured authentication 
 
 This can be perfomed by modifing the API Server POD configuration file with **--anonymous-auth=false** parameter setting.
 
-<<Include Screenshot>>
+Include Screenshot
+
+
+
 
 **2. Enable the "AlwaysPullImages" Admission Control Plugin**
 
@@ -74,23 +79,19 @@ This admission controller modifies every new Pod to force the image pull policy 
 
 To enable this plugin, we need to set the **--enable-admission-plugins** parameter in API Server POD configuration file and include AlwaysPullImages to the list of default admission plugins. 
 
-<<Include Screenshot>>
+Include Screenshot
+
+
+Post remediation, we will trigger a new configuration audit scan to validate that 2 of the 4 misconfigurations show up with their Status updated to "Resolved". 
+
+
+Include MVC image with only 2 remaining misconfigurations
 
 
 
 
-Post remediation, trigger a new configuration audit scan to validate that 2 of the 4 misconfigurations show up with their Status updated to "Resolved". 
 
-
-<<Include MVC image with only 2 remaining misconfigurations>>
-
-
-
-
-## 
-
-
-Some **key** thoughts to reflect on based on the security review that we just performed:
+A few **important** thoughts to reflect on based on the security review that was just performed:
 
 1. The default control-plane components (i.e., Kubernetes cluster comprising of master and worker nodes, etcd, coreDNS and kube-proxy DaemonSets, and a host of other foundational elements) that you installed in this lab section have security misconfigurations that have potentially introduced new attack surface to the cloud-native application architecture.
 
