@@ -39,6 +39,8 @@ for command in kubectl jq envsubst
 
 ```
 
+From the above output, you are looking for 3 returns of "x in path".
+
 #### Enable kubectl bash_completion
 ```
 kubectl completion bash >>  ~/.bash_completion
