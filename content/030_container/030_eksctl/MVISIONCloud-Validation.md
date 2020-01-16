@@ -38,14 +38,36 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 ## Review Misconfiguration Incidents on your Default EKS Cluster installation
 
 
-Every EKS cluster deployed as part of the class is expected to yield the following 4 security misconfigurations in terms of how the control-plane components are configured by default. 
+Of all the policies enabled for configuration audit, every EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
 
 
 ![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
 
 
 
-Here is the default EKS cluster yielding 16 misconfigurations when all configuration policy checks are activatated in MVISION Cloud:
+
+
+
+
+
+
+
+
+Review compliance on the two must-have security requirements that your EKS cluster should pass. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Here is the default EKS cluster yielding 16 misconfigurations when all configuration policy checks are activatated in your demo MVISION Cloud instance:
 
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
