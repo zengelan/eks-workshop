@@ -8,6 +8,9 @@ tags:
 ---
 #### While you are waiting for the EKS cluster to be created:
 
+{{<todo>}}Page in progress{{</todo>}}
+
+
 ## YAML Primer
 
 YAML Ain’t Markup Language (YAML) is a serialization language that has steadily increased in popularity over the last few years. It’s often used as a format for configuration files since it's easy to for humans to read. But its object serialization abilities make it a viable alternative for languages like JSON. This short YAML tutorial will demonstrate the language syntax with a guide. It concludes with a sample Python file showing the ease of parsing from a programming language.
@@ -232,5 +235,5 @@ session2 : containerlab
 stuff : {'foo': 'bar', 'bar': 'foo'}
 
 
-{{<todo>}}Page in progress{{</todo>}}
+
 
