@@ -53,6 +53,8 @@ Output format `json`
 aws configure
 ```
 
+PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose us-east-1.
+
 ![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
 Due to a bug in the Code9 IDE we need to remove the line `aws_session_token=` from the AWS credential file. Either edit the file and remove the line starting with `aws_session_token=` or execute the following command:
