@@ -8,7 +8,7 @@ tags:
   - shiftleft
   - boubker
 ---
-## Easy
+## Easy difficulty
 Start with the template named `fixme_easy_cloudformation.json`
 
 1. Log into jenkins: https://jenkins.sesummit20.net/jenkins
