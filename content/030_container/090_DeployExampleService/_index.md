@@ -1,5 +1,5 @@
 ---
-title: "Deploy the Example Microservices"
+title: "Bonus Section"
 chapter: true
 weight: 10
 tags:
@@ -7,7 +7,9 @@ tags:
   - CON203
 ---
 
-# Deploy the Example Microservices
+# Bonus section
+
+## Deploy the Example Microservices for a three-tier application
 
 ![microservices](/images/crystal.svg)
 {{% children showhidden="false" %}}
