@@ -15,11 +15,9 @@ tags:
 
 YAML Ain’t Markup Language (YAML) is a serialization language that has steadily increased in popularity over the last few years. It’s often used as a format for configuration files since it's easy to for humans to read. But its object serialization abilities make it a viable alternative for languages like JSON. This short YAML tutorial will demonstrate the language syntax with a guide. It concludes with a sample Python file showing the ease of parsing from a programming language.
 
-##Tutorial Quick Start:  A Sample File
-
 Let’s Review a sample YAML file for a brief overview.
 
---- 
+
  event: "SKO 2020"
  company: "McAfee"
  year: 2020
@@ -41,7 +39,7 @@ YAML supports more than just string values. The file starts with four  key-value
 
 In the example above lessonsections is indented with two spaces. Indentation is how YAML denotes nesting. The number of spaces can vary from file to file, but tabs are not allowed. We’ll look at how indentation works below.
 
-## OUTLINES AND INDENTATION IN TAML DOCUMENTS
+## OUTLINES AND INDENTATION IN YAML DOCUMENTS
 
 Whitespace is part of YAML’s formatting. Unless otherwise indicated, newlines indicate the end of a field.
 
