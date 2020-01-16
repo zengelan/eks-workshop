@@ -8,7 +8,7 @@ tags:
 ---
 #### Kubenetes attack vectors
 
-## YAML Primer
+## Kubenetes attack vectors
 
-{{<todo>}}Needs content, John S. suggested a YAML primer{{</todo>}}
+{{<todo>}}Update in progress{{</todo>}}
 
