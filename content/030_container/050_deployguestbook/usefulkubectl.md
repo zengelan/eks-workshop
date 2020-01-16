@@ -6,7 +6,7 @@ weight: 60
 
 The Kubernetes Controller provides a lot of useful commands. You can bookmark the following links for common uses kubectl and learn about many of the command parameters. 
   
-  <a href="https://kubernetes.io/docs/reference/kubectl/overview/">About kubectl</a>
+  <a href="https://kubernetes.io/docs/reference/kubectl/overview/">About kubectl</a><br>
   <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">kubectl Command Cheat Sheet</a>
   
 You can explore many of these commands using the help flag:
