@@ -51,15 +51,13 @@ Every EKS cluster deployed as part of the class is expected to yield the followi
 
 1. Disable Anonymous Auth to the Kubernetes API server
 
-<Blurb>>
+When enabled, requests that are not rejected by other configured authentication methods are treated as anonymous requests. These requests are then served by the K8s API server. One should rely on authentication to authorize access and disallow anonymous requests.
 
 
 
 2. Enable the "AlwaysPullImages" Admission Control Plugin:
 
 This admission controller modifies every new Pod to force the image pull policy to Always. This is useful in a multitenant cluster so that users can be assured that their private images can only be used by those who have the credentials to pull them. Without this admission controller, once an image has been pulled to a node, any pod from any user can use it simply by knowing the image’s name (assuming the Pod is scheduled onto the right node), without any authorization check against the image. When this admission controller is enabled, images are always pulled prior to starting containers, which means valid credentials are required.
-
-
 
 
 
