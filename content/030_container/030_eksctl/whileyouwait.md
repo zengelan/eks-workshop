@@ -8,8 +8,6 @@ tags:
 ---
 #### While you are waiting for the EKS cluster to be created:
 
-{{<todo>}}Page in progress{{</todo>}}
-
 
 ## YAML Primer
 
@@ -63,7 +61,7 @@ Comments begin with a pound sign. They can appear after a document value or take
 
 # This is a comment line
 
-foo: bar # this comment comes after a key mapping
+foo: bar     # this comment comes after a key mapping
 
 
 ## DATA TYPES IN YAML
@@ -78,7 +76,7 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
       A key value in YAML can be a string, a number, or another dictionary.
 
-  Numeric types
+  # Numeric types
 
      YAML recognizes numeric types. We saw floating point and integers above. YAML supports several other numeric types.
 
@@ -99,6 +97,7 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
 
     ---
     floatkey: 1230.15
+    
     expkey:  12.3015e+05
 
     When evaluated these entries are presented as 
@@ -110,13 +109,13 @@ Values in YAML’s are key-value pairs are they are scalar. They act similar to 
     Finally, we can represent not-a-number (NAN) or infinity.
 
      ---
-     infkey: .inf
+    infkey: .inf
      
     nonum: .NAN
 
-infkey Foo is infinity and nonum is NAN.  (Not a number)
+infkey is infinity and nonum is NAN.  (Not a number)
 
- String Types
+ # String Types
 
    YAML strings are Unicode based . In most situations, quotes are optional unless we use escape sequences in our string 
    
@@ -128,9 +127,10 @@ infkey Foo is infinity and nonum is NAN.  (Not a number)
     specialstring2: this is not a normal string\n
     
 
-    NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid having string contents interpreted as document formatting.
+    NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid
+    having string contents interpreted as document formatting.
 
- Multi-line String values
+ # Multi-line String values
  
  String values can span more than one line. With the fold operator (the greater than character)
  A string can bedefined in a block using this method
@@ -163,11 +163,14 @@ longstring: |
 And the output is 
 
 longstring : this is not a normal string it
+
 spans more than
+
 one line
 
 
-Assigning NULL values to a key 
+
+# Assigning NULL values to a key 
 
 You can enter numm values when assigning a key using the tilde or the unquoted word null
 
@@ -191,7 +194,7 @@ light: On
 TV: Off
 
 
-Arrays in YAML files
+# Arrays in YAML files
 
 An array can contain any valid YAML value. The values in a list do not have to be the same type.
 
@@ -205,7 +208,7 @@ You can specify arrays or lists on a single or multi line.  Both formats are sup
    names: [ "ten", "twenty", "thirty", "fourty" ]
    
 
-Multi Line Example
+# Multi Line Example
 
    ---
    items:
@@ -236,7 +239,7 @@ Multiple documents
 A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator. The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but Python’s PyYAML will.
 
 
-YAML Parse Example using Python
+# YAML Parse Example using Python
 
 
 Now, let’s process a compound document with it.
@@ -263,7 +266,7 @@ For our python example we will use the PyYAML package
 
 import yaml
 
-if __name__ == '__main__':
+if (__name__ == '__main__'):
 
     stream = open("foo.yaml", 'r')
     
@@ -281,7 +284,7 @@ session1 : cyberlab
 
 session2 : containerlab
 
-stuff : {'foo': 'bar', 'bar': 'foo'}
+session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
 
 
 
