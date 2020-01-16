@@ -1,5 +1,5 @@
 ---
-title: "Lab 1"
+title: "Lab 1 - Easy"
 chapter: false
 weight: 20
 tags:
@@ -54,7 +54,7 @@ https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1
 ![](/images/mfe/gethostname.png?classes=border,shadow)
 1. Using your local browser, navigate to the URL/IP of this server using http (port 80) to see what your new server is now sharing with the world. E.g. http://ec2-18-144-85-51.us-west-1.compute.amazonaws.com
 
-{{%expand "What else?" %}}
+{{%expand "What else?" (expand to see more) %}}
 You can click on the System information links of the web server you deployed to see some details about the system and AWS status and metadata. All machines running in AWS EC2 can retrieve this metadata easily and it can be used to deploy and configure new workloads and elastic scalability pretty easily.
 ![](/images/mfe/workloadaddtlinfo.png?classes=border,shadow)
 

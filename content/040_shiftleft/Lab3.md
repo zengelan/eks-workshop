@@ -1,5 +1,5 @@
 ---
-title: "Lab2"
+title: "Lab 3 - Hard"
 chapter: false
 weight: 60
 tags:
@@ -36,10 +36,6 @@ The lab steps are similar to Lab 1 and Lab 2, but there are more difficult error
 10. if not then investigate why it fails, fix the issue and check in the code changes again 
 
 
-{{%expand "Need help?" %}}
-Check out this post for some help and and example
-https://stackoverflow.com/a/48417263
-{{%/expand%}}
 
 
 
@@ -48,11 +44,8 @@ https://stackoverflow.com/a/48417263
 
 
 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-
-
-
-
-{{%expand "Need help?" %}}
- [Download solution](/static/fixme_hard_cloudformation_solution.json) 
+{{%expand "Need help?" (expand to see more) %}}
+ [Download solution](/labfiles/fixme_hard_cloudformation_solution.json) 
 {{%/expand%}}

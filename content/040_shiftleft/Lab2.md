@@ -1,5 +1,5 @@
 ---
-title: "Lab2"
+title: "Lab 2 - Medium"
 chapter: false
 weight: 50
 tags:
