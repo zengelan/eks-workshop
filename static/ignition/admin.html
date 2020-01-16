@@ -69,7 +69,7 @@
           <td ng-style="user.llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
             {{user.llminutesago}} min</td>
           <td ng-style="cloud9[user.codeword].status == 'ready' && {'background-color':'green'} || {'background-color':'FireBrick'}">
-            {{cloud9[user.codeword].status}} {{cloud9[user.codeword].llago}} ago</td>
+            {{cloud9[user.codeword].status}} {{cloud9[user.codeword].lastcachedago}} ago</td>
           <td ng-style="eks[user.codeword].status == 'ACTIVE' && {'background-color':'green'} || {'background-color':'FireBrick'}">
             {{eks[user.codeword].region}}/{{eks[user.codeword].name}}:{{eks[user.codeword].status}}</td>
           <td ng-style="(eks[user.codeword].nodegroups + '').length > 5 && {'background-color':'green'} || {'background-color':'Firebrick'}">
