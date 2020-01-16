@@ -22,9 +22,9 @@ This one-hour online meeting will focus on:
 
  
 
-SKO Cloud summit content review 
+- SKO Cloud summit content review 
 
-McAfee solutions alignment to IaaS/PaaS security requirements 
+- McAfee solutions alignment to IaaS/PaaS security requirements 
 
 Q&A 
 
