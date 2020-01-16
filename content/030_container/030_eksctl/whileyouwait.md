@@ -41,11 +41,11 @@ tags:
  
 ## YAML File Syntax
 
-   A YAML file alwsays starts starts with three dashes. These dashes indicate the start of a new YAML document. YAML supports multiple documents, and compliant parsers will recognize each set of dashes as the beginning of a new one
+   A YAML file always starts with three dashes. These dashes indicate the start of a new YAML document. YAML supports multiple documents, and compliant parsers will recognize each set of dashes as the beginning of a new one
 
-   Next, we see the construct that makes up most of a typical YAML document: a key-value pair. In this example event is a key that points to a string value: SKO 2020.
+   Next, we see the construct that makes up most of a typical YAML document: a key-value pair. In this example, event is a key that points to a string value: SKO 2020.
 
-   YAML supports more than just string values. The file starts with four  key-value pairs. They have four different data types. evenr and company are strings. year is an integer number. labcomplete is a boolean. You can enclose strings in single or double-quotes or no quotes at all. YAML recognizes unquoted numerals as integers or floating point. The fifth item labsections is an array. It has four elements. intro, containerlab, shiftleftlab and conclusion. 
+   YAML supports more than just string values. The file starts with four key-value pairs. They have four different data types. event and company are strings. year is an integer number. labcomplete is a boolean. You can enclose strings in single or double-quotes or no quotes at all. YAML recognizes unquoted numerals as integers or floating point. The fifth item labsections is an array. It has four elements. intro, containerlab, shiftleftlab and conclusion. 
 
    In the example above lessonsections is indented with two spaces. Indentation is how YAML denotes nesting. The number of spaces can vary from file to file, but tabs are not allowed. We’ll look at how indentation works below.
 
@@ -53,7 +53,7 @@ tags:
 
    Whitespace is part of YAML’s formatting. Unless otherwise indicated, newlines indicate the end of a field.
 
-   You structure a YAML document using indentation. The indentation level can be one or more spaces. The YAML specification forbids tabs because tools treat them differently.
+   You structure a YAML document using indentation. The indentation level can be one or more spaces. The YAML specification forbids tabs since many tools treat them differently.
 
 ## COMMENTS
 
@@ -95,9 +95,9 @@ Comments begin with a pound sign. They can appear after a document value or take
     
           octkey: 023332
  
-       As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
+       As you expect, Ox indicates a value is in hex, and a leading zero denotes an octal value.
 
-       YAML supports both fixed and exponential floating point numbers.
+       YAML supports both fixed and exponential floating point numbers as well.
 
           ---
     
@@ -105,13 +105,13 @@ Comments begin with a pound sign. They can appear after a document value or take
     
           expkey:  12.3015e+05
 
-       When evaluated these entries are presented as 
+       When evaluated these entries are interpreted as 
     
           floatkey : 1230.15
     
           expkey : 1230150.0
 
-       Finally, we can represent not-a-number (NAN) or infinity.
+       Finally, we can represent a key as  not-a-number (NAN) or infinity.
 
          ---
     
@@ -119,7 +119,7 @@ Comments begin with a pound sign. They can appear after a document value or take
      
          nonum: .NAN
 
-      infkey is infinity and nonum is NAN.  (Not a number)
+      In this example infkey has a value of infinity and nonum has. value of NAN.  (Not a number)
 
  # String Types
 
@@ -134,8 +134,9 @@ Comments begin with a pound sign. They can appear after a document value or take
           specialstring2: this is not a normal string\n
     
 
-    NOTE** YAML will not escape strings with single quotes, but the single quotes do avoid
+    NOTE** YAML will not escape strings with single quotes, but the single quotes help to avoid
     having string contents interpreted as document formatting.
+
 
  # Multi-line String values
  
@@ -291,9 +292,9 @@ A document starts with three dashes and ends with three periods. Some YAML proce
 
          main : SKO2020
 
-         session1 : cyberlab
+         session1 : 'cyberlab'
 
-         session2 : containerlab
+         session2 : 'containerlab'
 
          session2 : {'lesson1': 'containers', 'lessons2': 'kubernetes'}
 
