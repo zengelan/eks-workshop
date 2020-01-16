@@ -160,7 +160,7 @@ Comments begin with a pound sign. They can appear after a document value or take
       longstring : this is not a normal string it spans more than one line
 
 
-   IF we want to interpret a field exactly as is,  we use the (|) pipe character in place of the > sign as follows:
+   IF we want to interpret a field exactly as is,  we use the | pipe character in place of the > sign as follows:
 
       longstring: |
 
@@ -183,7 +183,7 @@ Comments begin with a pound sign. They can appear after a document value or take
 
  # Assigning NULL values to a key 
 
-   You can enter numm values when assigning a key using the tilde or the unquoted word null
+   You can enter null values when assigning a key using the tilde or the unquoted word null
 
       ---
 
@@ -254,8 +254,7 @@ Comments begin with a pound sign. They can appear after a document value or take
  # Multiple documents
 
  A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator.  
- The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but 
- Python’s PyYAML will.
+ The end operator is usually optional.
 
 
  # YAML Parse Example using Python
