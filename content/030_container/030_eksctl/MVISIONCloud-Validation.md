@@ -42,8 +42,6 @@ Of all the policies enabled for configuration audit, every EKS cluster deployed 
 
 
 
-
-
 ![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
 
 
@@ -59,22 +57,31 @@ Of all the policies enabled for configuration audit, every EKS cluster deployed 
 Review compliance on the **two** critical security requirements that your EKS cluster is expected to pass:
 
 
-1. Admission control plugin PodSecurityPolicy should be set for API Server
+
+
+**1. Argument secure-port should not be set to 0 for API Server** 
+
+
+![MVCValidationEKSCompliant1](/images/mfe/Capture_SuccessfulCheck_EKSCluster1.JPG?classes=border,shadow)
 
 
 
 
-
-2. Argument secure-port should not be set to 0 for API Server
-
+**2. Admission control plugin PodSecurityPolicy should be set for API Server**
 
 
+A **Pod Security Policy** is a cluster-level resource that controls the actions that a pod can perform and what it has the ability to access. The PodSecurityPolicy objects define a set of conditions that a pod must run with in order to be accepted into the system. Pod Security Policies are comprised of settings and strategies that control the security features a pod has access to and hence this must be used to control pod access permissions.
 
-
-
+![MVCValidationEKSCompliant2](/images/mfe/Capture_SuccessfulCheck_EKSCluster2.JPG?classes=border,shadow)
 
 
 
+Here's how you can manually validate this in your EKS cluster configuration to learn further: 
+
+![MVCValidationEKSCompliant2.1](/images/mfe/Capture_Validation2.JPG?classes=border,shadow)
+
+
+![MVCValidationEKSCompliant2.2](/images/mfe/Capture_Validation3.JPG?classes=border,shadow)
 
 
 
@@ -90,53 +97,10 @@ Here is the default EKS cluster yielding 16 misconfigurations when all configura
 
 
 
-
 ## Remediate & Revalidate Misconfigurations in your EKS cluster 
 
 
 To effect risk mitigation and proper hygiene,  we will prioritize mitigating the following 2 misconfigurations:
-
-
-
-**1. Disable Anonymous Auth to the Kubernetes API server**
-
-When enabled, requests that are not rejected by other configured authentication methods are treated as anonymous requests. These requests are then served by the secure port of the K8s API server. One should rely on authentication to authorize access and disallow anonymous requests. Anonymous requests have a username of system:anonymous, and a group name of system:unauthenticated
-
-This can be perfomed by modifing the API Server POD configuration file with **--anonymous-auth=false** parameter setting.
-
-Include Screenshot
-
-
-
-
-**2. Enable the "AlwaysPullImages" Admission Control Plugin**
-
-This admission controller modifies every new Pod to force the image pull policy to Always. This is useful in a multitenant cluster so that users can be assured that their private images can only be used by those who have the credentials to pull them. Without this admission controller, once an image has been pulled to a node, any pod from any user can use it simply by knowing the image’s name (assuming the Pod is scheduled onto the right node), without any authorization check against the image. When this admission controller is enabled, images are always pulled prior to starting containers, which means valid credentials are required.
-
-To enable this plugin, we need to set the **--enable-admission-plugins** parameter in API Server POD configuration file and include AlwaysPullImages to the list of default admission plugins. 
-
-Include Screenshot
-
-
-
-
-
-
-
-
-
-
-
-After remediation steps, we can trigger a new configuration audit scan to validate that 2 of the 4 misconfigurations show up with their Status updated to "Resolved".
-
-
-
-
-
-Include MVC screenshot with only 2 remaining misconfigurations
-
-
-
 
 
 
