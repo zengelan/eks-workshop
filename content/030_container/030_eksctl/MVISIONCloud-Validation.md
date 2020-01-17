@@ -38,31 +38,35 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 ## Review Misconfigurations with the Default EKS Cluster 
 
 
-Of all the policies enabled for configuration audit, every EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
+Out of all the 78 policies imported for configuration audit, every EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
+
+
+![MVCValidationEKS](/images/mfe/Capture_Misconfigurations_EKSCluster_Final.JPG?classes=border,shadow)
 
 
 
-![MVCValidationEKS](/images/mfe/Capture_EKSMaster_Violations1.JPG?classes=border,shadow)
-
-
-
-
-
-
-
-
-
-
-
-Review compliance on the **two** critical security requirements that your EKS cluster is expected to pass:
-
+Confirm that your cluster was compliant on the following **two** critical security requirements:
 
 
 
 **1. Argument secure-port should not be set to 0 for API Server** 
 
+API servers can arguably be perceived as the frontend of a Kubernetes cluster. As a good security rule of thumb, administrative access to the Kube-API master should be highly controlled and audited. 
+
+That includes disabling any anonymous authentication requests, ensuring HTTPS with client authentication is used in conjunction with authentication adn authorization plugins, and limiting network based access to the API-server only to dashboards and monitoring apps.
+
 
 ![MVCValidationEKSCompliant1](/images/mfe/Capture_SuccessfulCheck_EKSCluster1.JPG?classes=border,shadow)
+
+
+Here's how you can manually validate this for your specific EKS cluster instance:
+
+
+Review and select any one of the Security Misconfiguration Incidents and Review Content from the Incident Pane. Look for **apiServerInsecurePort** parameter value to confirm a non-zero value. 
+
+
+![MVCValidationEKSCompliant1.1](/images/mfe/Capture_Validation1.JPG?classes=border,shadow)
+
 
 
 
