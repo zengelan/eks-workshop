@@ -26,12 +26,14 @@ ll
 ```
 
 {{% notice warning %}}
-If you receive an error like "fatal: unable to access 'https://.....': The requested URL returned error: 403" then you need to remove the line starting with `aws_session_token` from the aws credential file at `${HOME}/.aws/credentials`
+If you receive an error like `fatal: unable to access 'https://.....': The requested URL returned error: 403` then you need to remove the line starting with `aws_session_token` from the aws credential file at `${HOME}/.aws/credentials`
 Otherwise you will not be able to authenticate correctly when using the `git`command.   
-You can use the following command to easily remove the line, then try again
-```bash
-sed -i '/aws_session_token/d' ${HOME}/.aws/credentials
-
-```
+Execute the command `sed -i '/aws_session_token/d' ${HOME}/.aws/credentials` to easily remove the line, then try again
 this is due to a current bug/issue in the Code9 IDE
+{{% /notice %}}
+
+Another note
+
+{{% notice warning %}}
+If you receive an error like `fatal: repository '/home/ec2-user/environment/SESummit2020' does not exist` then you hve not set the environment varibale with your codeword and the variable cannot be expanded. You can either set the variable manually with `export CODEWORD=<CODEWORD>` (and replacing <CODEWORD> with your actual codeword) or you check the section [PREPARE THE ENVIRONMENT](/020_prerequisites/environment) in the section "Start the workshop" for details
 {{% /notice %}}
