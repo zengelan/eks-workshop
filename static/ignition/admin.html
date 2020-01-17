@@ -57,7 +57,7 @@
       <th scope="col">Jenkins Easy</th>
       <th scope="col">Jenkins Medium</th>
       <th scope="col">Jenkins Hard</th>
-      <th scope="col">Stacks Depl</th>
+      <th scope="col">Stacks</th>
       <th scope="col">MVC lastlogin</th>
       <th scope="col">MVC Inc EKS</th>
       <th scope="col">MVC Inc ShiftLeft</th>
@@ -86,8 +86,8 @@
           <td ng-style="jenkins[user.codeword].jobs['hard'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs["hard"].color}}:{{jenkins[user.codeword].jobs["hard"].builds}}</td>
 
-          <td ng-style="cf[user.codeword].stacks.length > 0 && {'background-color':'Green'} || {'background-color':'Firebrick'}">
-            {{cf[user.codeword].stacks.length}}</td>
+          <td ng-style="cf[user.codeword].length > 0 && {'background-color':'Green'} || {'background-color':'Firebrick'}">
+            {{cf[user.codeword].length}}</td>
 
           <td ng-style="mvc[user.codeword].llminutesago < '120'  && {'background-color':'green'} || {'background-color':'FireBrick'}" >
             {{mvc[user.codeword].llminutesago}} min</td>
