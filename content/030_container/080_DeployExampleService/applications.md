@@ -4,6 +4,22 @@ date: 2018-09-18T16:01:14-05:00
 weight: 5
 ---
 
+# Bonus Section - Only when you still have time left
+
+### Get the files
+
+Execute the following to get the file for this Bonus lab
+```
+cd ~/environment
+git clone https://github.com/brentley/ecsdemo-frontend.git
+git clone https://github.com/brentley/ecsdemo-nodejs.git
+git clone https://github.com/brentley/ecsdemo-crystal.git
+
+```
+
+
+### Here is another example of an application:
+
 {{< output "linenos=true" >}}
 apiVersion: apps/v1
 kind: Deployment

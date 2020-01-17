@@ -10,7 +10,6 @@ tags:
 
 ## Kubenetes attack vectors
 
-{{<todo>}}Update in progress{{</todo>}}
 
 ![KSEC_Diagram](/images/mfe/KubArchS2.png?classes=border,shadow)
 

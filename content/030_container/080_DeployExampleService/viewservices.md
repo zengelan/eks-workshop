@@ -17,8 +17,12 @@ output format with this command:
 kubectl get service ecsdemo-frontend -o wide
 ```
 
-If we wanted to use the data programatically, we can also output via json. This is
-an example of how we might be able to make use of json output:
+If we wanted to use the data programatically, we can also output via json. 
+```
+kubectl get service ecsdemo-frontend -o json
+```
+
+This is an example of how we might be able to make use of json output:
 ```
 ELB=$(kubectl get service ecsdemo-frontend -o json | jq -r '.status.loadBalancer.ingress[].hostname')
 
@@ -30,3 +34,5 @@ It will take several minutes for the ELB to become healthy and start passing tra
 
 You should also be able to copy/paste the loadBalancer hostname into your browser and see the application running.
 Keep this tab open while we scale the services up on the next page.
+
+Now copy & paste the address of the load balancer hostname into your local browser and access your application. The application is set to re-load every second and everytime it loads it shows you to which availability zone and backend it is connecting.

@@ -2,6 +2,7 @@
 title: "Ensure the ELB Service Role exists"
 date: 2018-09-18T17:40:09-05:00
 weight: 29
+hidden: true
 ---
 
 In AWS accounts that have never created a load balancer before, it's possible
