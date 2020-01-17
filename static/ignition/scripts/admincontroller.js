@@ -124,6 +124,16 @@ redisApp.controller('AdminCtrl', function ($scope, $http, $location) {
             console.log(resp);
         });
 
+    // get CloudFormation data
+    $scope.controller.http_.get(apiUrl + "&admin=get_cf")
+        .success(function (data) {
+            $scope.cf = data.cf;
+            console.log($scope.cf);
+        })
+        .error(function (resp) {
+            console.log(resp);
+        });
+
     // get user table
     $scope.controller.http_.get(apiUrl + "&admin=get_user_table")
         .success(function (data) {
