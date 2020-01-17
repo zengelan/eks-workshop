@@ -67,17 +67,20 @@ eksctl create cluster --name=<CODEWORD>-eksctl --tags codeword=<CODEWORD> --node
 Launching EKS and all the dependencies will take approximately 15 minutes
 {{% /notice %}}
 
-{{<todo>}}what should we do with these 15 to 20 minutes{{</todo>}}
-
 While the task is running you can see the progress in the CloudFormation Console at https://console.aws.amazon.com/cloudformation/home?region=us-east-1
 You can also go to the other relevant services in the console to see how e.g. the EC2 machines are created, the VPC settings and security groups are configured automatically.
+
+{{% notice info %}}
+While this process is running, use the time to learn a bit about one of the hippest file formats in the DevOps world and work through the "YAML Primer Section"  ["YAML Primer Section"](/030_eksctl/whileyouwait) of this lab. The come back here, once cluster creation is done. Did you know that `YAML Ain't Markup Language` ?
+{{% /notice %}}
+
+
 
 After the command is done, execute the following command to view the cluster information:
 ```
  eksctl get cluster
 ```
 
-{{<todo>}}what to do when this fails? re-create with different name? reset account?{{</todo>}}
 
 {{%expand "If you have not used the specific eksctl version for this lab, expand this section to learn how to enable logging manually" %}}
 
