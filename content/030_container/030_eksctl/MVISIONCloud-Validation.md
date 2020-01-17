@@ -63,10 +63,10 @@ That includes disabling any anonymous authentication requests, ensuring HTTPS wi
 Here's how you can manually check this setting for your specific EKS cluster instance:
 
 
-Select any one of the security misconfiguration under the Incidents tab and review Content section from the Incident Details pane. Look for **apiServerInsecurePort** parameter value to confirm a non-zero value. 
+Select the EKS Cluster under the Analytics/Resources section and review Additional Details for the information provided via AWS APIs. Look for **apiServerSecurePort** parameter value to confirm a non-zero value. 
 
 
-![MVCValidationEKSCompliant1.1](/images/mfe/Capture_Validation1.JPG?classes=border,shadow)
+![MVCValidationEKSCompliant1.1](/images/mfe/Capture_Validation1Final.JPG?classes=border,shadow)
 
 
 
