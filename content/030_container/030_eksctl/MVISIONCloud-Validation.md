@@ -96,18 +96,7 @@ Here is the default EKS cluster yielding 16 misconfigurations when all configura
 
 
 
-
-## Remediate & Revalidate Misconfigurations in your EKS cluster 
-
-
-To effect risk mitigation and proper hygiene,  we will prioritize mitigating the following 2 misconfigurations:
-
-
-
-
-
-
-Some **important** points to highlight:
+## Important Considerations
 
 
 1. The default control-plane components (i.e., Kubernetes cluster comprising of master and worker nodes, etcd, coreDNS and kube-proxy DaemonSets, and a host of other foundational elements) that you installed in this lab section have security misconfigurations that have potentially introduced new attack surface to the cloud-native application architecture.
@@ -115,5 +104,8 @@ Some **important** points to highlight:
 2. The components in this section of the lab can now be thought of as "new abstract infrastructure", which will be utilized to install and manage lifecycle of several application pods on the respective nodes. More on that in the next section, but do we know enough about our EKS cluster misconfigurations until this point to make a decision whether to let the build activities continue or not?
 
 3. This is also where it's important to highlight MVISION Cloud's ability to perform security configuration audit scans in a CloudFormation/Terraform template **before** the underlying infrastructure gets instantiated by the development teams. Wouldn't it be effective to add these checks related to "container/cluster security" to other traditional security misconfiguration checks that are performed on other cloud-native resources like EC2 VMs, S3 buckets, etc.? Do you see where the two strategies intersect?
+
+4. It's worth noting that because the control plane components of an EKS cluster are implemented and managed by Amazon Web Services, the options to effect remediatiation on Kube-APIMaster or ETCD components are either not present or require an AWS support ticket. This in effect is the **Shared Responsibility Model**, just applied to the world of container orchestration platform. This has its advantages and disadvantages. 
+
 
 In short, the ability to scan misconfigurations on AWS managed Kubernetes environment helps enable good **guardrails** with respect to this new cloud-native application that we will shortly be deploying in the next section. 
