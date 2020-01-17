@@ -295,7 +295,7 @@ Comments begin with a pound sign. They can appear after a document value or take
  
       The output is:
 
-         main : SKO2020
+         main : 'SKO2020'
 
          session1 : 'cyberlab'
 
