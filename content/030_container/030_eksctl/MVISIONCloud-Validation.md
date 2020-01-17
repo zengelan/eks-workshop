@@ -35,34 +35,35 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 
 
 
-## Review Misconfigurations with the Default EKS Cluster 
+## Review Compliance with Default EKS Cluster Configurations 
 
 
-Out of all the 78 policies imported for configuration audit, every EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
+Out of the 78 policies imported for configuration audit, each EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
 
 
 ![MVCValidationEKS](/images/mfe/Capture_Misconfigurations_EKSCluster_Final.JPG?classes=border,shadow)
 
 
 
-Confirm that your cluster was compliant on the following **two** critical security requirements:
+Confirm that your cluster was compliant with the following **two** security checks:
+
 
 
 
 **1. Argument secure-port should not be set to 0 for API Server** 
 
-API servers can arguably be perceived as the frontend of a Kubernetes cluster. As a good security rule of thumb, administrative access to the Kube-API master should be highly controlled and audited. 
+API servers can arguably be perceived as the frontend of a Kubernetes cluster. As a good  rule of thumb, administrative access to the Kube-API master should be highly controlled and audited. 
 
-That includes disabling any anonymous authentication requests, ensuring HTTPS with client authentication is used in conjunction with authentication adn authorization plugins, and limiting network based access to the API-server only to dashboards and monitoring apps.
+That includes disabling any anonymous authentication requests, ensuring HTTPS with client authentication is used in conjunction with authentication and authorization plugins, and limiting network access to the API-server only to dashboards and health monitoring systems.
 
 
 ![MVCValidationEKSCompliant1](/images/mfe/Capture_SuccessfulCheck_EKSCluster1.JPG?classes=border,shadow)
 
 
-Here's how you can manually validate this for your specific EKS cluster instance:
+Here's how you can manually check this setting for your specific EKS cluster instance:
 
 
-Review and select any one of the Security Misconfiguration Incidents and Review Content from the Incident Pane. Look for **apiServerInsecurePort** parameter value to confirm a non-zero value. 
+Select any one of the security misconfiguration under the Incidents tab and review Content section from the Incident Details pane. Look for **apiServerInsecurePort** parameter value to confirm a non-zero value. 
 
 
 ![MVCValidationEKSCompliant1.1](/images/mfe/Capture_Validation1.JPG?classes=border,shadow)
@@ -92,7 +93,10 @@ Here's how you can manually validate this in your EKS cluster configuration to l
 
 
 
-Here is the default EKS cluster yielding 16 misconfigurations when all configuration policy checks are activatated in your demo MVISION Cloud instance:
+Finally, here is the default EKS cluster yielding 16 misconfigurations when all configuration policy checks are activatated in your demo MVISION Cloud instance. 
+
+
+This is based on the policy content update from the 4.4 release in December, when we had announced support for EKS/ECS Configuration Audit within MVISION Cloud.
 
 
 ![MVCValidation](/images/mfe/Capture_Violations.JPG?classes=border,shadow)
