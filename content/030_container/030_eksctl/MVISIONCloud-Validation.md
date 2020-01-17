@@ -113,7 +113,7 @@ This is based on the policy content update from the 4.4 release in December, whe
 
 3. This is also where it's important to highlight MVISION Cloud's ability to perform security configuration audit scans in a CloudFormation/Terraform template **before** the underlying infrastructure gets instantiated by the development teams. Wouldn't it be effective to add these checks related to "container/cluster security" to other traditional security misconfiguration checks that are performed on other cloud-native resources like EC2 VMs, S3 buckets, etc.? Do you see where the two strategies intersect?
 
-4. It's worth noting that because the control plane components of an EKS cluster are implemented and managed by Amazon Web Services, the options to effect remediatiation on Kube-APIMaster or ETCD components are either not present or require an AWS support ticket. This in effect is the **Shared Responsibility Model**, just applied to the world of container orchestration platform. This has its advantages and disadvantages. 
+4. It's worth noting that because the control plane components of an EKS cluster are implemented and managed by Amazon Web Services, the options to effect remediatiation on Kube-APIMaster or ETCD components are either not present or require an AWS support ticket. This in effect is the **Shared Responsibility Model**, just applied to the world of container orchestration platforms. This has its advantages and disadvantages and one size doesn't fit all.
 
 
 In short, the ability to scan misconfigurations on AWS managed Kubernetes environment helps enable good **guardrails** with respect to this new cloud-native application that we will shortly be deploying in the next section. 
