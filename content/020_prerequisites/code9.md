@@ -44,10 +44,14 @@ rm -vf ${HOME}/.aws/credentials
 #### Enter your student credentials
 Execute the following command and enter the information from the user information email. Enter the following:
 
-AWS Acces Key ID
-AWS Secret Access Key
-Region as `us-east-1`
-Output format `json`
+AWS Acces Key ID <br>
+AWS Secret Access Key <br>
+Region as `us-east-1` <br>
+Output format `json` <br>
+
+{{% notice warning %}}
+Please take extra care to not paste any whitespaces or line-breaks. If something goes wrong, then restart the command and try pasting the data again without whitespaces 
+{{% /notice %}}
 
 ```
 aws configure
