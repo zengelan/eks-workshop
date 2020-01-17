@@ -16,6 +16,7 @@ Let's first reset and setup the right configuration for the git command to use t
 rm ~/.gitconfig
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
+
 ```
 
 Now lets clone the `master` branch from the repository, we will be cloning another branch, specific for your student environment later
