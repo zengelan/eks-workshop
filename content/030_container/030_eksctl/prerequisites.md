@@ -11,6 +11,7 @@ For this module, we need to download the [eksctl](https://eksctl.io/) binary:
 ```
 curl --location "https://labs.sesummit20.net/tools/eksctl_mfesummit2020.tar.gz" | tar xz -C /tmp
 sudo mv -v /tmp/eksctl /usr/local/bin
+
 ```
 
 
@@ -23,6 +24,7 @@ In this workshop we will use a special version of eksctrl which turns on logging
 Confirm the eksctl command works:
 ```
 eksctl version
+
 ```
 
 Check that the version is `0.2.0-1086-g2c93d15f`
@@ -32,4 +34,5 @@ Enable eksctl bash-completion
 eksctl completion bash >> ~/.bash_completion
 . /etc/profile.d/bash_completion.sh
 . ~/.bash_completion
+
 ```
