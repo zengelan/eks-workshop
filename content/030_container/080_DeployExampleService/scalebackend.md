@@ -4,8 +4,8 @@ date: 2018-09-18T17:40:09-05:00
 weight: 50
 ---
 
-When we launched our services, we only launched one container of each. We can
-confirm this by viewing the running pods:
+When we launched our services, we only launched one container of each. This is why you see in the application that it always connects to the same availability zones and nodes running the backend services. 
+We can also confirm this by viewing the running pods:
 ```
 kubectl get deployments
 ```
