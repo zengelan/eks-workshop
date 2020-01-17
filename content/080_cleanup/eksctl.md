@@ -16,3 +16,5 @@ The nodegroup will have to complete the deletion process before the EKS cluster
 can be deleted. The total process will take approximately 15 minutes, and can be monitored via the
 [CloudFormation Console](https://console.aws.amazon.com/cloudformation/home)
 {{% /notice %}}
+
+We will clean out the rest of the resources after the lab fininshes.
