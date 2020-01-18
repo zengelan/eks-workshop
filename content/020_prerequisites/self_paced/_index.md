@@ -8,7 +8,7 @@ weight: 20
 ### Running the workshop on your own
 
 
-{{% notice warning %}}
+{{% notice note %}}
 This mode is not implemented yet. We will work on it after SE Summit 2020 so that new hires can work through it on-demand.
 {{% /notice %}}
 

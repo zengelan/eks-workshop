@@ -1,7 +1,7 @@
 ---
 title: "Prepare the environment"
 chapter: false
-weight: 14
+weight: 30
 tags:
   - MFESummit2020
   - frith
