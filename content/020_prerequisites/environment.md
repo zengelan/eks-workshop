@@ -10,8 +10,16 @@ tags:
 Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the **Copy to clipboard** feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.
 {{% /notice %}}
 
+To ensure temporary credentials aren't already in place we will also remove
+any existing credentials file by executing the following command in the Terminal:
+```
+rm -vf ${HOME}/.aws/credentials
+```
+
 #### Save your student credentials for AWS
-Execute the following command and enter the information from the user information email. Enter the following:
+Execute the following command and enter the information from the user information.
+ 
+Enter the following information when prompted for it:
 
 AWS Acces Key ID <br>
 AWS Secret Access Key <br>

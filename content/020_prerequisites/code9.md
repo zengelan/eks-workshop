@@ -4,7 +4,6 @@ chapter: false
 weight: 20
 tags:
   - MFESummit2020
-  - frith
 ---
 
 One of the most important resources you will be using is the Cloud 9, cloud based, Integrated Developer Environment (IDE). This is similar to using Eclipse or IntelliJ IDEA as an IDE. However Cloud 9 runs in the cloud, on a EC2 machine and can be accessed through the web browser.
@@ -35,10 +34,5 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 - Close the Preferences tab
 ![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
 
-To ensure temporary credentials aren't already in place we will also remove
-any existing credentials file by executing the following command in the Terminal:
-```
-rm -vf ${HOME}/.aws/credentials
-```
 
-In the next chapter we will *prepare the environment*
+In the next chapter we will **prepare the environment**
