@@ -7,11 +7,6 @@ weight: 50
 Amazon EKS clusters require kubectl and kubelet binaries and the aws-cli or aws-iam-authenticator
 binary to allow IAM authentication for your Kubernetes cluster.
 
-{{% notice tip %}}
-In this workshop we will give you the commands to download the Linux
-binaries. If you are running Mac OSX / Windows, please [see the official EKS docs
-for the download links.](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
-{{% /notice %}}
 
 {{% notice info %}}
 Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the **Copy to clipboard** feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.
