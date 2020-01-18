@@ -1,5 +1,5 @@
 ---
-title: "...at McAfee SE Summit 2020 event"
+title: "...at McAfee SE Summit 2020"
 chapter: true
 weight: 10
 tags:
