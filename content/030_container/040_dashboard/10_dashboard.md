@@ -8,10 +8,12 @@ tags:
   - done
 ---
 
-The official Kubernetes dashboard is not deployed by default, but there are
+The official Kubernetes Dashboard is not deployed by default, but there are
 instructions in [the official documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 
-We can deploy the dashboard with the following command:
+The Kubernetes Dashboard is a tool with a lot of focus currently and which wraps a comfortable UI around the kubernetes control commands and monitoring tools. We will use it throughout the lab as its a great tool to visualize whats going on.
+
+We can deploy the dashboard easily with the following command:
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
 ```
