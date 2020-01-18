@@ -12,7 +12,9 @@ tags:
 This workshop uses a shared, McAfee owned AWS account and every student will get a personal Cloud9 IDE environment. You will need your **McAfee Email Address** to request the environment and the credentials.
 
 {{% notice warning %}}
-This will only work today and only with your McAfee Email address{{% /notice %}}
+This will only work today and only with your McAfee Email address.
+All resources will be deleted after a maximum of 24 hours.
+{{% /notice %}}
 
 Connect to the portal by clicking the button or browsing to [https://labs.sesummit20.net/ignition/](https://labs.sesummit20.net/ignition/). The following screen shows up.
 
