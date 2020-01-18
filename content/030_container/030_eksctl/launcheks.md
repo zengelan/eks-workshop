@@ -71,7 +71,7 @@ While the task is running you can see the progress in the CloudFormation Console
 You can also go to the other relevant services in the console to see how e.g. the EC2 machines are created, the VPC settings and security groups are configured automatically.
 
 {{% notice info %}}
-While this process is running, use the time to learn a bit about one of the hippest file formats in the DevOps world and work through the "YAML Primer Section"  ["YAML Primer Section"](/030_eksctl/whileyouwait) and {{< ref "whileyouwait.md" >}} of this lab. The come back here, once cluster creation is done. Did you know that `YAML Ain't Markup Language` ?
+While this process is running, use the time to learn a bit about one of the hippest file formats in the DevOps world and work through the "YAML Primer Section"  ["YAML Primer Section"]({{< ref "whileyouwait.md" >}}) of this lab. The come back here, once cluster creation is done. Did you know that `YAML Ain't Markup Language` ?
 {{% /notice %}}
 
 
