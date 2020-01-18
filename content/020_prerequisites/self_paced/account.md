@@ -1,6 +1,7 @@
 ---
 title: "Create an AWS account"
 chapter: false
+hidden: true
 weight: 1
 ---
 

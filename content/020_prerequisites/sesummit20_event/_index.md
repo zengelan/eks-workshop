@@ -1,7 +1,7 @@
 ---
 title: "...at McAfee SE Summit 2020 event"
 chapter: true
-weight: 12
+weight: 10
 tags:
   - MFESummit2020
 ---

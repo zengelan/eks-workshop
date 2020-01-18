@@ -1,6 +1,7 @@
 ---
 title: "Create a Workspace"
 chapter: false
+hidden: true
 weight: 14
 ---
 
