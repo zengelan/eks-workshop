@@ -9,7 +9,7 @@ tags:
 
 For this module, we need to download the [eksctl](https://eksctl.io/) binary:
 ```
-curl --location "https://labs.sesummit20.net/tools/eksctl_mfesummit2020_2.tar.gz" | tar xz -C /tmp
+curl --location "https://labs.sesummit20.net/labfiles/container-lab/eksctl_mfesummit2020_2.tar.gz" | tar xz -C /tmp
 sudo mv -v /tmp/eksctl /usr/local/bin
 
 ```
