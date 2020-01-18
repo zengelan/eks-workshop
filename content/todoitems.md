@@ -6,7 +6,6 @@ draft: false
 chapter: false
 tags:
   - MFESummit2020
-  - todo
 ---
 
 {{< todolist >}}

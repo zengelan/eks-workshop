@@ -5,8 +5,6 @@ weight: 30
 draft: false
 tags:
   - MFESummit2020
-  - todo
-  - dennen
 ---
 
 The redis-slave and redis-master Services you applied are only accessible within the container cluster because the default type for a Service is ClusterIP. ClusterIP provides a single IP address for the set of Pods the Service is pointing to. This IP address is accessible only within the cluster.
@@ -67,7 +65,7 @@ Here you can see that Kubernetes has setup a service that can be accessed on TCP
 As this can be very dynamic, as Kubernetes automatically chooses which nodes to run pods on and  as Kubernetes can automatically scale up and down and increase number of pods or even nodes, it is possible to address this *service* using Kubernetes built-in DNS system. Kubernetes automatically keeps the pointers in DNS updates to always point to the right *pods*
 
 
-Execute {{< todo >}} Write up some details on how to interpret the output: {{< /todo >}}
+Execute 
 ```
 kubectl describe svc frontend
 ```

@@ -5,8 +5,6 @@ weight: 35
 draft: false
 tags:
   - MFESummit2020
-  - todo
-  - dennen
 ---
 
 topic to describe on how to access the guestbook app and how to work with it

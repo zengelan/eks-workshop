@@ -4,8 +4,6 @@ date: 2018-08-07T13:36:57-07:00
 weight: 30
 tags:
   - beginner
-  - todo
-  - stupiello
 ---
 
 ## Explore details of your cluster using the Kubernetes Dashboard
