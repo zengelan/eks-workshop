@@ -29,9 +29,9 @@ eksctl version
 
 Check that the version is `0.2.0-1086-g2c93d15f` or `0.2.0-1087-g4c73011` 
 
-{{% expand "Expand for more information about these versions" %}}
-
 ***
+
+{{% expand "Expand for more information about these versions" %}}
 
 These versions of eksctl were specifically modified and built for our workshop.
 
@@ -45,10 +45,10 @@ These versions of eksctl were specifically modified and built for our workshop.
   + In addition to the change of the version above
   + This version includes a code change that ensure that three availability groups are also used in the us-east-1 region. The original version would only use two, even when using three nodes.
   + Commit 4c73011: https://github.com/zengelan/eksctl/commit/4c730114a3791295bc9a06188e035bf639c49381 
-  
-***
 
 {{% /expand %}}
+
+***
 
 Now let's enable eksctl bash-completion, so you can use the <TAB> key to complete commands and arguments while you type
 ```
