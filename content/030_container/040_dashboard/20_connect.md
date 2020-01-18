@@ -58,7 +58,9 @@ Then press *Sign In*.
 
 
 {{% expand "Expand here to see another option to get a token to authenticate to the dashboard" %}}
+
 ---
+
 Run the command ``kubectl  get secrets --all-namespaces`` to identify the accounts, then copy the name of the token starting with `kubernetes-dashboard-token-`
 and run  the command ````
 ```bash
@@ -68,6 +70,7 @@ kubectl --namespace kubernetes-dashboard describe secrets/kubernetes-dashboard-t
 ![alttoken.png](/images/mfe/alttoken.png?classes=border,shadow)
 
 from the output copy the token and paste it into the dashboard login page
+
 ---
 {{% /expand %}}
 
