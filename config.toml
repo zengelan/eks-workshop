@@ -6,7 +6,7 @@ theme = "learn"
 uglyurls = false
 googleAnalytics = "UA-35687986-6"
 sectionPagesMenu = "main"
-relativeURLs = true
+relativeURLs = false
 enableGitInfo = true
 
 [blackfriday]
