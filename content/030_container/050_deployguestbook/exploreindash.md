@@ -14,6 +14,7 @@ Login back to the Kubernetes Dashboard see <a href="/040_dashboard/20_connect">C
 
 #### Investigate the Deployment
 need content
+{{<todo>}}need content{{</todo>}}
 
 #### Investigate the Replica Sets
 need content

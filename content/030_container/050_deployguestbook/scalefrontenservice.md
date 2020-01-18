@@ -45,7 +45,7 @@ Scaling up or down is easy because your servers are defined as a Service that us
 
 5. Browse to Guestbook application using the DNS name of your Load Balancer.  Continue refreshing the page to witness the values change for the pod running the webserver and the instance that the pod runs on. This demonstrates the dynamic nature of the Web server that is being connected to, as well as the EC2 server pool that spans across multiple Availability Zones (AZ).
 In the guestbook perform some operations and reloads and see how the POD name and instance ID change between requests. 
-![microservices](/images/mfe/guestbook.png)
+![microservices](/images/mfe/guestbook.png?classes=border,shadow)
 
 6. Once you've completed step 5, you can scale in the number of pods to the inital value of 1.
 

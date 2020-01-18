@@ -83,4 +83,4 @@ You should also be able to copy/paste the loadBalancer hostname into your browse
 Keep this tab open while we scale the services up on the next page.
 
 Check out the display of the POD name and the name of the instance the POD is running on:
-![microservices](/images/mfe/guestbook.png)
+![microservices](/images/mfe/guestbook.png?classes=border,shadow)

@@ -19,7 +19,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-b
 ```
 
 This results in the following output:
-![dashinstalloutput](/images/mfe/dashinstalloutput.jpg)
+![dashinstalloutput](/images/mfe/dashinstalloutput.jpg?classes=border,shadow)
 
 The command above is a great example on how dynamic the kubernetes and conatiner tools are built. By specifying a URL that point to a configuration (in YAML format here) the tool automatically downlaod the specifications and deploys a full application including all required infrastructure. 
 
