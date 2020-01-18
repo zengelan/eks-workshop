@@ -32,3 +32,12 @@ echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
 
 ```
 
+And now we also need to make sure to setup the right configuration for the git command to use the aws credentials (ref: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
+
+```
+rm ~/.gitconfig
+git config --global credential.helper '!aws codecommit credential-helper $@'
+git config --global credential.UseHttpPath true
+
+```
+
