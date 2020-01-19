@@ -45,6 +45,7 @@ spec:
         - containerPort: 80
 ```
 
+
 Inspect the line
 ```
         image: zengelan/gb_frontend:latest
