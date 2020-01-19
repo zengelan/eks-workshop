@@ -3,8 +3,6 @@ title: "Followup Session"
 chapter: false
 weight: 20
 tags:
-    - draft
-    - boubker
 ---
 
 
