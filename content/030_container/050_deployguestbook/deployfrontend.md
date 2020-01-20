@@ -58,7 +58,7 @@ This tells kubernetes to download the docker image named `gb_frontend` from the 
   kubectl apply -f ~/environment/guestbook-example/frontend-deployment.yaml
 ```
 
-2. Query the list of Pods to verify that the three frontend replicas are running:
+2. Query the list of Pods to verify that the a single frontend replica is running:
 
 ```
   kubectl get pods -l app=guestbook -l tier=frontend
