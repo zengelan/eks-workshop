@@ -91,7 +91,7 @@ kubectl describe pods --all-namespaces
 Get the name of the `aws-node` PODs from above command then execute
 
 ```
-kubectl describe pods aws-node-XYZ -n kube-system
+kubectl describe pods aws-node-abcdesfg -n kube-system
 ```
 
 
