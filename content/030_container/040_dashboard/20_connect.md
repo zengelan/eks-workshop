@@ -5,7 +5,6 @@ weight: 20
 tags:
   - beginner
   - andreas
-  - done
 ---
 
 Since the dashboard is deployed to our private cluster, we need to access it via a proxy.
@@ -58,6 +57,7 @@ Then press *Sign In*.
 
 ***
 
+<!--  something doesn't work with this alternative method, so leaving it out. one option is good enough
 {{% expand "Expand here to see another option to get a token to authenticate to the dashboard" %}}
 
 Run the command ``kubectl  get secrets --all-namespaces`` to identify the accounts, then copy the name of the token starting with `kubernetes-dashboard-token-`
@@ -73,6 +73,8 @@ from the output copy the token and paste it into the dashboard login page
 {{% /expand %}}
 
 ***
+
+-->
 
 If you want to see the dashboard in a full tab, click the **Pop Out** button, like below:
 ![popout](/images/popout.png?classes=border,shadow)
