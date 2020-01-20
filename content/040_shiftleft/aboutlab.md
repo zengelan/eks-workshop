@@ -30,7 +30,7 @@ Lab1:  Easy – Deploy EC2
 
 Lab2:  Medium – Deploy S3
 
-Lab3:  Hard – Deploy EBS volume
+Lab3:  Hard – Deploy RDS (DB)
 
 
 
