@@ -89,6 +89,7 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
-here are some details https://labs.sesummit20.net/030_container/130_exposing-service/connecting/
+
+If you have some spare time, and want to know more about how services can be exposed. here are some details for further reading {{< ref "/additional/130_exposing-service/connecting" >}}
 
 
