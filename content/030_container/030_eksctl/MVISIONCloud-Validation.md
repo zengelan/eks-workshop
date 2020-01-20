@@ -38,7 +38,7 @@ In today's lab you are not able start a scan. A scan will be started by the inst
 ## Review Compliance with Default EKS Cluster Configurations 
 
 
-Out of the 78 policies imported for configuration audit, each EKS cluster deployed as part of this SE-Summit class is expected to yield the following 2 security misconfigurations that relate to the control-plane default configurations of your cluster. 
+Out of the 78 policies imported for configuration audit, each EKS cluster deployed as part of this SE-Summit class is expected to yield the 2 or more security misconfigurations that relate to the control-plane default configurations of your cluster. This incldes the following issues:
 
 
 ![MVCValidationEKS](/images/mfe/Capture_Misconfigurations_EKSCluster_Final.JPG?classes=border,shadow)
@@ -82,6 +82,18 @@ A **Pod Security Policy** is a cluster-level resource that controls the actions 
 
 
 Here's how you can manually validate this in your EKS cluster configuration to learn further: 
+
+```
+kubectl describe pods --all-namespaces
+```
+
+Get the name of the `aws-node` PODs from above command then execute
+
+```
+kubectl describe pod aws-node-XYZ -n kube-system
+```
+
+
 
 ![MVCValidationEKSCompliant2.1](/images/mfe/Capture_Validation2.JPG?classes=border,shadow)
 
