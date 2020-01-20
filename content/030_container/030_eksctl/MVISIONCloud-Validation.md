@@ -85,14 +85,14 @@ Here's how you can manually validate this in your EKS cluster configuration to l
 
 ```
 kubectl describe pods --all-namespaces
+
 ```
 
 Get the name of the `aws-node` PODs from above command then execute
 
 ```
-kubectl describe pod aws-node-XYZ -n kube-system
+kubectl describe pods aws-node-XYZ -n kube-system
 ```
-
 
 
 ![MVCValidationEKSCompliant2.1](/images/mfe/Capture_Validation2.JPG?classes=border,shadow)
