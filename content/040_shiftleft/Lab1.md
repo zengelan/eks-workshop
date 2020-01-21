@@ -25,25 +25,25 @@ Start with the template named `fixme_easy_cloudformation.json`
 
 ![](/images/mfe/3_audit.png?classes=border,shadow)
 
-1. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template. Search for your codeword in the search bar to filter your the incidents associated with your lab account. Investigate the details of the incidents. 
+4. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template. Search for your codeword in the search bar to filter your the incidents associated with your lab account. Investigate the details of the incidents. 
 https://www.myshn.net
 
 ![](/images/mfe/4_login.png?classes=border,shadow)
 
-1. Open the template in your Cloud 9 IDE by navigating to `cd ~/environment/SESummit2020/ShiftLeft` and / or using the file browser on the left side of the Cloud 9 screen to open the file with a double click:
+5. Open the template in your Cloud 9 IDE by navigating to `cd ~/environment/SESummit2020/ShiftLeft` and / or using the file browser on the left side of the Cloud 9 screen to open the file with a double click:
 ![](/images/mfe/gototemplate.png?classes=border,shadow)
 
 ![](/images/mfe/5_login.png?classes=border,shadow)
 
-1. Make the appropriate changes and save the file
+6. Make the appropriate changes and save the file
 
-1. Commit the code changes to your local copy of the repo with the command ``git commit -a -m "made updates"``
+7. Commit the code changes to your local copy of the repo with the command ``git commit -a -m "made updates"``
 
-1. Push the changes back to central repository with ``git push`` (this will automatically trigger a new build in jenkins afer a few seconds)
+8. Push the changes back to central repository with ``git push`` (this will automatically trigger a new build in jenkins afer a few seconds)
 
-1. Check the build in jenkins to see if it succeeds, 
+9. Check the build in jenkins to see if it succeeds, 
 
-1. If not then investigate why it fails, fix the issue and check in the code changes again, and investigate the next build
+10. If not then investigate why it fails, fix the issue and check in the code changes again, and investigate the next build
 
 ### When the build succeeded
 1. Investigate the console output from the build and see that this triggered a new VM to be deployed to Amazon EC2 based on an image (AMI). In the console log in Jenkins you can see the instance id and details about the newly deployed server.
