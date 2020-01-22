@@ -6,10 +6,10 @@ tags:
   - MFESummit2020
 ---
 
-### Running the workshop at the McAfee SE Summit 2020 event (unless you are beta tester of course)
+### Running the workshop at the McAfee SE Summit 2020 event
 
 {{% notice warning %}}
-Only complete this section if you are at McAfee SE Summit 2020 event (unless you are beta tester of course)
+Only complete this section if you are at McAfee SE Summit 2020 event
 {{% /notice %}}
 
 In this case you will request your credentials for an shared AWS environment using a website. You will receive credentials and access to all required systems to perform this workshop.

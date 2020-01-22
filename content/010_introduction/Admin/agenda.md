@@ -8,24 +8,23 @@ weight: 10
 
 ## Our Agenda for today
 
-### Morning Session
+### Morning & Afternoon Session
 
-* 7:00 Intros and Welcome with Andreas
-* 7:10 Introduction to Kubernetes with Andreas
-* 7:20 min Reality Check with Jason and Brooke Noelke
-* 7:30 Start the Lab
-* Checkpoint (1): EKS Cluster creation started {{< ref "030_container/030_eksctl/launcheks.md" >}}
+* Intros and Welcome with Andreas
+* Introduction to Kubernetes with Andreas
+* Reality Check with Justin Cragin and Brooke Noelke
+* Start the Lab
+* Checkpoint (1): EKS Cluster creation started [Launch EKS]({{< ref "030_container/030_eksctl/launcheks.md" >}})
+
 * Overview of EKS architecture, Guestbook App
 * EKS Lab, Deploy, run and scale applications
 * Checkpoint (2): Guestbook application running
-* 9:00 (Hard Meeting Point) Overview of Jenkins and Shift-Left
-* 10 min Brooke and IT person interview
+* End of Container Lab
+
+* Overview of Jenkins and Shift-Left with Boubker
+* Brooke and Justin Cragin pon Shift-Left and CI/CD
 * Shift-Left Lab: Deploy compliant infrastructure
 * Check Point (3)
+
 * Solutions presentation
-* Award
 * Conclusion 
-
-
-* 10:00 - 11:00 Coffee Break
-* 11:00 - 13:00 Continue Lab
