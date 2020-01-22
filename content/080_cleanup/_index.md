@@ -4,7 +4,6 @@ chapter: true
 weight: 80
 tags:
   - beginner
-  - mfearchitects
 ---
 
 # Cleanup

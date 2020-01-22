@@ -4,7 +4,6 @@ chapter: true
 weight: 50
 tags:
   - beginner
-  - mfearchitects
 ---
 
 # Deploy the Guestbook Application
