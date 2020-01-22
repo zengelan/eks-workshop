@@ -36,10 +36,11 @@ The lab steps are similar to Lab 1 and Lab 2, but there are more difficult error
 10. if not then investigate why it fails, fix the issue and check in the code changes again 
 
 
+When the build succeeded
 
-
-
-
+Investigate the console output from the build and check out which resources were deployed
+Look in the Cloudformation console for the relevant region for detail on the deployed assets and stages: https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1
+if the stack failed find out why and try to fix it in the cloudformation template
 
 
 
