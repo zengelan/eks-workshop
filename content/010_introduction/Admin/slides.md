@@ -6,5 +6,13 @@ hidden: true
 weight: 20
 ---
 
-## Slides for the intro
+## Intro slides
 
+
+![appbuildtoday](/images/mfe/appbuildtoday.jpg?classes=border,shadow)
+
+![infrastructureascode](/images/mfe/infrastructureascode.jpg?classes=border,shadow)
+
+![cfdesigner](/images/mfe/cfdesigner.jpg?classes=border,shadow)
+
+![cfjson](/images/mfe/cfjson.jpg?classes=border,shadow)
