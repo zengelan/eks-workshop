@@ -18,10 +18,14 @@ weight: 10
 * Overview of EKS architecture, Guestbook App
 * EKS Lab, Deploy, run and scale applications
 * Checkpoint (2): Guestbook application running
-* 10:00 (Hard Meeting Point) Overview of Jenkins and Shift-Left
+* 9:00 (Hard Meeting Point) Overview of Jenkins and Shift-Left
 * 10 min Brooke and IT person interview
 * Shift-Left Lab: Deploy compliant infrastructure
 * Check Point (3)
-* Expalin how they could have been fixed for all easy medium and hard
+* Solutions presentation
+* Award
+* Conclusion 
+
+
 * 10:00 - 11:00 Coffee Break
 * 11:00 - 13:00 Continue Lab

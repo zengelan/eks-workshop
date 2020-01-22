@@ -38,4 +38,6 @@ You can confirm that the services have been deleted by running:
   kubectl get services
 ```
 
+Don't worry if something is not deleted correctly at this point. We are going to delete the whole EKS cluster after the lab anyway.
+
 Thank You!  This concludes the Container Lab for the Guestbook Application.
