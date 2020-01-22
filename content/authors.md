@@ -29,6 +29,6 @@ Special thanks to:
  * Vishal R.
  * Will A.
 
- Thanks to the GitHub Contributors:
+ Thanks also to the GitHub Contributors and the original creators of the eksworkshop:
  
 {{% ghcontributors "https://api.github.com/repos/zengelan/eks-workshop/contributors?per_page=1000" %}}
