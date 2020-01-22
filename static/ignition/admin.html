@@ -15,7 +15,6 @@
 <body ng-controller="AdminCtrl" onload="bodyOnLoad();">
 <div style="width: 70%; margin-left: 20px">
   <h2>McAfee SE Summit 2020 Active User Admin View</h2>
-  <form>
     <fieldset>
       <!--
       <button type="button" class="btn btn-primary" ng-click="controller.onUserStatus()">Update</button>
@@ -80,7 +79,8 @@
           <td ng-style="mvc[user.codeword].incidents['eks'].length > 1 && {'background-color':'green'} || {'background-color':'Firebrick'}" >
             eks:{{mvc[user.codeword].incidents['eks'].length}}</td>
           <td ng-style="cc[user.codeword].commits.length > 0 && {'background-color':'green'} || {'background-color':'FireBrick'}" >
-            {{ cc[user.codeword] ? "true":"false" }} {{cc[user.codeword].commits.length}} {{cc[user.codeword].commits[0].author.name}}</td>
+            <a href="#" onclick="resetjenkins('{{user.mfeemail}}');">
+            {{ cc[user.codeword] ? "true":"false" }} {{cc[user.codeword].commits.length}} {{cc[user.codeword].commits[0].author.name}}</a></td>
           <td ng-style="jenkins[user.codeword].jobs['easy'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
             {{jenkins[user.codeword].jobs['easy'].color}}:{{jenkins[user.codeword].jobs['easy'].builds}}</td>
           <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">

@@ -3,6 +3,15 @@ var apiUrl = "https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummi
 var loadingdiv;
 var resulttable;
 
+function resetjenkins(mfeemail){
+    console.log("Resetting jenkins for user: " + mfeemail);
+    url = "https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummit2020-creds-prod/v2?"
+    url += "acckey=" + Cookies.get('adminkey')
+    url += "&resetjenkins=yes&mfeemail=" + encodeURI(mfeemail)
+    window.open(url);
+
+}
+
 $('#saveadminkey').on('click', function (e) {
     Cookies.set('adminkey', $('#adminkeyin').val(), {expires: 60});
     if (Cookies.get('adminkey')) {
