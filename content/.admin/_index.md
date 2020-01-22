@@ -1,9 +1,9 @@
 ---
-title: "Admin section"
-date: 2020-01-20T10:14:32-07:00
+title: "Admin"
+weight: 10
 chapter: true
+draft: false
 hidden: true
-weight: 1
 tags:
   - MFESummit2020
 ---

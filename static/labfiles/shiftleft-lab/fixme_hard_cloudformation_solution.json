@@ -1,1 +1,30 @@
-add content
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "SE Summit 2020 RDS Database Cloudformation Template",
+  "Resources": {
+    "myDB": {
+      "Type": "AWS::RDS::DBInstance",
+      "Properties": {
+        "DBInstanceIdentifier": "RDS-##CODENAME##-ShiftLeftLab-Hard-Instance",
+        "AvailabilityZone": "us-west-1b",
+        "MultiAZ": false,
+        "AllocatedStorage": "100",
+        "DBInstanceClass": "db.t2.small",
+        "Engine": "MySQL",
+        "Iops": "1000",
+        "MasterUsername": "root",
+        "MasterUserPassword": "##CODENAME##12345!",
+        "PubliclyAccessible": false,
+        "StorageEncrypted": true,
+        "Tags": [{
+          "Key": "Name",
+          "Value": "RDS-##CODENAME##-ShiftLeftLab-Hard-Instance"
+        }, {
+          "Key": "IaaSLabTemplateType",
+          "Value": "Hard"
+        }
+        ]
+      }
+    }
+  }
+}

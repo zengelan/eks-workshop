@@ -23,7 +23,14 @@ The lab2 steps are similar to Lab1.
 
 4. Log into MVISION Cloud shared tenant and use the incidents view to find the issues associated with this template
 
-5. Open the template in your Cloud 9 IDE by navigating to `cd ~/environment/SESummit2020/ShiftLeft` 
+5. Open the template in your Cloud 9 IDE by navigating to `cd ~/environment/SESummit2020/ShiftLeft`
+
+
+{{% notice tip %}}
+You can also edit the file directly in the CodeCommit UI in AWS Console. There you can browser the code repository and directly edit files. The file will be committed as soon as you save it. In the CodeCommit console you can also see all the checkins and branches.
+Please make sure to select the right branch, named after your **codeword** or you will be editing someone else's file
+https://console.aws.amazon.com/codesuite/codecommit/repositories/SESummit2020/branches?region=us-east-1 
+{{% /notice %}}
 
 6. Make the appropriate changes and save the file
 

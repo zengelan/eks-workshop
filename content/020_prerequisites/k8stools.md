@@ -18,7 +18,7 @@ sudo chmod +x /usr/local/bin/kubectl
 
 #### Install jq, envsubst (from GNU gettext utilities) and bash-completion
 ```
-sudo yum -y install jq gettext bash-completion
+sudo yum -y install jq gettext bash-completion mysql57
 
 ```
 

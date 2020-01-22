@@ -5,6 +5,7 @@ weight: 20
 tags:
 ---
 
+You can also run the workshop again, anytime, in the next 2 weeks and request new credentials, but EKS clusters will be deleted after 6 hours so please make sure you go through the lab without long interruptions.
 
 We want to follow up with you to see how things are going on learning containers security and shift-left.  
 
