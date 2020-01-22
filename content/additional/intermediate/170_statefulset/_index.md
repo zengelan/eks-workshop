@@ -4,7 +4,7 @@ chapter: true
 weight: 170
 tags:
   - intermediate
-  - CON206
+  
 ---
 
 # Stateful containers using StatefulSets

@@ -2,7 +2,6 @@
 title: "Let us know what you think!"
 weight: 60
 tags:
-  - laurent
 ---
 
 ## Give us some feedback

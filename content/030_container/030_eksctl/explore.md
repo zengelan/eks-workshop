@@ -4,7 +4,7 @@ date: 2018-08-07T13:36:57-07:00
 weight: 40
 tags:
   - MFESummit2020
-  - sunny
+  
 ---
 
 ## Explore details of your cluster using kubectl and the AWS Console

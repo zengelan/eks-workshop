@@ -5,7 +5,7 @@ weight: 30
 draft: false
 tags:
   - mfesesummit2020
-  - boubker
+  
 ---
 
 ![LAB_Diagram](/images/mfe/LAB_Diagram.png?classes=border,shadow)

@@ -4,8 +4,6 @@ chapter: true
 weight: 40
 tags:
   - beginner
-  - andreas
-  - done
 ---
 
 # Deploy the Kubernetes Dashboard

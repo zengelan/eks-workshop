@@ -5,9 +5,6 @@ weight: 420
 draft: false
 tags:
   - advanced
-  - kubeflow
-  - ml
-  - OPN401
 ---
 
 # Machine Learning using [Kubeflow](https://kubeflow.org/)

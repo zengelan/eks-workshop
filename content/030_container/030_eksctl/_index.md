@@ -5,7 +5,7 @@ weight: 30
 tags:
   - beginner
   - MFESummit2020
-  - sunny
+  
 ---
 
 # Create an EKS environment using [eksctl](https://eksctl.io/)

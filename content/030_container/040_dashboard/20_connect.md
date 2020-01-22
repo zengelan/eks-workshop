@@ -4,7 +4,6 @@ date: 2018-08-07T08:30:11-07:00
 weight: 20
 tags:
   - beginner
-  - andreas
 ---
 
 Since the dashboard is deployed to our private cluster, we need to access it via a proxy.

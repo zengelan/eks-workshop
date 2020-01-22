@@ -6,7 +6,7 @@ tags:
   - beginner
   - MFESummit2020
   - shiftleft
-  - boubker
+  
 ---
 ## Easy difficulty
 Start with the template named `fixme_easy_cloudformation.json`

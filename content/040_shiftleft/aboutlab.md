@@ -6,7 +6,7 @@ tags:
   - beginner
   - MFESummit2020
   - shiftleft
-  - boubker
+  
 ---
 ## About the labs with Jenkins
 

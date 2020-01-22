@@ -6,7 +6,7 @@ draft: false
 tags:
   - advanced
   - batch
-  - CON205
+  
 ---
 
 ### Batch Processing

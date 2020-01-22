@@ -4,8 +4,6 @@ date: 2018-08-07T13:36:57-07:00
 weight: 65
 tags:
   - beginner
-  - mfearchitects
-  - stuppiello
 ---
 
 ## Explore details of the deployment in Kubernetes Dashboard
