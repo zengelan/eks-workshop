@@ -48,6 +48,10 @@ If the output does not print your codeword or not the region, then please go bac
 
 #### Now we are ready to create your own Kubernetes cluster with all the required resources:
 
+{{% notice warning %}}
+PLEASE HOLD HERE AND WAIT UNTIL THE INSTRUCTOR GIVES YOU THE OK TO COMMENCE. WE NEED TO AVOID CONCURRENCY ISSUES
+{{% /notice %}}
+
 Copy & Paste the following command to your Cloud9 terminal, then execute
 ```
 eksctl create cluster --name=${CODEWORD}-eksctl --region=${EKS_REGION} --tags codeword=${CODEWORD} --nodes=3 --node-type=t3a.small --managed --vpc-nat-mode Disable --alb-ingress-access
