@@ -78,7 +78,10 @@ To make things easier in the next steps you will define a couple of environment 
 We are using the ``bash_profile`` to save the variables. We can then reference them later as environment variables  
 {{% /notice %}}
 
-Copy this command, then paste it into the Cloud 9 terminal, then replace ``<CODEWORD>`` with the codeword for your environment. Then execute the command.
+Copy this command, then paste it into the Cloud 9 terminal, then replace ``<CODEWORD>`` with the LOWERCASE codeword for your environment. Then execute the command.
+{{% notice warning %}}
+Please make sure you enter your codeword in lowercase letters. E.g. enter `skydive` and not `SKYDIVE`
+{{% /notice %}}
 
 ```
 echo export CODEWORD=<CODEWORD> | tee -a ~/.bash_profile
