@@ -9,7 +9,7 @@ tags:
 SEs Team –  
 
 
-We hope that this Cloud Security workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
+We hope that this  Cloud Security  workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
 
   
 
