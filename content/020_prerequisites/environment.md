@@ -97,7 +97,7 @@ then execute
 
 ```
 
-You should also save the default regions for the the different labs and resources in this lab:
+You need to also save the default regions for the the different labs and resources in this lab. The command below shows us-east-1, but please enter your assigned region.
 ```
 echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
 . ~/.bash_profile 
