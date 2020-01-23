@@ -3,6 +3,7 @@ title: "Accessing your Guestbook App"
 date: 2020-01-09
 weight: 35
 draft: false
+hidden: true
 tags:
   - MFESummit2020
 ---
