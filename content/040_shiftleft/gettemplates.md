@@ -35,5 +35,5 @@ this is due to a current bug/issue in the Cloud9 IDE
 Another note
 
 {{% notice warning %}}
-If you receive an error like `fatal: repository '/home/ec2-user/environment/SESummit2020' does not exist` then you hve not set the environment varibale with your codeword and the variable cannot be expanded. You can either set the variable manually with `export CODEWORD=<CODEWORD>` (and replacing <CODEWORD> with your actual codeword) or you check the section [PREPARE THE ENVIRONMENT](/020_prerequisites/environment) in the section "Start the workshop" for details
+If you receive an error like `fatal: repository '/home/ec2-user/environment/SESummit2020' does not exist` then you hve not set the environment varibale with your codeword and the variable cannot be expanded. You can either set the variable manually with `export CODEWORD=<CODEWORD>` (and replacing <CODEWORD> with your actual codeword, for example 'export CODEWORD=flashpoint') or you check the section [PREPARE THE ENVIRONMENT](/020_prerequisites/environment) in the section "Start the workshop" for details
 {{% /notice %}}
