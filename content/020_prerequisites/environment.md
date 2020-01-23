@@ -18,12 +18,16 @@ rm -vf ${HOME}/.aws/credentials
 
 #### Save your student credentials for AWS
 Execute the following command and enter the information from the user information.
+
+{{% notice warning %}}
+As Default Region, please use the region assigned to you by the instructor
+{{% /notice %}}
  
 Enter the following information when prompted for it:
 
 AWS Acces Key ID <br>
 AWS Secret Access Key <br>
-Region as `us-east-1` <br>
+Region as ######## <br>
 Output format `json` <br>
 
 {{% notice warning %}}
