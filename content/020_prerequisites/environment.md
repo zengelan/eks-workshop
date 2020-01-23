@@ -38,7 +38,7 @@ Please take extra care to not paste any whitespaces or line-breaks. If something
 aws configure
 ```
 
-PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose us-east-1.
+PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose the right region as assigned by the instructor
 
 ![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
