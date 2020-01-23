@@ -56,7 +56,7 @@ kubectl get pods <<name_of_a_pod>> -n <<name_of_a_namespace_that_has_that_pod>> 
 
 
 ## AWS EKS Console 
-Navigate to the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-1) and open the details of your cluster, if you don't see the cluster with your codeword, make sure you selected the right region ``us-east-1``.
+Navigate to the [AWS EKS Console UI](https://us-east-1.console.aws.amazon.com/eks/home?region=us-east-1) and open the details of your cluster, if you don't see the cluster with your codeword, make sure you selected the right region.
 
 Review the different security groups that were created by default as part of the EKS cluster creation efforts. Piece the information together to see what's happening under the covers. 
 
