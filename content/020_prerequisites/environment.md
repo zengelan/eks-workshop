@@ -100,8 +100,13 @@ then execute
 You need to also save the default regions for the the different labs and resources in this lab. The command below shows us-east-1, but please enter your assigned region.
 ```
 echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
-. ~/.bash_profile 
 
+```
+
+then execute 
+
+```
+. ~/.bash_profile 
 ```
 
 And now we also need to make sure to setup the right configuration for the git command to use the aws credentials (ref: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
