@@ -22,13 +22,8 @@ A Docker container image is a lightweight, standalone, executable package of sof
 
 ![dockers](/images/mfe/docker.png?classes=border,shadow)
 
-## 3) What is ECS?
 
-Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service. You can choose to run your ECS clusters using <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>, which is serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.&#160;
-
-![ecss](/images/mfe/ecs.png?classes=border,shadow)
-
-## 4) What is Kubernetes?
+## 3) What is Kubernetes?
 
 <a href="https://kubernetes.io/">Kubernetes</a>&#160;is an open source platform for managing containerized applications. If you use Docker to deploy&#160;an application, a Kubernetes cluster can manage your servers and deployments, including tasks such as scaling, deployment, and rolling upgrades.
 
@@ -39,16 +34,23 @@ A Kubernetes cluster consists of at least one **Master** node and several **Work
 
 ![podss](/images/mfe/pods.png?classes=border,shadow)
 
-## 5) What is EKS?
+## 4) What is EKS?
 
 Amazon Elastic Kubernetes Service (EKS) is a managed&#160;<a href="https://aws.amazon.com/kubernetes/" target="_blank">Kubernetes</a>&#160;service that makes it easy for you to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane.&#160;Amazon EKS automatically manages the availability and scalability of the Kubernetes control plane nodes that are responsible for starting and stopping&#160;<a href="https://aws.amazon.com/containers/" target="_blank">containers</a>, scheduling containers on virtual machines, storing cluster data, and other tasks. Amazon EKS automatically detects and replaces unhealthy control plane nodes for each cluster.
 
 ![ekss](/images/mfe/eks.png?classes=border,shadow)
 
-## 6) What does MVision Cloud for Containers provide for Container Security?
+## 5) What does MVision Cloud for Containers provide for Container Security?
 
 MVISION Cloud Container Security provides&#160;Cloud Security Posture Management (CSPM) for major IaaS providers such as Amazon Web Services (AWS), as part of a unified cloud security platform. This has been extended and enhanced to&#160;secure dynamic container workloads and the&#160;infrastructure they depend on.&#160;
 
 MVISION Cloud Container Security solution continuously checks CIS Level 1 and 2 benchmark requirements to detect and correct any misconfigurations or drift in workloads and containers.&#160;Currently, MVISION Cloud Container Security supports Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS), and provides more than 78 preconfigured <a href="https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Policy_Templates_for_Container_Security"> Policy Templates </a> (46 for EKS and 32 for ECS)
 
 For EKS, as of the MVISION Cloud 4.4.0 release, MCC supports CSPM audit of only the **Master** node, **NOT** the Worker nodes
+
+
+## 6) What is ECS?
+
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service. You can choose to run your ECS clusters using <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>, which is serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.&#160;
+
+![ecss](/images/mfe/ecs.png?classes=border,shadow)
