@@ -34,5 +34,5 @@ You can use the following command to easily remove the line, then try again
 sed -i '/aws_session_token/d' ${HOME}/.aws/credentials
 
 ```
-this is due to a current bug/issue in the Code9 IDE
+this is due to a current bug/issue in the Cloud9 IDE
 {{% /notice %}}

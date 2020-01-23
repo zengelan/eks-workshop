@@ -42,4 +42,4 @@ Click on the link  [https://mfesesummit2020.signin.aws.amazon.com/console/](http
 
 ![Ignition4](/images/mfe/ignition4.jpg?classes=border,shadow)
 
-Once you have completed the step above, you can head straight to [**Access Code 9 IDE**](/020_prerequisites/code9/)
+Once you have completed the step above, you can head straight to [**Access Code 9 IDE**](/020_prerequisites/Cloud9/)

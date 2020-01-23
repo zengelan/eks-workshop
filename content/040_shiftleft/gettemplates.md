@@ -29,7 +29,7 @@ ll
 If you receive an error like `fatal: unable to access 'https://.....': The requested URL returned error: 403` then you need to remove the line starting with `aws_session_token` from the aws credential file at `${HOME}/.aws/credentials`
 Otherwise you will not be able to authenticate correctly when using the `git`command.   
 Execute the command `sed -i '/aws_session_token/d' ${HOME}/.aws/credentials` to easily remove the line, then try again
-this is due to a current bug/issue in the Code9 IDE
+this is due to a current bug/issue in the Cloud9 IDE
 {{% /notice %}}
 
 Another note

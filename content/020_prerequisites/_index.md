@@ -20,4 +20,4 @@ To start the workshop, follow one of the following depending on whether you are.
 {{% /expand %}}
 
 
-Once you have completed with either setup, continue with [**Access Code 9 IDE **](/020_prerequisites/code9/)
+Once you have completed with either setup, continue with [**Access Code 9 IDE **](/020_prerequisites/Cloud9/)
