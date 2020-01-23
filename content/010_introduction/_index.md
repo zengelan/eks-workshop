@@ -14,9 +14,9 @@ A walkthrough of basic Kubernetes concepts.
 
 ![Title Image](/images/introduction/eks-product-page.png?classes=border,shadow)
 
-Welcome to the Amazon EKS Workshop!
+Welcome to the IaaS workshop
 
-The intent of this workshop is to educate users about the features of Amazon EKS.
+The intent of this workshop is to educate users about Containers, Kubernetes, EKS, DevSecOps and Shift-Left.
 
 Background in EKS, Kubernetes, Docker, and container workflows are not required, but they are recommended.
 
