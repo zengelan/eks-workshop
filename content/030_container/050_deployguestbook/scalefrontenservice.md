@@ -8,7 +8,7 @@ Scaling up or down is easy because your servers are defined as a Service that us
 
 1. Query the existing number of Pods by running the following command:
 ```
-  kubtcl get pods
+  kubetcl get pods
 ```  
 
 2. Run the following command to scale up the number of frontend Pods:
