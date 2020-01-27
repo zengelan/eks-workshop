@@ -1,5 +1,5 @@
 ---
-title: "Scale the Frontend Services"
+title: "Scale the Frontend"
 date: 2020-01-08
 weight: 50
 ---
