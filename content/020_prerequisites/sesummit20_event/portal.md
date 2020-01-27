@@ -12,7 +12,7 @@ tags:
 This workshop uses a shared, McAfee owned and payed for, AWS account and every student will get a personal Cloud9 IDE environment. You will need your **McAfee Email Address** to request the environment and the credentials.
 
 {{% notice info %}}
-This will only work today and for the next 2 weeks and only with your McAfee Email address.
+This will only work for students at or after the McAfee SESUmmit 20 event and only with your McAfee Email address.
 All resources will be deleted after a maximum of 24 hours. EKS Clusters will be deleted after 6 hours.
 {{% /notice %}}
 
