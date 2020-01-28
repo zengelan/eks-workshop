@@ -1,4 +1,4 @@
-name: Build with Node.js and Hugo then deploy to S3 master branch
+name: master branch build and deploy
 
 on:
   push:
