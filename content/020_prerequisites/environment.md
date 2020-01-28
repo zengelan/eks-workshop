@@ -20,7 +20,7 @@ rm -vf ${HOME}/.aws/credentials
 Execute the following command and enter the information from the user information.
 
 {{% notice warning %}}
-As Default Region, please use the region assigned to you by the instructor
+As Default Region, please use `us-east-1`
 {{% /notice %}}
  
 Enter the following information when prompted for it:
@@ -38,7 +38,7 @@ Please take extra care to not paste any whitespaces or line-breaks. If something
 aws configure
 ```
 
-PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose the right region as assigned by the instructor
+PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose `us-east-1`
 
 ![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
@@ -97,17 +97,6 @@ then execute
 
 ```
 
-You need to also save the default regions for the the different labs and resources in this lab. The command below shows us-east-1, but please enter your assigned region.
-```
-echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
-
-```
-
-then execute 
-
-```
-. ~/.bash_profile 
-```
 
 And now we also need to make sure to setup the right configuration for the git command to use the aws credentials (ref: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
 
