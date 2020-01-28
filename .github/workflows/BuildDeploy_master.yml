@@ -1,4 +1,4 @@
-name: Build with Node.js and Hugo then deploy to S3
+name: Build with Node.js and Hugo then deploy to S3 master branch
 
 on: [push]
 
@@ -11,12 +11,13 @@ jobs:
       matrix:
         node-version: [12.x]
     env:
-      S3_BUCKET_NAME: sesummit2020
+      S3_BUCKET_NAME: mfeiaasworkshopmaster
 
     steps:
     - uses: actions/checkout@v1
       with:
         submodules: true
+        ref: master
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
