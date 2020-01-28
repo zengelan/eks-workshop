@@ -62,8 +62,8 @@ img {
 }
 
 pre {
-    padding: 0.1rem;
-    margin: 0.1rem 0;
+    margin: 0.1rem 0 0.1rem 10px;
+    padding: 0.1rem 0.1rem 0.1rem 10px;
 }
 
 pre.bash {
