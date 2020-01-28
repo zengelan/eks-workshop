@@ -31,6 +31,13 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 
 To create your new EKS cluster we will be using some defaults for this lab to ensure the resources are tagged with your codeword and we have some best practices settings defined like enabling logging of the EKS cluster and nodes 
 
+First we are going to store the desired EKS region in a variable, so we can use it more easily later. Please execute the following to set the environment variable named `EKS_REGION` to `us-east-1` 
+```
+echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
+. ~/.bash_profile 
+```
+
+
 
 Make sure you saved the appropriate environment variables as described in the section [Prepare the environment](/020_prerequisites/environment).
 To check this execute the command:
