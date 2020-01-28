@@ -1,6 +1,7 @@
 name: Build with Node.js and Hugo then deploy to S3 sesummit20 branch
 
-on: [push]
+on: push
+  branches: sesummit2020
 
 jobs:
   build:
