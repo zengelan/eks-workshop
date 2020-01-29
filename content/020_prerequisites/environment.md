@@ -16,7 +16,7 @@ any existing credentials file by executing the following command in the Terminal
 rm -vf ${HOME}/.aws/credentials
 ```
 
-#### Save your student credentials for AWS
+#### Saving your student credentials for AWS
 Execute the following command and enter the information from the user information.
 
 {{% notice warning %}}
