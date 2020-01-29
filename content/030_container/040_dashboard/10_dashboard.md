@@ -21,7 +21,7 @@ This results in the following output:
 
 The command above is a great example on how dynamic the kubernetes and conatiner tools are built. By specifying a URL that point to a configuration (in YAML format here) the tool automatically downlaod the specifications and deploys a full application including all required infrastructure. 
 
-The file `/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml` iss tored on GitHub, a Code Collaboration tool, so when the develoeprs check in a new version or make any changes to the infrastructure, re-executing this command will automatically update the application and infrastructure.
+The file `/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml` is tored on GitHub, a Code Collaboration tool, so when the develoeprs check in a new version or make any changes to the infrastructure, re-executing this command will automatically update the application and infrastructure.
 
 
 Please continue on the next page

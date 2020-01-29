@@ -78,8 +78,5 @@ from the output copy the token and paste it into the dashboard login page
 If you want to see the dashboard in a full tab, click the **Pop Out** button, like below:
 ![popout](/images/popout.png?classes=border,shadow)
 
-If you are not seeing the Memory and CPU utilization and your dashboard looks like this:
-then please make sure to go through the section {{< relref "15_metricsserver.md" >}} to deploy the metrics server.
-![dashnometrics](/images/mfe/dashnometrics.jpg?classes=border,shadow)
 
 
