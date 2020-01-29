@@ -3,11 +3,6 @@ master branch:
 # eksworkshop
 
 ### Setup:
-#### Get a certificate or renew it for cloudfront distribution:
-reqeust cert:
-certbot-auto certonly --manual --preferred-challenges=dns -d sesummit20.net -d *.sesummit20.net
-renew cert (on the same host where requested)
-certbot-auto certonly --manual --preferred-challenges=dns -d sesummit20.net -d *.sesummit20.net
 
 #### Install Hugo:
 On a mac:
@@ -20,7 +15,7 @@ On Linux:
 
 #### Clone this repo:
 From wherever you checkout repos:
-`git clone git@github.com:aws-samples/eks-workshop.git` (or your fork)
+`git clone git@github.com:zengelan/eks-workshop.git` (or your fork)
 
 #### Clone the theme submodule:
 `cd eks-workshop`
@@ -54,4 +49,5 @@ Any commits to master will auto build and deploy in a couple of minutes. You can
 deployed hash at the bottom of the menu panel.
 
 note: shift-reload may be necessary in your browser to reflect the latest changes.
+
 
