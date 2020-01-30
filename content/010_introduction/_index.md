@@ -14,7 +14,7 @@ A walkthrough of basic Kubernetes concepts.
 
 ![Title Image](/images/introduction/eks-product-page.png?classes=border,shadow)
 
-Welcome to the IaaS workshop
+Welcome to the IaaS Workshop
 
 The intent of this workshop is to educate users about Containers, Kubernetes, EKS, DevSecOps and Shift-Left.
 
