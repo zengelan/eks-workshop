@@ -3,7 +3,7 @@ title: "Access Code 9 IDE"
 chapter: false
 weight: 20
 tags:
-  - MFESummit2020
+  - RSA
 ---
 
 One of the most important resources you will be using is the Cloud 9, cloud based, Integrated Developer Environment (IDE). This is similar to using Eclipse or IntelliJ IDEA as an IDE. However Cloud 9 runs in the cloud, on a EC2 machine and can be accessed through the web browser.
@@ -25,7 +25,7 @@ Your IDE Opens and you can see the main window layout. It looks like a "regular"
 ### Configure Cloud9 Credential Management
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
-the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
+the EKS IAM authentication, so we will disable it and provide our AWS credentials via environment variables.
 {{% /notice %}}
 
 - Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab

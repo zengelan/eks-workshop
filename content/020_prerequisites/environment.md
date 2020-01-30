@@ -3,7 +3,7 @@ title: "Prepare the environment"
 chapter: false
 weight: 30
 tags:
-  - MFESummit2020
+  - RSA
 ---
 
 {{% notice info %}}
@@ -20,14 +20,14 @@ rm -vf ${HOME}/.aws/credentials
 Execute the following command and enter the information from the user information.
 
 {{% notice warning %}}
-As Default Region, please use `us-east-1`
+As Default Region, please use `us-east-2`
 {{% /notice %}}
  
 Enter the following information when prompted for it:
 
 AWS Acces Key ID <br>
 AWS Secret Access Key <br>
-Region as ######## <br>
+Region as us-east-2 <br>
 Output format `json` <br>
 
 {{% notice warning %}}
@@ -38,7 +38,6 @@ Please take extra care to not paste any whitespaces or line-breaks. If something
 aws configure
 ```
 
-PLEASE NOTE: Screenshot below shows us-east-2, but make sure to choose `us-east-1`
 
 ![awscliauth](/images/mfe/awscliauth.jpg?classes=border,shadow)
 
@@ -50,6 +49,21 @@ sed -i '/aws_session_token/d' ${HOME}/.aws/credentials
 {{% notice warning %}}
 If the line starting with `aws_session_token` is in the aws credential file at ${HOME}/.aws/credentials you will not be able to authenticate correctly when using the `git`command   
 {{% /notice %}}
+
+
+### Using environment variables as credential storage
+You can also store the AWS credentials in environment variables, these credentials stored in environment varibales have a higher priority and, when set, are overwriting the credentials used in the aws cli configuration.
+To set your environment variables execute the following commands and append the key id and private key accordingly. These variables are only set in the current terminal session, so if you open a new terminal tab, these environment variables must be set again.
+
+```
+export AWS_ACCESS_KEY_ID=A...X
+```
+
+and
+
+```
+export AWS_SECRET_ACCESS_KEY=h...K
+```
 
 ### Check Credential configuration
 
@@ -73,29 +87,6 @@ aws sts get-caller-identity
 
 The output will show the username and user id of the currently logged in user and look like this:
 ![Cloud93](/images/mfe/cloud9_3.jpg?classes=border,shadow)
-
-
-
-To make things easier in the next steps you will define a couple of environment variables specific to your environment.
-
-{{% notice tip %}}
-We are using the ``bash_profile`` to save the variables. We can then reference them later as environment variables  
-{{% /notice %}}
-
-Copy this command, then paste it into the Cloud 9 terminal, then replace ``<CODEWORD>`` with the LOWERCASE codeword for your environment, without the < >. Then execute the command.
-{{% notice warning %}}
-Please make sure you enter your codeword in lowercase letters. E.g. enter `skydive` and not `SKYDIVE`
-{{% /notice %}}
-
-```
-echo export CODEWORD=<CODEWORD> | tee -a ~/.bash_profile
-```
-then execute 
-
-```
-. ~/.bash_profile 
-
-```
 
 
 And now we also need to make sure to setup the right configuration for the git command to use the aws credentials (ref: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
