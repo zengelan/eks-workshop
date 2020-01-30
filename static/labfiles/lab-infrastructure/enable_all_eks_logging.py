@@ -39,4 +39,4 @@ if __name__ == '__main__':
         if not cluster.get("logging"):
             enable_eks_logging(cluster.get("name"), cluster.get("region"))
             print("Enabled logging on cluster {}".format(key))
-    print("Done")
+    print("Done with enabling all EKS logging")

@@ -8,3 +8,4 @@ terraform.tfstate.backup
 .DS_Store
 *.swp
 themes/learn
+templates/deploy_lab-setup-lambda-timer.cmd

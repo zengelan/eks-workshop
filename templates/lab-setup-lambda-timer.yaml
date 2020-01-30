@@ -4,7 +4,7 @@ Resources:
     Type: AWS::IAM::Role
     Properties:
       RoleName:
-        Fn::Sub: lambda-role
+        Fn::Sub: Role-LabSetupTimerFunction
       AssumeRolePolicyDocument:
         Statement:
           - Action:
@@ -22,8 +22,8 @@ Resources:
   LambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        FunctionName: EnableEksLogging
-        Description: Python Function to enable logging in all EKS clusters
+        FunctionName: LabSetupTimerFunction
+        Description: Python Function to execute scripts to setup the lab environment
         Handler: index.handler
         Runtime: python3.7
         Timeout: 120
@@ -32,53 +32,43 @@ Resources:
           Fn::GetAtt:
             - LambdaRole
             - Arn
+        Environment:
+          Variables:
+            URL: "https://rsa.sesummit20.net/labfiles/lab-infrastructure/"
+            SCRIPTLIST: "rsa_lab_timer_execute.txt"
         Code:
           ZipFile: |
-            import boto3
-            def enable_eks_logging(eks_name, eks_region):
-                client = boto3.session.Session(region_name=eks_region).client('eks')
-                response = client.update_cluster_config(name=eks_name,
-                                                        logging={'clusterLogging': [
-                                                            {'types': ['api', 'audit', 'authenticator', 'controllerManager',
-                                                                       'scheduler'], 'enabled': True}]
-                                                        }
-                                                        )
-                print("repsonse: {}".format(response))
-                return
-            def get_all_eks():
-                eks_all = dict()
-                for region in ['us-east-1', 'us-east-2', 'us-west-2']:
-                    eks = boto3.session.Session(region_name=region).client('eks')
-                    paginator = eks.get_paginator('list_clusters')
-                    for res in paginator.paginate():
-                        for cluster in res.get('clusters'):
-                            rng = eks.list_nodegroups(clusterName=cluster)
-                            rin = eks.describe_cluster(name=cluster)
-                            rdetail = rin.get('cluster')
-                            rdetail["region"] = region
-                            rdetail["nodegroups"] = rng.get('nodegroups', 'n/a')
-                            rdetail["logging"] = rdetail.get('logging').get('clusterLogging')[0].get('enabled')
-                            key = "{}/{}".format(region, cluster)
-                            eks_all[key] = rdetail
-                return eks_all
-            def handler(event, context):
-                whoami = boto3.session.Session().client('sts').get_caller_identity()
-                print("Logged in as {}".format(whoami))
-                # 1 get all eks clusters
-                print("Loading all EKS clusters")
-                all_eks = get_all_eks()
-                print("Found {} clusters with names: {}".format(len(all_eks.keys()), all_eks.items()))
-                for key, cluster in all_eks.items():
-                    if not cluster.get("logging"):
-                        enable_eks_logging(cluster.get("name"), cluster.get("region"))
-                        print("Enabled logging on cluster {}".format(key))
-                print("Done")
-                return None
+            import certifi
+            import urllib3
+            import os
+            u = os.environ.get('URL')
+            h = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',ca_certs=certifi.where())
+            r = h.request('GET', u + os.environ.get('SCRIPTLIST'))
+            if not r.status == 200:
+                print("Could not download script list file")
+                exit(1)
+            sl = r.data.decode('utf-8').split("\n")
+            for s in sl:
+                print("Downloading source from '{}'".format(s))
+                try:
+                    src = h.request('GET', u + s).data.decode('utf-8')
+                except Exception as e:
+                    print("Could not download file ", e)
+                    continue
+                print("Downloaded source from '{}' with '{}' bytes".format(s, len(src)))
+                print("Executing script in file '{}'".format(s))
+                try:
+                    exec(src)
+                except Exception as e:
+                    print("Could not execute script in file ", e)
+                    continue
+                print("Fininshed executing script in file '{}'".format(s))
+
   ScheduledRule: 
     Type: AWS::Events::Rule
     Properties: 
       Description: "Runs a lambda to configure lab environment"
-      Name: "SetupLabEnv"
+      Name: "LabSetupTimerTrigger"
       ScheduleExpression: "rate(2 minutes)"
       State: "ENABLED"
       Targets: 
