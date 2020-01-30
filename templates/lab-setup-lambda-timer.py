@@ -8,9 +8,10 @@
 import urllib3
 import os
 import logging
+import boto3
 
 l = logging.getLogger()
-l.setLevel(logging.DEBUG)
+l.setLevel(logging.INFO)
 def handler(e,c):
     u = os.environ.get('URL')
     h = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=os.environ.get('CACERTS'))
@@ -25,13 +26,13 @@ def handler(e,c):
         try:
             src = h.request('GET', u + s).data.decode('utf-8')
         except Exception as e:
-            l.info("Could not download file ", e)
+            l.exception("Could not download file")
             continue
         l.info("Downloaded source from '{}' with '{}' bytes".format(s, len(src)))
         l.info("Executing script in file '{}'".format(s))
         try:
             exec(src, globals(), locals())
         except Exception as e:
-            l.info("Could not execute script in file ", e)
+            l.exception("Could not execute script in file")
             continue
         l.info("Fininshed executing script in file '{}'".format(s))

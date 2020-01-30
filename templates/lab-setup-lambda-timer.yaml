@@ -20,6 +20,26 @@ Resources:
         - arn:aws:iam::aws:policy/AmazonS3FullAccess
         - arn:aws:iam::aws:policy/AdministratorAccess
       Path: /
+
+  ScheduledRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: "Runs a lambda to configure lab environment"
+      Name: "LabSetupTimerTrigger"
+      ScheduleExpression: "rate(2 minutes)"
+      State: "ENABLED"
+      Targets:
+        - Arn: !GetAtt LambdaFunction.Arn
+          Id: "ScheduledRule"
+
+  CwEventPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt LambdaFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt ScheduledRule.Arn
+
   LambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
@@ -29,10 +49,7 @@ Resources:
         Runtime: python3.6
         Timeout: 120
         MemorySize: 256
-        Role:
-          Fn::GetAtt:
-            - LambdaRole
-            - Arn
+        Role: !GetAtt LambdaRole.Arn
         Environment:
           Variables:
             URL: "https://rsa.sesummit20.net/labfiles/lab-infrastructure/"
@@ -43,9 +60,10 @@ Resources:
             import urllib3
             import os
             import logging
+            import boto3
 
             l = logging.getLogger()
-            l.setLevel(logging.DEBUG)
+            l.setLevel(logging.INFO)
             def handler(e,c):
                 u = os.environ.get('URL')
                 h = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=os.environ.get('CACERTS'))
@@ -59,24 +77,13 @@ Resources:
                     try:
                         src = h.request('GET', u + s).data.decode('utf-8')
                     except Exception as e:
-                        l.info("Could not download file ", e)
+                        l.exception("Could not download file")
                         continue
                     l.info("Downloaded source from '{}' with '{}' bytes".format(s, len(src)))
                     l.info("Executing script in file '{}'".format(s))
                     try:
                         exec(src, globals(), locals())
                     except Exception as e:
-                        l.info("Could not execute script in file ", e)
+                        l.exception("Could not execute script in file")
                         continue
                     l.info("Fininshed executing script in file '{}'".format(s))
-
-  ScheduledRule: 
-    Type: AWS::Events::Rule
-    Properties: 
-      Description: "Runs a lambda to configure lab environment"
-      Name: "LabSetupTimerTrigger"
-      ScheduleExpression: "rate(2 minutes)"
-      State: "ENABLED"
-      Targets: 
-        - Arn: !GetAtt LambdaFunction.Arn
-          Id: "TargetFunction"
