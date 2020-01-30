@@ -28,23 +28,22 @@
                         }
                     ],
                     "SubnetIds": [{
-                            "Ref": "SubnetPublicUSEAST2B"
+                            "Ref": "SubnetPublicREGIONAZB"
                         }, {
-                            "Ref": "SubnetPublicUSEAST2C"
+                            "Ref": "SubnetPublicREGIONAZC"
                         }, {
-                            "Ref": "SubnetPublicUSEAST2A"
+                            "Ref": "SubnetPublicREGIONAZA"
                         }, {
-                            "Ref": "SubnetPrivateUSEAST2B"
+                            "Ref": "SubnetPrivateREGIONAZB"
                         }, {
-                            "Ref": "SubnetPrivateUSEAST2C"
+                            "Ref": "SubnetPrivateREGIONAZC"
                         }, {
-                            "Ref": "SubnetPrivateUSEAST2A"
+                            "Ref": "SubnetPrivateREGIONAZA"
                         }
                     ]
                 },
                 "RoleArn": {
-                    "Fn::GetAtt": "ServiceRole.Arn"
-                },
+                    "Fn::GetAtt": "ServiceRole.Arn"},
                 "Version": "1.14"
             }
         },
@@ -145,7 +144,7 @@
                     "Fn::GetAtt": "NATIP.AllocationId"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPublicUSEAST2A"
+                    "Ref": "SubnetPublicREGIONAZA"
                 },
                 "Tags": [{
                         "Key": "Name",
@@ -162,7 +161,7 @@
                 "Domain": "vpc"
             }
         },
-        "NATPrivateSubnetRouteUSEAST2A": {
+        "NATPrivateSubnetRouteREGIONAZA": {
             "Type": "AWS::EC2::Route",
             "Properties": {
                 "DestinationCidrBlock": "0.0.0.0/0",
@@ -170,11 +169,11 @@
                     "Ref": "NATGateway"
                 },
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2A"
+                    "Ref": "PrivateRouteTableREGIONAZA"
                 }
             }
         },
-        "NATPrivateSubnetRouteUSEAST2B": {
+        "NATPrivateSubnetRouteREGIONAZB": {
             "Type": "AWS::EC2::Route",
             "Properties": {
                 "DestinationCidrBlock": "0.0.0.0/0",
@@ -182,11 +181,11 @@
                     "Ref": "NATGateway"
                 },
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2B"
+                    "Ref": "PrivateRouteTableREGIONAZB"
                 }
             }
         },
-        "NATPrivateSubnetRouteUSEAST2C": {
+        "NATPrivateSubnetRouteREGIONAZC": {
             "Type": "AWS::EC2::Route",
             "Properties": {
                 "DestinationCidrBlock": "0.0.0.0/0",
@@ -194,7 +193,7 @@
                     "Ref": "NATGateway"
                 },
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2C"
+                    "Ref": "PrivateRouteTableREGIONAZC"
                 }
             }
         },
@@ -240,13 +239,13 @@
                 ]
             }
         },
-        "PrivateRouteTableUSEAST2A": {
+        "PrivateRouteTableREGIONAZA": {
             "Type": "AWS::EC2::RouteTable",
             "Properties": {
                 "Tags": [{
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSEAST2A"
+                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableREGIONAZA"
                         }
                     }
                 ],
@@ -255,13 +254,13 @@
                 }
             }
         },
-        "PrivateRouteTableUSEAST2B": {
+        "PrivateRouteTableREGIONAZB": {
             "Type": "AWS::EC2::RouteTable",
             "Properties": {
                 "Tags": [{
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSEAST2B"
+                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableREGIONAZB"
                         }
                     }
                 ],
@@ -270,13 +269,13 @@
                 }
             }
         },
-        "PrivateRouteTableUSEAST2C": {
+        "PrivateRouteTableREGIONAZC": {
             "Type": "AWS::EC2::RouteTable",
             "Properties": {
                 "Tags": [{
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSEAST2C"
+                            "Fn::Sub": "${AWS::StackName}/PrivateRouteTableREGIONAZC"
                         }
                     }
                 ],
@@ -312,69 +311,69 @@
                 }
             }
         },
-        "RouteTableAssociationPrivateUSEAST2A": {
+        "RouteTableAssociationPrivateREGIONAZA": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2A"
+                    "Ref": "PrivateRouteTableREGIONAZA"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPrivateUSEAST2A"
+                    "Ref": "SubnetPrivateREGIONAZA"
                 }
             }
         },
-        "RouteTableAssociationPrivateUSEAST2B": {
+        "RouteTableAssociationPrivateREGIONAZB": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2B"
+                    "Ref": "PrivateRouteTableREGIONAZB"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPrivateUSEAST2B"
+                    "Ref": "SubnetPrivateREGIONAZB"
                 }
             }
         },
-        "RouteTableAssociationPrivateUSEAST2C": {
+        "RouteTableAssociationPrivateREGIONAZC": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
-                    "Ref": "PrivateRouteTableUSEAST2C"
+                    "Ref": "PrivateRouteTableREGIONAZC"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPrivateUSEAST2C"
+                    "Ref": "SubnetPrivateREGIONAZC"
                 }
             }
         },
-        "RouteTableAssociationPublicUSEAST2A": {
+        "RouteTableAssociationPublicREGIONAZA": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
                     "Ref": "PublicRouteTable"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPublicUSEAST2A"
+                    "Ref": "SubnetPublicREGIONAZA"
                 }
             }
         },
-        "RouteTableAssociationPublicUSEAST2B": {
+        "RouteTableAssociationPublicREGIONAZB": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
                     "Ref": "PublicRouteTable"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPublicUSEAST2B"
+                    "Ref": "SubnetPublicREGIONAZB"
                 }
             }
         },
-        "RouteTableAssociationPublicUSEAST2C": {
+        "RouteTableAssociationPublicREGIONAZC": {
             "Type": "AWS::EC2::SubnetRouteTableAssociation",
             "Properties": {
                 "RouteTableId": {
                     "Ref": "PublicRouteTable"
                 },
                 "SubnetId": {
-                    "Ref": "SubnetPublicUSEAST2C"
+                    "Ref": "SubnetPublicREGIONAZC"
                 }
             }
         },
@@ -395,7 +394,7 @@
                 "ManagedPolicyArns": ["arn:aws:iam::aws:policy/AmazonEKSServicePolicy", "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"]
             }
         },
-        "SubnetPrivateUSEAST2A": {
+        "SubnetPrivateREGIONAZA": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "a"] ]},
@@ -406,7 +405,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSEAST2A"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateREGIONAZA"
                         }
                     }
                 ],
@@ -415,7 +414,7 @@
                 }
             }
         },
-        "SubnetPrivateUSEAST2B": {
+        "SubnetPrivateREGIONAZB": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "b"] ]},
@@ -426,7 +425,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSEAST2B"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateREGIONAZB"
                         }
                     }
                 ],
@@ -435,7 +434,7 @@
                 }
             }
         },
-        "SubnetPrivateUSEAST2C": {
+        "SubnetPrivateREGIONAZC": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "c"] ]},
@@ -446,7 +445,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSEAST2C"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPrivateREGIONAZC"
                         }
                     }
                 ],
@@ -455,7 +454,7 @@
                 }
             }
         },
-        "SubnetPublicUSEAST2A": {
+        "SubnetPublicREGIONAZA": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "a"] ]},
@@ -466,7 +465,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPublicUSEAST2A"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPublicREGIONAZA"
                         }
                     }
                 ],
@@ -475,7 +474,7 @@
                 }
             }
         },
-        "SubnetPublicUSEAST2B": {
+        "SubnetPublicREGIONAZB": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "b"] ]},
@@ -486,7 +485,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPublicUSEAST2B"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPublicREGIONAZB"
                         }
                     }
                 ],
@@ -495,7 +494,7 @@
                 }
             }
         },
-        "SubnetPublicUSEAST2C": {
+        "SubnetPublicREGIONAZC": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "AvailabilityZone": {"Fn::Join" : [ "", [ { "Ref" : "AWS::Region" }, "c"] ]},
@@ -506,7 +505,7 @@
                     }, {
                         "Key": "Name",
                         "Value": {
-                            "Fn::Sub": "${AWS::StackName}/SubnetPublicUSEAST2C"
+                            "Fn::Sub": "${AWS::StackName}/SubnetPublicREGIONAZC"
                         }
                     }
                 ],
@@ -634,11 +633,11 @@
             },
             "Value": {
                 "Fn::Join": [",", [{
-                            "Ref": "SubnetPrivateUSEAST2B"
+                            "Ref": "SubnetPrivateREGIONAZB"
                         }, {
-                            "Ref": "SubnetPrivateUSEAST2C"
+                            "Ref": "SubnetPrivateREGIONAZC"
                         }, {
-                            "Ref": "SubnetPrivateUSEAST2A"
+                            "Ref": "SubnetPrivateREGIONAZA"
                         }
                     ]]
             }
@@ -651,11 +650,11 @@
             },
             "Value": {
                 "Fn::Join": [",", [{
-                            "Ref": "SubnetPublicUSEAST2B"
+                            "Ref": "SubnetPublicREGIONAZB"
                         }, {
-                            "Ref": "SubnetPublicUSEAST2C"
+                            "Ref": "SubnetPublicREGIONAZC"
                         }, {
-                            "Ref": "SubnetPublicUSEAST2A"
+                            "Ref": "SubnetPublicREGIONAZA"
                         }
                     ]]
             }

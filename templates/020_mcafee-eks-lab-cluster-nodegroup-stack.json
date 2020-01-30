@@ -7,7 +7,7 @@
         "Default" : "mcafee-eks-lab-cluster-stack",
         "Description" : "Enter the name of the stack that was used to deploy the EKS Cluster. Default is 'mcafee-eks-lab-cluster-stack'"
       }
-    }
+    },
     "Resources": {
         "ManagedNodeGroup": {
             "Type": "AWS::EKS::Nodegroup",
@@ -21,7 +21,7 @@
                 },
                 "Subnets": {
                     "Fn::Split": [",", {
-                            "Fn::ImportValue": {"Fn::Join" : [ "", [ { "Ref" : "InstanceTypeParameter" }, "::SubnetsPublic"] ]}
+                            "Fn::ImportValue": {"Fn::Join" : [ "", [ { "Ref" : "EKSClusterStackName" }, "::SubnetsPublic"] ]}
                         }
                     ]
                 },
