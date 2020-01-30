@@ -15,6 +15,12 @@ kubectl get nodes
 
 if we see our 3 nodes, we know we have authenticated correctly
 
+If you have issues here and the output tells you that you are unauthenticated, then execute the following command to update the kubeconfig file with the correct credentials
+
+```
+aws eks --region ${EKS_REGION} update-kubeconfig --name ${CODEWORD}-eksctl
+```
+
 #### Export the Worker Role Name for use throughout the workshop:
 
 ```
