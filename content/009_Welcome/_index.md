@@ -8,12 +8,13 @@ tags:
   - beginner
 ---
 
-## Lab Welcome
+# Lab Welcome
 
 Thank you for attending this lab session! Here is a brief introduction of the lab objectives and what we hope you learn today. 
 
+### Overview
 Duration: 3 hours
-Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed. 
+Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.  
 
 #### Lab 1 - Deploying Risky Container Applications
 - Connect McAfee MVISION Cloud to an AWS Account, deploy some policies to protect Containers
