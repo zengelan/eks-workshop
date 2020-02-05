@@ -1,6 +1,6 @@
 ---
 title: "Welcome"
-weight: 5
+weight: 1
 chapter: true
 draft: false
 tags:
