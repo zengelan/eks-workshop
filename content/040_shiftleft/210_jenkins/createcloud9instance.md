@@ -19,10 +19,10 @@ AWS Cloud9 allows developers to access EC2 servers in order to write, run, and d
 
 1. Expand the AWS Services menu and click on Cloud9 under the Developer Tools Section.
 
-2. Click the ![Create_Environment](/static/images/shiftleft/createenvironment.png?classes=border,shadow) button.
+2. Click the ![Create_Environment](/images/shiftleft/createenvironment.png?classes=border,shadow) button.
 
 3. Configure the Cloud9 envionment to use a new t3.small instance with Amazon Linux as shown below.  You can use any name you like for this environment.
 
-    ![Cloud9_Environment_Settings](/static/images/shiftleft/cloud9environment.png)?classes=border,shadow
+    ![Cloud9_Environment_Settings](/images/shiftleft/cloud9environment.png)?classes=border,shadow
 
 
