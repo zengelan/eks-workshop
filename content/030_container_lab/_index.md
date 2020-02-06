@@ -1,5 +1,5 @@
 ---
-title: "Container Lab - Archived"
+title: "Container Lab"
 chapter: true
 weight: 40
 tags:
@@ -8,7 +8,7 @@ tags:
   - container
 ---
 
-# Archived Container Lab - Archived
+# Container Lab
 
 Welcome to our Container Lab 
 ![Colorfull Containers](/images/mfe/colorful-containers.jpg)
