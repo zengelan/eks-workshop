@@ -30,4 +30,8 @@ Please note: At noon today we will be serving lunch and you can continue the lab
   - Push a Amazon Machine Image (AMI) with known issues
   - Identify the issue using MVISION Cloud 
   - Resolve the issue
-- Medium Lab - Protecting 
+- Medium Lab - Protecting Accidental Exposure
+  - Push a S3 Cloud Formation Template 
+  - Identify the issue using MVISION Cloud
+  - Resolve the issue
+  
