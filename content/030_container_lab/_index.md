@@ -8,7 +8,7 @@ tags:
   - container
 ---
 
-# Container Lab
+# Archived Container Lab
 
 Welcome to our Container Lab 
 ![Colorfull Containers](/images/mfe/colorful-containers.jpg)
