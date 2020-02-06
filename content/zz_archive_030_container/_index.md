@@ -1,7 +1,7 @@
 ---
-title: "Archived - Container Lab"
+title: "Container Lab"
 chapter: true
-weight: 1000
+weight: 40
 tags:
   - beginner
   - MFESummit2020
@@ -10,5 +10,5 @@ tags:
 
 # Container Lab
 
-Welcome to our Container Lab - Archived
+Welcome to our Container Lab
 ![Colorfull Containers](/images/mfe/colorful-containers.jpg)
