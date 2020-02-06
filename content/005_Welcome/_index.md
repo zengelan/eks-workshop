@@ -33,5 +33,5 @@ Please note: At noon today we will be serving lunch and you can continue the lab
 - Medium Lab - Protecting Accidental Exposure
   - Push a S3 Cloud Formation Template 
   - Identify the issue using MVISION Cloud
-  - Resolve the issue
+  - Resolve the issue 
   
