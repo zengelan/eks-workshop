@@ -12,7 +12,7 @@ tags:
 
 Jenkins is an open source automation tool written for automating Continuous Integration efforts. Jenkins is used to build, test, and deploy code as it is updated and checked in by developers.
 
-![What_is_Jenkins](/images/mfe/CICI-Jenkins.png?classes=border,shadow)
+![What_is_Jenkins](/images/mfe/CICD-Jenkins.png?classes=border,shadow)
 
 As shown above, once code is checked into a repository (such as AWS CodeCommit) it is ready to be built by Jenkins.  This build can be triggered automatically, on a schedule, or manually as part of a project.  Each project in Jenkins contains a series of build steps and triggers.  For example, a simple containerized application might look like this:
 
