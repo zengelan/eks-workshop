@@ -1,5 +1,5 @@
 ---
-title: "Enable"
+title: "Enable MVISION Cloud"
 weight: 10
 chapter: true
 draft: false
