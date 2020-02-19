@@ -1,5 +1,5 @@
 ---
-title: "LAB High Level Diagram"
+title: "Lab Diagram and CI/CD Pipeline"
 date: 2018-08-07T08:30:11-07:00
 weight: 30
 draft: false

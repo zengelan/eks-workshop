@@ -1,28 +1,17 @@
 ---
-title: "Introducing Jenkins"
+title: "Introduction to Jenkins"
 date: 2018-08-07T08:30:11-07:00
-weight: 10
+weight: 5
 draft: false
 tags:
   - mfesesummit2020
   
 ---
 
-## Introducing Jenkins
+## Introduction to Jenkins and the MVISION Cloud Plugin
 
-Jenkins is an open source automation tool written for automating Continuous Integration efforts. Jenkins is used to build, test, and deploy code as it is updated and checked in by developers.
+MVISION Cloud integrates with a popular Continuous Integration (CI) tool call Jenkins via a plugin which inspects infrastucture-as-code resources to ensure that they follow security policies defined within MVISION Cloud.
 
-![What_is_Jenkins](/images/mfe/CICD-Jenkins.png?classes=border,shadow)
+This section of the lab will introduce you to key concepts and lab architecture as well as get you connected to the Jenkins instance pre-created for you in your AWS environment.
 
-As shown above, once code is checked into a repository (such as AWS CodeCommit) it is ready to be built by Jenkins.  This build can be triggered automatically, on a schedule, or manually as part of a project.  Each project in Jenkins contains a series of build steps and triggers.  For example, a simple containerized application might look like this:
-
-  1.  Build triggered by code update, timer, or by clicking the "build now" button
-  2.  The latest source code is pulled from the code repository (AWS CodeCommit)
-  3.  Execute build scripts, compile code and test code
-  4.  Deploy IaaS templates (such as EC2 instances, security groups, load balancers, etc.)
-  5.  Configure the container orchestrator (such as Kubernetes)
-  5.  Deploy code into the new infrastructure
-  6.  Run test scripts against the new infrastructure and code
-  7.  Modify DNS to move users over to the newly deployed infrastructure and code
-
-These builds generally take only a few minutes, allowing errors and failures to be addressed by developers quickly.  This speedy and automatic feedback drives huge amount of efficiency for developers.
+![Jenkins](/images/mfe/jenkins.png?classes=border,shadow)

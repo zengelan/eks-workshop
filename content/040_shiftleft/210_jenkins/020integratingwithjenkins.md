@@ -1,5 +1,5 @@
 ---
-title: "About the Jenkins Plugin"
+title: "About the MVISION Cloud Plugin"
 date: 2018-08-07T08:30:11-07:00
 weight: 20
 draft: false
@@ -32,4 +32,4 @@ If non-compliant infrastructure templates are identified, developers receive imm
 
 ![Build failed by violation](/images/mfe/failedbuild.png?classes=border,shadow)
 
-![Jenkins with MVISION Cloud](/images/mfe/chucknorris.png?classes=border,shadow)
+![Chuck Norris owns you](/images/mfe/chucknorris.png?classes=border,shadow)
