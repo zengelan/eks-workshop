@@ -1,5 +1,5 @@
 ---
-title: "About the labs"
+title: "Shift Left Lab"
 chapter: false
 weight: 40
 tags:
@@ -12,7 +12,7 @@ tags:
 ![ShiftLeft](/images/mfe/shiftleft.png?classes=border,shadow)
 
 
-## About the labs with Jenkins
+## About the lab with Jenkins
 
 We built a scenario where you will be an engineer working on applications running in the cloud (AWS). We provided you with Continuous Integration / Continuous Delivery (CI/CD) tools like codecommit, cloudformation and Jenkins. In the lab we integrate Jenkins with MVISION CLOUD to scan the cloudformation template for security misconfiguration. 
 
