@@ -13,7 +13,7 @@ enableGitInfo = true
 hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/zengelan/eks-workshop/edit/master/content/"
+editURL = "https://github.com/zengelan/eks-workshop/edit/sesummit2020/content/"
 themeVariant = "mine"
 showVisitedLinks = true
 author = "Andreas Zengel (original from Brent Langston)"
@@ -26,7 +26,7 @@ disableShortcutsTitle=false
 disableBreadcrumb = false
 disableInlineCopyToClipBoard = false
 ghrepo = "https://github.com/zengelan/eks-workshop/"
-branch = "master"
+branch = "sesummit2020"
 template_bucket = "eksworkshop.com"
 pygmentsUseClasses = true
 pygmentsCodeFences = true

@@ -21,7 +21,7 @@ cd metrics-server
 
 Now can deploy the latest version of the Metric Server with the following command:
 ```
-kubectl create -f deploy/1.8+/
+kubectl create -f deploy/kubernetes/
 ```
 
 Now that this is installed in our cluster, let's connect to the Kubernetes Dashboard and see whats going on
