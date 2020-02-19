@@ -1,5 +1,5 @@
 ---
-title: "Create an EC2 Instance for Jenkins"
+title: "Login and Configure Jenkins"
 date: 2018-08-07T08:30:11-07:00
 weight: 40
 draft: false
@@ -7,22 +7,16 @@ tags:
   - mfesesummit2020
   
 ---
-In this lab, we will be using Cloud9 to access our EC2 instances and install Jenkins.
+In this section, we will login and connect to a basic installation of Jenkins which as been preinstalled in your AWS lab environment.
 
-## About Cloud9
+## Locate your Jenkins instance
 
-AWS Cloud9 allows developers to access EC2 servers in order to write, run, and debug code through the browser.  In short, Cloud9 is an SSH front-end to a Linux EC2 instance.  This is ideal for a lab environment because it will provide a consistent experience across operating system platforms.
+When logged in to your AWS account, navigate to EC2 in the US-WEST-2 (Oregon) region:
 
+![Cloud9_Environment_Settings](/images/shiftleft/findjenkins1.png)?classes=border,shadow
 
+You will find two EC2 t2.micro instances created in this region.  One will have a name that refers to Cloud9 (Amazon's web-based Integrated Development Environmen) and one other without a name.  The one without a name is your Jenkins instance, which you can verify by the name of the security group (which will refer to Jenkins).
 
-## Create Cloud9 Environment on New EC2 Instance
+Locate and record the public IP address for you Jenkins instance:
 
-1. Expand the AWS Services menu and click on Cloud9 under the Developer Tools Section.
-
-2. Click the ![Create_Environment](/images/shiftleft/createenvironment.png?classes=border,shadow) button.
-
-3. Configure the Cloud9 envionment to use a new t3.small instance with Amazon Linux as shown below.  You can use any name you like for this environment.
-
-    ![Cloud9_Environment_Settings](/images/shiftleft/cloud9environment.png)?classes=border,shadow
-
-
+![Cloud9_Environment_Settings](/images/shiftleft/findjenkins2.png)?classes=border,shadow
