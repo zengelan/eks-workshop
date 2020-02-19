@@ -1,14 +1,14 @@
 ---
-title: "Integrating with Jenkins"
+title: "About the Jenkins Plugin"
 date: 2018-08-07T08:30:11-07:00
-weight: 25
+weight: 20
 draft: false
 tags:
   - mfesesummit2020
   
 ---
 
-## Integrating Jenkins with MVISION Cloud
+## About the MVISION Cloud Plugin for Jenkins
 
 Jenkins supports hundreds of plugins that do everything from enhance its ability to provide management metrics, utilize various code repositories, enable deployment to IaaS, and even provide Chuck Norris "facts."  Similarly, MVISION Cloud is enabled through the use of a Jenkins plugin.
 
