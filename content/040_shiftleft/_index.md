@@ -1,7 +1,7 @@
 ---
 title: "About the labs"
 chapter: false
-weight: 10
+weight: 40
 tags:
   - beginner
   - MFESummit2020
