@@ -1,7 +1,7 @@
 ---
 title: "Configuring Jenkins for MVISION Cloud"
 date: 2018-08-07T08:30:11-07:00
-weight: 220
+weight: 5
 draft: false
 tags:
   - mfesesummit2020
