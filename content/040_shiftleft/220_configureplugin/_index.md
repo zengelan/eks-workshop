@@ -1,5 +1,5 @@
 ---
-title: "Configuring Jenkins for MVISION Cloud"
+title: "Configure Jenkins"
 date: 2018-08-07T08:30:11-07:00
 weight: 20
 draft: false
@@ -8,7 +8,7 @@ tags:
   
 ---
 
-## Configuring Jenkins
+## Jenkins Configuration Basics
 
 Now that we have access to our Jenkins server, we need to configure a few items to get it up and running and talking to MVISION Cloud:
 

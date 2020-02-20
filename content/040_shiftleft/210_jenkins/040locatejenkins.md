@@ -1,5 +1,5 @@
 ---
-title: "Locate and connect to you Jenkins Instance"
+title: "Locate and connect to your Jenkins Instance"
 date: 2018-08-07T08:30:11-07:00
 weight: 40
 draft: false
