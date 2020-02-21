@@ -16,19 +16,19 @@ Jenkins uses stores credentials modularly, with usernames, passwords, API keys, 
 
 Follow the steps below to update the MVISION Cloud credentials that Jenkins will use:
 
-### From the Jenkins homepage, click "Credentials":
+From the Jenkins homepage, click "Credentials":
 
 ![Credentials](/images/mfe/jenkinscredentials.png?classes=border,shadow)
 
-### Find and click the credential set that has "MVC Prod SE Summit 2020" in the name:
+Find and click the credential set that has "MVC Prod SE Summit 2020" in the name:
 
 ![MVC Credential](/images/mfe/clickcredential.png?classes=border,shadow)
 
-### Note that the details screen for the credentials shows the jobs that are using it, then click "update":
+Note that the details screen for the credentials shows the jobs that are using it, then click "update":
 
 ![Jenkins URL](/images/mfe/clickupdate.png?classes=border,shadow)
 
-### Replace the username and password fields with the credentials you were provided for you MVISION Cloud tenant (do not change the ID) and click "save":
+Replace the username and password fields with the credentials you were provided for you MVISION Cloud tenant (do not change the ID) and click "save":
 
 ![Jenkins URL](/images/mfe/updatecredentials.png?classes=border,shadow)
 
