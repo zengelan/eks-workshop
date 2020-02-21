@@ -8,8 +8,6 @@ tags:
   
 ---
 
-## Configure Jenkins' IP address
-
 Jenkins is often configured with an HTTPS reverse proxy or other security in front of it, so it needs to be told what the URL looks like in your browser bar in order to correctly display images and form absolute links for notifications.  Also, Jenkins will nag you to fix this until you do so let's take care of that now.
 
 From the Jenkins homepage, click "Manage Jenkins"

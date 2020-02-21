@@ -1,5 +1,5 @@
 ---
-title: "Configuring MVISION Cloud Credentials"
+title: "Configure Jenkins Projects"
 date: 2018-08-07T08:30:11-07:00
 weight: 20
 draft: false
@@ -7,8 +7,6 @@ tags:
   - mfesesummit2020
   
 ---
-
-## Configure projects for MVISION Cloud
 
 Now that Jenkins is configured and ready to use MVISION Cloud, the final step is to enable the security checks are part of the project's build process.
 
