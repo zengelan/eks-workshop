@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to Containers"
 weight: 10
 chapter: true
 draft: false
@@ -8,7 +8,7 @@ tags:
   - beginner
 ---
 
-# Introduction to Kubernetes
+# Introduction to Containers and Kubernetes
 
 A walkthrough of basic Kubernetes concepts.
 

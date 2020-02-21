@@ -27,7 +27,8 @@ In a new browser tab or window, navigate to http://YOUR-JENKINS-IP-ADDRESS:8080 
 ![Jenkins Signin](/images/mfe/jenkinssignin.png?classes=border,shadow)
 
 NOTE: Ensure you are not using HTTPS, some browsers will default to this.  If you wish to secure your Jenkins instance later by following the instructions [from the Jenkins Wiki.](https://wiki.jenkins.io/pages/viewpage.action?pageId=135468777)
-## Connect to Jenkins
+
+## Login to Jenkins
 
 Use the following credentials to login to your Jenkins instance:
 

@@ -10,7 +10,7 @@ tags:
 
 ## Configure MVISION Cloud
 
-Now that Jenkins is configured and ready to 
+Now that Jenkins is configured and ready to scan files with MVISION Cloud, we need to configure MVISION Cloud's policies
 
 1. **Enable Policies** - Jenkins needs to know its IP address to write correct URLs and hyperlinks
 2. ...
