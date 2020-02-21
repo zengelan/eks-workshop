@@ -32,4 +32,3 @@ Replace the username and password fields with the credentials you were provided 
 
 ![Jenkins URL](/images/mfe/updatecredentials.png?classes=border,shadow)
 
-## You have successfully configured Jenkins to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.

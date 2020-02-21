@@ -10,7 +10,7 @@ tags:
 
 ## Configure MVISION Cloud
 
-Overview...
+Now that Jenkins is configured and ready to 
 
 1. **Enable Policies** - Jenkins needs to know its IP address to write correct URLs and hyperlinks
 2. ...
