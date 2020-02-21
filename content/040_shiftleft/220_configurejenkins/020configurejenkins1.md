@@ -12,15 +12,15 @@ tags:
 
 Jenkins is often configured with an HTTPS reverse proxy or other security in front of it, so it needs to be told what the URL looks like in your browser bar in order to correctly display images and form absolute links for notifications.  Also, Jenkins will nag you to fix this until you do so let's take care of that now.
 
-1.  From the Jenkins homepage, click "Manage Jenkins"
+# From the Jenkins homepage, click "Manage Jenkins"
 
 ![Manage Jenkins](/images/mfe/managejenkins.png?classes=border,shadow)
 
-2.  From the Manage Jenkins screen, click "Configure System"
+# From the Manage Jenkins screen, click "Configure System"
 
 ![Configure System](/images/mfe/configuresystem.png?classes=border,shadow)
 
-3.  From Jenkins configuration, locate the Jenkins URL setting and replace the IP address that is there with the IP address of your Jenkins instance recorded in the previous section.  The URL should begin with http:// and end with :8080/ as shown below:
+# From Jenkins configuration, locate the Jenkins URL setting and replace the IP address that is there with the IP address of your Jenkins instance recorded in the previous section.  The URL should begin with http:// and end with :8080/ as shown below:
 
 ![Jenkins URL](/images/mfe/jenkinsurl.png?classes=border,shadow)
 
