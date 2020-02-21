@@ -8,7 +8,6 @@ tags:
   - shiftleft
   
 ---
-##  welcome to our Shift-Left and Jenkins Lab
 ![ShiftLeft](/images/mfe/shiftleft.png?classes=border,shadow)
 
 
