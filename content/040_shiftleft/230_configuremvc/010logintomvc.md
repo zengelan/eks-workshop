@@ -8,8 +8,6 @@ tags:
   
 ---
 
-## Connect and login to MVISION Cloud
-
 In a new browser window or tab, navigate to https://www.myshn.net and login with the MVISION Cloud credentials provided to you:
 
 ![MVC Login](/images/mfe/mvclogin.png?classes=border,shadow)
