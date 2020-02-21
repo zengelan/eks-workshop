@@ -16,7 +16,7 @@ When logged in to your AWS account, navigate to EC2 in the US-WEST-2 (Oregon) re
 ![Jenkins Instance](/images/mfe/findjenkins1.png?classes=border,shadow)
 You will find two EC2 t2.micro instances created in this region.  One will have a name that refers to Cloud9 (Amazon's web-based Integrated Development Environmen) and one other without a name.  The one without a name is your Jenkins instance, which you can verify by the name of the security group (which will refer to Jenkins).
 
-Locate and record the public IP address for you Jenkins instance (it will be different from the IP address below):
+**Locate and record the public IP address for you Jenkins instance (it will be different from the IP address below):**
 
 ![Jenkins' IP Address](/images/mfe/findjenkins2.png?classes=border,shadow)
 
