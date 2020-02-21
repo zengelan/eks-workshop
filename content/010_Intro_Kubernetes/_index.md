@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Containers"
+title: "Containers 101"
 weight: 10
 chapter: true
 draft: false
