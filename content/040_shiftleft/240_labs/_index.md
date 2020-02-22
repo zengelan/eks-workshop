@@ -10,9 +10,9 @@ tags:
 
 ## It's time to put on your software developer hat
 
-![Trust me](/images/mfe/trustme.png?classes=border,shadow)
+![Trust me](/images/mfe/trustme.jpg?classes=border,shadow)
 
-You may recall
+You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now use C
 
 - Clone the repo containing templates
 
