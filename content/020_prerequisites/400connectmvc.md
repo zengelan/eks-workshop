@@ -60,15 +60,13 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 1.  Return to the MVISION Cloud configuration screen.
 
 2.  Enter the new Role ARN you recorded in the previous step and provide a friendly name such as the one shown below, click **add** and then click **Authenticate Accounts**
-
   ![Copy Role ARN](/images/mfe/enterarn.png?classes=border,shadow)
 
 3.  Wait while MVISION Cloud authenticates the account and click **Done** when promtped.
 
 4.  Click the button to select the receiver account, and click the account number of the AWS account you just connected.
-
   ![Copy Role ARN](/images/mfe/selectreceiveraccount.png?classes=border,shadow)
-
+  
 5.  Tick the box to allow MVISION Cloud to automatically create permissions needed for Real-Time monitoring and click **Next**.
 
 6.  Select or enter any email addresses that you would like to receive automatic email notification of violations and click **Next**.
