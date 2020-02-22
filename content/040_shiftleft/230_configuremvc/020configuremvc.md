@@ -16,12 +16,8 @@ Scroll through the list of available configuration items and click a few to find
 
 ![Configuration Audit](/images/mfe/audititemdetails.png?classes=border,shadow)
 
-Expand the Policy Category section and select filters Secure Config and Unrestricted Access from the list:
+Select the following policies and enable them through the actions menu:
 
-![Configuration Audit](/images/mfe/filtercategories1.png?classes=border,shadow)
+![Configuration Audit](/images/mfe/enablepolicies.png?classes=border,shadow)
 
-Use the header checkbox to select all of the filtered policies and then click activate from the Actions menu:
-
-![Configuration Audit](/images/mfe/filtercategories2.png?classes=border,shadow)
-
-#### Congratulations, MVISION Cloud is ready to start protecting AWS from insecure configuration.  It's time to test your skills in the shoes of an application developer writing infrastructure-as-code!
+#### Congratulations, MVISION Cloud is ready to start protecting AWS from insecure infrastructure-as-code.  It's time to test your skills in the shoes of an application developer writing infrastructure-as-code!

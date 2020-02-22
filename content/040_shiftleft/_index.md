@@ -1,5 +1,5 @@
 ---
-title: "Shift Left Lab"
+title: "Shift-Left Lab"
 chapter: false
 weight: 40
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 ![ShiftLeft](/images/mfe/shiftleft.png?classes=border,shadow)
 
-## What is "shift-left"?
+## What is "Shift-Left"?
 
 Traditional software development models have lumped most changes and improvements into large releases each of which has a planning, coding, testing, and release schedule.  Releases would often be several months or years apart which means that customers would have to wait a long time for features or bug fixes even though the code is already done.
 
