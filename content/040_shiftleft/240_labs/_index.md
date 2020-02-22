@@ -12,11 +12,6 @@ tags:
 
 ![Trust me](/images/mfe/trustme.jpg?classes=border,shadow)
 
-You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now use C
+You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now try to build the code there, ivestigate any securityproblems encountered, and attempt to resolve them.
 
-- Clone the repo containing templates
-
-- Easy
-- Medium
-- Hard
-
+#### Let's get started!
