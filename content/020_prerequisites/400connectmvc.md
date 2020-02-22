@@ -6,6 +6,8 @@ weight: 300
 
 MVISION Cloud utilizes AWS' comprehensive set of APIs to provide security for IaaS services such as EC2 and S3.  Later sections of this workshop will provide details on the details of the security provided, the following describes the functionality of MVISION Cloud for AWS at a high level:
 
+![MVISION Cloud](/images/mfe/mvcforAWS.png?classes=border,shadow)
+
 In order to provide this security, your MVISION Cloud tenant will need access to various components of your AWS environment.  Let's get started on creating a role.
 
 #### Determine your MVISION Cloud AWS Account ID
