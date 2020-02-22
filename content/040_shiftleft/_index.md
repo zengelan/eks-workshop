@@ -23,7 +23,7 @@ Shift-left mentality changes this model in a few key ways:
 
 ## About the lab with Jenkins
 
-This lab is a scenario where you will be an engineer working on applications running in the cloud (AWS). We provided you with Continuous Integration / Continuous Delivery (CI/CD) tools like codecommit, cloudformation and Jenkins. In this lab you will learn the basics of these tools and how to easily add infrastructure-as-code (CloudFormation)security to an existing CI/CD pipeline:
+This lab is a scenario where you will be an engineer working on applications running in the cloud (AWS). We provided you with Continuous Integration / Continuous Delivery (CI/CD) tools like AWS CodeCommit, AWS CloudFormation and Jenkins. In this lab you will learn the basics of these tools and how to easily add infrastructure-as-code (CloudFormation)security to an existing CI/CD pipeline:
 
 1.	Learn how CI tools like Jenkins work to quickly automate the process of transforming source code to a deployment
 2.	Configure and enable the MVISION Cloud plugin for Jenkins 
