@@ -26,7 +26,7 @@ Scroll through the project's configuration, taking note of the enabled sections 
 
   ![SQS Trigger](/images/mfe/sqstrigger.png?classes=border,shadow)
 
-  Also note that the project is built from the latest source stored in AWS CodeCommit using Git:
+  Also note that the project is built from the latest source stored in AWS CodeCommit using Git (more on this later):
 
   ![Git AWS CodeCommit](/images/mfe/gitcodecommit.png?classes=border,shadow)
 

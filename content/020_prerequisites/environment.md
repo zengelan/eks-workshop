@@ -1,5 +1,5 @@
 ---
-title: "Prepare the environment"
+title: "Configure Cloud9 IDE"
 chapter: false
 weight: 30
 tags:
