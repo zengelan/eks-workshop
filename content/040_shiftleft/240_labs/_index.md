@@ -8,7 +8,11 @@ tags:
   
 ---
 
-## Placeholder for section to fix and build projects
+## It's time to put on your software developer hat
+
+![Trust me](/images/mfe/trustme.png?classes=border,shadow)
+
+You may recall
 
 - Clone the repo containing templates
 
