@@ -1,7 +1,7 @@
 ---
 title: "Container Lab"
 chapter: true
-weight: 40
+weight: 20
 hidden: true
 tags:
   - beginner

@@ -1,7 +1,7 @@
 ---
 title: "Additional Labs"
 chapter: true
-weight: 20
+weight: 30
 tags:
   - advanced
 ---
