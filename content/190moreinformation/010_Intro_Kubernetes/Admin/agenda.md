@@ -14,7 +14,7 @@ weight: 10
 * Introduction to Kubernetes with Andreas
 * Reality Check with Justin Cragin and Brooke Noelke
 * Start the Lab
-* Checkpoint (1): EKS Cluster creation started [Launch EKS]({{< ref "030_container/030_eksctl/launcheks.md" >}})
+* Checkpoint (1): EKS Cluster creation started 
 
 * Overview of EKS architecture, Guestbook App
 * EKS Lab, Deploy, run and scale applications
