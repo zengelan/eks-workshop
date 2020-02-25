@@ -4,15 +4,16 @@ date: 2020-02-24
 weight: 10
 ---
 
-###Important Policy Options
+### Important Policy Options
 
 Before we get started, there are three important policy options we want to enable:
 
-a. Data Storage
+1. Data Storage
     reason
-b. Secure Match Highlighting with Obfuscation
+    
+2. Secure Match Highlighting with Obfuscation
     reason
-c. Autonomous Remediation
+3. Autonomous Remediation
     reason
 
 To start, make sure you are logged into your MVC tenant and click on POLICY at the top, and then POLICY OPTIONS.
