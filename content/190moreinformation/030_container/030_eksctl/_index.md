@@ -4,7 +4,7 @@ chapter: true
 weight: 30
 tags:
   - beginner
-  - MFESummit2020
+  - AWSWorkshop2020
   
 ---
 

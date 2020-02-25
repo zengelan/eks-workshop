@@ -3,7 +3,7 @@ title: "McAfee SE Summit Ignition Portal"
 chapter: false
 weight: 20
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
   
 ---
 

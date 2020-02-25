@@ -8,6 +8,8 @@ tags:
   
 ---
 
-## The More You Know...
+## This section contains extra information and labs!
 
 ![The More You Know](/images/mfe/themoreyouknow.jpg)
+
+#### Feel free to explore!

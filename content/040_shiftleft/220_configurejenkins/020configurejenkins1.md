@@ -22,4 +22,4 @@ From Jenkins configuration, locate the Jenkins URL setting and replace the IP ad
 
 ![Jenkins URL](/images/mfe/jenkinsurl.png?classes=border,shadow)
 
-**Please continue to the next section of the lab to configure Jenkins' MVISION Cloud credentials**
+#### Please continue to the next section of the lab to configure Jenkins' MVISION Cloud credentials

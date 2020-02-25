@@ -10,4 +10,4 @@ tags:
 
 ![LAB_Diagram](/images/mfe/LAB_Diagram.png?classes=border,shadow)
 
-### Now that we've discussed how Jenkins and McAfee MVISION Cloud work together, let's get started!  Please continue to the next section of the lab.
+#### Now that we've discussed how Jenkins and McAfee MVISION Cloud work together, let's get started!  Please continue to the next section of the lab.

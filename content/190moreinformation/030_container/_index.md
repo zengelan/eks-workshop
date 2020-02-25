@@ -5,7 +5,7 @@ weight: 20
 hidden: true
 tags:
   - beginner
-  - MFESummit2020
+  - AWSWorkshop2020
   - container
 ---
 

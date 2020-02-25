@@ -4,7 +4,7 @@ date: 2020-01-08
 weight: 30
 draft: false
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 The redis-slave and redis-master Services you applied are only accessible within the container cluster because the default type for a Service is ClusterIP. ClusterIP provides a single IP address for the set of Pods the Service is pointing to. This IP address is accessible only within the cluster.

@@ -40,3 +40,5 @@ Use the following credentials to login to your Jenkins instance:
 You should be presented with a Jenkins home screen similar to the one below:
 
 ![Jenkins Signin](/images/mfe/jenkinshome.png?classes=border,shadow)
+
+#### Continue to the next section to start configuring Jenkins

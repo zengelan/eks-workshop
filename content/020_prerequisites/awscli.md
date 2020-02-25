@@ -6,7 +6,7 @@ draft: false
 hidden: true
 comment: default install now includes aws-cli/1.15.83
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 {{% notice tip %}}

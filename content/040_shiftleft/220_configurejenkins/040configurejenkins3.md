@@ -37,5 +37,5 @@ Click the "Enable Shift Left Inline Integration Box" (there is no need to change
 
 ### Repeat the above steps for the Medium and Hard projects!
 
-**You have successfully configured the Jenkins projects to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.**
+#### You have successfully configured the Jenkins projects to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.
 

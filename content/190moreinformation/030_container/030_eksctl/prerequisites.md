@@ -3,13 +3,13 @@ title: "Prerequisites"
 date: 2018-08-07T13:31:55-07:00
 weight: 10
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
   
 ---
 
 For this module, we need to download the [eksctl](https://eksctl.io/) binary:
 ```
-curl --location "https://labs.sesummit20.net/labfiles/container-lab/eksctl_mfesummit2020_2.tar.gz" | tar xz -C /tmp
+curl --location "https://labs.sesummit20.net/labfiles/container-lab/eksctl_AWSWorkshop2020_2.tar.gz" | tar xz -C /tmp
 sudo mv -v /tmp/eksctl /usr/local/bin
 
 ```

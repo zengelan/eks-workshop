@@ -4,7 +4,7 @@ date: 2018-10-03T10:14:32-07:00
 draft: false
 weight: 30
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 # How it works - IaaS Containers

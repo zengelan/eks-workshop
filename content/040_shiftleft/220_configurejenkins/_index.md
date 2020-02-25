@@ -8,7 +8,7 @@ tags:
   
 ---
 
-## Jenkins Configuration Basics
+# Jenkins Configuration Basics
 
 Now that we have access to our Jenkins server, we need to configure a few items to get it up and running and talking to MVISION Cloud.  In this section we will accomplish the following:
 
@@ -21,4 +21,4 @@ Now that we have access to our Jenkins server, we need to configure a few items 
 
 4. **Enable MVISION Cloud on projects** - A trio of Jenkins projects have been preconfigured with all the steps necessary to build three different CloudFormation templates however they need to be configured to do the configuration check with MVISION Cloud.
 
-
+#### Let's get started in the next section!
