@@ -1,5 +1,5 @@
 ---
-title: "MVISION Cloud Policy"
+title: "MVISION Cloud Security Scans"
 weight: 25
 chapter: true
 draft: false
