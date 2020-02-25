@@ -49,3 +49,5 @@ ll
 You should now see file listing and a new folder created in your Cloud9 IDE:
 
 ![Successful Clone](/images/mfe/successfulclone.png?classes=border,shadow)
+
+#### Move on to the next section to try your skills at fixing insecure infrastructure-as-code!

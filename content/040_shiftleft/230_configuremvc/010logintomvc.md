@@ -12,4 +12,5 @@ In a new browser window or tab, navigate to https://www.myshn.net and login with
 
 ![MVC Login](/images/mfe/mvclogin.png?classes=border,shadow)
 
+#### Move on to the next section to configure MVISION Cloud policies
 

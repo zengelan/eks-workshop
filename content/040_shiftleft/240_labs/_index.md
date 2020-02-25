@@ -14,4 +14,4 @@ tags:
 
 You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now try to build the code there, ivestigate any securityproblems encountered, and attempt to resolve them.
 
-#### Let's get started!
+#### Let's get started in the next section!

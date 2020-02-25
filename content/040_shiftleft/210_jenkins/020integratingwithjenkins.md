@@ -33,3 +33,5 @@ If non-compliant infrastructure templates are identified, developers receive imm
 ![Build failed by violation](/images/mfe/failedbuild.png?classes=border,shadow)
 
 ![Chuck Norris owns you](/images/mfe/chucknorris.png?classes=border,shadow)
+
+#### Continue to the next section for a summary of our lab environment and CI/CD pipeline. 

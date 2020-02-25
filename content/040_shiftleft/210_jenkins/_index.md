@@ -15,3 +15,5 @@ MVISION Cloud integrates with a popular Continuous Integration (CI) tool call Je
 This section of the lab will introduce you to key concepts and lab architecture as well as get you connected to the Jenkins instance pre-created for you in your AWS environment.
 
 ![Jenkins](/images/mfe/jenkins.png?classes=border,shadow)
+
+#### Move on to the next section to learn more about Jenkins.
