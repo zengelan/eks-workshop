@@ -8,10 +8,6 @@ tags:
   - beginner
 ---
 
-# Placeholder for Nick's content
-
-# Old content follows:
-
 # Lab Welcome
 
 Thank you for attending this lab session! Here is a brief introduction of the lab objectives and what we hope you learn today. 
@@ -39,4 +35,4 @@ Please note: At noon today we will be serving lunch and you can continue the lab
   - Resolve issue, rescan to validate fixed issue
 - Difficult Lab 
   - Using the same principles, find security issues using clues provided by MVISION Cloud and resolve. 
-   
+
