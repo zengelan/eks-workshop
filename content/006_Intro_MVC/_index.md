@@ -22,4 +22,4 @@ MVISION Cloud is a broad security platform designed to provide a variety of serv
 #### Goals 
 In this lab, we will focus on DevOps/DevSecOps/Developer roles and their need to have a simple approach to securing cloud resources. 
 
-Container Security, Infrastructure-as-a-service (IaaS) and Infrastructure-as-Code (IaC) are fundamental shifts for customers. While the cloud transformation includes simple concepts such as cloud migration strategy for legacy resources (i.e. moving server infrastructure and data to a public cloud), it also includes building infrastructure for new projects, customer facing applications, and other modern workflows commonly associated with DevOps and DevSecOps. 
+Container Security, Infrastructure-as-a-service (IaaS) and Infrastructure-as-Code (IaC) are fundamental shifts for customers. While the cloud transformation includes simple concepts such as cloud migration strategy for legacy resources (i.e. moving server infrastructure and data to a public cloud), it also includes building infrastructure for new projects, customer facing applications, and other modern workflows commonly associated with DevOps and DevSecOps.  
