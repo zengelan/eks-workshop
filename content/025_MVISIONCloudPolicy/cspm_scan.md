@@ -5,3 +5,7 @@ weight: 16
 ---
 
 Placeholder
+
+![cspm1](/images/mvcscan/cspmscan01.png?classes=border,shadow)
+
+![cspm2](/images/mvcscan/cspmscan01.png?classes=border,shadow)
