@@ -5,7 +5,7 @@ chapter: true
 draft: false
 hidden: true
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 # Admin Section

@@ -4,7 +4,7 @@ chapter: true
 hidden: true
 weight: 10
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 ### Running the workshop at the McAfee SE Summit 2020 event

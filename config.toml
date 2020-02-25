@@ -48,8 +48,8 @@ listTodo = true
     weight = -110
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-aws'></i> MFESUMMIT2020"
-url = "/tags/mfesummit2020"
+name = "<i class='fab fa-aws'></i> AWSWorkshop2020"
+url = "/tags/AWSWorkshop2020"
 weight = 4
 
 [[menu.shortcuts]]

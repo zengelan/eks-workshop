@@ -4,7 +4,7 @@ chapter: false
 weight: 40
 hidden: true
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 In this step you are downloading some of the files and tools we need for the lab to your environment. The following commands create a git repository in your environment and fill it with the data from the central repository.

@@ -4,7 +4,7 @@ pre: "<b>   </b>"
 chapter: true
 weight: 20
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
   - beginner
   
 ---

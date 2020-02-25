@@ -5,7 +5,7 @@ weight: 30
 draft: false
 chapter: false
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 {{< todolist >}}

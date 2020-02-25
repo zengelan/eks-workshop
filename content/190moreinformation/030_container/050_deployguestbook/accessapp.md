@@ -5,7 +5,7 @@ weight: 35
 draft: false
 hidden: true
 tags:
-  - MFESummit2020
+  - AWSWorkshop2020
 ---
 
 topic to describe on how to access the guestbook app and how to work with it
