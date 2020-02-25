@@ -14,6 +14,7 @@ Thank you for attending this lab session! Here is a brief introduction of the la
 
 #### Overview
 Duration: 3 hours
+
 Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.  
 
 #### Lab 1 - Deploying Risky Container Applications
