@@ -10,5 +10,5 @@ tags:
 
 # Container Lab
 
-Welcome to our Container Lab - Dennen Test Master Branch
+Welcome to our Container Lab
 ![Colorfull Containers](/images/mfe/colorful-containers.jpg)
