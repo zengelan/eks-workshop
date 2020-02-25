@@ -13,4 +13,4 @@ Placeholder
 ![dlp3](/static/images/mvcscan/dlpscan03.png?classes=border,shadow)
 
 
-test
+testing static relative path
