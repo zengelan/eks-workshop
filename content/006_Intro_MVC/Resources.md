@@ -10,7 +10,7 @@ tags:
 
 # Resources
 
-### Overview 
+#### Overview 
 This is a fully cloud-hosted lab environment. You do not need any additional software or administrator rights to complete the labs. 
 
 AWS account

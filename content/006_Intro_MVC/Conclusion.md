@@ -10,7 +10,7 @@ tags:
 
 # Conclusion
 
-### What You Will Walk Away With
+#### What You Will Walk Away With
 
 When completed, you should have a solid understanding that AWS and McAfee can work together to simplify and automate modern IaaS and IaC processes. 
 
