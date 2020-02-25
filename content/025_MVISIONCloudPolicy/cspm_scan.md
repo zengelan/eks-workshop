@@ -8,4 +8,4 @@ Placeholder
 
 ![cspm1](/images/mvcscan/cspmscan01.png?classes=border,shadow)
 
-![cspm2](/images/mvcscan/cspmscan01.png?classes=border,shadow)
+![cspm2](/images/mvcscan/cspmscan02.png?classes=border,shadow)
