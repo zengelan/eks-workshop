@@ -30,3 +30,4 @@ Replace the username and password fields with the credentials you were provided 
 
 ![Jenkins URL](/images/mfe/updatecredentials.png?classes=border,shadow)
 
+**Please continue to the next section of the lab to configure the Jenkins projects**

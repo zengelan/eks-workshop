@@ -18,3 +18,5 @@ Now that Jenkins is configured and ready to scan files with MVISION Cloud, we ne
   However it need to be provided credentials for your MVISION Cloud tenant in order to make the API calls necessary to submit infrastructre-as-code (CloudFormation) files for inspection
 
 4. **Enable MVISION Cloud on projects** - A trio of Jenkins projects have been preconfigured with all the steps necessary to build three different CloudFormation templates however they need to be configured to do the configuration check with MVISION Cloud.
+
+#### Continue to the next section to get started
