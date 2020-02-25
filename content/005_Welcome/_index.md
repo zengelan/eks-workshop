@@ -30,8 +30,13 @@ Please note: At noon today we will be serving lunch and you can continue the lab
 #### Lab 2 - DevSecOps - Add security to code check-in (Shift-Left, protecting configuration issues in code)
 - Configure and connect Jenkins (AWS credentials, AWS SQS, McAfee MVISION Cloud credentials)   
 - Enable "Cloud Security Posture Management" (CSPM) policies in MVISION Cloud
-- Easy Lab - 
+- Easy Lab
   - Push a Amazon Machine Image (AMI) with known issues
   - Identify the issue using MVISION Cloud 
   - Resolve the issue
-- Medium Lab - Protecting 
+- Medium Lab 
+  - Identify Configuration discrepencies in a YAML connfig file
+  - Resolve issue, rescan to validate fixed issue
+- Difficult Lab 
+  - Using the same principles, find security issues using clues provided by MVISION Cloud and resolve. 
+   
