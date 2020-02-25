@@ -34,9 +34,9 @@ Click the "Enable Shift Left Inline Integration Box" (there is no need to change
 
 ![Enable Shift Left](/images/mfe/enableshiftleft.png?classes=border,shadow)
 
-{{% notice Important %}}
-Repeat the above steps for the Medium and Hard projects
-{{% /notice %}}
+
+####Repeat the above steps for the Medium and Hard projects
+
 
 You have successfully configured Jenkins to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.
 
