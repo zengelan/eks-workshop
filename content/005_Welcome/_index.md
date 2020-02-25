@@ -35,5 +35,5 @@ Please note: At noon today we will be serving lunch and you can continue the lab
   - Identify Configuration discrepencies in a YAML connfig file
   - Resolve issue, rescan to validate fixed issue
 - Difficult Lab 
-  - Using the same principles, find security issues using clues provided by MVISION Cloud and resolve. 
+  - Using the same principles, find security issues using clues provided by MVISION Cloud and resolve.  
 
