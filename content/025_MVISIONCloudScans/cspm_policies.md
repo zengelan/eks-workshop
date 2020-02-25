@@ -6,7 +6,7 @@ weight: 15
 
 For the first Security Scan, we will be performing Cloud Security Posture Management (CSPM or Config Audit) against both the AWS environment as a whole and the Elastic Kubernetes Service (EKS).
 
-Howver over POLICY at the top and select CONFIGURATION AUDIT.
+Hover over POLICY at the top and select CONFIGURATION AUDIT.
 
 ![cspm1](/images/mvcscan/cspmpolicy01.png?classes=border,shadow)
 
