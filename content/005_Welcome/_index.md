@@ -8,7 +8,7 @@ tags:
   - beginner
 ---
 
-## Placeholder for Nick, old content follows:
+## Placeholder for Nick's conten.  Old content follows:
 
 
 # Lab Welcome
