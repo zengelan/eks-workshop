@@ -1,14 +1,17 @@
 ---
-title: "Prepare your Lab Environment"
-pre: "<b>   </b>"
-chapter: true
-weight: 20
+title: "Getting Started in your Lab"
+date: 2018-08-07T08:30:11-07:00
+weight: 10
+draft: false
 tags:
-  - AWSWorkshop2020
-  - beginner
+  - mfesesummit2020
   
 ---
 
-# Getting Started
+In this section we will get your lab environment ready to do:
 
-TODO: Enter a brief overview of the lab environment
+1. **Access Cloud9** - We'll start off accessing your development environment in AWS Cloud9, a web-based Integrate Development Environment
+
+2. **Connect MVISION Cloud to AWS** - Next we will connect MVISION Cloud to your AWS environment to provide visibility and control over IaaS resources and configuration.
+
+#### Let's get started with the lab in the next section!
