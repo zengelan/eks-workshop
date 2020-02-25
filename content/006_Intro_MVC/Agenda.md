@@ -21,7 +21,7 @@ The labs are designed for increasing difficulty.
 Lab 2:  CI/CD Developer Workflows 
      - Correct misconfiguration in a CloudFormation Template
      - Correct misconfiguration in a YAML template
-     - Successfully diagnose and deploy cloud infrastructure
+     - Successfully diagnose and deploy cloud infrastructures
 
 
 
