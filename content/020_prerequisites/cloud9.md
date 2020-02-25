@@ -22,17 +22,4 @@ Your IDE Opens and you can see the main window layout. It looks like a "regular"
 
 ![Cloud92](/images/mfe/cloud9_2.jpg)
 
-### Configure Cloud9 Credential Management
-{{% notice info %}}
-Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
-the EKS IAM authentication, so we will disable it and provide our AWS credentials via environment variables.
-{{% /notice %}}
-
-- Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab
-- Select **AWS SETTINGS**
-- Turn off **AWS managed temporary credentials**
-- Close the Preferences tab
-![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
-
-
 In the next chapter we will **prepare the environment**

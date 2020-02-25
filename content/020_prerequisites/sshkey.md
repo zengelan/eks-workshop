@@ -2,6 +2,7 @@
 title: "Create an SSH key"
 chapter: false
 weight: 40
+hidden: true
 ---
 
 

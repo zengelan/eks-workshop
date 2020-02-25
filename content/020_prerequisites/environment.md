@@ -2,6 +2,7 @@
 title: "Configure Cloud9 IDE"
 chapter: false
 weight: 30
+hidden: true
 tags:
   - RSA
 ---

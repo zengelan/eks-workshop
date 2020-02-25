@@ -8,4 +8,5 @@ tags:
 
 # Conclusion
 
-{{% children showhidden="false" %}}
+## Placeholder for Nick's content
+

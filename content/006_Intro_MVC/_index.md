@@ -10,5 +10,5 @@ tags:
 
 # Introduction to MVISION Cloud
 
-## Nick to add content
+## Placeholder for Nick's content
 
