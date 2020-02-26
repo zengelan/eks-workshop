@@ -46,14 +46,18 @@ Then press the following keys in order to issue a command to write and quit:
 2. w
 3. q
 
-Now that we've updated our bucket and our PSP policy, let's kick off another CSPM scan
-
 ![AR](/images/mvcscan/cspmresolve05.png?classes=border,shadow)
+
+Now that we've updated our bucket and our PSP policy, let's kick off another CSPM scan
 
 ![cspm2](/images/mvcscan/cspmscan02.png?classes=border,shadow)
 
-![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow)
+<!--- ![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow) --->
+
+Hover over the INCIDENT tab and choose POLICY INCIDENT SUMMARY. You'll be able to see that a few of the incidents have automatically moved to a Resolved status. This drastically reduces the number of incidents your infosec teams need to review! 
 
 ![cspm2](/images/mvcscan/cspmrescan01.png?classes=border,shadow)
 
 ![dlp8](/images/mvcscan/cspmrescan01.png?classes=border,shadow)
+
+Please note, the Pod Security Policy incidents can take some time to resolve. Try checking back later after the Shift-Left lab.
