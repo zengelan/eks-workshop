@@ -17,6 +17,5 @@ Duration: 3 hours
 
 {{% notice info %}}
 Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.
-
 We would also ask that you complete the survey at the end of these labs. Your feedback is extremely important!
 {{% /notice %}}  
