@@ -6,23 +6,16 @@ tags:
 
 ## Give us some feedback
 
-SEs Team –  
+Dear Student –  
+
+We hope that this Cloud Security  workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
 
 
-We hope that this  Cloud Security  workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
-
-  
-
-We continue to appreciate and solicit your input on Cloud solutions enablement and direction. As you know our Cloud security business and the Cloud is a critical control point in our strategy and catalyst for growth. 
-
-  
-
-Your voice is important to us, so we ask you to complete the following survey on the SE Summit 2020 Cloud Workshop you attended: 
+Your voice is important to us, so we ask you to complete the following survey on the Cloud Security Workshop you attended today: 
 
 Please take the survey here:
 
-<div width="100%">
-<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd3l5quHMqTNHHqqwJzbJnYh_2Bxfz3_2Bxo8eQ0nsmtvAIXa.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
-</div>
+<iframe width="100%" height= "600px" src= "https://www.surveymonkey.com/r/McAfee2020RSA_AWSWorkshop" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
 
 Thank you! 
