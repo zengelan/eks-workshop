@@ -15,7 +15,7 @@ Thank you for attending this lab session! Here is a brief introduction of the la
 #### Overview
 Duration: 3 hours
 
-{{% notice note %}}
+{{% notice Important Information %}}
 Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.
 
 We would also ask that you complete the survey at the end of these labs. Your feedback is extremely important!

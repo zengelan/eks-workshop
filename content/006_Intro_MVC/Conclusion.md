@@ -1,7 +1,7 @@
 ---
 title: "What you will learn"
 weight: 9
-chapter: true
+chapter: false
 draft: false
 tags:
   - RSA

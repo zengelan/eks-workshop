@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 weight: 6
-chapter: true
+chapter: false
 draft: false
 tags:
   - RSA
