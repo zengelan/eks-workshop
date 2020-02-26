@@ -7,9 +7,6 @@ tags:
   - RSA
   - beginner
 ---
-
-# Lab Personas
-
 #### Personas for this lab
 This lab is designed for you to understand how AWS and McAfee work together to help secure your cloud environments as you take on modern IaaS annd PaaS infrastructure rollout. 
 
