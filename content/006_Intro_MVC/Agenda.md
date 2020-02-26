@@ -7,9 +7,6 @@ tags:
   - RSA
   - beginner
 ---
-
-# Agenda
-
 #### What to expect
 
 Fundamentally, MVISION Cloud will be connected to your AWS account to monitor DevSecOps and Developer workflows. 
