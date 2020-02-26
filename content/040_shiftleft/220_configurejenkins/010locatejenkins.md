@@ -9,7 +9,7 @@ tags:
 ---
 In this section, we will locate and connect to a basic installation of Jenkins which as been preinstalled in your AWS lab environment.
 
-## Locate your Jenkins instance
+## Find your Jenkins instance
 
 When logged in to your AWS account, navigate to EC2 in the US-WEST-2 (Oregon) region:
 
