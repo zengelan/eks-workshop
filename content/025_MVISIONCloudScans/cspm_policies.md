@@ -16,15 +16,14 @@ Click the check box at the top-left of the list to select all the CSPM policies.
 
 ![cspm2](/images/mvcscan/cspmpolicy02.png?classes=border,shadow)
 
-In the search policies field at the top of the screen, type "escalated" and look for the following policy:
-Enable control plane logging during EKS cluster creation"
+On the left hand side, expand the Policy Category section and choose "Container Security". Then select the checkbox above the list to select all the policies. Once all the Container Security policies are selected, click ACTIONS in the top right and choose activate.
 
-Select the policy checkbox, click on ACTIONS, and select ACTIVATE POLICY.
+![cspm3](/images/mvcscan/cspmpolicy05.png?classes=border,shadow)
 
-![cspm3](/images/mvcscan/cspmpolicy03.png?classes=border,shadow)
+Clear the search bar, and then type "unrestricted" and select the filtered policy called "Unrestricted Access to S3 Bucket". Once it is filtered in the list, select the checkbox next to the policy and then activate it.
 
-Repeat the steps above for the following policies:
-"World Readable S3 Buckets"
-"Others"
+![cspm4](/images/mvcscan/cspmpolicy06.png?classes=border,shadow)
 
-![cspm4](/images/mvcscan/cspmpolicy04.png?classes=border,shadow)
+Repeat the same step for the policy "Unencrypted S3 Buckets"
+
+![cspm4](/images/mvcscan/cspmpolicy07.png?classes=border,shadow)
