@@ -16,7 +16,7 @@ Click the check box at the top-left of the list to select all the CSPM policies.
 
 ![cspm2](/images/mvcscan/cspmpolicy02.png?classes=border,shadow)
 
-In the search policies field at the top of the screen, type "logging" and look for the following policy:
+In the search policies field at the top of the screen, type "escalated" and look for the following policy:
 Enable control plane logging during EKS cluster creation"
 
 Select the policy checkbox, click on ACTIONS, and select ACTIVATE POLICY.

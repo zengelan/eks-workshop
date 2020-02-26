@@ -8,7 +8,7 @@ tags:
 
 Dear Student –  
 
-We hope that this Cloud Security  workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
+We hope that this Cloud Security Workshop has helped you to better understand the security challenges in IaaS environments, including containerization technologies. 
 
 
 Your voice is important to us, so we ask you to complete the following survey on the Cloud Security Workshop you attended today: 

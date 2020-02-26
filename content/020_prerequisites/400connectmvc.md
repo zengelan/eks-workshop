@@ -30,13 +30,21 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 1.  Login to your AWS account and select **IAM** from the services menu.
 
-2.  From IAM, navigate to Roles and search for "mcafee"
+2.  From IAM, navigate to Roles and search for "mcafee". Select "McAfeeServiceRole".
 
   ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup02.png?classes=border,shadow)
 
+  On the Summary page for the Role, select the "Trust Relationships" tab and then click "Edit trust relationship".
+
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup03.png?classes=border,shadow)
 
+Within the JSON formatted permissions, modify the Account ID and External ID as shown in the screenshot below. The Account ID and External ID are available on the MVISION Cloud page.
+
+Once finished, click Update Trust Policy button.
+
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
+
+Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup05.png?classes=border,shadow)
 
@@ -48,6 +56,8 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup06.png?classes=border,shadow)
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup07.png?classes=border,shadow)
+
+Please note, you will get a warning Regarding Non Critical Errors as shown below. It is safe to "Continue with Error". 
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup08.png?classes=border,shadow)
 
