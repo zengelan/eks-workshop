@@ -68,4 +68,4 @@ Hover over the INCIDENT tab and choose POLICY INCIDENT SUMMARY. You'll be able t
 
 Please note, the Pod Security Policy incidents can take some time to resolve. Try checking back later after the Shift-Left lab.
 
-Furthermore, Autonomous Remediation also works for DLP Incidents. In a production environment, if the files within the S3 bucket were deleted, the incidents would automatically moved to a Resolved status.
+Furthermore, Autonomous Remediation also works for DLP Incidents. In a production environment, if the files within the S3 bucket were deleted, the incidents would automatically be moved to a Resolved status.
