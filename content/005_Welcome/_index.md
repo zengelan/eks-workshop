@@ -17,25 +17,9 @@ Duration: 3 hours
 
 {{% notice note %}}
 Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.
+
+We would also ask that you complete the survey at the end of these labs. Your feedback is extremely important!
 {{% /notice %}}  
 
-#### Lab 1 - Deploying Risky Container Applications
-- Connect McAfee MVISION Cloud to an AWS Account, deploy some policies to protect Containers
-- Using Containers, you will deploy a webapp into AWS
-- Within this webapp, McAfee MVISION Cloud will identify configuration issues with the Container using an on-demand scan, once the issue is identified, you can fix the configuration issue
-- Using MVISION Cloud you will create Data Loss Prevention policies to find sensitive data from the webapp stored in AWS S3 storage 
-- Review non-compliant resources in AWS (S3), fix issues
 
-#### Lab 2 - DevSecOps - Add security to code check-in (Shift-Left, protecting configuration issues in code)
-- Configure and connect Jenkins (AWS credentials, AWS SQS, McAfee MVISION Cloud credentials)   
-- Enable "Cloud Security Posture Management" (CSPM) policies in MVISION Cloud
-- Easy Lab
-  - Push a Amazon Machine Image (AMI) with known issues
-  - Identify the issue using MVISION Cloud 
-  - Resolve the issue
-- Medium Lab 
-  - Identify Configuration discrepencies in a YAML connfig file
-  - Resolve issue, rescan to validate fixed issue
-- Difficult Lab 
-  - Using the same principles, find security issues using clues provided by MVISION Cloud and resolve.  
 
