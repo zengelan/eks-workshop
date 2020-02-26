@@ -18,3 +18,5 @@ By selecting an incident row, you can see details for that incident.
 Make sure to scroll down within the Incident Details to see the secure Match Highlighting with Obfuscation.
 
 ![dlp](/images/mvcscan/dlpincident04.png?classes=border,shadow)
+
+You may notice that one high severity incident has an action taken of "Quarantine Failed". This is expected as our IAM Role is ReadOnly. MVISION Cloud can take numerous automatic response actions, but require further permissions within the AWS environment.
