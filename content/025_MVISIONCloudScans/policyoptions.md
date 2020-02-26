@@ -10,7 +10,7 @@ Before we get started, there are three important policy options we want to enabl
 
 1. Data Storage - customers can choose to store their secure match highlights within McAfee, or their own S3/Blob storage encrypted to their own keys
 
-2. Secure Match Highlighting with Obfuscation - This features allows remdiators to quickly and safley make true-positive or false-positive decisions about DLP incidents
+2. Secure Match Highlighting with Obfuscation - This features allows remediators to quickly and safley make true-positive or false-positive decisions about DLP incidents
 
 3. Autonomous Remediation - This feature allows MVC to automatically move Incidents from a New status to a Resolved status after a remediator fixes the issue
 
