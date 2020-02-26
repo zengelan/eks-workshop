@@ -10,3 +10,8 @@ For the sake of time, we will not be performing this portion in the lab today, b
 
 ![vulnvideo](/images/mvcscan/ContainerScanCVE.mp4?classes=border,shadow)
 
+<video controls>
+  <source src="/images/mvcscan/ContainerScanCVE.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
