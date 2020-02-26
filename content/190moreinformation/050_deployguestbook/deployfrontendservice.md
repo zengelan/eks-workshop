@@ -90,6 +90,4 @@ External Traffic Policy:  Cluster
 Events:                   <none>
 ```
 
-If you have some spare time, and want to know more about how services can be exposed. here are some details for further reading {{< ref "/additional/130_exposing-service/connecting" >}}
-
 
