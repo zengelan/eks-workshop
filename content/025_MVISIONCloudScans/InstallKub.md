@@ -60,3 +60,9 @@ any existing credentials file by executing the following command in the Terminal
 ```
 rm -vf ${HOME}/.aws/credentials
 ```
+
+The final step ties your Cloud9 environment to the EKS Cluster
+
+```
+aws eks update-kubeconfig --name ‘mcafee-workshop-eksctl’
+```
