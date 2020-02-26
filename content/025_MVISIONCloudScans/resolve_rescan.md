@@ -26,9 +26,10 @@ kubectl edit psp
 ```
 
 This will pull up the following screen, allowing you to edit the file with Vi commands. Here is a quick cheatsheet on Vi commands, but further information is available here:
-insert Vi page
 
-Press the Insert key on your keyboard to modify. Once modified, press the Insert key to stop modifying.
+https://kb.iu.edu/d/afdc
+
+Move the cursor to around where you want to modify. Press the Insert key on your keyboard to modify (drop "into" the document). Once modified, press the Insert or Escape key to stop modifying.
 
 ![AR](/images/mvcscan/cspmresolve02.png?classes=border,shadow)
 

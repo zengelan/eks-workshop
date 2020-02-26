@@ -4,7 +4,7 @@ date: 2020-02-24
 weight: 17
 ---
 
-Once the scan is complete, hover of INCIDENTS at the top and choose POLICY INCIDENTS. Explore the incidents at your leisure. 
+Once the scan is complete, hover over INCIDENTS at the top and choose POLICY INCIDENTS. Explore the incidents at your leisure. 
 
 Take special note of the "Do not admin with allowPrivilegeEscalation in Pod Security Policies" as shown below.
 
