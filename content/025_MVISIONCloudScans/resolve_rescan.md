@@ -4,9 +4,7 @@ date: 2020-02-24
 weight: 30
 ---
 
-![cspm2](/images/mvcscan/cspmscan02.png?classes=border,shadow)
 
-![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow)
 
 
 
@@ -19,3 +17,11 @@ weight: 30
 ![AR](/images/mvcscan/cspmresolve04.png?classes=border,shadow)
 
 ![AR](/images/mvcscan/cspmresolve05.png?classes=border,shadow)
+
+![cspm2](/images/mvcscan/cspmscan02.png?classes=border,shadow)
+
+![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow)
+
+![cspm2](/images/mvcscan/cspmrescan01.png?classes=border,shadow)
+
+![dlp8](/images/mvcscan/cspmrescan01.png?classes=border,shadow)
