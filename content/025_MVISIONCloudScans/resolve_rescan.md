@@ -4,7 +4,12 @@ date: 2020-02-24
 weight: 30
 ---
 
-Now let's fix some of these issues! First, log into your AWS tenant and head to the S3 service. Within here, see if you can successfully remove public access (unrestricted access) and enable bucket encryption. A hint screenshot is below.
+Now let's fix some of these issues! First, log into your AWS tenant and head to the S3 service. Within here, see if you can successfully:
+
+1. remove public access (unrestricted access)
+2. enable bucket encryption.
+
+A hint screenshot for the unrestricted access is below. For the encryption, choose AES-256.
 
 ![AR](/images/mvcscan/cspmresolve06.png?classes=border,shadow)
 
