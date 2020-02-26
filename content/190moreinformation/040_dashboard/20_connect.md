@@ -43,7 +43,7 @@ Now lets's get the authentication done
 
 Open a New Terminal Tab and enter
 ```
-aws eks get-token --cluster-name ${CODEWORD}-eksctl | jq -r '.status.token'
+aws eks get-token --cluster-name mcafee-workshop-eksctl | jq -r '.status.token'
 ```
 
 Copy the output of this command and then click the radio button next to
