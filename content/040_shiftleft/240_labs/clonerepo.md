@@ -1,6 +1,7 @@
 ---
 title: "Clone your CodeCommit Repo"
 chapter: false
+hidden: true
 weight: 20
 tags:
   - beginner
