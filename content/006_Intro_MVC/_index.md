@@ -2,12 +2,10 @@
 title: "Introduction to MVISION Cloud"
 weight: 3
 chapter: true
-draft: false
 tags:
   - RSA
   - beginner
 ---
-
 # Introduction to MVISION Cloud
 
 MVISION Cloud is a broad security platform designed to provide a variety of services to customers who need security policy in cloud assets. 
@@ -19,7 +17,7 @@ MVISION Cloud is a broad security platform designed to provide a variety of serv
  - Collaboration events such as controlled sharing of sensitive data externally 
  - Threat prevention (Insider threats, impossible travel, anomalous behavior, compromised accounts, malware protection)
 
-#### Goals 
+#### Lab Objectives 
 In this lab, we will focus on DevOps/DevSecOps/Developer roles and their need to have a simple approach to securing cloud resources. 
 
 Container Security, Infrastructure-as-a-service (IaaS) and Infrastructure-as-Code (IaC) are fundamental shifts for customers. 

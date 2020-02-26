@@ -1,16 +1,13 @@
 ---
 title: "Agenda"
 weight: 4
-chapter: true
+chapter: false
 draft: false
 tags:
   - RSA
   - beginner
 ---
-
-# Agenda
-
-#### What to expect
+## What to expect
 
 Fundamentally, MVISION Cloud will be connected to your AWS account to monitor DevSecOps and Developer workflows. 
 
@@ -20,7 +17,7 @@ The next use case concerns itself with sensitive data stored in AWS. Customers o
 
 Lastly, we will guide you through the "Shift Left" use-case. What if security principles were applied BEFORE a devops team pushed infrastructure? The scan results will show discrepancies that need to be remediated before being allowed to deploy to production. 
 
-Labs Summary: 
+#### Labs Summary: 
 - Lab 1: Cloud Security Scans
      - A configuration issue will need to be resolved. 
      - A data compliance issue will need to be resolved. 

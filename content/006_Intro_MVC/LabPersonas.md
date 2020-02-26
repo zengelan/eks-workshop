@@ -1,7 +1,7 @@
 ---
 title: "Lab Personas"
 weight: 5
-chapter: true
+chapter: false
 draft: false
 tags:
   - RSA
