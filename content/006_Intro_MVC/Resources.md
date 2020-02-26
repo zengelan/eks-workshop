@@ -8,7 +8,7 @@ tags:
   - beginner
 ---
 #### Overview 
-This is a fully cloud-hosted lab environment. You do not need any additional software or administrator rights to complete the labs. 
+This is a fully cloud-hosted lab environment. You do not need any additional software or administrator rights to complete the labs. You will interact with the following resources / services: 
 
 + AWS account
 + AWS Kubernetes Cluster (EKS)
