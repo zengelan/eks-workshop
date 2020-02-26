@@ -1,7 +1,7 @@
 ---
 title: "...on your own"
 chapter: true
-hidden: true
+hidden: false
 weight: 20
 ---
 
@@ -9,8 +9,9 @@ weight: 20
 
 
 {{% notice note %}}
-This mode is not implemented yet. We will work on it after SE Summit 2020 so that new hires can work through it on-demand. Meanwhile, please use this mode of operation when you want to re-do the lab
-[**Running the workshop at the McAfee SE Summit 2020 event**](/020_prerequisites/sesummit20_event/)
+This mode is not implemented yet. We will work on it in the next couple of weeks. Please contact us if you want to run the workshop again or if you like us to facilitate this workshop at your company.
+[Request follow-up session]( {{< ref "followup.md" >}}).
 {{% /notice %}}
+
 
 {{% children %}}
