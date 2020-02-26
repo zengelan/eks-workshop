@@ -27,3 +27,5 @@ Clear the search bar, and then type "unrestricted" and select the filtered polic
 Repeat the same step for the policy "Unencrypted S3 Buckets"
 
 ![cspm4](/images/mvcscan/cspmpolicy07.png?classes=border,shadow)
+
+### You should have ~185 Active policies ###
