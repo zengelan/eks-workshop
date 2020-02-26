@@ -1,7 +1,7 @@
 ---
 title: "Introduction to MVISION Cloud"
 weight: 3
-chapter: true
+chapter: false
 tags:
   - RSA
   - beginner
