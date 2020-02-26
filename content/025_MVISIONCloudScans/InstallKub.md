@@ -7,7 +7,7 @@ weight: 5
 Amazon EKS clusters require kubectl and kubelet binaries and the aws-cli or aws-iam-authenticator
 binary to allow IAM authentication for your Kubernetes cluster.
 
-
+Go to your Cloud9 Terminal and run the following commands in order. While you should consider the commands, it is best to use the "Copy" button at the top right of each block.
 
 #### Install kubectl
 ```
@@ -66,3 +66,5 @@ The final step ties your Cloud9 environment to the EKS Cluster
 ```
 aws eks update-kubeconfig --name mcafee-workshop-eksctl --region us-west-2
 ```
+
+This concludes the prep for the Kubernetes environment. We will return here after the scans to resolve some high severity incidents!

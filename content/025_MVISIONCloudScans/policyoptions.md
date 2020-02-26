@@ -8,13 +8,11 @@ weight: 10
 
 Before we get started, there are three important policy options we want to enable:
 
-1. Data Storage
-    reason
-    
-2. Secure Match Highlighting with Obfuscation
-    reason
-3. Autonomous Remediation
-    reason
+1. Data Storage - customers can choose to store their secure match highlights within McAfee, or their own S3/Blob storage encrypted to their own keys
+
+2. Secure Match Highlighting with Obfuscation - This features allows remdiators to quickly and safley make true-positive or false-positive decisions about DLP incidents
+
+3. Autonomous Remediation - This feature allows MVC to automatically move Incidents from a New status to a Resolved status after a remediator fixes the issue
 
 To start, make sure you are logged into your MVC tenant and click on POLICY at the top, and then POLICY OPTIONS.
 
