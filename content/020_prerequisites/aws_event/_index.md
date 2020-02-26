@@ -9,7 +9,6 @@ weight: 12
 {{% notice warning %}}
 Only complete this section if you are at an AWS and / or McAfee hosted event. If you 
 are running the workshop on your own, go to:
-
 [Start the workshop on your own](../self_paced/).
 {{% /notice %}}
 
