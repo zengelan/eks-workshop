@@ -36,6 +36,8 @@ Here is what the modification should look like.
 
 ![AR](/images/mvcscan/cspmresolve03.png?classes=border,shadow)
 
+![AR](/images/mvcscan/cspmresolve04.png?classes=border,shadow)
+
 Make sure you no longer see --- INSERT --- at the bottom of the screen, which lets you know you are no longer modifying.
 
 Then press the following keys in order to issue a command to write and quit:
@@ -43,8 +45,6 @@ Then press the following keys in order to issue a command to write and quit:
 1. :
 2. w
 3. q
-
-![AR](/images/mvcscan/cspmresolve04.png?classes=border,shadow)
 
 Now that we've updated our bucket and our PSP policy, let's kick off another CSPM scan
 
