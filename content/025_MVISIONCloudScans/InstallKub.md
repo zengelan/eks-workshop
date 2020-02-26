@@ -64,5 +64,5 @@ rm -vf ${HOME}/.aws/credentials
 The final step ties your Cloud9 environment to the EKS Cluster
 
 ```
-aws eks update-kubeconfig --name ‘mcafee-workshop-eksctl’
+aws eks update-kubeconfig --name mcafee-workshop-eksctl --region us-west-2
 ```
