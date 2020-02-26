@@ -1,5 +1,5 @@
 ---
-title: "Conclusion"
+title: "What you will learn"
 weight: 9
 chapter: true
 draft: false
@@ -8,9 +8,7 @@ tags:
   - beginner
 ---
 
-# Conclusion
-
-#### What You Will Walk Away With
+# What You Will Walk Away With
 
 When completed, you should have a solid understanding that AWS and McAfee can work together to simplify and automate modern IaaS and IaC processes. 
 
@@ -19,5 +17,3 @@ When completed, you should have a solid understanding that AWS and McAfee can wo
  - Operationalize incident management to assure proper deployment of cloud resources
  - Identify critical data found in cloud infrastructure
  - Identify misconfigurations of cloud resources and easily resolve them 
-
-
