@@ -18,9 +18,9 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 2.  Click **Add Service Instance**, select AWS, and provide a name for the instance when promted ("AWS" will work just fine)
 
-3.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown then click **next**.
+3.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown below then click **next**.
 
-  ![Enter Service Management](/images/mfe/awsselections.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/mvcsetup01.png?classes=border,shadow)
 
 4.  Acknowlege the pre-requisites and click **next**
 
@@ -30,49 +30,29 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 1.  Login to your AWS account and select **IAM** from the services menu.
 
-2.  From IAM, navigate to Roles and click **Create Role**
+2.  From IAM, navigate to Roles and search for "mcafee"
 
-  ![MVISION Cloud for AWS Summary](/images/mfe/1add_role.png?classes=border,shadow)
+  ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup02.png?classes=border,shadow)
 
-3.  Select **Another AWS account** and check the **Require External ID** option.  Enter your **Account ID** and **External ID** information that you recorded from MVISION Cloud earlier.  Then click **Next: Permissions**
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup03.png?classes=border,shadow)
 
-  ![Create AWS Role 1](/images/mfe/createawsrole1.png?classes=border,shadow)
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
-4.  In the seach box, enter "administrator" and select the AdministratorAccess checkbox and click **Next: Tags**
-
-  ![MVISION Cloud for AWS Summary](/images/mfe/administratoraccess.png?classes=border,shadow)
-
-  {{% notice Important %}}
-  In a production environment you would provide much more granular controls, however since this is a lab environment we don't want to restrict MVISION Cloud from doing anything it needs to.
-  {{% /notice %}}
-
-5.  Click **Next: Review**
-
-6.  Provide a name for the new role such as the one below and the click **Create role**
-  ![MVISION Cloud for AWS Summary](/images/mfe/clickcreaterole.png?classes=border,shadow)
-
-7.  Back at the AWS Roles screen, enter the name of the role you just created in the search box and click its name.
-
-8.  Record the Role ARN Shown there.
-
-  ![Copy Role ARN](/images/mfe/copyrolearn.png?classes=border,shadow)
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup05.png?classes=border,shadow)
 
 #### Configure MVISION Cloud to use the new AWS Role
 
 1.  Return to the MVISION Cloud configuration screen.
 
 2.  Enter the new Role ARN you recorded in the previous step and provide a friendly name such as the one shown below, click **add** and then click **Authenticate Accounts**
-  ![Copy Role ARN](/images/mfe/enterarn.png?classes=border,shadow)
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup06.png?classes=border,shadow)
 
-3.  Wait while MVISION Cloud authenticates the account and click **Done** when promtped.
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup07.png?classes=border,shadow)
 
-4.  Click the button to select the receiver account, and click the account number of the AWS account you just connected.
-  ![Copy Role ARN](/images/mfe/selectreceiveraccount.png?classes=border,shadow)
-  
-5.  Tick the box to allow MVISION Cloud to automatically create permissions needed for Real-Time monitoring and click **Next**.
-
-6.  Select or enter any email addresses that you would like to receive automatic email notification of violations and click **Next**.
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup08.png?classes=border,shadow)
 
 7.  Review all of the information and click **Save**
+
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup09.png?classes=border,shadow)
 
 #### Congratulations MVISION Cloud is now configured and ready for use with AWS!
