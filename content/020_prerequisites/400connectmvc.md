@@ -12,6 +12,10 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 #### Determine your MVISION Cloud AWS Account ID
 
+### MVISION Cloud URL ###
+
+https://www.myshn.net
+
 1.  From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
 
   ![Enter Service Management](/images/mfe/clickservicemanagement.png?classes=border,shadow)
