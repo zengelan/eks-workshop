@@ -10,6 +10,23 @@ tags:
 Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the **Copy to clipboard** feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.
 {{% /notice %}}
 
+First of all, we need to update the AWS Commmand Line that comes installed on the Cloud9 machine. It is outdated and we need a never version of at least 1.18. We can do this using these commands:
+
+```
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/bin/aws      
+```
+This has now (1) downloaded the latest version of the aws cli bundle
+(2) unzipped it and 
+(3) installed it on top of the already installed version
+
+Now, lets check the version by executing
+```
+aws --version
+```
+this should now show you at least version `aws-cli/1.18.1` or higher.
+
 To ensure temporary credentials aren't already in place we will also remove
 any existing credentials file by executing the following command in the Terminal:
 ```
