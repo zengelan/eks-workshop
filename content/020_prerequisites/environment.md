@@ -10,12 +10,14 @@ tags:
 Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the **Copy to clipboard** feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.
 {{% /notice %}}
 
+#### Upgrade AWS Command Line aws-cli to latest version
 First of all, we need to update the AWS Commmand Line that comes installed on the Cloud9 machine. It is outdated and we need a never version of at least 1.18. We can do this using these commands:
 
 ```
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
-sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/bin/aws      
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/bin/aws   
+
 ```
 This has now (1) downloaded the latest version of the aws cli bundle
 (2) unzipped it and 
@@ -24,9 +26,19 @@ This has now (1) downloaded the latest version of the aws cli bundle
 Now, lets check the version by executing
 ```
 aws --version
+
 ```
 this should now show you at least version `aws-cli/1.18.1` or higher.
 
+#### Install iam-authenticator for AWS
+We also need the tool `iam-authenticator` from the Amazon AWS tools. Let's install it by executing these commands:
+```
+sudo curl --location -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/aws-iam-authenticator
+sudo chmod +x /usr/local/bin/aws-iam-authenticator
+
+```
+
+#### Setup authentication for AWS Commmand line and API calls
 To ensure temporary credentials aren't already in place we will also remove
 any existing credentials file by executing the following command in the Terminal:
 ```
@@ -106,6 +118,7 @@ Please make sure you enter your codeword in lowercase letters. E.g. enter `skydi
 
 ```
 echo export CODEWORD=<CODEWORD> | tee -a ~/.bash_profile
+echo export EKS_REGION=us-east-1 | tee -a ~/.bash_profile
 ```
 then execute 
 
