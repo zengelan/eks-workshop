@@ -9,7 +9,7 @@ tags:
 
 For this module, we need to download the [eksctl](https://eksctl.io/) binary:
 ```
-curl --location "https://labs.sesummit20.net/labfiles/container-lab/eksctl_mfesummit2020_2.tar.gz" | tar xz -C /tmp
+curl --location "https://labs.sesummit20.net/labfiles/container-lab/eksctl_mfesummit2020_3.tar.gz" | tar xz -C /tmp
 sudo mv -v /tmp/eksctl /usr/local/bin
 
 ```
@@ -27,7 +27,7 @@ eksctl version
 
 ```
 
-Check that the version is `0.2.0-1086-g2c93d15f` or `0.2.0-1087-g4c730114` 
+Check that the version is `0.18.0-mcafee eksworkshop 3+ddeb1aca.2020-05-07T19:18:10Z` 
 
 ***
 
