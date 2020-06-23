@@ -8,7 +8,7 @@ tags:
 
 # Perform a vulnerability scan on Containers
 
-In this Chapter, we will create a container registry, upload some c ontainer images and then scan those using MVISION Cloud to detect any CVE vulnerabilities in these conatiner imagesrrr.
+In this Chapter, we will create a container registry, upload some c ontainer images and then scan those using MVISION Cloud to detect any CVE vulnerabilities in these conatiner images.
 
 ![cvelogo](cvelogo.jpg?classes=border,shadow)
 
