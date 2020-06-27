@@ -48,7 +48,7 @@ Note: you must disable ECR vulnerability scanning as you create the ECR repo
 Additional notes will be provided within lab steps
 
 
-![cve_image_1](cve_image_1.jpg?classes=border,shadow)
+![cve_image_1](cve_image_1.png?classes=border,shadow)
 
 
 
