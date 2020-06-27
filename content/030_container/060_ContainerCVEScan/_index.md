@@ -50,10 +50,48 @@ Additional notes will be provided within lab steps
 
 ![cve_image_1](cve_image_1.jpg?classes=border,shadow)
 
+-You have docker installed (on the Ubuntu VM) [required to pull/push docker images to the ECR repo]
+-You will be pulling vulnerable docker image which have vulnerabilities, examples are provided later in this lab
+https://docs.docker.com/get-docker/
+https://aws.amazon.com/blogs/compute/authenticating-amazon-ecr-repositories-for-docker-cli-with-credential-helper/
+-Add your username to the docker group so that you can run Docker without using sudo: sudo usermod -a -G docker ${USER}
+Note: At the time of this lab, the following command was not working as expected:  aws ecr get-login | docker login --username AWS --password-stdin <Account-ID>.dkr.ecr.us-west-2.amazonaws.com
+-Use this instead:  aws --region us-west-1 ecr get-login-password | docker login --username AWS --password-stdin <Account-ID>.dkr.ecr.us-west-1.amazonaws.com
+-Change your region to appropriate location, and replace '<Account-ID>' with your AWS account ID.
+-For more info: https://github.com/aws/aws-cli/issues/4962
+-If this does not work, then log into AWS first, then authenticate to docker using the --password option
+# Obtain dirty docker images
 
+To obtain a set of dirty images, navigate to https://hub.docker.com/r/vulnerables/web-dvwa to look for some interesting docker images.
 
+For example these images were found to be dirty at the time of this lab:
 
+Pull these images below:
 
+vulnerables/web-dvwa
+vulnerables/web-owasp-railsgoat
+tomcat:8-jdk8-corretto
+bitnami/wordpress:5.2.2-ol-7-r59
+Obtain the pull command directly from the Docker hub:
 
+![cve_image_2](cve_image_2.jpg?classes=border,shadow)
 
+At this stage you should have the images, check by running 'docker image ls'
 
+#Push instructions to ECR
+
+Option 1: Create the ECR repositories using the AWS UI
+
+Reminder: make sure the AWS vulnerability scanning was disabled when you created your ECR repo. If not, delete the repo and recreate.
+
+![cve_image_1](cve_image_1.jpg?classes=border,shadow)
+
+Option 2: Create the ECR repositories using the AWS cli
+
+aws ecr create-repository --repository-name myapp2 --image-scanning-configuration scanOnPush=false --region us-west-1
+
+Note: This command will fail if you are using aws cli version 1
+
+Retag the container
+
+1. Find your push commands from your ECR container
