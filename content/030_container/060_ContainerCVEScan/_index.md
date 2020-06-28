@@ -23,15 +23,14 @@ Similar to On-Demand Scans, it appears as an option while creating a new ODS sca
 
 - Read all prerequisites before taking any actions.
 - Its highly recommended to create your own Ubuntu Linux image in AWS and/or Azure for this lab and future labs.
--  Corporate laptops are being forced through a proxy, which in some cases causes certificate issues when running AWS CLI commands needed in this lab.
--  For Ubuntu, install these updates:
-- "sudo -s"
+- Corporate laptops are being forced through a proxy, which in some cases causes certificate issues when running AWS CLI commands needed in this lab.
 
+For Ubuntu, install these updates:
+- "sudo -s"
 - apt-get update
 - apt-get install unzip
 - apt-get install curl
 - apt-get install groff
-
 - "apt-get update -y sudo apt-get upgrade -y sudo apt-get dist-upgrade"
 - apt install python3
 - apt-get install python3-pip
@@ -65,7 +64,7 @@ Note: At the time of this lab, the following command was not working as expected
 
 - For example these images were found to be dirty at the time of this lab:
 
-- Pull these images below:
+Pull these images below:
 
 - vulnerables/web-dvwa
 - vulnerables/web-owasp-railsgoat
