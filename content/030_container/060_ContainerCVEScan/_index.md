@@ -13,8 +13,6 @@ In this Chapter, we will create a container registry, upload some c ontainer ima
 ![cvelogo](cvelogo.jpg?classes=border,shadow)
 
 
-IN PROGRESS....
-
 ### Introduction
 
 MVISION Cloud provides the ability to run Container Vulnerability Scan (CVS) to help customers prevent weak code from reaching production. Container Vulnerability Scan (CVS) scans your images in CSP registries. It scans all specified images against a known list of vulnerabilities and creates an incident for each image against which the vulnerabilities are found.
@@ -27,18 +25,18 @@ Similar to On-Demand Scans, it appears as an option while creating a new ODS sca
 - Its highly recommended to create your own Ubuntu Linux image in AWS and/or Azure for this lab and future labs.
 -  Corporate laptops are being forced through a proxy, which in some cases causes certificate issues when running AWS CLI commands needed in this lab.
 -  For Ubuntu, install these updates:
-- sudo -s 
+- "sudo -s"
 
 - apt-get update
-apt-get install unzip
-apt-get install curl
-apt-get install groff
+- apt-get install unzip
+- apt-get install curl
+- apt-get install groff
 
-apt-get update -y sudo apt-get upgrade -y sudo apt-get dist-upgrade
-apt install python3
-apt-get install python3-pip
-apt-get install iputils-ping
-apt-get install ssh
+- "apt-get update -y sudo apt-get upgrade -y sudo apt-get dist-upgrade"
+- apt install python3
+- apt-get install python3-pip
+- apt-get install iputils-ping
+- apt-get install ssh
 
 - You have an MVC tenant
 - You have an AWS account
@@ -63,11 +61,11 @@ Note: At the time of this lab, the following command was not working as expected
 
 ### Obtain dirty docker images
 
-To obtain a set of dirty images, navigate to https://hub.docker.com/r/vulnerables/web-dvwa to look for some interesting docker images.
+- To obtain a set of dirty images, navigate to https://hub.docker.com/r/vulnerables/web-dvwa to look for some interesting docker images.
 
-For example these images were found to be dirty at the time of this lab:
+- For example these images were found to be dirty at the time of this lab:
 
-Pull these images below:
+- Pull these images below:
 
 - vulnerables/web-dvwa
 - vulnerables/web-owasp-railsgoat
@@ -96,10 +94,10 @@ Note: This command will fail if you are using aws cli version 1
 
 _**Retag the container**_
 
-1. Find your push commands from your ECR container
+1.  Find your push commands from your ECR container
 ![push1](push1.jpg?classes=border,shadow)
 
-2. Use Docker to re-tag your images
+2.  Use Docker to re-tag your images
 ![cve_4](cve_4.jpg?classes=border,shadow)
 
 - The 'highlighted' text will come from your ECR push commands.
@@ -153,10 +151,10 @@ Click Next
 6. Choose Policy > On-Demand Scan.
 7. Click Actions > Container Vulnerability.
 8. The Scan Creation Wizard is displayed. On the General Info page enter the following:
--Scan Type. Select Container Vulnerability.
--Name. Enter a unique identifier so that you can rerun the scan later.
--Description. Enter an optional description for the scan. 
--Service Instance. Select the cloud service instance you want to scan.
+- Scan Type. Select Container Vulnerability.
+- Name. Enter a unique identifier so that you can rerun the scan later.
+- Description. Enter an optional description for the scan. 
+- Service Instance. Select the cloud service instance you want to scan.
 ![cve_13](cve_13.jpg?classes=border,shadow)
 
 9. Click Next. 
@@ -188,9 +186,9 @@ Click Next
 
 7. Click Next. 
 8. On the Schedule Scan page, select the schedule to run your scan and click Next:
--None (On-Demand Only). Run the scan once now. (Select this one)
--Daily. Run the scan once a day. Configure the time and time zone. 
--Weekly. Run the scan once a week. Configure the day, time, and time zone.
+- None (On-Demand Only). Run the scan once now. (Select this one)
+- Daily. Run the scan once a day. Configure the time and time zone. 
+- Weekly. Run the scan once a week. Configure the day, time, and time zone.
 ![cve_17](cve_17.jpg?classes=border,shadow)
 
 9. On the Review and Activate page, review your settings for the On-Demand Scan, and click Save.  
