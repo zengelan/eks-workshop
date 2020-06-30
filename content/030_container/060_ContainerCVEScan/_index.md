@@ -98,7 +98,7 @@ _**Retag the container**_
 ![push1](push1.jpg?classes=border,shadow)
 
 2.  Use Docker to re-tag your images
-![cve_4](cve_4.jpg?classes=border,shadow)
+![docker_tag](docker_tag.jpg?classes=border,shadow)
 
 - The 'highlighted' text will come from your ECR push commands.
 - Find the docker repository name and tag using the docker images command.
