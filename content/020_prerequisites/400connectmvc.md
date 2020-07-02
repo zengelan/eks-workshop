@@ -14,21 +14,21 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 ### MVISION Cloud URL ###
 
-https://www.myshn.net
+1. Login to the MVISION Cloud Dashboard at https://www.myshn.net/
 
-1.  From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
+2. From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
 
   ![Enter Service Management](/images/mfe/clickservicemanagement.png?classes=border,shadow)
 
-2.  Click **Add Service Instance**, select AWS, and provide a name for the instance when promted ("AWS" will work just fine)
+3.  Click **Add Service Instance**, select AWS, and provide a name for the instance when promted ("AWS" will work just fine)
 
-3.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown below then click **next**.
+4.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown below then click **next**.
 
   ![Enter Service Management](/images/mfe/mvcsetup01.png?classes=border,shadow)
 
-4.  Acknowlege the pre-requisites and click **next**
+5.  Acknowlege the pre-requisites and click **next**
 
-5.  You will be presented with a page to enter you AWS Role ARNs.  Leave this browser tab where it is and we will come back to it later.
+6.  You will be presented with a page to enter you AWS Role ARNs.  Leave this browser tab where it is and we will come back to it later.
 
 #### Create an AWS Role for MVISION Cloud
 
@@ -65,7 +65,10 @@ Please note, you will get a warning Regarding Non Critical Errors as shown below
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup08.png?classes=border,shadow)
 
-7.  Review all of the information and click **Save**
+3. Optionally add an email address where you would like to receive notifications for policy incidents and click next.
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup18.png?classes=border,shadow)
+
+4.  Review all of the information and click **Save**
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup09.png?classes=border,shadow)
 
