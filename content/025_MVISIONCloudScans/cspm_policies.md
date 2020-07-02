@@ -28,4 +28,4 @@ Repeat the same step for the policy "Unencrypted S3 Buckets"
 
 ![cspm4](/images/mvcscan/cspmpolicy07.png?classes=border,shadow)
 
-### You should have ~185 Active policies ###
+### You should have ~233 Active policies ###
