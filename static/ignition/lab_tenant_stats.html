@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="admin">
+<html lang="en" ng-app="lab_tenant_stats">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -15,14 +15,6 @@
 <body ng-controller="LabTenantStats" onload="bodyOnLoad();">
 <div style="width: 70%; margin-left: 20px">
   <h2>McAfee RSA AWS Workshop - Lab Tenant Overview</h2>
-    <fieldset>
-      <!--
-      <button type="button" class="btn btn-primary" ng-click="controller.onUserStatus()">Update</button>
-      <button type="button" class="btn btn-primary" ng-click="controller.onGetJenkins()">GetJenkins</button>
-      -->
-      <input type="checkbox" ng-checked="showemail" ng-click="showemail=!showemail" ng-init="showemail=false">mfeemail<br>
-    </fieldset>
-  </form>
   <div id="adminkeydiv">
     <input id="adminkeyin" placeholder="Admin Key" style="width: 200px; margin-left: 20px" type="text">
     <input type="submit" id="saveadminkey" value="Save">
@@ -35,66 +27,32 @@
   <table id="resulttable" hidden class="table table-striped table-hover table-bordered">
     <thead>
       <th scope="col">#</th>
-      <th scope="col">
-        <a href="#" ng-click="orderByField='codeword'; reverseSort = !reverseSort">
-          codeword <span ng-show="orderByField == 'codeword'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
-        </a>
-      </th>
-      <th scope="col" ng-show="showemail">
-        <a href="#" ng-click="orderByField='mfeemail'; reverseSort = !reverseSort">
-          mfeemail <span ng-show="orderByField == 'mfeemail'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
-        </a>
-      </th>
-
-
-      <th scope="col">AWS lastlogin</th>
-      <th scope="col">c9status</th>
-      <th scope="col">eks</th>
-      <th scope="col">nodegroups</th>
-      <th scope="col">ekslogging</th>
-      <th scope="col">MVC Inc EKS</th>
-      <th scope="col">branch&checkins</th>
-      <th scope="col">Jenkins Easy</th>
-      <th scope="col">Jenkins Medium</th>
-      <th scope="col">Jenkins Hard</th>
-      <th scope="col">Stacks</th>
-      <th scope="col">MVC lastlogin</th>
-      <th scope="col">MVC Inc ShiftLeft</th>
+      <th scope="col">tenantName</th>
+      <th scope="col">tenantId</th>
+      <th scope="col">Last update</th>
+      <th scope="col">Student</th>
+      <th scope="col">DLP Policies</th>
+      <th scope="col">CSPM Policies</th>
+      <th scope="col">users</th>
+      <th scope="col">Audit Log entries</th>
+      <th scope="col">Incidents</th>
+      <th scope="col">Instances</th>
+      <th scope="col">OD Scans</th>
     </thead>
     <tbody>
-        <tr ng-repeat="(userid, user) in user_table | orderBy:orderByField:reverseSort">
-          <th scope="row">{{ $index }}</th>
-          <td scope="row">{{ user.codeword }}</td>
-          <td ng-show="showemail">{{user.mfeemail}}</td>
-          <td ng-style="user.llminutesago == 'n/a'  && {'background-color':'FireBrick'} || {'background-color':'green'}" >
-            {{user.llminutesago}} min</td>
-          <td ng-style="cloud9[user.codeword].status == 'ready' && {'background-color':'green'} || {'background-color':'FireBrick'}">
-            {{cloud9[user.codeword].status}} {{cloud9[user.codeword].lastcachedago}}</td>
-          <td ng-style="eks[user.codeword].status == 'ACTIVE' && {'background-color':'green'} || {'background-color':'FireBrick'}">
-            {{eks[user.codeword].region}}/{{eks[user.codeword].name}}:{{eks[user.codeword].status}}</td>
-          <td ng-style="(eks[user.codeword].nodegroups + '').length > 5 && {'background-color':'green'} || {'background-color':'Firebrick'}">
-            {{eks[user.codeword].nodegroups}}</td>
-          <td ng-style="eks[user.codeword].logging == 'True' && {'background-color':'green'} || {'background-color':'Firebrick'}" >
-            {{eks[user.codeword].logging}}</td>
-          <td ng-style="mvc[user.codeword].incidents['eks'].length > 1 && {'background-color':'green'} || {'background-color':'Firebrick'}" >
-            eks:{{mvc[user.codeword].incidents['eks'].length}}</td>
-          <td ng-style="cc[user.codeword].commits.length > 0 && {'background-color':'green'} || {'background-color':'FireBrick'}" >
-            <!--<a href="#" onclick="resetjenkins('{{user.mfeemail}}');"> -->
-            {{ cc[user.codeword] ? "true":"false" }} {{cc[user.codeword].commits.length}} {{cc[user.codeword].commits[0].author.name}}<!--</a>--></td>
-          <td ng-style="jenkins[user.codeword].jobs['easy'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
-            {{jenkins[user.codeword].jobs['easy'].color}}:{{jenkins[user.codeword].jobs['easy'].builds}}</td>
-          <td ng-style="jenkins[user.codeword].jobs['medium'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
-            {{jenkins[user.codeword].jobs["medium"].color}}:{{jenkins[user.codeword].jobs["medium"].builds}}</td>
-          <td ng-style="jenkins[user.codeword].jobs['hard'].color != 'blue' && {'background-color':'Firebrick'} || {'background-color':'Green'}">
-            {{jenkins[user.codeword].jobs["hard"].color}}:{{jenkins[user.codeword].jobs["hard"].builds}}</td>
-
-          <td ng-style="cf[user.codeword].length > 0 && {'background-color':'Green'} || {'background-color':'Firebrick'}">
-            {{cf[user.codeword].length}}</td>
-
-          <td ng-style="mvc[user.codeword].llminutesago < '120'  && {'background-color':'green'} || {'background-color':'FireBrick'}" >
-            {{mvc[user.codeword].llminutesago}} min</td>
-          <td ng-style="mvc[user.codeword].incidents['shiftleft'].length > 1 && {'background-color':'green'} || {'background-color':'Firebrick'}" >
-            shiftleft:{{mvc[user.codeword].incidents['shiftleft'].length}}</td>
+        <tr ng-repeat="(tenantName, tenant) in lab_tenants | orderBy:tenantName">
+          <th scope="row">{{ $index + 1 }}</th>
+          <td scope="row">{{ tenantName }}</td>
+          <td scope="row">{{ tenant.tenantid }}</td>
+          <td scope="row">{{ tenant.lastFetched }}</td>
+          <td scope="row">{{ tenant.student == null && '?' || tenant.student }}</td>
+          <td scope="row">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
+          <td scope="row">{{ tenant.configAuditPolicies.numberOfConfigAuditPolicies }}</td>
+          <td scope="row">{{ tenant.users.length }}</td>
+          <td scope="row">{{ tenant.audit.numberOfAuditLogs }}</td>
+          <td scope="row">{{ tenant.incidents.numberOfIncidents }}</td>
+          <td scope="row">{{ tenant.instances.length }}</td>
+          <td scope="row">{{ tenant.ods.length }}</td>
         </tr>
      </tbody>
   </table>

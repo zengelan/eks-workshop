@@ -1,4 +1,4 @@
-var redisApp = angular.module('admin', ['ui.bootstrap', 'ngCookies']);
+var redisApp = angular.module('lab_tenant_stats', ['ui.bootstrap', 'ngCookies']);
 var apiUrl = "https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummit2020-creds-prod/v2?mfeemail=none%40mcafee.com&acckey=14653d20-3889-4187-9d82-ada2eebfd524"
 var loadingdiv;
 var resulttable;
@@ -30,37 +30,6 @@ function bodyOnLoad() {
 function RedisController() {
 }
 
-RedisController.prototype.onUserStatus = function () {
-    this.http_.get(apiUrl + "&admin=get_user_table")
-        .success(function (data) {
-            console.log(data);
-            this.user_table = data.user_table;
-            this.update_time = data.update_time;
-            loadingdiv.hide();
-            resulttable.show();
-        })
-        .error(function (resp) {
-            console.log(resp);
-            $('#adminkeydiv').show();
-            loadingdiv[0].innerText = "ERROR!";
-        });
-};
-
-RedisController.prototype.onGetJenkins = function () {
-    this.http_.get(apiUrl + "&admin=get_jenkins")
-        .success(function (data) {
-            console.log(data);
-            this.jenkins = data.jenkins;
-            loadingdiv.hide();
-            resulttable.show();
-        })
-        .error(function (resp) {
-            console.log(resp);
-            $('#adminkeydiv').show();
-            loadingdiv[0].innerText = "ERROR!";
-        });
-};
-
 redisApp.controller('LabTenantStats', function ($scope, $http, $location) {
     $scope.controller = new RedisController();
     $scope.controller.scope_ = $scope;
@@ -78,7 +47,9 @@ redisApp.controller('LabTenantStats', function ($scope, $http, $location) {
     $scope.controller.http_.get(apiUrl + "&admin=get_mvc_lab_tenants")
         .success(function (data) {
             console.log(data);
-            $scope.labtenants = data.labtenants;
+            $scope.lab_tenants = data.lab_tenants;
+            loadingdiv.hide();
+            resulttable.show();
         })
         .error(function (resp) {
             console.log(resp);
