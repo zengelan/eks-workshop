@@ -13,12 +13,12 @@ In this section, we will locate and connect to a basic installation of Jenkins w
 
 When logged in to your AWS account, navigate to EC2 in the US-WEST-2 (Oregon) region:
 
-![Jenkins Instance](/images/mfe/findjenkins1.png?classes=border,shadow)
+![Jenkins Instance](/images/mfe/us-west-2-region.png?classes=border,shadow)
 You will find EC2 t2.micro instance created in this region with the name jenkins-instance. 
 
 **Locate and record the public IP address for you Jenkins instance (it will be different from the IP address below):**
 
-![Jenkins' IP Address](/images/mfe/findjenkins2.png?classes=border,shadow)
+![Jenkins' IP Address](/images/mfe/Jenkins.png?classes=border,shadow)
 
 ## Connect to Jenkins
 
