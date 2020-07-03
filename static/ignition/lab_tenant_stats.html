@@ -29,6 +29,7 @@
       <th scope="col">#</th>
       <th scope="col">tenantName</th>
       <th scope="col">tenantId</th>
+      <!-- <th scope="col">info age</th> -->
       <th scope="col">Last update</th>
       <th scope="col">Student</th>
       <th scope="col">DLP Policies</th>
@@ -44,8 +45,9 @@
           <th scope="row">{{ $index + 1 }}</th>
           <td scope="row">{{ tenantName }}</td>
           <td scope="row">{{ tenant.tenantid }}</td>
+          <!-- <td scope="row">{{ timeAgo(tenant.lastFetchedSecs)}}</td> -->
           <td scope="row">{{ tenant.lastFetched }}</td>
-          <td scope="row">{{ tenant.student == null && '?' || tenant.student }}</td>
+          <td scope="row">{{ tenant.studentName }} {{ tenant.studentEmail }} {{ tenant.studentCompany}}</td>
           <td scope="row">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
           <td scope="row">{{ tenant.configAuditPolicies.numberOfConfigAuditPolicies }}</td>
           <td scope="row">{{ tenant.users.length }}</td>

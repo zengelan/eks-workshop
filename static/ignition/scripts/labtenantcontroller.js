@@ -13,6 +13,7 @@ $('#saveadminkey').on('click', function (e) {
     }
 })
 
+
 function bodyOnLoad() {
     loadingdiv = $('#loading');
     resulttable = $('#resulttable');
