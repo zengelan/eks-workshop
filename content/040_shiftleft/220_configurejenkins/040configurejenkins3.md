@@ -30,7 +30,7 @@ Scroll through the project's configuration, taking note of the enabled sections 
 
   ![Git AWS CodeCommit](/images/mfe/gitcodecommit.png?classes=border,shadow)
 
-Click the "Enable Shift Left Inline Integration Box" (there is no need to change the other settings), click on Apply and then save:
+Click the "Enable Shift Left Inline Integration Box" (there is no need to change the other settings), click on Apply and then Save:
 
 ![Enable Shift Left](/images/mfe/shift-left.png?classes=border,shadow)
 
