@@ -47,14 +47,14 @@
           <td scope="row">{{ tenant.tenantid }}</td>
           <!-- <td scope="row">{{ timeAgo(tenant.lastFetchedSecs)}}</td> -->
           <td scope="row">{{ tenant.lastFetched }}</td>
-          <td scope="row">{{ tenant.studentName }} {{ tenant.studentEmail }} {{ tenant.studentCompany}}</td>
-          <td scope="row">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
-          <td scope="row">{{ tenant.configAuditPolicies.numberOfConfigAuditPolicies }}</td>
-          <td scope="row">{{ tenant.users.length }}</td>
-          <td scope="row">{{ tenant.audit.numberOfAuditLogs }}</td>
-          <td scope="row">{{ tenant.incidents.numberOfIncidents }}</td>
-          <td scope="row">{{ tenant.instances.length }}</td>
-          <td scope="row">{{ tenant.ods.length }}</td>
+          <td scope="row" ng-style="tenant.studentName == null && {'background-color':'	#ffe6e6'}">{{ tenant.studentName }} {{ tenant.studentEmail }} {{ tenant.studentCompany}}</td>
+          <td scope="row" ng-style="tenant.dlpPolicies.numberOfDlpPolicies >1 && {'background-color':'	#ffe6e6'}">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
+          <td scope="row" ng-style="tenant.configAuditPolicies.numberOfConfigAuditPolicies >1 && {'background-color':'	#ffe6e6'}">{{ tenant.configAuditPolicies.numberOfConfigAuditPolicies }}</td>
+          <td scope="row" ng-style="tenant.users.length !=1 && {'background-color':'	#ffe6e6'}">{{ tenant.users.length }}</td>
+          <td scope="row" ng-style="tenant.audit.numberOfAuditLogs >1 && {'background-color':'	#ffe6e6'}">{{ tenant.audit.numberOfAuditLogs }}</td>
+          <td scope="row" ng-style="tenant.incidents.numberOfIncidents >1 && {'background-color':'	#e6ffe6'}">{{ tenant.incidents.numberOfIncidents }}</td>
+          <td scope="row" ng-style="tenant.instances.length >1 && {'background-color':'	#ffe6e6'}">{{ tenant.instances.length }}</td>
+          <td scope="row" ng-style="tenant.ods.length >1 && {'background-color':'	#e6ffe6'}">{{ tenant.ods.length }}</td>
         </tr>
      </tbody>
   </table>
