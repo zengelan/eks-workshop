@@ -45,15 +45,15 @@
           <th scope="row">{{ $index + 1 }}</th>
           <td scope="row">{{ tenantName }}</td>
           <td scope="row">{{ tenant.tenantid }}</td>
-          <td scope="row" ng-style="now.getTime() - tenant.lastFetchedEpoch >10000 && {'background-color':'#ffe6e6'}">{{ tenant.lastFetched }}</td>
+          <td scope="row" ng-style="((Date.now()/1000) - tenant.lastFetchedEpoch) >10000 && {'background-color':'#ffe6e6'}">{{ tenant.lastFetched }}</td>
           <td scope="row" ng-style="tenant.studentName != null && {'background-color':'	#e6ffe6'}">{{ tenant.studentName }} {{ tenant.studentEmail }} {{ tenant.studentCompany}}</td>
           <td scope="row" ng-style="tenant.dlpPolicies.numberOfDlpPolicies >1 && {'background-color':'#e6ffe6'}">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
           <td scope="row" ng-style="tenant.configAuditPolicies.numberOfConfigAuditPolicies >1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.configAuditPolicies.numberOfConfigAuditPolicies }}</td>
           <td scope="row" ng-style="tenant.users.length !=1 && {'background-color':'#ffe6e6'} || {'background-color':'#e6ffe6'}" >{{ tenant.users.length }}</td>
           <td scope="row" ng-style="tenant.audit.numberOfAuditLogs >62 && {'background-color':'#e6ffe6'}">{{ tenant.audit.numberOfAuditLogs }}</td>
           <td scope="row" ng-style="tenant.incidents.numberOfIncidents >1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfIncidents }}</td>
-          <td scope="row" ng-style="tenant.instances.length >1 && {'background-color':'	#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.instances.length }}</td>
-          <td scope="row" ng-style="tenant.ods.length >1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.ods.length }}</td>
+          <td scope="row" ng-style="tenant.instances.length >=1 && {'background-color':'	#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.instances.length }}</td>
+          <td scope="row" ng-style="tenant.ods.length >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.ods.length }}</td>
         </tr>
      </tbody>
   </table>
