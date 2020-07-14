@@ -73,12 +73,12 @@ Once finished, click Update Trust Policy button.
 }
 
 ```
-Create the policy
+Create new policy using the above JSON 
 
 ![MVISION Cloud for AWS Summary](/images/mfe/create-policy.png?classes=border,shadow)
 ![MVISION Cloud for AWS Summary](/images/mfe/MVC-policy.png?classes=border,shadow)
 
-Attach the policy
+Attach the policy you created to “McAfeeServiceRole”
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Attach-policy.png?classes=border,shadow)
 
