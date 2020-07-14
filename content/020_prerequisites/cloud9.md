@@ -23,3 +23,23 @@ Your IDE Opens and you can see the main window layout. It looks like a "regular"
 ![Cloud92](/images/mfe/cloud9_2.jpg)
 
 In the next chapter we will **prepare the environment**
+
+### Install eksctl
+
+In this section we will install the eksctl tool to communicate from Cloud9 to the EKS cluster.
+Go to your Cloud9 IDE and open a new terminal and run the following commands.
+
+1. Download and extract the latest release of eksctl with the following command.
+```curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp```
+
+2. Move the extracted binary to /usr/local/bin.
+```sudo mv /tmp/eksctl /usr/local/bin```
+
+3. Test that your installation was successful with the following command.
+```eksctl version```
+
+4. Add the permission to the EKS cluster for the MVISION Cloud role.
+```eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn <put your own McAfeeServiceRole arn here> --group system:masters --username admin```
+
+    Example:
+```eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn arn:aws:iam::248338443305:role/McAfeeServiceRole --group system:masters --username admin```
