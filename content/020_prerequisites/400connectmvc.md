@@ -18,13 +18,13 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 2. From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
 
-  ![Enter Service Management](/images/mfe/mvc-activation.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/MVC-add-service.png?classes=border,shadow)
 
 3.  Click **Add Service Instance**, select AWS, and provide a name for the instance when promted ("AWS" will work just fine)
 
 4.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown below then click **next**.
 
-  ![Enter Service Management](/images/mfe/mvcsetup01.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/mvc-activation.png?classes=border,shadow)
 
 5.  Acknowlege the pre-requisites and click **next**
 
