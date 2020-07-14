@@ -72,6 +72,14 @@ Once finished, click Update Trust Policy button.
 }
 
 ```
+Create the policy
+
+![MVISION Cloud for AWS Summary](/images/mfe/create-policy.png?classes=border,shadow)
+![MVISION Cloud for AWS Summary](/images/mfe/MVC-policy.png?classes=border,shadow)
+
+Attach the policy
+
+![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
 Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.
