@@ -18,13 +18,13 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 
 2. From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
 
-  ![Enter Service Management](/images/mfe/clickservicemanagement.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/MVC-add-service.png?classes=border,shadow)
 
 3.  Click **Add Service Instance**, select AWS, and provide a name for the instance when promted ("AWS" will work just fine)
 
 4.  On the **Account Settings** screen make a note of your **MVISION Cloud AWS Account ID** and **External ID** then select the checkboxes shown below then click **next**.
 
-  ![Enter Service Management](/images/mfe/mvcsetup01.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/mvc-activation.png?classes=border,shadow)
 
 5.  Acknowlege the pre-requisites and click **next**
 
@@ -46,28 +46,6 @@ Within the JSON formatted permissions, modify the Account ID and External ID as 
 
 Once finished, click Update Trust Policy button.
 
-
-#### Use the following JSON with an AWS policy to provide MVISION Cloud services access to EKS. Attach them to your "McAfeeServiceRole" IAM role. 
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "SkyhighEKS",
-            "Effect": "Allow",
-            "Action": [
-                "logs:DescibeLogGroups",
-                "logs:DescribeLogStreams",
-                "eks:DescribeCluster",
-                "eks:ListClusters",
-                "logs:FilterLogEvents"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-
-```
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
 Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.

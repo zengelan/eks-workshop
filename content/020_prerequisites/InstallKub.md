@@ -1,7 +1,7 @@
 ---
 title: "Install Kubernetes Tools"
 chapter: false
-weight: 5
+weight: 30
 ---
 
 Amazon EKS clusters require kubectl and kubelet binaries and the aws-cli or aws-iam-authenticator
@@ -40,31 +40,3 @@ kubectl completion bash >>  ~/.bash_completion
 . ~/.bash_completion
 
 ```
-
-
-### Configure Cloud9 Credential Management
-{{% notice info %}}
-Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
-the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
-{{% /notice %}}
-
-- Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab
-- Select **AWS SETTINGS**
-- Turn off **AWS managed temporary credentials**
-- Close the Preferences tab
-![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
-
-
-To ensure temporary credentials aren't already in place we will also remove
-any existing credentials file by executing the following command in the Terminal:
-```
-rm -vf ${HOME}/.aws/credentials
-```
-
-The final step ties your Cloud9 environment to the EKS Cluster
-
-```
-aws eks update-kubeconfig --name mcafee-workshop-eksctl --region us-west-2
-```
-
-This concludes the prep for the Kubernetes environment. We will return here after the scans to resolve some high severity incidents!
