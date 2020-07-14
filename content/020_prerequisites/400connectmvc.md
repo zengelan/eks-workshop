@@ -46,6 +46,28 @@ Within the JSON formatted permissions, modify the Account ID and External ID as 
 
 Once finished, click Update Trust Policy button.
 
+
+#### Use the following JSON with an AWS policy to provide MVISION Cloud services access to EKS. Attach them to your "McAfeeServiceRole" IAM role. 
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "SkyhighEKS",
+            "Effect": "Allow",
+            "Action": [
+                "logs:DescibeLogGroups",
+                "logs:DescribeLogStreams",
+                "eks:DescribeCluster",
+                "eks:ListClusters",
+                "logs:FilterLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+```
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
 Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.
