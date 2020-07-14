@@ -48,41 +48,6 @@ Once finished, click Update Trust Policy button.
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
-#### Use the following JSON with an AWS policy to provide MVISION Cloud services access to EKS. Attach them to your "McAfeeServiceRole" IAM role. 
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "SkyhighEKS",
-            "Effect": "Allow",
-            "Action": [
-                "logs:DescibeLogGroups",
-                "logs:DescribeLogStreams",
-                "eks:DescribeCluster",
-                "eks:ListClusters",
-                "logs:FilterLogEvents",
-                "ecr:DesribeRepositories",
-                "ecs:describeContainerInstances",
-                "ecs:describeTasks",
-                "iam:ListAccessKeys"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-
-```
-Create new policy using the above JSON 
-
-![MVISION Cloud for AWS Summary](/images/mfe/create-policy.png?classes=border,shadow)
-![MVISION Cloud for AWS Summary](/images/mfe/MVC-policy.png?classes=border,shadow)
-
-Attach the policy you created to “McAfeeServiceRole”
-
-![MVISION Cloud for AWS Summary](/images/mfe/Attach-policy.png?classes=border,shadow)
-
-
 Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.
 
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup05.png?classes=border,shadow)
