@@ -79,7 +79,7 @@ Create the policy
 
 Attach the policy
 
-![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
+![MVISION Cloud for AWS Summary](/images/mfe/Attach-policy.png?classes=border,shadow)
 ![MVISION Cloud for AWS Summary](/images/mfe/mvcsetup04.png?classes=border,shadow)
 
 Once back at the Summary page for the Role, copy the "Role ARN" value. You will use this value momentarily within MVISION Cloud.
