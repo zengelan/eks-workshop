@@ -24,22 +24,59 @@ Your IDE Opens and you can see the main window layout. It looks like a "regular"
 
 In the next chapter we will **prepare the environment**
 
+### Configure Cloud9 Credential Management
+{{% notice info %}}
+Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
+the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
+{{% /notice %}}
+
+- Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab
+- Select **AWS SETTINGS**
+- Turn off **AWS managed temporary credentials**
+- Close the Preferences tab
+![c9disableiam](/images/c9disableiam.png?classes=border,shadow)
+
+
+To ensure temporary credentials aren't already in place we will also remove
+any existing credentials file by executing the following command in the Terminal:
+```
+rm -vf ${HOME}/.aws/credentials
+```
+
+The final step ties your Cloud9 environment to the EKS Cluster
+
+```
+aws eks update-kubeconfig --name mcafee-workshop-eksctl --region us-west-2
+```
+
+This concludes the prep for the Kubernetes environment. We will return here after the scans to resolve some high severity incidents!
+
 ### Install eksctl
 
 In this section we will install the eksctl tool to communicate from Cloud9 to the EKS cluster.
 Go to your Cloud9 IDE and open a new terminal and run the following commands.
 
-1. Download and extract the latest release of eksctl with the following command.
-```curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp```
+Download and extract the latest release of eksctl with the following command.
+```
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+```
 
-2. Move the extracted binary to /usr/local/bin.
-```sudo mv /tmp/eksctl /usr/local/bin```
+Move the extracted binary to /usr/local/bin.
+```
+sudo mv /tmp/eksctl /usr/local/bin
+```
 
-3. Test that your installation was successful with the following command.
-```eksctl version```
+Test that your installation was successful with the following command.
+```
+eksctl version
+```
 
-4. Add the permission to the EKS cluster for the MVISION Cloud role.
-```eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn <put your own McAfeeServiceRole arn here> --group system:masters --username admin```
+Add the permission to the EKS cluster for the MVISION Cloud role.
+```
+eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn <put your own McAfeeServiceRole arn here> --group system:masters --username admin
+```
 
-    Example:
-```eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn arn:aws:iam::248338443305:role/McAfeeServiceRole --group system:masters --username admin```
+Example:
+```
+eksctl create iamidentitymapping --cluster mcafee-workshop-eksctl --arn arn:aws:iam::248338443305:role/McAfeeServiceRole --group system:masters --username admin
+```
