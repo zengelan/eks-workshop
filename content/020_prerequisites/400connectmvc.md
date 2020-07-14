@@ -60,7 +60,11 @@ Once finished, click Update Trust Policy button.
                 "logs:DescribeLogStreams",
                 "eks:DescribeCluster",
                 "eks:ListClusters",
-                "logs:FilterLogEvents"
+                "logs:FilterLogEvents",
+                "ecr:DesribeRepositories",
+                "ecs:describeContainerInstances",
+                "ecs:describeTasks",
+                "iam:ListAccessKeys"
             ],
             "Resource": "*"
         }
