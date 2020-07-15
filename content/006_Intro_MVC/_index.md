@@ -6,7 +6,6 @@ tags:
   - RSA
   - beginner
 ---
-# Introduction to MVISION Cloud
 
 MVISION Cloud is a broad security platform designed to provide a variety of services to customers who need security policy in cloud assets. 
 
