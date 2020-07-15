@@ -37,7 +37,8 @@
       <th scope="col">Users</th>
       <th scope="col">Audit Logs (2h)</th>
       <th scope="col">Resources</th>
-      <th scope="col">Incidents</th>
+      <th scope="col">Incidents (all)</th>
+      <th scope="col">Incidents (shiftleft)</th>
       <th scope="col">Instances</th>
       <th scope="col">OD Scans</th>
     </thead>
@@ -54,6 +55,7 @@
           <td scope="row" ng-style="tenant.audit.numberOfAuditLogsLast2Hours >30 && {'background-color':'#e6ffe6'}">{{ tenant.audit.numberOfAuditLogsLast2Hours }}</td>
           <td scope="row" ng-style="tenant.resources.numberOfResources > 35 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.resources.numberOfResources }}</td>
           <td scope="row" ng-style="tenant.incidents.numberOfIncidents >1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfIncidents }}</td>
+          <td scope="row" ng-style="tenant.incidents.numberOfInlineIncidents >1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfInlineIncidents }}</td>
           <td scope="row" ng-style="tenant.instances.length >=1 && {'background-color':'	#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.instances.length }}</td>
           <td scope="row" ng-style="tenant.ods.length >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.ods.length }}</td>
         </tr>
