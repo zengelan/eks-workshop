@@ -25,10 +25,11 @@ In order to provide this security, your MVISION Cloud tenant will need access to
 4.  Configure the **Account Settings** according to our needs. Enable **Data Loss Prevention** and **On-Demand Scan**. Also enable **Security Config Audit** and **On-Demand Scan** here. You don't need to enable anything else for this lab
 
   ![Enter Service Management](/images/mfe/mvc-activation.png?classes=border,shadow)
-  
+ 
 5.  On the **Review Pre-Requisites** screen , acknoledge the check box and make a note of your **MVISION Cloud AWS Account ID** and **External ID** then click **next**.
 
-![Note External ID and Account ID](/images/mfe/mvc_account_externalid.png?classes=border,shadow)
+  ![Note External ID and Account ID](/images/mfe/mvc_account_externalid.png?classes=border,shadow)
+
 
 
 #### Create an AWS Role for MVISION Cloud
