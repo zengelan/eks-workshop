@@ -20,12 +20,12 @@ On the left hand side, expand the Policy Category section and choose "Container 
 
 ![cspm3](/images/mvcscan/cspmpolicy05.png?classes=border,shadow)
 
-Clear the search bar, and then type "unrestricted" and select the filtered policy called "Unrestricted Access to S3 Bucket". Once it is filtered in the list, select the checkbox next to the policy and then activate it.
+Clear the search bar, and then type "S3" and select the filtered policy called "S3 buckets should not have unrestricted access". Once it is filtered in the list, select the checkbox next to the policy and then activate it.
 
-![cspm4](/images/mvcscan/cspmpolicy06.png?classes=border,shadow)
+![cspm4](/images/mvcscan/S3buckets.png?classes=border,shadow)
 
-Repeat the same step for the policy "Unencrypted S3 Buckets"
+Repeat the same step for the policy "S3 buckets should not be unencrypted"
 
-![cspm4](/images/mvcscan/cspmpolicy07.png?classes=border,shadow)
+![cspm4](/images/mvcscan/S3unencrypted.png?classes=border,shadow)
 
-### You should have ~368 Active policies ###
+### You should have ~366 Active policies ###
