@@ -22,7 +22,7 @@ On the left hand side, expand the Policy Category section and choose "Container 
 
 Clear the search bar, and then type "S3" and select the filtered policy called "S3 buckets should not have unrestricted access". Once it is filtered in the list, select the checkbox next to the policy and then activate it.
 
-![cspm4](/images/mvcscan/S3buckets.png?classes=border,shadow)
+![cspm5](/images/mvcscan/S3buckets.png?classes=border,shadow)
 
 Repeat the same step for the policy "S3 buckets should not be unencrypted"
 
