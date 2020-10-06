@@ -12,15 +12,15 @@ Now that Jenkins is configured and ready to use MVISION Cloud, the final step is
 
 To get started, return to the Jenkins homepage and click manage Jenkins:
 
-![ConfigAudit_Easy](/images/mfe/Jenkins-config2.png?classes=border,shadow)
+![ConfigAudit](/images/mfe/Jenkins-config2.png?classes=border,shadow)
 
 Then, scroll down and double click on configure system
 
-![ConfigAudit_Easy](/images/mfe/Jenkins-config.png?classes=border,shadow)
+![ConfigAudit](/images/mfe/Jenkins-config.png?classes=border,shadow)
 
 Scroll down until AWS Code Commit Trigger SQS Plugin and click on test access and make sure is you see "Access to SQS successful"
 
-![ConfigAudit_Easy](/images/mfe/Jenkins-SQS.png?classes=border,shadow)
+![ConfigAudit](/images/mfe/Jenkins-SQS.png?classes=border,shadow)
 
 Return to the Jenkins homepage and click the first project (ConfigAudit_Easy):
 
