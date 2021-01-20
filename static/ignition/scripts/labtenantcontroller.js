@@ -13,6 +13,11 @@ $('#saveadminkey').on('click', function (e) {
     }
 })
 
+function openInstancesWindow() {
+    var url = apiUrl + "&admin=get_mvc_lab_tenants_instances";
+    window.open(url);
+}
+
 
 function bodyOnLoad() {
     loadingdiv = $('#loading');
