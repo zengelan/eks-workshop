@@ -43,6 +43,7 @@
       <th scope="col">Incidents (shiftleft)</th>
       <th scope="col">Instances</th>
       <th scope="col">OD Scans</th>
+      <th scope="col">MPOPS</th>
     </thead>
     <tbody>
         <tr ng-repeat="(tenantName, tenant) in lab_tenants | orderBy:tenantName">
@@ -60,6 +61,7 @@
           <td scope="row" ng-style="tenant.incidents.numberOfInlineIncidents >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfInlineIncidents }}</td>
           <td scope="row" ng-style="tenant.instances.length >=1 && {'background-color':'	#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.instances.length }}</td>
           <td scope="row" ng-style="tenant.ods.length >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.ods.length }}</td>
+          <td scope="row" >{{ tenant.mpops }}</td>
         </tr>
      </tbody>
   </table>
