@@ -30,7 +30,6 @@
     <thead>
       <th scope="col">#</th>
       <th scope="col">tenantName</th>
-      <th scope="col">tenantId</th>
       <!-- <th scope="col">info age</th> -->
       <th scope="col">Last update</th>
       <th scope="col">Student</th>
@@ -40,16 +39,14 @@
       <th scope="col">Audit Logs (2h)</th>
       <th scope="col">Resources</th>
       <th scope="col">Incidents (all)</th>
-      <th scope="col">Incidents (shiftleft)</th>
       <th scope="col">Instances</th>
       <th scope="col">OD Scans</th>
-      <th scope="col">MPOPS</th>
+      <th scope="col" nowrap>MPOPS</th>
     </thead>
     <tbody>
         <tr ng-repeat="(tenantName, tenant) in lab_tenants | orderBy:tenantName">
           <th scope="row">{{ $index + 1 }}</th>
-          <td scope="row">{{ tenantName }}</td>
-          <td scope="row">{{ tenant.tenantid }}</td>
+          <td scope="row">{{ tenantName }}<br>{{ tenant.tenantid }}</td>
           <td scope="row" ng-style="((Date.now()/1000) - tenant.lastFetchedEpoch) >10000 && {'background-color':'#ffe6e6'}">{{ tenant.lastFetched }}</td>
           <td scope="row" ng-style="tenant.studentName.length < 5 && {'background-color':'	#e6ffe6'}">{{ tenant.studentName }} {{ tenant.studentEmail }} {{ tenant.studentCompany}}</td>
           <td scope="row" ng-style="tenant.dlpPolicies.numberOfDlpPolicies >1 && {'background-color':'#e6ffe6'}">{{ tenant.dlpPolicies.numberOfDlpPolicies }}</td>
@@ -57,11 +54,18 @@
           <td scope="row" ng-style="tenant.users.length !=1 && {'background-color':'#ffe6e6'} || {'background-color':'#e6ffe6'}" >{{ tenant.users.length }}</td>
           <td scope="row" ng-style="tenant.audit.numberOfAuditLogsLast2Hours >30 && {'background-color':'#e6ffe6'}">{{ tenant.audit.numberOfAuditLogsLast2Hours }}</td>
           <td scope="row" ng-style="tenant.resources.numberOfResources > 23 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.resources.numberOfResources }}</td>
-          <td scope="row" ng-style="tenant.incidents.SANCTIONED_DLP >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfIncidents }}</td>
-          <td scope="row" ng-style="tenant.incidents.numberOfInlineIncidents >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.incidents.numberOfInlineIncidents }}</td>
+          <td scope="row" nowrap>
+            <div ng-repeat="(t, c) in tenant.incidents">
+              {{t}}:{{c}}</br>
+            </div>
+          </td>
           <td scope="row" ng-style="tenant.instances.length >=1 && {'background-color':'	#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.instances.length }}</td>
           <td scope="row" ng-style="tenant.ods.length >=1 && {'background-color':'#e6ffe6'} || {'background-color':'#ffe6e6'}">{{ tenant.ods.length }}</td>
-          <td scope="row" >{{ tenant.mpops }}</td>
+          <td scope="row" nowrap>
+            <div ng-repeat="mp in tenant.mpops">
+              {{ mp.accountID }}:{{ mp.region }}:{{ mp.status }}
+            </div>
+          </td>
         </tr>
      </tbody>
   </table>
