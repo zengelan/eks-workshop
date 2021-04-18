@@ -3,7 +3,6 @@ var apiUrl = "https://nfk3jyz99k.execute-api.us-east-1.amazonaws.com/get-sesummi
 var loadingdiv;
 var resulttable;
 
-
 $('#saveadminkey').on('click', function (e) {
     Cookies.set('adminkey', $('#adminkeyin').val(), {expires: 60});
     if (Cookies.get('adminkey')) {
@@ -49,11 +48,19 @@ redisApp.controller('LabTenantStats', function ($scope, $http, $location) {
     loadingdiv.show();
     apiUrl = apiUrl + "&adminkey=" + Cookies.get('adminkey');
 
-    // get jenkins data
+    var now = Math.round((new Date).getTime() / 1000)
+
+    $scope.infoAge = function(i) {
+        var age = now - i;
+        return Math.round(age/60);  // in minutes
+    }
+
+    // get tenant data
     $scope.controller.http_.get(apiUrl + "&admin=get_mvc_lab_tenants")
         .success(function (data) {
             console.log(data);
             $scope.lab_tenants = data.lab_tenants;
+            $scope.epochNow = now;
             loadingdiv.hide();
             resulttable.show();
         })
